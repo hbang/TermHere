@@ -23,8 +23,8 @@
 /* Class = "NSMenuItem"; title = "TermHere Help"; ObjectID = "FKE-Sm-Kum"; */
 "FKE-Sm-Kum.title" = "TermHere Help";
 
-/* Class = "NSWindow"; title = "Window"; ObjectID = "IQv-IB-iLA"; */
-"IQv-IB-iLA.title" = "Window";
+/* Class = "NSWindow"; title = "TermHere"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "TermHere";
 
 /* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
 "Kd2-mp-pUS.title" = "Show All";
