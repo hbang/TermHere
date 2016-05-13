@@ -1,0 +1,5 @@
+﻿/* Button that chooses the selected app in the open panel. */
+"CHOOSE" = "Choose";
+
+/* Title of the “Choose Application” window. */
+"CHOOSE_APPLICATION" = "Choose Application";

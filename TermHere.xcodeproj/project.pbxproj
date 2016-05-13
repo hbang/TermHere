@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF9CEE601CE59B1F00A89E71 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CEE5F1CE59B1F00A89E71 /* FinderSync.swift */; };
+		CF9CEE641CE59B1F00A89E71 /* TermHere Finder Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF9CEE5B1CE59B1F00A89E71 /* TermHere Finder Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CF9CEE6A1CE5A77B00A89E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9CEE691CE5A77B00A89E71 /* Assets.xcassets */; };
+		CF9CEE6C1CE5A91000A89E71 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CF9CEE6B1CE5A91000A89E71 /* Credits.rtf */; };
+		CF9CEE721CE5B55100A89E71 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF9CEE701CE5B55100A89E71 /* Localizable.strings */; };
+		CF9CEE751CE5B57D00A89E71 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF9CEE731CE5B57D00A89E71 /* Localizable.strings */; };
+		CFD9B7C61CE5960500947EC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD9B7C51CE5960500947EC8 /* AppDelegate.swift */; };
+		CFD9B7C81CE5960500947EC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD9B7C71CE5960500947EC8 /* ViewController.swift */; };
+		CFD9B7CA1CE5960500947EC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD9B7C91CE5960500947EC8 /* Assets.xcassets */; };
+		CFD9B7CD1CE5960500947EC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD9B7CB1CE5960500947EC8 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF9CEE621CE59B1F00A89E71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFD9B7BA1CE5960500947EC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF9CEE5A1CE59B1F00A89E71;
+			remoteInfo = "TermHere Finder Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF9CEE681CE59B1F00A89E71 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CF9CEE641CE59B1F00A89E71 /* TermHere Finder Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CF9CEE5B1CE59B1F00A89E71 /* TermHere Finder Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TermHere Finder Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF9CEE5E1CE59B1F00A89E71 /* TermHere_Finder_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TermHere_Finder_Extension.entitlements; sourceTree = "<group>"; };
+		CF9CEE5F1CE59B1F00A89E71 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
+		CF9CEE611CE59B1F00A89E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF9CEE691CE5A77B00A89E71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF9CEE6B1CE5A91000A89E71 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		CF9CEE6D1CE5AD6600A89E71 /* TermHere.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TermHere.entitlements; sourceTree = "<group>"; };
+		CF9CEE6F1CE5B10A00A89E71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		CF9CEE711CE5B55100A89E71 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CF9CEE741CE5B57D00A89E71 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CFD9B7C21CE5960500947EC8 /* TermHere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TermHere.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD9B7C51CE5960500947EC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFD9B7C71CE5960500947EC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFD9B7C91CE5960500947EC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFD9B7CC1CE5960500947EC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFD9B7CE1CE5960500947EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF9CEE581CE59B1F00A89E71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD9B7BF1CE5960500947EC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF9CEE5C1CE59B1F00A89E71 /* TermHere Finder Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CF9CEE5F1CE59B1F00A89E71 /* FinderSync.swift */,
+				CF9CEE691CE5A77B00A89E71 /* Assets.xcassets */,
+				CF9CEE5D1CE59B1F00A89E71 /* Supporting Files */,
+			);
+			path = "TermHere Finder Extension";
+			sourceTree = "<group>";
+		};
+		CF9CEE5D1CE59B1F00A89E71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF9CEE791CE5B67200A89E71 /* Localization */,
+				CF9CEE611CE59B1F00A89E71 /* Info.plist */,
+				CF9CEE5E1CE59B1F00A89E71 /* TermHere_Finder_Extension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF9CEE761CE5B65E00A89E71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF9CEE781CE5B66C00A89E71 /* Localization */,
+				CF9CEE7B1CE5B6B000A89E71 /* Resources */,
+				CFD9B7CE1CE5960500947EC8 /* Info.plist */,
+				CF9CEE6D1CE5AD6600A89E71 /* TermHere.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF9CEE781CE5B66C00A89E71 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				CF9CEE701CE5B55100A89E71 /* Localizable.strings */,
+			);
+			name = Localization;
+			sourceTree = "<group>";
+		};
+		CF9CEE791CE5B67200A89E71 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				CF9CEE731CE5B57D00A89E71 /* Localizable.strings */,
+			);
+			name = Localization;
+			sourceTree = "<group>";
+		};
+		CF9CEE7B1CE5B6B000A89E71 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF9CEE6B1CE5A91000A89E71 /* Credits.rtf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CFD9B7B91CE5960500947EC8 = {
+			isa = PBXGroup;
+			children = (
+				CFD9B7C41CE5960500947EC8 /* TermHere */,
+				CF9CEE5C1CE59B1F00A89E71 /* TermHere Finder Extension */,
+				CFD9B7C31CE5960500947EC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFD9B7C31CE5960500947EC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFD9B7C21CE5960500947EC8 /* TermHere.app */,
+				CF9CEE5B1CE59B1F00A89E71 /* TermHere Finder Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFD9B7C41CE5960500947EC8 /* TermHere */ = {
+			isa = PBXGroup;
+			children = (
+				CFD9B7C51CE5960500947EC8 /* AppDelegate.swift */,
+				CFD9B7C71CE5960500947EC8 /* ViewController.swift */,
+				CFD9B7C91CE5960500947EC8 /* Assets.xcassets */,
+				CFD9B7CB1CE5960500947EC8 /* Main.storyboard */,
+				CF9CEE761CE5B65E00A89E71 /* Supporting Files */,
+			);
+			path = TermHere;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF9CEE5A1CE59B1F00A89E71 /* TermHere Finder Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF9CEE671CE59B1F00A89E71 /* Build configuration list for PBXNativeTarget "TermHere Finder Extension" */;
+			buildPhases = (
+				CF9CEE571CE59B1F00A89E71 /* Sources */,
+				CF9CEE581CE59B1F00A89E71 /* Frameworks */,
+				CF9CEE591CE59B1F00A89E71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TermHere Finder Extension";
+			productName = "TermHere Finder Extension";
+			productReference = CF9CEE5B1CE59B1F00A89E71 /* TermHere Finder Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CFD9B7C11CE5960500947EC8 /* TermHere */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFD9B7D11CE5960500947EC8 /* Build configuration list for PBXNativeTarget "TermHere" */;
+			buildPhases = (
+				CFD9B7BE1CE5960500947EC8 /* Sources */,
+				CFD9B7BF1CE5960500947EC8 /* Frameworks */,
+				CFD9B7C01CE5960500947EC8 /* Resources */,
+				CF9CEE681CE59B1F00A89E71 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF9CEE631CE59B1F00A89E71 /* PBXTargetDependency */,
+			);
+			name = TermHere;
+			productName = TermHere;
+			productReference = CFD9B7C21CE5960500947EC8 /* TermHere.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFD9B7BA1CE5960500947EC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "HASHBANG Productions";
+				TargetAttributes = {
+					CF9CEE5A1CE59B1F00A89E71 = {
+						CreatedOnToolsVersion = 7.3.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+						};
+					};
+					CFD9B7C11CE5960500947EC8 = {
+						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = CFD9B7BD1CE5960500947EC8 /* Build configuration list for PBXProject "TermHere" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFD9B7B91CE5960500947EC8;
+			productRefGroup = CFD9B7C31CE5960500947EC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFD9B7C11CE5960500947EC8 /* TermHere */,
+				CF9CEE5A1CE59B1F00A89E71 /* TermHere Finder Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF9CEE591CE59B1F00A89E71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF9CEE6A1CE5A77B00A89E71 /* Assets.xcassets in Resources */,
+				CF9CEE751CE5B57D00A89E71 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD9B7C01CE5960500947EC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD9B7CA1CE5960500947EC8 /* Assets.xcassets in Resources */,
+				CF9CEE721CE5B55100A89E71 /* Localizable.strings in Resources */,
+				CF9CEE6C1CE5A91000A89E71 /* Credits.rtf in Resources */,
+				CFD9B7CD1CE5960500947EC8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF9CEE571CE59B1F00A89E71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF9CEE601CE59B1F00A89E71 /* FinderSync.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD9B7BE1CE5960500947EC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD9B7C81CE5960500947EC8 /* ViewController.swift in Sources */,
+				CFD9B7C61CE5960500947EC8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF9CEE631CE59B1F00A89E71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF9CEE5A1CE59B1F00A89E71 /* TermHere Finder Extension */;
+			targetProxy = CF9CEE621CE59B1F00A89E71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF9CEE701CE5B55100A89E71 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF9CEE711CE5B55100A89E71 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CF9CEE731CE5B57D00A89E71 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF9CEE741CE5B57D00A89E71 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CFD9B7CB1CE5960500947EC8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFD9B7CC1CE5960500947EC8 /* Base */,
+				CF9CEE6F1CE5B10A00A89E71 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF9CEE651CE59B1F00A89E71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TermHere Finder Extension/TermHere_Finder_Extension.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "TermHere Finder Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.hbang.TermHere.TermHere-Finder-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CF9CEE661CE59B1F00A89E71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TermHere Finder Extension/TermHere_Finder_Extension.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "TermHere Finder Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.hbang.TermHere.TermHere-Finder-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CFD9B7CF1CE5960500947EC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFD9B7D01CE5960500947EC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CFD9B7D21CE5960500947EC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TermHere/TermHere.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = TermHere/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.hbang.TermHere;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CFD9B7D31CE5960500947EC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TermHere/TermHere.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = TermHere/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.hbang.TermHere;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF9CEE671CE59B1F00A89E71 /* Build configuration list for PBXNativeTarget "TermHere Finder Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF9CEE651CE59B1F00A89E71 /* Debug */,
+				CF9CEE661CE59B1F00A89E71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CFD9B7BD1CE5960500947EC8 /* Build configuration list for PBXProject "TermHere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD9B7CF1CE5960500947EC8 /* Debug */,
+				CFD9B7D01CE5960500947EC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFD9B7D11CE5960500947EC8 /* Build configuration list for PBXNativeTarget "TermHere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD9B7D21CE5960500947EC8 /* Debug */,
+				CFD9B7D31CE5960500947EC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFD9B7BA1CE5960500947EC8 /* Project object */;
+}

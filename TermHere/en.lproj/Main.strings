@@ -1,0 +1,75 @@
+
+/* Class = "NSMenuItem"; title = "TermHere"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "TermHere";
+
+/* Class = "NSMenuItem"; title = "Quit TermHere"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit TermHere";
+
+/* Class = "NSMenuItem"; title = "About TermHere"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "About TermHere";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "Preferences…";
+
+/* Class = "NSButtonCell"; title = "Open Preferences"; ObjectID = "Due-74-LRw"; */
+"Due-74-LRw.title" = "Open Preferences";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "Help";
+
+/* Class = "NSMenuItem"; title = "TermHere Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "TermHere Help";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Show All";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
+"LE2-aR-0XJ.title" = "Bring All to Front";
+
+/* Class = "NSTextFieldCell"; title = "Not seeing it? Make sure TermHere is enabled in the Extensions preferences."; ObjectID = "Msh-Hp-hvC"; */
+"Msh-Hp-hvC.title" = "Not seeing it? Make sure TermHere is enabled in the Extensions preferences.";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "Minimize";
+
+/* Class = "NSMenuItem"; title = "Hide TermHere"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Hide TermHere";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
+"R4o-n2-Eq4.title" = "Zoom";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Hide Others";
+
+/* Class = "NSButtonCell"; title = "Browse"; ObjectID = "XdH-ej-nuM"; */
+"XdH-ej-nuM.title" = "Browse";
+
+/* Class = "NSViewController"; title = "TermHere"; ObjectID = "XfG-lQ-9wD"; */
+"XfG-lQ-9wD.title" = "TermHere";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Window";
+
+/* Class = "NSTextFieldCell"; title = "Terminal App:"; ObjectID = "avK-6B-WJJ"; */
+"avK-6B-WJJ.title" = "Terminal App:";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "Services";
+
+/* Class = "NSMenu"; title = "TermHere"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "TermHere";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Help";

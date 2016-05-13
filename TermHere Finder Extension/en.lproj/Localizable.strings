@@ -1,0 +1,5 @@
+﻿/* Button that opens a new terminal window. */
+"NEW_TERMINAL_HERE" = "New Terminal Here";
+
+/* Explanation of what the New Terminal Here button does. */
+"NEW_TERMINAL_HERE_TOOLTIP" = "Open a terminal window in this directory";
