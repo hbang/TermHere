@@ -26,6 +26,38 @@ class ViewController: NSViewController {
 		pathControl.URL = NSURL(string: preferences.objectForKey("TerminalAppURL") as? String ?? "file:///Applications/Utilities/Terminal.app")
 	}
 
+	override func viewDidAppear() {
+		super.viewDidAppear()
+		requestExtensionEnable()
+	}
+
+	// MARK: - First Run
+
+	func requestExtensionEnable() {
+		// if this is the first run
+		if preferences.objectForKey("HadFirstRun") == nil {
+			// set HadFirstRun so this won’t activate again
+			preferences.setObject(true, forKey: "HadFirstRun")
+
+			// construct and show an alert asking to enable the extension
+			let alert = NSAlert()
+			alert.messageText = NSLocalizedString("PLEASE_ENABLE", comment: "Title of prompt asking the user to enable the extension.")
+			alert.informativeText = NSLocalizedString("PLEASE_ENABLE_EXPLANATION", comment: "Explanation of how to enable the extension.")
+			alert.addButtonWithTitle(NSLocalizedString("OK", comment: "OK button label"))
+
+			alert.beginSheetModalForWindow(view.window!) { (result: NSModalResponse) in
+				self.openExtensionPreferences()
+			}
+		}
+	}
+
+	func openExtensionPreferences() {
+		// open the pref pane for extensions
+		NSWorkspace.sharedWorkspace().openURL(NSURL(fileURLWithPath: "/System/Library/PreferencePanes/Extensions.prefPane"))
+	}
+
+	// MARK: - Callbacks
+
 	@IBAction func browseClicked(sender: AnyObject) {
 		// set up the open panel
 		let panel = NSOpenPanel()
@@ -56,9 +88,8 @@ class ViewController: NSViewController {
 		}
 	}
 
-	@IBAction func openExtensionPreferences(sender: AnyObject) {
-		// open the prefPane for extensions
-		NSWorkspace.sharedWorkspace().openURL(NSURL(fileURLWithPath: "/System/Library/PreferencePanes/Extensions.prefPane"))
+	@IBAction func openPreferencesClicked(sender: AnyObject) {
+		openExtensionPreferences()
 	}
 
 }

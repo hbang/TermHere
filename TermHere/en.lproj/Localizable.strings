@@ -3,3 +3,9 @@
 
 /* Title of the “Choose Application” window. */
 "CHOOSE_APPLICATION" = "Choose Application";
+
+/* Title of prompt asking the user to enable the extension. */
+"PLEASE_ENABLE" = "To start using TermHere, please enable the extension.";
+
+/* Explanation of how to enable the extension. */
+"PLEASE_ENABLE_EXPLANATION" = "Click OK to open the Extensions preferences. Under TermHere, click the checkbox next to “Finder”.";
