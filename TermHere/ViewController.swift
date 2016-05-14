@@ -17,17 +17,21 @@ class ViewController: NSViewController {
 	// for the preferences
 	let preferences = NSUserDefaults(suiteName: "group.au.com.hbang.TermHere")!
 
+	// MARK: - NSViewController
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
 		// get the app url or use the default
-		pathControl.URL = preferences.objectForKey("TerminalAppURL") as? NSURL ?? NSURL(fileURLWithPath: "/Applications/Utilities/Terminal.app")
+		pathControl.URL = NSURL(string: preferences.objectForKey("TerminalAppURL") as? String ?? "file:///Applications/Utilities/Terminal.app")
 	}
 
 	@IBAction func browseClicked(sender: AnyObject) {
 		// set up the open panel
 		let panel = NSOpenPanel()
 		panel.title = NSLocalizedString("CHOOSE_APPLICATION", comment: "Title of the “Choose Application” window.")
+
+		// only allow selecting app bundles
 		panel.allowedFileTypes = [ kUTTypeApplicationBundle as String ]
 
 		// configure the selected item. set the path to open to, then the filename
@@ -44,6 +48,10 @@ class ViewController: NSViewController {
 				let url = panel.URLs[0]
 				self.pathControl.URL = url
 				self.preferences.setObject(url.absoluteString, forKey: "TerminalAppURL")
+
+				// also get the bundle identifier
+				let bundle = NSBundle(URL: url)
+				self.preferences.setObject(bundle?.bundleIdentifier, forKey: "TerminalAppBundleIdentifier")
 			}
 		}
 	}

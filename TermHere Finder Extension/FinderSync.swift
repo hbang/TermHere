@@ -21,26 +21,6 @@ class FinderSync: FIFinderSync {
 		finderController.directoryURLs = [ NSURL(fileURLWithPath: "/") ]
 	}
 
-	// MARK: - Preferences
-
-	var appBundleIdentifier: String {
-		get {
-			// get the app url or use the default
-			let url = preferences.objectForKey("TerminalAppURL") as? NSURL ?? NSURL(fileURLWithPath: "/Applications/Utilities/Terminal.app")
-
-			// grab the bundle
-			guard let bundle = NSBundle(URL: url) else {
-				NSLog("bundle %@ can’t be found?", url)
-
-				// fall back to terminal bundle id
-				return "com.apple.Terminal"
-			}
-
-			// return the bundle id in question
-			return bundle.bundleIdentifier!
-		}
-	}
-
 	// MARK: - Toolbar item
 
 	override var toolbarItemName: String {
@@ -108,8 +88,11 @@ class FinderSync: FIFinderSync {
 			urls.append(target)
 		}
 
+		// determine the bundle id, falling back to terminal as default
+		let bundleIdentifier = preferences.objectForKey("TerminalAppBundleIdentifier") as? String ?? "com.apple.Terminal"
+
 		// go ahead and open all of those urls in the specified terminal app
-		NSWorkspace.sharedWorkspace().openURLs(urls, withAppBundleIdentifier: appBundleIdentifier, options: .Default, additionalEventParamDescriptor: nil, launchIdentifiers: nil)
+		NSWorkspace.sharedWorkspace().openURLs(urls, withAppBundleIdentifier: bundleIdentifier, options: .Default, additionalEventParamDescriptor: nil, launchIdentifiers: nil)
 	}
 
 }
