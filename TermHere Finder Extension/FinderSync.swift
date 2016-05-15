@@ -32,9 +32,7 @@ class FinderSync: FIFinderSync {
 	}
 
 	override var toolbarItemImage: NSImage {
-		let icon = NSBundle.mainBundle().imageForResource("toolbar-terminal")!
-		icon.template = true
-		return icon
+		return NSBundle.mainBundle().imageForResource("toolbar-terminal")!
 	}
 
 	override func menuForMenuKind(menuKind: FIMenuKind) -> NSMenu {
