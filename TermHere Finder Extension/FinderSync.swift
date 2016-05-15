@@ -12,7 +12,7 @@ import FinderSync
 class FinderSync: FIFinderSync {
 
 	let finderController = FIFinderSyncController.defaultController()
-	let preferences = NSUserDefaults(suiteName: "group.au.com.hbang.TermHere")!
+	let preferences = NSUserDefaults(suiteName: "N2LN9ZT493.group.au.com.hbang.TermHere")!
 
 	override init() {
 		super.init()

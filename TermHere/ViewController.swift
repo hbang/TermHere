@@ -19,7 +19,7 @@ class ViewController: NSViewController {
 
 	// this is simple enough that i don’t really care to make a controller class
 	// for the preferences
-	let preferences = NSUserDefaults(suiteName: "group.au.com.hbang.TermHere")!
+	let preferences = NSUserDefaults(suiteName: "N2LN9ZT493.group.au.com.hbang.TermHere")!
 
 	// MARK: - NSViewController
 

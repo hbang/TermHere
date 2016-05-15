@@ -224,6 +224,9 @@
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 1;
 							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
 						};
 					};
 					CFD9B7C11CE5960500947EC8 = {
@@ -231,6 +234,9 @@
 						DevelopmentTeam = N2LN9ZT493;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
 								enabled = 1;
 							};
 						};
