@@ -126,29 +126,19 @@
             <objects>
                 <viewController title="TermHere" id="XfG-lQ-9wD" customClass="ViewController" customModule="TermHere" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="500" height="103"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="146"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ctC-dy-Shm">
-                                <rect key="frame" x="10" y="11" width="337" height="34"/>
-                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" title="Not seeing it? Make sure TermHere is enabled in the Extensions preferences." id="Msh-Hp-hvC">
+                                <rect key="frame" x="10" y="68" width="335" height="34"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Not seeing it? Make sure TermHere is enabled in the Extensions preferences." id="Msh-Hp-hvC">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="Gam-j7-DQE">
-                                <rect key="frame" x="347" y="3" width="149" height="32"/>
-                                <buttonCell key="cell" type="push" title="Open Preferences" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Due-74-LRw">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="openPreferencesClicked:" target="XfG-lQ-9wD" id="jy9-z0-MNs"/>
-                                </connections>
-                            </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="C1a-DL-hAU">
-                                <rect key="frame" x="10" y="74" width="88" height="17"/>
+                                <rect key="frame" x="10" y="117" width="88" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Terminal App:" id="avK-6B-WJJ">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -156,7 +146,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5dx-sP-OUE">
-                                <rect key="frame" x="406" y="64" width="88" height="32"/>
+                                <rect key="frame" x="406" y="107" width="88" height="32"/>
                                 <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XdH-ej-nuM">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -166,41 +156,74 @@
                                 </connections>
                             </button>
                             <pathControl verticalHuggingPriority="750" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DXP-MN-PTQ">
-                                <rect key="frame" x="104" y="71" width="300" height="20"/>
+                                <rect key="frame" x="104" y="114" width="300" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="Rt2-PJ-HvW"/>
                                     <constraint firstAttribute="height" constant="20" id="cFR-9e-kRq"/>
                                 </constraints>
-                                <pathCell key="cell" controlSize="small" selectable="YES" editable="YES" alignment="left" id="FCu-Eu-FAk">
+                                <pathCell key="cell" controlSize="small" selectable="YES" refusesFirstResponder="YES" alignment="left" id="FCu-Eu-FAk">
                                     <font key="font" metaFont="smallSystem"/>
                                     <url key="url" string="file:///Applications/Utilities/Terminal.app/"/>
-                                    <color key="backgroundColor" red="0.8980392157" green="0.92549019610000005" blue="0.97254901959999995" alpha="1" colorSpace="deviceRGB"/>
                                 </pathCell>
                             </pathControl>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="fnX-Yt-TmH">
+                                <rect key="frame" x="10" y="12" width="405" height="28"/>
+                                <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" title="If this app is useful to you, please consider sending a small donation to the developer to say thanks." id="NCD-Yd-LL3">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Sw8-ag-2dl">
+                                <rect key="frame" x="416" y="6" width="77" height="28"/>
+                                <buttonCell key="cell" type="push" title="Loading…" bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jcg-5p-aLA">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystem"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="purchaseClicked:" target="XfG-lQ-9wD" id="22z-zu-md2"/>
+                                </connections>
+                            </button>
+                            <button horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="Gam-j7-DQE">
+                                <rect key="frame" x="345" y="60" width="149" height="32"/>
+                                <buttonCell key="cell" type="push" title="Open Preferences" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Due-74-LRw">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="openPreferencesClicked:" target="XfG-lQ-9wD" id="jy9-z0-MNs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="C1a-DL-hAU" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="12" id="27z-Pg-3tp"/>
                             <constraint firstItem="DXP-MN-PTQ" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="12" id="6ul-vE-nXq"/>
+                            <constraint firstAttribute="trailing" secondItem="Sw8-ag-2dl" secondAttribute="trailing" constant="12" id="CM2-Ue-sWu"/>
                             <constraint firstItem="DXP-MN-PTQ" firstAttribute="leading" secondItem="C1a-DL-hAU" secondAttribute="trailing" constant="8" id="Iah-u3-mgs"/>
                             <constraint firstItem="Gam-j7-DQE" firstAttribute="leading" secondItem="ctC-dy-Shm" secondAttribute="trailing" constant="8" symbolic="YES" id="K7o-CP-d30"/>
                             <constraint firstItem="C1a-DL-hAU" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="12" id="KUi-w8-Dms"/>
+                            <constraint firstItem="ctC-dy-Shm" firstAttribute="top" secondItem="DXP-MN-PTQ" secondAttribute="bottom" constant="12" id="NLi-Gb-vl1"/>
+                            <constraint firstAttribute="bottom" secondItem="Sw8-ag-2dl" secondAttribute="bottom" constant="12" id="U1t-UG-1lf"/>
                             <constraint firstItem="ctC-dy-Shm" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="12" id="VG5-pj-zbu"/>
-                            <constraint firstAttribute="trailing" secondItem="Gam-j7-DQE" secondAttribute="trailing" constant="10" id="emF-sy-d4W"/>
+                            <constraint firstItem="fnX-Yt-TmH" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="12" id="aRc-ml-TxR"/>
+                            <constraint firstAttribute="trailing" secondItem="Gam-j7-DQE" secondAttribute="trailing" constant="12" id="emF-sy-d4W"/>
                             <constraint firstItem="5dx-sP-OUE" firstAttribute="leading" secondItem="DXP-MN-PTQ" secondAttribute="trailing" constant="8" id="jkb-V7-Gf0"/>
                             <constraint firstAttribute="trailing" secondItem="5dx-sP-OUE" secondAttribute="trailing" constant="12" id="poe-b5-m6B"/>
-                            <constraint firstAttribute="bottom" secondItem="Gam-j7-DQE" secondAttribute="bottom" constant="10" id="rLx-3K-bBY"/>
+                            <constraint firstAttribute="bottom" secondItem="fnX-Yt-TmH" secondAttribute="bottom" constant="12" id="s9c-Z4-7Vc"/>
                             <constraint firstItem="ctC-dy-Shm" firstAttribute="baseline" secondItem="Gam-j7-DQE" secondAttribute="baseline" constant="2" id="tFO-iq-YPI"/>
+                            <constraint firstItem="Sw8-ag-2dl" firstAttribute="leading" secondItem="fnX-Yt-TmH" secondAttribute="trailing" constant="8" id="v9x-aL-AGn"/>
                             <constraint firstItem="5dx-sP-OUE" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="11" id="vIa-qX-6f1"/>
                             <constraint firstItem="DXP-MN-PTQ" firstAttribute="leading" secondItem="C1a-DL-hAU" secondAttribute="trailing" constant="8" id="wDd-bU-V7z"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="pathControl" destination="DXP-MN-PTQ" id="1Qt-Pe-Mm5"/>
+                        <outlet property="purchaseButton" destination="Sw8-ag-2dl" id="OvV-GA-a64"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85" y="754.5"/>
+            <point key="canvasLocation" x="85" y="776"/>
         </scene>
     </scenes>
 </document>

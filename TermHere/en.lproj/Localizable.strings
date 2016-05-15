@@ -4,6 +4,12 @@
 /* Title of the “Choose Application” window. */
 "CHOOSE_APPLICATION" = "Choose Application";
 
+/* Button that allows a donation to be made. %@ is the donation amount. */
+"DONATE_WITH_PRICE" = "Donate %@";
+
+/* Message displayed when a donation has successfully been made. */
+"DONATION_SUCCEEDED" = "Thank you for your donation.";
+
 /* Title of prompt asking the user to enable the extension. */
 "PLEASE_ENABLE" = "To start using TermHere, please enable the extension.";
 

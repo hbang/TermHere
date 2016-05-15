@@ -8,10 +8,14 @@
 
 import Cocoa
 import CoreServices
+import StoreKit
 
 class ViewController: NSViewController {
 
 	@IBOutlet weak var pathControl: NSPathControl!
+	@IBOutlet weak var purchaseButton: NSButton!
+
+	let purchaseController = PurchaseController()
 
 	// this is simple enough that i don’t really care to make a controller class
 	// for the preferences
@@ -24,6 +28,9 @@ class ViewController: NSViewController {
 
 		// get the app url or use the default
 		pathControl.URL = NSURL(string: preferences.objectForKey("TerminalAppURL") as? String ?? "file:///Applications/Utilities/Terminal.app")
+
+		// listen for purchase info received notifications
+		NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(receivedPurchaseInfo(_:)), name: PurchaseControllerReceivedProductsNotification, object: nil)
 	}
 
 	override func viewDidAppear() {
@@ -51,12 +58,27 @@ class ViewController: NSViewController {
 		}
 	}
 
+	// MARK: - Callbacks
+
 	func openExtensionPreferences() {
 		// open the pref pane for extensions
 		NSWorkspace.sharedWorkspace().openURL(NSURL(fileURLWithPath: "/System/Library/PreferencePanes/Extensions.prefPane"))
 	}
 
-	// MARK: - Callbacks
+	func receivedPurchaseInfo(notification: NSNotification) {
+		let product = notification.object as! SKProduct
+
+		// format the price as a currency string
+		let formatter = NSNumberFormatter()
+		formatter.numberStyle = .CurrencyStyle
+		formatter.locale = product.priceLocale
+
+		let price = formatter.stringFromNumber(product.price!)!
+
+		// enable the
+		purchaseButton.enabled = true
+		purchaseButton.title = NSString(format: NSLocalizedString("DONATE_WITH_PRICE", comment: "Button that allows a donation to be made. %@ is the donation amount."), price) as String
+	}
 
 	@IBAction func browseClicked(sender: AnyObject) {
 		// set up the open panel
@@ -90,6 +112,10 @@ class ViewController: NSViewController {
 
 	@IBAction func openPreferencesClicked(sender: AnyObject) {
 		openExtensionPreferences()
+	}
+
+	@IBAction func purchaseClicked(sender: AnyObject) {
+		purchaseController.purchase()
 	}
 
 }

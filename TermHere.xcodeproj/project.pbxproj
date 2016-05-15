@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF0608281CE8C765003BB13F /* PurchaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0608271CE8C765003BB13F /* PurchaseController.swift */; };
 		CF9CEE601CE59B1F00A89E71 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CEE5F1CE59B1F00A89E71 /* FinderSync.swift */; };
 		CF9CEE641CE59B1F00A89E71 /* TermHere Finder Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF9CEE5B1CE59B1F00A89E71 /* TermHere Finder Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CF9CEE6A1CE5A77B00A89E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9CEE691CE5A77B00A89E71 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CF0608271CE8C765003BB13F /* PurchaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseController.swift; sourceTree = "<group>"; };
 		CF9CEE5B1CE59B1F00A89E71 /* TermHere Finder Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TermHere Finder Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9CEE5E1CE59B1F00A89E71 /* TermHere_Finder_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TermHere_Finder_Extension.entitlements; sourceTree = "<group>"; };
 		CF9CEE5F1CE59B1F00A89E71 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			children = (
 				CFD9B7C51CE5960500947EC8 /* AppDelegate.swift */,
 				CFD9B7C71CE5960500947EC8 /* ViewController.swift */,
+				CF0608271CE8C765003BB13F /* PurchaseController.swift */,
 				CFD9B7C91CE5960500947EC8 /* Assets.xcassets */,
 				CFD9B7CB1CE5960500947EC8 /* Main.storyboard */,
 				CF9CEE761CE5B65E00A89E71 /* Supporting Files */,
@@ -290,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFD9B7C81CE5960500947EC8 /* ViewController.swift in Sources */,
+				CF0608281CE8C765003BB13F /* PurchaseController.swift in Sources */,
 				CFD9B7C61CE5960500947EC8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
