@@ -58,6 +58,12 @@ class PurchaseController: NSObject, SKPaymentTransactionObserver, SKProductsRequ
 			NSNotificationCenter.defaultCenter().postNotification(NSNotification(name: PurchaseControllerReceivedProductsNotification, object: products))
 		}
 	}
+	
+	func request(request: SKRequest, didFailWithError error: NSError?) {
+		if error != nil {
+			NSLog("loading products failed? %@", error!)
+		}
+	}
 
 	// MARK: - SKPaymentTransactionObserver
 
