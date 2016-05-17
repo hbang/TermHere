@@ -66,7 +66,8 @@ class ViewController: NSViewController {
 	}
 
 	func receivedPurchaseInfo(notification: NSNotification) {
-		let product = notification.object as! SKProduct
+		let products = notification.object as! [SKProduct]
+		let product = products[0]
 
 		// format the price as a currency string
 		let formatter = NSNumberFormatter()
