@@ -38,7 +38,7 @@ class FinderSync: FIFinderSync {
 	override func menuForMenuKind(menuKind: FIMenuKind) -> NSMenu {
 		// create the menu
 		let menu = NSMenu(title: "")
-		menu.addItemWithTitle("New Terminal Here", action: #selector(openTerminal(_:)), keyEquivalent: "T")
+		menu.addItemWithTitle(NSLocalizedString("NEW_TERMINAL_HERE", comment: "Button that opens a new terminal window."), action: #selector(openTerminal(_:)), keyEquivalent: "T")
 		return menu
 	}
 
