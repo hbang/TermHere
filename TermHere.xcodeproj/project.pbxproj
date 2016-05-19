@@ -18,6 +18,10 @@
 		CFD9B7C81CE5960500947EC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD9B7C71CE5960500947EC8 /* ViewController.swift */; };
 		CFD9B7CA1CE5960500947EC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD9B7C91CE5960500947EC8 /* Assets.xcassets */; };
 		CFD9B7CD1CE5960500947EC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD9B7CB1CE5960500947EC8 /* Main.storyboard */; };
+		CFFF6DAF1CEE0F5A004E5894 /* TermHere Common.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFF6DAE1CEE0F5A004E5894 /* TermHere Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFFF6DB31CEE0F5A004E5894 /* TermHereCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFF6DAC1CEE0F5A004E5894 /* TermHereCommon.framework */; };
+		CFFF6DB41CEE0F5A004E5894 /* TermHereCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFFF6DAC1CEE0F5A004E5894 /* TermHereCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFFF6DBC1CEE0F6F004E5894 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF6DBB1CEE0F6F004E5894 /* Preferences.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = CF9CEE5A1CE59B1F00A89E71;
 			remoteInfo = "TermHere Finder Extension";
+		};
+		CFFF6DB11CEE0F5A004E5894 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFD9B7BA1CE5960500947EC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFFF6DAB1CEE0F5A004E5894;
+			remoteInfo = "TermHere Common";
+		};
+		CFFF6DB91CEE0F62004E5894 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFD9B7BA1CE5960500947EC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFFF6DAB1CEE0F5A004E5894;
+			remoteInfo = "TermHere Common";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,6 +58,17 @@
 				CF9CEE641CE59B1F00A89E71 /* TermHere Finder Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFFF6DB81CEE0F5A004E5894 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CFFF6DB41CEE0F5A004E5894 /* TermHereCommon.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -62,6 +91,10 @@
 		CFD9B7C91CE5960500947EC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFD9B7CC1CE5960500947EC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFD9B7CE1CE5960500947EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFFF6DAC1CEE0F5A004E5894 /* TermHereCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TermHereCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFFF6DAE1CEE0F5A004E5894 /* TermHere Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TermHere Common.h"; sourceTree = "<group>"; };
+		CFFF6DB01CEE0F5A004E5894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFFF6DBB1CEE0F6F004E5894 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +106,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CFD9B7BF1CE5960500947EC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFFF6DB31CEE0F5A004E5894 /* TermHereCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFFF6DA81CEE0F5A004E5894 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -142,6 +183,7 @@
 			children = (
 				CFD9B7C41CE5960500947EC8 /* TermHere */,
 				CF9CEE5C1CE59B1F00A89E71 /* TermHere Finder Extension */,
+				CFFF6DAD1CEE0F5A004E5894 /* TermHere Common */,
 				CFD9B7C31CE5960500947EC8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -151,6 +193,7 @@
 			children = (
 				CFD9B7C21CE5960500947EC8 /* TermHere.app */,
 				CF9CEE5B1CE59B1F00A89E71 /* TermHere Finder Extension.appex */,
+				CFFF6DAC1CEE0F5A004E5894 /* TermHereCommon.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,7 +211,36 @@
 			path = TermHere;
 			sourceTree = "<group>";
 		};
+		CFFF6DAD1CEE0F5A004E5894 /* TermHere Common */ = {
+			isa = PBXGroup;
+			children = (
+				CFFF6DBB1CEE0F6F004E5894 /* Preferences.swift */,
+				CFFF6DBD1CEE0F7F004E5894 /* Supporting Files */,
+			);
+			path = "TermHere Common";
+			sourceTree = "<group>";
+		};
+		CFFF6DBD1CEE0F7F004E5894 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFFF6DAE1CEE0F5A004E5894 /* TermHere Common.h */,
+				CFFF6DB01CEE0F5A004E5894 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CFFF6DA91CEE0F5A004E5894 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFFF6DAF1CEE0F5A004E5894 /* TermHere Common.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		CF9CEE5A1CE59B1F00A89E71 /* TermHere Finder Extension */ = {
@@ -182,6 +254,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CFFF6DBA1CEE0F62004E5894 /* PBXTargetDependency */,
 			);
 			name = "TermHere Finder Extension";
 			productName = "TermHere Finder Extension";
@@ -196,16 +269,36 @@
 				CFD9B7BF1CE5960500947EC8 /* Frameworks */,
 				CFD9B7C01CE5960500947EC8 /* Resources */,
 				CF9CEE681CE59B1F00A89E71 /* Embed App Extensions */,
+				CFFF6DB81CEE0F5A004E5894 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				CF9CEE631CE59B1F00A89E71 /* PBXTargetDependency */,
+				CFFF6DB21CEE0F5A004E5894 /* PBXTargetDependency */,
 			);
 			name = TermHere;
 			productName = TermHere;
 			productReference = CFD9B7C21CE5960500947EC8 /* TermHere.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CFFF6DAB1CEE0F5A004E5894 /* TermHere Common */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFFF6DB71CEE0F5A004E5894 /* Build configuration list for PBXNativeTarget "TermHere Common" */;
+			buildPhases = (
+				CFFF6DA71CEE0F5A004E5894 /* Sources */,
+				CFFF6DA81CEE0F5A004E5894 /* Frameworks */,
+				CFFF6DA91CEE0F5A004E5894 /* Headers */,
+				CFFF6DAA1CEE0F5A004E5894 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TermHere Common";
+			productName = "TermHere Common";
+			productReference = CFFF6DAC1CEE0F5A004E5894 /* TermHereCommon.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -241,6 +334,10 @@
 							};
 						};
 					};
+					CFFF6DAB1CEE0F5A004E5894 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = N2LN9ZT493;
+					};
 				};
 			};
 			buildConfigurationList = CFD9B7BD1CE5960500947EC8 /* Build configuration list for PBXProject "TermHere" */;
@@ -258,6 +355,7 @@
 			targets = (
 				CFD9B7C11CE5960500947EC8 /* TermHere */,
 				CF9CEE5A1CE59B1F00A89E71 /* TermHere Finder Extension */,
+				CFFF6DAB1CEE0F5A004E5894 /* TermHere Common */,
 			);
 		};
 /* End PBXProject section */
@@ -283,6 +381,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CFFF6DAA1CEE0F5A004E5894 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -304,6 +409,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CFFF6DA71CEE0F5A004E5894 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFFF6DBC1CEE0F6F004E5894 /* Preferences.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -311,6 +424,16 @@
 			isa = PBXTargetDependency;
 			target = CF9CEE5A1CE59B1F00A89E71 /* TermHere Finder Extension */;
 			targetProxy = CF9CEE621CE59B1F00A89E71 /* PBXContainerItemProxy */;
+		};
+		CFFF6DB21CEE0F5A004E5894 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFFF6DAB1CEE0F5A004E5894 /* TermHere Common */;
+			targetProxy = CFFF6DB11CEE0F5A004E5894 /* PBXContainerItemProxy */;
+		};
+		CFFF6DBA1CEE0F62004E5894 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFFF6DAB1CEE0F5A004E5894 /* TermHere Common */;
+			targetProxy = CFFF6DB91CEE0F62004E5894 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -485,6 +608,55 @@
 			};
 			name = Release;
 		};
+		CFFF6DB51CEE0F5A004E5894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "TermHere Common/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.hbang.TermHere-Common";
+				PRODUCT_NAME = TermHereCommon;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CFFF6DB61CEE0F5A004E5894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "TermHere Common/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.hbang.TermHere-Common";
+				PRODUCT_NAME = TermHereCommon;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -514,6 +686,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CFFF6DB71CEE0F5A004E5894 /* Build configuration list for PBXNativeTarget "TermHere Common" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFFF6DB51CEE0F5A004E5894 /* Debug */,
+				CFFF6DB61CEE0F5A004E5894 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

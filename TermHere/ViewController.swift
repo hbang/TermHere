@@ -9,6 +9,7 @@
 import Cocoa
 import CoreServices
 import StoreKit
+import TermHereCommon
 
 class ViewController: NSViewController {
 
@@ -24,10 +25,7 @@ class ViewController: NSViewController {
 	@IBOutlet weak var purchaseButton: NSButton!
 
 	let purchaseController = PurchaseController()
-
-	// this is simple enough that i don’t really care to make a controller class
-	// for the preferences
-	let preferences = NSUserDefaults(suiteName: "N2LN9ZT493.group.au.com.hbang.TermHere")!
+	let preferences = Preferences.sharedInstance
 
 	// MARK: - NSViewController
 
@@ -35,7 +33,7 @@ class ViewController: NSViewController {
 		super.viewDidLoad()
 
 		// get the app url or use the default
-		pathControl.URL = NSURL(string: preferences.objectForKey("TerminalAppURL") as? String ?? "file:///Applications/Utilities/Terminal.app")
+		pathControl.URL = preferences.terminalAppURL
 
 		// listen for purchase info received notifications
 		NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(receivedPurchaseInfo(_:)), name: PurchaseControllerReceivedProductsNotification, object: nil)
@@ -50,9 +48,9 @@ class ViewController: NSViewController {
 
 	func requestExtensionEnable() {
 		// if this is the first run
-		if preferences.objectForKey("HadFirstRun") == nil {
-			// set HadFirstRun so this won’t activate again
-			preferences.setObject(true, forKey: "HadFirstRun")
+		if preferences.hadFirstRun == false {
+			// set hadFirstRun so this won’t activate again
+			preferences.hadFirstRun = true
 
 			// construct and show an alert asking to enable the extension
 			let alert = NSAlert()
@@ -110,11 +108,11 @@ class ViewController: NSViewController {
 				// set the url on the path control and commit to preferences
 				let url = panel.URLs[0]
 				self.pathControl.URL = url
-				self.preferences.setObject(url.absoluteString, forKey: "TerminalAppURL")
+				self.preferences.terminalAppURL = url
 
 				// also get the bundle identifier
 				let bundle = NSBundle(URL: url)
-				self.preferences.setObject(bundle?.bundleIdentifier, forKey: "TerminalAppBundleIdentifier")
+				self.preferences.terminalBundleIdentifier = bundle!.bundleIdentifier!
 			}
 		}
 	}

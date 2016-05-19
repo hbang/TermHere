@@ -8,11 +8,12 @@
 
 import Cocoa
 import FinderSync
+import TermHereCommon
 
 class FinderSync: FIFinderSync {
 
 	let finderController = FIFinderSyncController.defaultController()
-	let preferences = NSUserDefaults(suiteName: "N2LN9ZT493.group.au.com.hbang.TermHere")!
+	let preferences = Preferences.sharedInstance
 
 	override init() {
 		super.init()
@@ -38,7 +39,15 @@ class FinderSync: FIFinderSync {
 	override func menuForMenuKind(menuKind: FIMenuKind) -> NSMenu {
 		// create the menu
 		let menu = NSMenu(title: "")
-		menu.addItemWithTitle(NSLocalizedString("NEW_TERMINAL_HERE", comment: "Button that opens a new terminal window."), action: #selector(openTerminal(_:)), keyEquivalent: "T")
+
+		let newTabItem = menu.addItemWithTitle(NSLocalizedString("NEW_TERMINAL_HERE", comment: "Button that opens a new terminal tab."), action: #selector(newTerminal(_:)), keyEquivalent: "r")!
+		newTabItem.target = self
+		newTabItem.keyEquivalentModifierMask = Int(NSEventModifierFlags.ShiftKeyMask.rawValue)
+
+		let newWindowItem = menu.addItemWithTitle(NSLocalizedString("NEW_TERMINAL_WINDOW_HERE", comment: "Button that opens a new terminal window (shown when Option is held down)."), action: #selector(newTerminalWindow(_:)), keyEquivalent: "r")!
+		newWindowItem.target = self
+		newWindowItem.keyEquivalentModifierMask = Int(NSEventModifierFlags.ShiftKeyMask.rawValue | NSEventModifierFlags.AlternateKeyMask.rawValue) // gee thanks apple
+		newWindowItem.alternate = true
 
 		if menuKind == .ToolbarItemMenu {
 			menu.addItem(NSMenuItem.separatorItem())
@@ -52,7 +61,15 @@ class FinderSync: FIFinderSync {
 
 	// MARK: - Callbacks
 
-	@IBAction func openTerminal(sender: AnyObject?) {
+	func newTerminal(sender: NSMenuItem) {
+		openTerminal(false)
+	}
+
+	func newTerminalWindow(sender: NSMenuItem) {
+		openTerminal(true)
+	}
+
+	func openTerminal(newWindow: Bool) {
 		// get the current directory and selected items, bail out if either is nil
 		// (which shouldn’t be possible, but still)
 		guard let target = finderController.targetedURL() else {
@@ -95,7 +112,28 @@ class FinderSync: FIFinderSync {
 		}
 
 		// determine the bundle id, falling back to terminal as default
-		let bundleIdentifier = preferences.objectForKey("TerminalAppBundleIdentifier") as? String ?? "com.apple.Terminal"
+		let bundleIdentifier = preferences.terminalBundleIdentifier
+		let activationType = preferences.activationType
+
+		var applescript: NSAppleScript?
+
+		if bundleIdentifier == "com.apple.Terminal" {
+			switch activationType {
+			case .NewTab:
+				applescript = NSAppleScript(source: "tell application \"Terminal\"\nactivate window 0\ndo script \"echo hi\" in window 0\nend tell")
+
+			case .NewWindow:
+				applescript = NSAppleScript(source: "tell application \"Terminal\"\nactivate window 0\ndo script \"echo hi\" in window 0\nend tell")
+
+			case .SameTab:
+				applescript = NSAppleScript(source: "tell application \"Terminal\"\nactivate window 0\ndo script \"echo hi\" in window 0\nend tell")
+			}
+		}
+
+		if applescript != nil {
+			var errorInfo: NSDictionary?
+			applescript!.executeAndReturnError(&errorInfo)
+		}
 
 		// go ahead and open all of those urls in the specified terminal app
 		NSWorkspace.sharedWorkspace().openURLs(urls, withAppBundleIdentifier: bundleIdentifier, options: .Default, additionalEventParamDescriptor: nil, launchIdentifiers: nil)
