@@ -13,6 +13,14 @@ import StoreKit
 class ViewController: NSViewController {
 
 	@IBOutlet weak var pathControl: NSPathControl!
+
+	@IBOutlet weak var finderToolbarCheckbox: NSButton!
+	@IBOutlet weak var contextMenusCheckbox: NSButton!
+
+	@IBOutlet weak var newTabRadioButton: NSButton!
+	@IBOutlet weak var newWindowRadioButton: NSButton!
+	@IBOutlet weak var lastTabRadioButton: NSButton!
+
 	@IBOutlet weak var purchaseButton: NSButton!
 
 	let purchaseController = PurchaseController()
@@ -109,6 +117,18 @@ class ViewController: NSViewController {
 				self.preferences.setObject(bundle?.bundleIdentifier, forKey: "TerminalAppBundleIdentifier")
 			}
 		}
+	}
+
+	@IBAction func finderToolbarChecked(sender: AnyObject) {
+
+	}
+
+	@IBAction func contextMenusChecked(sender: AnyObject) {
+
+	}
+
+	@IBAction func openInChanged(sender: AnyObject) {
+
 	}
 
 	@IBAction func openPreferencesClicked(sender: AnyObject) {
