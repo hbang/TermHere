@@ -81,8 +81,10 @@ class PurchaseController: NSObject, SKPaymentTransactionObserver, SKProductsRequ
 			alert.runModal()
 
 		case SKPaymentTransactionStateFailed:
-			let alert = NSAlert(error: transaction.error!)
-			alert.runModal()
+			if transaction.error!.code != SKErrorPaymentCancelled {
+				let alert = NSAlert(error: transaction.error!)
+				alert.runModal()
+			}
 
 		default:
 			// stupid anonymous enums
