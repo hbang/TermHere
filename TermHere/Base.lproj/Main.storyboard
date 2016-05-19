@@ -217,7 +217,7 @@
                                     </button>
                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="GAn-gt-LAm">
                                         <rect key="frame" x="89" y="57" width="73" height="18"/>
-                                        <buttonCell key="cell" type="radio" title="New tab" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="IBt-gx-lRF">
+                                        <buttonCell key="cell" type="radio" title="New tab" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="IBt-gx-lRF">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -237,7 +237,7 @@
                                     </button>
                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="ZAX-rb-7yk">
                                         <rect key="frame" x="89" y="17" width="105" height="18"/>
-                                        <buttonCell key="cell" type="radio" title="Last used tab" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="yxC-Y1-TOP">
+                                        <buttonCell key="cell" type="radio" title="Last used tab" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="yxC-Y1-TOP">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
