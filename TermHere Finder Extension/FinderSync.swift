@@ -39,6 +39,14 @@ class FinderSync: FIFinderSync {
 		// create the menu
 		let menu = NSMenu(title: "")
 		menu.addItemWithTitle(NSLocalizedString("NEW_TERMINAL_HERE", comment: "Button that opens a new terminal window."), action: #selector(openTerminal(_:)), keyEquivalent: "T")
+
+		if menuKind == .ToolbarItemMenu {
+			menu.addItem(NSMenuItem.separatorItem())
+
+			let settingsItem = menu.addItemWithTitle(NSLocalizedString("OPEN_SETTINGS", comment: "Button that opens the TermHere settings."), action: #selector(openSettings(_:)), keyEquivalent: "")!
+			settingsItem.target = self
+		}
+
 		return menu
 	}
 
@@ -91,6 +99,11 @@ class FinderSync: FIFinderSync {
 
 		// go ahead and open all of those urls in the specified terminal app
 		NSWorkspace.sharedWorkspace().openURLs(urls, withAppBundleIdentifier: bundleIdentifier, options: .Default, additionalEventParamDescriptor: nil, launchIdentifiers: nil)
+	}
+
+	func openSettings(sender: NSMenuItem) {
+		// launch the app
+		NSWorkspace.sharedWorkspace().launchAppWithBundleIdentifier("au.com.hbang.TermHere", options: .Default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
 	}
 
 }
