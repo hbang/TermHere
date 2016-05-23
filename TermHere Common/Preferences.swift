@@ -8,10 +8,21 @@
 
 import Foundation
 
-public enum ActivationType: UInt {
+public enum ActivationType: UInt, CustomStringConvertible {
 	case NewTab
 	case NewWindow
 	case SameTab
+
+	public var description: String {
+		switch self {
+		case .NewTab:
+			return "NewTab"
+		case .NewWindow:
+			return "NewWindow"
+		case .SameTab:
+			return "SameTab"
+		}
+	}
 }
 
 public class Preferences {

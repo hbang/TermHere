@@ -8,12 +8,10 @@
 
 import Cocoa
 import FinderSync
-import TermHereCommon
 
 class FinderSync: FIFinderSync {
 
 	let finderController = FIFinderSyncController.defaultController()
-	let preferences = Preferences.sharedInstance
 
 	override init() {
 		super.init()
@@ -25,7 +23,7 @@ class FinderSync: FIFinderSync {
 	// MARK: - Toolbar item
 
 	override var toolbarItemName: String {
-		return NSLocalizedString("NEW_TERMINAL_HERE", comment: "Button that opens a new terminal window.")
+		return NSLocalizedString("NEW_TERMINAL_HERE", comment: "Button that opens a new terminal tab.")
 	}
 
 	override var toolbarItemToolTip: String {
@@ -44,11 +42,6 @@ class FinderSync: FIFinderSync {
 		newTabItem.target = self
 		newTabItem.keyEquivalentModifierMask = Int(NSEventModifierFlags.ShiftKeyMask.rawValue)
 
-		let newWindowItem = menu.addItemWithTitle(NSLocalizedString("NEW_TERMINAL_WINDOW_HERE", comment: "Button that opens a new terminal window (shown when Option is held down)."), action: #selector(newTerminalWindow(_:)), keyEquivalent: "r")!
-		newWindowItem.target = self
-		newWindowItem.keyEquivalentModifierMask = Int(NSEventModifierFlags.ShiftKeyMask.rawValue | NSEventModifierFlags.AlternateKeyMask.rawValue) // gee thanks apple
-		newWindowItem.alternate = true
-
 		if menuKind == .ToolbarItemMenu {
 			menu.addItem(NSMenuItem.separatorItem())
 
@@ -61,82 +54,69 @@ class FinderSync: FIFinderSync {
 
 	// MARK: - Callbacks
 
-	func newTerminal(sender: NSMenuItem) {
-		openTerminal(false)
-	}
+	var urlsToOpen: [NSURL] {
+		get {
+			// get the current directory and selected items, bail out if either is nil
+			// (which shouldn’t be possible, but still)
+			guard let target = finderController.targetedURL() else {
+				NSLog("target is nil – attempting to open from an unknown path?")
+				return []
+			}
 
-	func newTerminalWindow(sender: NSMenuItem) {
-		openTerminal(true)
-	}
+			guard let items = finderController.selectedItemURLs() else {
+				NSLog("items is nil – attempting to open from an unknown path?")
+				return []
+			}
 
-	func openTerminal(newWindow: Bool) {
-		// get the current directory and selected items, bail out if either is nil
-		// (which shouldn’t be possible, but still)
-		guard let target = finderController.targetedURL() else {
-			NSLog("target is nil – attempting to open from an unknown path?")
-			return
-		}
+			var urls: [NSURL] = []
 
-		guard let items = finderController.selectedItemURLs() else {
-			NSLog("items is nil – attempting to open from an unknown path?")
-			return
-		}
+			// if items are selected, loop over them
+			if items.count > 0 {
+				for item in items {
+					var isDirectory: AnyObject?
 
-		var urls: [NSURL] = []
+					do {
+						// is it a directory?
+						try item.getResourceValue(&isDirectory, forKey: NSURLIsDirectoryKey)
 
-		// if items are selected, loop over them
-		if items.count > 0 {
-			for item in items {
-				var isDirectory: AnyObject?
-
-				do {
-					// is it a directory?
-					try item.getResourceValue(&isDirectory, forKey: NSURLIsDirectoryKey)
-
-					if let result = isDirectory as? NSNumber {
-						if result.boolValue {
-							// add it to the array
-							urls.append(item)
+						if let result = isDirectory as? NSNumber {
+							if result.boolValue {
+								// add it to the array
+								urls.append(item)
+							}
 						}
+					} catch {
+						NSLog("error while checking if %@ is a directory: %@", item, error as NSError)
 					}
-				} catch {
-					NSLog("error while checking if %@ is a directory: %@", item, error as NSError)
 				}
 			}
-		}
 
-		// if we didn’t end up getting any urls, we can assume the user wants to
-		// open a terminal in the current directory
-		if urls.count == 0 {
-			urls.append(target)
-		}
-
-		// determine the bundle id, falling back to terminal as default
-		let bundleIdentifier = preferences.terminalBundleIdentifier
-		let activationType = preferences.activationType
-
-		var applescript: NSAppleScript?
-
-		if bundleIdentifier == "com.apple.Terminal" {
-			switch activationType {
-			case .NewTab:
-				applescript = NSAppleScript(source: "tell application \"Terminal\"\nactivate window 0\ndo script \"echo hi\" in window 0\nend tell")
-
-			case .NewWindow:
-				applescript = NSAppleScript(source: "tell application \"Terminal\"\nactivate window 0\ndo script \"echo hi\" in window 0\nend tell")
-
-			case .SameTab:
-				applescript = NSAppleScript(source: "tell application \"Terminal\"\nactivate window 0\ndo script \"echo hi\" in window 0\nend tell")
+			// if we didn’t end up getting any urls, we can assume the user wants to
+			// open a terminal in the current directory
+			if urls.count == 0 {
+				urls.append(target)
 			}
-		}
 
-		if applescript != nil {
-			var errorInfo: NSDictionary?
-			applescript!.executeAndReturnError(&errorInfo)
+			return urls
 		}
+	}
 
-		// go ahead and open all of those urls in the specified terminal app
-		NSWorkspace.sharedWorkspace().openURLs(urls, withAppBundleIdentifier: bundleIdentifier, options: .Default, additionalEventParamDescriptor: nil, launchIdentifiers: nil)
+	func newTerminal(sender: NSMenuItem) {
+		// work out the parent app’s URL, get its NSBundle, and then get the URL to
+		// the launchterminal binary. ugh. there *has* to be a cleaner way to do
+		// this, right?
+		let extensionPath = NSBundle(forClass: self.dynamicType).bundlePath
+		let launchPath = extensionPath + "/../../MacOS/launchterminal"
+
+		let task = NSTask()
+		task.qualityOfService = .UserInitiated
+		task.launchPath = launchPath
+
+		// map the urls to paths and pass in as arguments
+		task.arguments = urlsToOpen.map { $0.path! }
+
+		// launch!
+		task.launch()
 	}
 
 	func openSettings(sender: NSMenuItem) {
