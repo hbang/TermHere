@@ -102,21 +102,15 @@ class FinderSync: FIFinderSync {
 	}
 
 	func newTerminal(sender: NSMenuItem) {
-		// work out the parent app’s URL, get its NSBundle, and then get the URL to
-		// the launchterminal binary. ugh. there *has* to be a cleaner way to do
-		// this, right?
-		let extensionPath = NSBundle(forClass: self.dynamicType).bundlePath
-		let launchPath = extensionPath + "/../../MacOS/launchterminal"
+		// get the filenames (map back to paths)
+		let paths = urlsToOpen.map { $0.path }
 
-		let task = NSTask()
-		task.qualityOfService = .UserInitiated
-		task.launchPath = launchPath
+		// set up a pasteboard
+		let pasteboard = NSPasteboard()
+		pasteboard.setPropertyList(paths as! AnyObject, forType: NSFilenamesPboardType)
 
-		// map the urls to paths and pass in as arguments
-		task.arguments = urlsToOpen.map { $0.path! }
-
-		// launch!
-		task.launch()
+		// invoke the service
+		NSPerformService("NEW_TERMINAL_HERE", pasteboard)
 	}
 
 	func openSettings(sender: NSMenuItem) {
