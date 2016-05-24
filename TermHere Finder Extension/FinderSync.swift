@@ -120,11 +120,11 @@ class FinderSync: FIFinderSync {
 
 	func newTerminal(sender: NSMenuItem) {
 		// get the filenames (map back to paths)
-		let paths = urlsToOpen.map { $0.path }
+		let paths = urlsToOpen.map { $0.path! }
 
 		// set up a pasteboard
-		let pasteboard = NSPasteboard()
-		pasteboard.setPropertyList(paths as! AnyObject, forType: NSFilenamesPboardType)
+		let pasteboard = NSPasteboard.pasteboardWithUniqueName()
+		pasteboard.setPropertyList(paths as AnyObject, forType: NSFilenamesPboardType)
 
 		// invoke the service
 		NSPerformService("NEW_TERMINAL_HERE", pasteboard)
