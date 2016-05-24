@@ -8,6 +8,7 @@
 
 import Cocoa
 import FinderSync
+import TermHereCommon
 
 class FinderSync: FIFinderSync {
 
@@ -38,10 +39,26 @@ class FinderSync: FIFinderSync {
 		// create the menu
 		let menu = NSMenu(title: "")
 
-		let newTabItem = menu.addItemWithTitle(NSLocalizedString("NEW_TERMINAL_HERE", comment: "Button that opens a new terminal tab."), action: #selector(newTerminal(_:)), keyEquivalent: "r")!
-		newTabItem.target = self
-		newTabItem.keyEquivalentModifierMask = Int(NSEventModifierFlags.ShiftKeyMask.rawValue)
+		// if we're a disabled menu type, stop here
+		let preferences = Preferences.sharedInstance
 
+		switch menuKind {
+		case .ContextualMenuForItems, .ContextualMenuForSidebar, .ContextualMenuForContainer:
+			if !preferences.showInContextMenus {
+				return menu
+			}
+
+		case .ToolbarItemMenu:
+			if !preferences.showOnFinderToolbar {
+				return menu
+			}
+		}
+
+		// create the new tab item
+		let newTabItem = menu.addItemWithTitle(NSLocalizedString("NEW_TERMINAL_HERE", comment: "Button that opens a new terminal tab."), action: #selector(newTerminal(_:)), keyEquivalent: "X")!
+		newTabItem.target = self
+
+		// if this is the toolbar menu, add a separator and open settings item
 		if menuKind == .ToolbarItemMenu {
 			menu.addItem(NSMenuItem.separatorItem())
 
