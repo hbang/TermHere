@@ -126,6 +126,7 @@ class ViewController: NSViewController {
 	}
 
 	@IBAction func openInChanged(sender: AnyObject) {
+		// set the preference according to the selected button
 		if newTabRadioButton.state == NSOnState {
 			preferences.activationType = .NewTab
 		} else if newWindowRadioButton.state == NSOnState {
