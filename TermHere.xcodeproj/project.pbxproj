@@ -10,6 +10,7 @@
 		CF0608281CE8C765003BB13F /* PurchaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0608271CE8C765003BB13F /* PurchaseController.swift */; };
 		CF435B681CF34EB200F794F1 /* TerminalServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1471101CF2B95000A914CB /* TerminalServiceProvider.swift */; };
 		CF435B691CF34EC100F794F1 /* AppleScriptCommands.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFFF6DC01CEEFCE0004E5894 /* AppleScriptCommands.plist */; };
+		CF435B6C1CF3C06D00F794F1 /* ServicesMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF435B6A1CF3C06D00F794F1 /* ServicesMenu.strings */; };
 		CF9CEE601CE59B1F00A89E71 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CEE5F1CE59B1F00A89E71 /* FinderSync.swift */; };
 		CF9CEE641CE59B1F00A89E71 /* TermHere Finder Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF9CEE5B1CE59B1F00A89E71 /* TermHere Finder Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CF9CEE6A1CE5A77B00A89E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9CEE691CE5A77B00A89E71 /* Assets.xcassets */; };
@@ -78,6 +79,7 @@
 /* Begin PBXFileReference section */
 		CF0608271CE8C765003BB13F /* PurchaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseController.swift; sourceTree = "<group>"; };
 		CF1471101CF2B95000A914CB /* TerminalServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TerminalServiceProvider.swift; path = TermHere/TerminalServiceProvider.swift; sourceTree = SOURCE_ROOT; };
+		CF435B6B1CF3C06D00F794F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
 		CF9CEE5B1CE59B1F00A89E71 /* TermHere Finder Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TermHere Finder Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9CEE5E1CE59B1F00A89E71 /* TermHere_Finder_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TermHere_Finder_Extension.entitlements; sourceTree = "<group>"; };
 		CF9CEE5F1CE59B1F00A89E71 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				CF9CEE701CE5B55100A89E71 /* Localizable.strings */,
+				CF435B6A1CF3C06D00F794F1 /* ServicesMenu.strings */,
 			);
 			name = Localization;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				CF9CEE721CE5B55100A89E71 /* Localizable.strings in Resources */,
 				CF9CEE6C1CE5A91000A89E71 /* Credits.rtf in Resources */,
 				CFD9B7CD1CE5960500947EC8 /* Main.storyboard in Resources */,
+				CF435B6C1CF3C06D00F794F1 /* ServicesMenu.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +450,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CF435B6A1CF3C06D00F794F1 /* ServicesMenu.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF435B6B1CF3C06D00F794F1 /* en */,
+			);
+			name = ServicesMenu.strings;
+			sourceTree = "<group>";
+		};
 		CF9CEE701CE5B55100A89E71 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

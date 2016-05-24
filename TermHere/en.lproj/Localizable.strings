@@ -10,9 +10,6 @@
 /* Message displayed when a donation has successfully been made. */
 "DONATION_SUCCEEDED" = "Thank you for your donation.";
 
-/* Button that opens a new terminal tab. */
-"NEW_TERMINAL_HERE" = "New Terminal Here";
-
 /* Message displayed when the app fails to be opened. */
 "OPENING_APP_FAILED" = "Couldn’t launch the app because an unknown error occurred.";
 
