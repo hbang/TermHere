@@ -82,7 +82,7 @@ class ViewController: NSViewController {
 
 		let price = formatter.stringFromNumber(product.price!)!
 
-		// enable the
+		// enable the button and set the price label
 		purchaseButton.enabled = true
 		purchaseButton.title = NSString(format: NSLocalizedString("DONATE_WITH_PRICE", comment: "Button that allows a donation to be made. %@ is the donation amount."), price) as String
 	}
@@ -118,15 +118,21 @@ class ViewController: NSViewController {
 	}
 
 	@IBAction func finderToolbarChecked(sender: AnyObject) {
-
+		preferences.showOnFinderToolbar = finderToolbarCheckbox.state == NSOnState
 	}
 
 	@IBAction func contextMenusChecked(sender: AnyObject) {
-
+		preferences.showInContextMenus = contextMenusCheckbox.state == NSOnState
 	}
 
 	@IBAction func openInChanged(sender: AnyObject) {
-
+		if newTabRadioButton.state == NSOnState {
+			preferences.activationType = .NewTab
+		} else if newWindowRadioButton.state == NSOnState {
+			preferences.activationType = .NewWindow
+		} else if lastTabRadioButton.state == NSOnState {
+			preferences.activationType = .SameTab
+		}
 	}
 
 	@IBAction func openPreferencesClicked(sender: AnyObject) {
@@ -136,6 +142,5 @@ class ViewController: NSViewController {
 	@IBAction func purchaseClicked(sender: AnyObject) {
 		purchaseController.purchase()
 	}
-
+	
 }
-
