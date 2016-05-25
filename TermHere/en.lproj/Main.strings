@@ -2,6 +2,9 @@
 /* Class = "NSMenuItem"; title = "TermHere"; ObjectID = "1Xt-HY-uBw"; */
 "1Xt-HY-uBw.title" = "TermHere";
 
+/* Class = "NSButtonCell"; title = "About"; ObjectID = "3H8-3a-ttT"; */
+"3H8-3a-ttT.title" = "About";
+
 /* Class = "NSMenuItem"; title = "Quit TermHere"; ObjectID = "4sb-4s-VLi"; */
 "4sb-4s-VLi.title" = "Quit TermHere";
 
@@ -23,8 +26,17 @@
 /* Class = "NSMenuItem"; title = "TermHere Help"; ObjectID = "FKE-Sm-Kum"; */
 "FKE-Sm-Kum.title" = "TermHere Help";
 
+/* Class = "NSButtonCell"; title = "Context menus"; ObjectID = "FlD-PF-2Gy"; */
+"FlD-PF-2Gy.title" = "Context menus";
+
+/* Class = "NSButtonCell"; title = "New tab"; ObjectID = "IBt-gx-lRF"; */
+"IBt-gx-lRF.title" = "New tab";
+
 /* Class = "NSWindow"; title = "TermHere"; ObjectID = "IQv-IB-iLA"; */
 "IQv-IB-iLA.title" = "TermHere";
+
+/* Class = "NSTextFieldCell"; title = "This feature requires Terminal or iTerm 2.9 or newer."; ObjectID = "JU7-10-Rfa"; */
+"JU7-10-Rfa.title" = "This feature requires Terminal or iTerm 2.9 or newer.";
 
 /* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
 "Kd2-mp-pUS.title" = "Show All";
@@ -32,8 +44,14 @@
 /* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
 "LE2-aR-0XJ.title" = "Bring All to Front";
 
+/* Class = "NSButtonCell"; title = "Finder toolbar"; ObjectID = "Lvi-c9-Pl1"; */
+"Lvi-c9-Pl1.title" = "Finder toolbar";
+
 /* Class = "NSTextFieldCell"; title = "Not seeing it? Make sure TermHere is enabled in the Extensions preferences."; ObjectID = "Msh-Hp-hvC"; */
 "Msh-Hp-hvC.title" = "Not seeing it? Make sure TermHere is enabled in the Extensions preferences.";
+
+/* Class = "NSTextFieldCell"; title = "If this app is useful to you, please consider sending a small donation to the developer to say thanks."; ObjectID = "NCD-Yd-LL3"; */
+"NCD-Yd-LL3.title" = "If this app is useful to you, please consider sending a small donation to the developer to say thanks.";
 
 /* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
 "NMo-om-nkz.title" = "Services";
@@ -50,6 +68,12 @@
 /* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
 "Td7-aD-5lo.title" = "Window";
 
+/* Class = "NSTextFieldCell"; title = "Copyright"; ObjectID = "URC-0v-hin"; */
+"URC-0v-hin.title" = "Copyright";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "UyG-r7-BIW"; */
+"UyG-r7-BIW.title" = "OK";
+
 /* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
 "Vdr-fp-XzO.title" = "Hide Others";
 
@@ -62,14 +86,32 @@
 /* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
 "aUF-d1-5bR.title" = "Window";
 
-/* Class = "NSTextFieldCell"; title = "Terminal App:"; ObjectID = "avK-6B-WJJ"; */
-"avK-6B-WJJ.title" = "Terminal App:";
+/* Class = "NSTextFieldCell"; title = "Terminal app:"; ObjectID = "avK-6B-WJJ"; */
+"avK-6B-WJJ.title" = "Terminal app:";
+
+/* Class = "NSTextFieldCell"; title = "Open in:"; ObjectID = "g4h-wX-vAm"; */
+"g4h-wX-vAm.title" = "Open in:";
 
 /* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
 "hz9-B4-Xy5.title" = "Services";
+
+/* Class = "NSButtonCell"; title = "Loading…"; ObjectID = "jcg-5p-aLA"; */
+"jcg-5p-aLA.title" = "Loading…";
+
+/* Class = "NSTextFieldCell"; title = "App Version"; ObjectID = "jn0-iS-c8a"; */
+"jn0-iS-c8a.title" = "App Version";
+
+/* Class = "NSButtonCell"; title = "New window"; ObjectID = "nAS-Zi-dzR"; */
+"nAS-Zi-dzR.title" = "New window";
 
 /* Class = "NSMenu"; title = "TermHere"; ObjectID = "uQy-DD-JDr"; */
 "uQy-DD-JDr.title" = "TermHere";
 
 /* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
 "wpr-3q-Mcd.title" = "Help";
+
+/* Class = "NSTextFieldCell"; title = "Show in:"; ObjectID = "xhO-2F-SiW"; */
+"xhO-2F-SiW.title" = "Show in:";
+
+/* Class = "NSButtonCell"; title = "Last used tab"; ObjectID = "yxC-Y1-TOP"; */
+"yxC-Y1-TOP.title" = "Last used tab";

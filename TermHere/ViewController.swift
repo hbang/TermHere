@@ -8,7 +8,6 @@
 
 import Cocoa
 import CoreServices
-import StoreKit
 import TermHereCommon
 
 class ViewController: NSViewController {
@@ -21,10 +20,7 @@ class ViewController: NSViewController {
 	@IBOutlet weak var newTabRadioButton: NSButton!
 	@IBOutlet weak var newWindowRadioButton: NSButton!
 	@IBOutlet weak var lastTabRadioButton: NSButton!
-
-	@IBOutlet weak var purchaseButton: NSButton!
-
-	let purchaseController = PurchaseController()
+	
 	let preferences = Preferences.sharedInstance
 
 	// MARK: - NSViewController
@@ -34,9 +30,6 @@ class ViewController: NSViewController {
 
 		// get the app url or use the default
 		pathControl.URL = preferences.terminalAppURL
-
-		// listen for purchase info received notifications
-		NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(receivedPurchaseInfo(_:)), name: PurchaseControllerReceivedProductsNotification, object: nil)
 	}
 
 	override func viewDidAppear() {
@@ -69,22 +62,6 @@ class ViewController: NSViewController {
 	func openExtensionPreferences() {
 		// open the pref pane for extensions
 		NSWorkspace.sharedWorkspace().openURL(NSURL(fileURLWithPath: "/System/Library/PreferencePanes/Extensions.prefPane"))
-	}
-
-	func receivedPurchaseInfo(notification: NSNotification) {
-		let products = notification.object as! [SKProduct]
-		let product = products[0]
-
-		// format the price as a currency string
-		let formatter = NSNumberFormatter()
-		formatter.numberStyle = .CurrencyStyle
-		formatter.locale = product.priceLocale
-
-		let price = formatter.stringFromNumber(product.price!)!
-
-		// enable the button and set the price label
-		purchaseButton.enabled = true
-		purchaseButton.title = NSString(format: NSLocalizedString("DONATE_WITH_PRICE", comment: "Button that allows a donation to be made. %@ is the donation amount."), price) as String
 	}
 
 	@IBAction func browseClicked(sender: AnyObject) {
@@ -138,10 +115,6 @@ class ViewController: NSViewController {
 
 	@IBAction func openPreferencesClicked(sender: AnyObject) {
 		openExtensionPreferences()
-	}
-
-	@IBAction func purchaseClicked(sender: AnyObject) {
-		purchaseController.purchase()
 	}
 	
 }
