@@ -19,6 +19,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		didSet {
 			let app = NSApplication.sharedApplication()
 
+			// set the activation policy accordingly (mostly, whether the dock icon
+			// shows or not)
 			switch appMode {
 			case .Service:
 				app.setActivationPolicy(.Accessory)
