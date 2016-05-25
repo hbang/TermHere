@@ -94,10 +94,6 @@ class ViewController: NSViewController {
 		}
 	}
 
-	@IBAction func finderToolbarChecked(sender: AnyObject) {
-		preferences.showOnFinderToolbar = finderToolbarCheckbox.state == NSOnState
-	}
-
 	@IBAction func contextMenusChecked(sender: AnyObject) {
 		preferences.showInContextMenus = contextMenusCheckbox.state == NSOnState
 	}

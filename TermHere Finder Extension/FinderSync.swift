@@ -49,9 +49,7 @@ class FinderSync: FIFinderSync {
 			}
 
 		case .ToolbarItemMenu:
-			if !preferences.showOnFinderToolbar {
-				return menu
-			}
+			break
 		}
 
 		// create the new tab item

@@ -129,10 +129,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="4ta-vO-hQK" customClass="ContainerView" customModule="TermHere" customModuleProvider="target">
-                                <rect key="frame" x="12" y="102" width="471" height="156"/>
+                                <rect key="frame" x="12" y="90" width="471" height="168"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="C1a-DL-hAU">
-                                        <rect key="frame" x="-2" y="139" width="86" height="17"/>
+                                        <rect key="frame" x="-2" y="151" width="86" height="17"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Terminal app:" id="avK-6B-WJJ">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -140,7 +140,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xkm-we-EBK">
-                                        <rect key="frame" x="-2" y="107" width="86" height="17"/>
+                                        <rect key="frame" x="-2" y="119" width="86" height="17"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Show in:" id="xhO-2F-SiW">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -156,7 +156,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5dx-sP-OUE">
-                                        <rect key="frame" x="392" y="129" width="85" height="32"/>
+                                        <rect key="frame" x="392" y="141" width="85" height="32"/>
                                         <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XdH-ej-nuM">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -166,7 +166,7 @@
                                         </connections>
                                     </button>
                                     <pathControl verticalHuggingPriority="750" horizontalCompressionResistancePriority="749" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DXP-MN-PTQ">
-                                        <rect key="frame" x="90" y="136" width="300" height="20"/>
+                                        <rect key="frame" x="90" y="148" width="300" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="Z5t-RP-1xv"/>
                                             <constraint firstAttribute="height" constant="20" id="cFR-9e-kRq"/>
@@ -176,18 +176,8 @@
                                             <url key="url" string="file:///Applications/Utilities/Terminal.app/"/>
                                         </pathCell>
                                     </pathControl>
-                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="iVG-dh-InG">
-                                        <rect key="frame" x="88" y="106" width="107" height="18"/>
-                                        <buttonCell key="cell" type="check" title="Finder toolbar" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Lvi-c9-Pl1">
-                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="finderToolbarChecked:" target="XfG-lQ-9wD" id="zmN-0J-Gyr"/>
-                                        </connections>
-                                    </button>
                                     <button verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NY6-xo-2kn">
-                                        <rect key="frame" x="88" y="86" width="114" height="18"/>
+                                        <rect key="frame" x="88" y="118" width="114" height="18"/>
                                         <buttonCell key="cell" type="check" title="Context menus" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="FlD-PF-2Gy">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -227,8 +217,16 @@
                                         </connections>
                                     </button>
                                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="wvd-lc-y80">
-                                        <rect key="frame" x="88" y="0.0" width="279" height="14"/>
+                                        <rect key="frame" x="88" y="0.0" width="385" height="14"/>
                                         <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" title="This feature requires Terminal or iTerm 2.9 or newer." id="JU7-10-Rfa">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="hSy-Gi-DiA">
+                                        <rect key="frame" x="88" y="88" width="385" height="28"/>
+                                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" title="To show or hide the Finder toolbar button, open Finder and click View → Customize Toolbar." id="itw-J6-gYO">
                                             <font key="font" metaFont="smallSystem"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -240,23 +238,25 @@
                                     <constraint firstItem="5dx-sP-OUE" firstAttribute="top" secondItem="4ta-vO-hQK" secondAttribute="top" constant="-1" id="5UK-AB-OTI"/>
                                     <constraint firstItem="l5V-ks-1Oz" firstAttribute="trailing" secondItem="xkm-we-EBK" secondAttribute="trailing" id="6vn-cf-C4H"/>
                                     <constraint firstItem="ZAX-rb-7yk" firstAttribute="leading" secondItem="P7Z-ei-3dU" secondAttribute="leading" id="7UD-Sl-hr0"/>
+                                    <constraint firstItem="hSy-Gi-DiA" firstAttribute="leading" secondItem="NY6-xo-2kn" secondAttribute="leading" id="8bC-Gc-Yv8"/>
+                                    <constraint firstItem="NY6-xo-2kn" firstAttribute="top" secondItem="DXP-MN-PTQ" secondAttribute="bottom" constant="14" id="DDe-fv-AKv"/>
                                     <constraint firstItem="GAn-gt-LAm" firstAttribute="top" secondItem="l5V-ks-1Oz" secondAttribute="top" constant="2" id="FYd-MI-6V5"/>
-                                    <constraint firstItem="NY6-xo-2kn" firstAttribute="top" secondItem="iVG-dh-InG" secondAttribute="bottom" constant="6" id="IGw-BY-UbQ"/>
+                                    <constraint firstItem="GAn-gt-LAm" firstAttribute="top" secondItem="hSy-Gi-DiA" secondAttribute="bottom" constant="14" id="Jit-Ht-tr9"/>
                                     <constraint firstItem="DXP-MN-PTQ" firstAttribute="leading" secondItem="C1a-DL-hAU" secondAttribute="trailing" constant="8" symbolic="YES" id="K9G-b5-C17"/>
-                                    <constraint firstItem="iVG-dh-InG" firstAttribute="top" secondItem="xkm-we-EBK" secondAttribute="top" constant="2" id="LMn-8s-QmN"/>
                                     <constraint firstItem="xkm-we-EBK" firstAttribute="leading" secondItem="C1a-DL-hAU" secondAttribute="leading" id="Lbb-bE-D7b"/>
-                                    <constraint firstItem="iVG-dh-InG" firstAttribute="top" secondItem="DXP-MN-PTQ" secondAttribute="bottom" constant="14" id="PLK-ph-tQ9"/>
                                     <constraint firstItem="5dx-sP-OUE" firstAttribute="leading" secondItem="DXP-MN-PTQ" secondAttribute="trailing" constant="8" symbolic="YES" id="Qsf-xo-I4r"/>
+                                    <constraint firstAttribute="trailing" secondItem="wvd-lc-y80" secondAttribute="trailing" id="R9E-q8-rgy"/>
                                     <constraint firstItem="P7Z-ei-3dU" firstAttribute="top" secondItem="GAn-gt-LAm" secondAttribute="bottom" constant="4" id="Ugk-PB-hHk"/>
                                     <constraint firstItem="P7Z-ei-3dU" firstAttribute="leading" secondItem="GAn-gt-LAm" secondAttribute="leading" id="VP1-rh-Z8K"/>
-                                    <constraint firstItem="iVG-dh-InG" firstAttribute="leading" secondItem="DXP-MN-PTQ" secondAttribute="leading" id="WMI-17-3T9"/>
                                     <constraint firstItem="wvd-lc-y80" firstAttribute="leading" secondItem="ZAX-rb-7yk" secondAttribute="leading" id="XU6-bU-ysB"/>
-                                    <constraint firstItem="NY6-xo-2kn" firstAttribute="leading" secondItem="iVG-dh-InG" secondAttribute="leading" id="YhQ-qG-YmQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="hSy-Gi-DiA" secondAttribute="trailing" id="XZn-n4-fNv"/>
                                     <constraint firstItem="wvd-lc-y80" firstAttribute="top" secondItem="ZAX-rb-7yk" secondAttribute="bottom" constant="4" id="ciY-9D-HA0"/>
                                     <constraint firstAttribute="bottom" secondItem="wvd-lc-y80" secondAttribute="bottom" id="dIb-GF-pas"/>
                                     <constraint firstItem="DXP-MN-PTQ" firstAttribute="top" secondItem="4ta-vO-hQK" secondAttribute="top" id="ejL-JU-d1S"/>
-                                    <constraint firstItem="GAn-gt-LAm" firstAttribute="top" secondItem="NY6-xo-2kn" secondAttribute="bottom" constant="14" id="f8I-Js-wyt"/>
                                     <constraint firstItem="C1a-DL-hAU" firstAttribute="top" secondItem="4ta-vO-hQK" secondAttribute="top" id="gHm-1D-jyD"/>
+                                    <constraint firstItem="NY6-xo-2kn" firstAttribute="top" secondItem="xkm-we-EBK" secondAttribute="top" constant="2" id="hwT-Qx-2AG"/>
+                                    <constraint firstItem="hSy-Gi-DiA" firstAttribute="top" secondItem="NY6-xo-2kn" secondAttribute="bottom" constant="4" id="lbd-JR-hrD"/>
+                                    <constraint firstItem="NY6-xo-2kn" firstAttribute="leading" secondItem="DXP-MN-PTQ" secondAttribute="leading" id="lhv-04-ybJ"/>
                                     <constraint firstItem="ZAX-rb-7yk" firstAttribute="top" secondItem="P7Z-ei-3dU" secondAttribute="bottom" constant="4" id="rzO-TR-rL7"/>
                                     <constraint firstItem="l5V-ks-1Oz" firstAttribute="leading" secondItem="4ta-vO-hQK" secondAttribute="leading" id="sIC-XJ-GqV"/>
                                     <constraint firstItem="GAn-gt-LAm" firstAttribute="leading" secondItem="l5V-ks-1Oz" secondAttribute="trailing" constant="8" id="say-E3-gzn"/>
@@ -264,7 +264,7 @@
                                 </constraints>
                             </customView>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ctC-dy-Shm">
-                                <rect key="frame" x="10" y="56" width="330" height="34"/>
+                                <rect key="frame" x="10" y="44" width="330" height="34"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Not seeing it? Make sure TermHere is enabled in the Extensions preferences." id="Msh-Hp-hvC">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -272,7 +272,7 @@
                                 </textFieldCell>
                             </textField>
                             <button horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="Gam-j7-DQE">
-                                <rect key="frame" x="340" y="49" width="149" height="32"/>
+                                <rect key="frame" x="340" y="37" width="149" height="32"/>
                                 <buttonCell key="cell" type="push" title="Open Preferences" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Due-74-LRw">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -281,8 +281,8 @@
                                     <action selector="openPreferencesClicked:" target="XfG-lQ-9wD" id="jy9-z0-MNs"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fvo-0h-JfF">
-                                <rect key="frame" x="216" y="6" width="65" height="28"/>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fvo-0h-JfF">
+                                <rect key="frame" x="215" y="6" width="65" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="jk6-DP-NRk"/>
                                 </constraints>
@@ -311,7 +311,6 @@
                     </view>
                     <connections>
                         <outlet property="contextMenusCheckbox" destination="NY6-xo-2kn" id="Rdo-as-jJT"/>
-                        <outlet property="finderToolbarCheckbox" destination="iVG-dh-InG" id="Q3d-LT-Sm2"/>
                         <outlet property="lastTabRadioButton" destination="ZAX-rb-7yk" id="rPB-Yz-1Sj"/>
                         <outlet property="newTabRadioButton" destination="GAn-gt-LAm" id="9r4-dw-Y8L"/>
                         <outlet property="newWindowRadioButton" destination="P7Z-ei-3dU" id="XPQ-Hz-bDa"/>

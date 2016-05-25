@@ -38,7 +38,6 @@ public class Preferences {
 			"TerminalAppURL": "file:///Applications/Utilities/Terminal.app",
 			"TerminalAppBundleIdentifier": "com.apple.Terminal",
 
-			"ShowInToolbar": true,
 			"ShowInContextMenu": true,
 			"TerminalActivationType": ActivationType.NewTab.rawValue
 		])
@@ -57,11 +56,6 @@ public class Preferences {
 	public var terminalBundleIdentifier: String {
 		get { return preferences.stringForKey("TerminalAppBundleIdentifier")! }
 		set { preferences.setObject(newValue, forKey: "TerminalAppBundleIdentifier") }
-	}
-
-	public var showOnFinderToolbar: Bool {
-		get { return preferences.boolForKey("ShowInToolbar") }
-		set { preferences.setBool(newValue, forKey: "ShowInToolbar") }
 	}
 
 	public var showInContextMenus: Bool {
