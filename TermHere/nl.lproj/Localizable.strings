@@ -1,0 +1,20 @@
+﻿/* Button that chooses the selected app in the open panel. */
+"CHOOSE" = "Kies";
+
+/* Title of the “Choose Application” window. */
+"CHOOSE_APPLICATION" = "Kies programma";
+
+/* Button that allows a donation to be made. %@ is the donation amount. */
+"DONATE_WITH_PRICE" = "Doneer %@";
+
+/* Message displayed when a donation has successfully been made. */
+"DONATION_SUCCEEDED" = "Bedankt voor je donatie.";
+
+/* Message displayed when the app fails to be opened. */
+"OPENING_APP_FAILED" = "Kon de app niet starten omdat er een onbekende fout is opgetreden.";
+
+/* Title of prompt asking the user to enable the extension. */
+"PLEASE_ENABLE" = "Schakel de extensie in om TermHere te gebruiken.";
+
+/* Explanation of how to enable the extension. */
+"PLEASE_ENABLE_EXPLANATION" = "Klik op OK om de Extensievoorkeuren te openen. Klik bij TermHere op het vakje naast 'Finder'.";
