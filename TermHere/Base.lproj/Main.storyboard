@@ -18,6 +18,7 @@
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                                <segue destination="Te1-KI-xzI" kind="show" id="GWU-1B-VZB"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
@@ -100,7 +101,7 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TermHere" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="75.5" y="-28"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -261,12 +262,30 @@
             </objects>
             <point key="canvasLocation" x="668.5" y="249"/>
         </scene>
-        <!--About View Controller-->
+        <!--Window Controller-->
+        <scene sceneID="Ye7-7d-ZYC">
+            <objects>
+                <windowController id="Te1-KI-xzI" sceneMemberID="viewController">
+                    <window key="window" title="About" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="c5A-Qm-4tB">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+                    </window>
+                    <connections>
+                        <segue destination="FO0-2H-YkO" kind="relationship" relationship="window.shadowedContentViewController" id="yuc-ax-zm3"/>
+                    </connections>
+                </windowController>
+                <customObject id="dee-zN-Yc3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="657"/>
+        </scene>
+        <!--About-->
         <scene sceneID="l5e-xJ-FXN">
             <objects>
-                <viewController id="FO0-2H-YkO" customClass="AboutViewController" customModule="TermHere" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="About" id="FO0-2H-YkO" customClass="AboutViewController" customModule="TermHere" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="zDv-8l-BLc">
-                        <rect key="frame" x="0.0" y="0.0" width="440" height="260"/>
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="240"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="fnX-Yt-TmH">
@@ -288,19 +307,19 @@
                                 </connections>
                             </button>
                             <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eY-0w-clI">
-                                <rect key="frame" x="12" y="87" width="416" height="89"/>
+                                <rect key="frame" x="12" y="87" width="416" height="69"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="12P-8g-hQS">
-                                    <rect key="frame" x="0.0" y="0.0" width="416" height="89"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="416" height="69"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView editable="NO" drawsBackground="NO" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="Cxa-0J-SyY">
-                                            <rect key="frame" x="0.0" y="0.0" width="416" height="89"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="416" height="69"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="minSize" width="416" height="89"/>
+                                            <size key="minSize" width="416" height="69"/>
                                             <size key="maxSize" width="463" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="416" height="89"/>
+                                            <size key="minSize" width="416" height="69"/>
                                             <size key="maxSize" width="463" height="10000000"/>
                                         </textView>
                                     </subviews>
@@ -311,7 +330,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="Or7-8u-DJF">
-                                    <rect key="frame" x="400" y="0.0" width="16" height="89"/>
+                                    <rect key="frame" x="400" y="0.0" width="16" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -332,7 +351,7 @@ DQ
                                 </connections>
                             </button>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="QKF-4C-pNO">
-                                <rect key="frame" x="12" y="186" width="416" height="64"/>
+                                <rect key="frame" x="12" y="166" width="416" height="64"/>
                                 <subviews>
                                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gMU-It-eCD">
                                         <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
@@ -413,10 +432,13 @@ DQ
                 </viewController>
                 <customObject id="L2e-Kb-7Qj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="668" y="657.5"/>
+            <point key="canvasLocation" x="668" y="657"/>
         </scene>
     </scenes>
     <resources>
         <image name="AppIcon" width="128" height="128"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yuc-ax-zm3"/>
+    </inferredMetricsTieBreakers>
 </document>
