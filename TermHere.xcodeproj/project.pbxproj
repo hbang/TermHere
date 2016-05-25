@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CF0608281CE8C765003BB13F /* PurchaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0608271CE8C765003BB13F /* PurchaseController.swift */; };
 		CF435B681CF34EB200F794F1 /* TerminalServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1471101CF2B95000A914CB /* TerminalServiceProvider.swift */; };
-		CF435B691CF34EC100F794F1 /* AppleScriptCommands.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFFF6DC01CEEFCE0004E5894 /* AppleScriptCommands.plist */; };
 		CF435B6C1CF3C06D00F794F1 /* ServicesMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF435B6A1CF3C06D00F794F1 /* ServicesMenu.strings */; };
 		CF9CEE601CE59B1F00A89E71 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CEE5F1CE59B1F00A89E71 /* FinderSync.swift */; };
 		CF9CEE641CE59B1F00A89E71 /* TermHere Finder Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF9CEE5B1CE59B1F00A89E71 /* TermHere Finder Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -421,7 +420,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF435B691CF34EC100F794F1 /* AppleScriptCommands.plist in Resources */,
 				CFD9B7CA1CE5960500947EC8 /* Assets.xcassets in Resources */,
 				CF9CEE721CE5B55100A89E71 /* Localizable.strings in Resources */,
 				CF9CEE6C1CE5A91000A89E71 /* Credits.rtf in Resources */,
