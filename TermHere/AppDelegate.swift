@@ -23,7 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		], returnTypes: [])
 
 		// force a refresh so we get added
-		NSUpdateDynamicServices();
+		NSUpdateDynamicServices()
 	}
 
 	func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {
