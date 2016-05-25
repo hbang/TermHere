@@ -8,8 +8,28 @@
 
 import Cocoa
 
+enum AppMode: UInt {
+	case Service, Settings
+}
+
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
+
+	var appMode = AppMode.Settings {
+		didSet {
+			let app = NSApplication.sharedApplication()
+
+			switch appMode {
+			case .Service:
+				app.setActivationPolicy(.Accessory)
+				
+			case .Settings:
+				app.setActivationPolicy(.Regular)
+			}
+		}
+	}
+
+	// MARK: - App Delegate
 
 	func applicationDidFinishLaunching(notification: NSNotification) {
 		// register ourself
@@ -27,7 +47,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	}
 
 	func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {
-		return true
+		// we should only quit if we’ve been manually invoked
+		return appMode == .Settings
 	}
 
 }
