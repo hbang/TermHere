@@ -34,7 +34,12 @@ class ViewController: NSViewController {
 
 	override func viewDidAppear() {
 		super.viewDidAppear()
+
 		requestExtensionEnable()
+
+		// set the app to settings mode
+		let appDelegate = NSApplication.sharedApplication().delegate as! AppDelegate
+		appDelegate.appMode = .Settings
 	}
 
 	// MARK: - First Run

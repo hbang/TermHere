@@ -9,20 +9,21 @@
 import Cocoa
 
 enum AppMode: UInt {
+	case Unknown
 	case Service, Settings
 }
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-	var appMode = AppMode.Settings {
+	var appMode = AppMode.Unknown {
 		didSet {
 			let app = NSApplication.sharedApplication()
 
 			// set the activation policy accordingly (mostly, whether the dock icon
 			// shows or not)
 			switch appMode {
-			case .Service:
+			case .Unknown, .Service:
 				app.setActivationPolicy(.Accessory)
 				
 			case .Settings:
