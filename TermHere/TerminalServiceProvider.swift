@@ -28,14 +28,17 @@ class TerminalServiceProvider: NSObject {
 		// map the filename strings to urls
 		let urls = filenames.map { NSURL(fileURLWithPath: $0) }
 
-		// launch them!
-		if !launch(urls) {
-			// if it failed, show an alert accordingly
-			error.memory = NSLocalizedString("OPENING_APP_FAILED", comment: "Message displayed when the app fails to be opened.")
+		// hop over to the main queue
+		dispatch_async(dispatch_get_main_queue()) {
+			// launch them!
+			if !self.launch(urls) {
+				// if it failed, show an alert accordingly
+				error.memory = NSLocalizedString("OPENING_APP_FAILED", comment: "Message displayed when the app fails to be opened.")
 
-			let alert = NSAlert()
-			alert.messageText = error.memory as! String
-			alert.runModal()
+				let alert = NSAlert()
+				alert.messageText = error.memory as! String
+				alert.runModal()
+			}
 		}
 	}
 
