@@ -59,4 +59,8 @@ class AboutViewController: NSViewController {
 		purchaseController.purchase()
 	}
 
+	@IBAction func closeClicked(sender: AnyObject) {
+		view.window!.close()
+	}
+
 }

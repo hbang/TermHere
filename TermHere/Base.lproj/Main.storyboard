@@ -106,7 +106,7 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController showSeguePresentationStyle="single" id="B8D-0N-5wS" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="SettingsWindowController" showSeguePresentationStyle="single" id="B8D-0N-5wS" sceneMemberID="viewController">
                     <window key="window" title="TermHere" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -345,10 +345,10 @@
                                     <string key="keyEquivalent" base64-UTF8="YES">
 DQ
 </string>
+                                    <connections>
+                                        <action selector="closeClicked:" target="FO0-2H-YkO" id="Bae-jV-BhR"/>
+                                    </connections>
                                 </buttonCell>
-                                <connections>
-                                    <action selector="dismissController:" target="FO0-2H-YkO" id="Xox-7p-eLe"/>
-                                </connections>
                             </button>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="QKF-4C-pNO">
                                 <rect key="frame" x="12" y="166" width="416" height="64"/>
