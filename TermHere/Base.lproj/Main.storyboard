@@ -106,7 +106,7 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                <windowController showSeguePresentationStyle="single" id="B8D-0N-5wS" sceneMemberID="viewController">
                     <window key="window" title="TermHere" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -124,7 +124,7 @@
         <!--TermHere-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController title="TermHere" id="XfG-lQ-9wD" customClass="ViewController" customModule="TermHere" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="TermHere" showSeguePresentationStyle="single" id="XfG-lQ-9wD" customClass="ViewController" customModule="TermHere" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="495" height="190"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -265,7 +265,7 @@
         <!--Window Controller-->
         <scene sceneID="Ye7-7d-ZYC">
             <objects>
-                <windowController id="Te1-KI-xzI" sceneMemberID="viewController">
+                <windowController showSeguePresentationStyle="single" id="Te1-KI-xzI" sceneMemberID="viewController">
                     <window key="window" title="About" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="c5A-Qm-4tB">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -283,7 +283,7 @@
         <!--About-->
         <scene sceneID="l5e-xJ-FXN">
             <objects>
-                <viewController title="About" id="FO0-2H-YkO" customClass="AboutViewController" customModule="TermHere" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="About" showSeguePresentationStyle="single" id="FO0-2H-YkO" customClass="AboutViewController" customModule="TermHere" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="zDv-8l-BLc">
                         <rect key="frame" x="0.0" y="0.0" width="440" height="240"/>
                         <autoresizingMask key="autoresizingMask"/>
