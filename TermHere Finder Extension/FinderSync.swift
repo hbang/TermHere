@@ -49,6 +49,10 @@ class FinderSync: FIFinderSync {
 			}
 
 		case .ToolbarItemMenu:
+            if preferences.openOnToolbarButtonClick {
+                self.newTerminal(nil)
+                return menu
+            }
 			break
 		}
 
@@ -116,7 +120,7 @@ class FinderSync: FIFinderSync {
 		}
 	}
 
-	func newTerminal(sender: NSMenuItem) {
+	func newTerminal(sender: NSMenuItem?) {
 		// get the filenames (map back to paths)
 		let paths = urlsToOpen.map { $0.path! }
 
