@@ -89,8 +89,7 @@ class FinderSync: FIFinderSync {
 
 			var urls: [NSURL] = []
             
-            //when we set open on toolbar button than we always want to open the current directory
-            if Preferences.sharedInstance.openOnToolbarButtonClick {
+            if Preferences.sharedInstance.openCurrentDirectory {
                 urls.append(target)
                 return urls;
             }
