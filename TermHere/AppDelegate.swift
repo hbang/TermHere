@@ -45,14 +45,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 			NSMultipleTextSelectionPboardType
 		], returnTypes: [])
 
-		// force a refresh so we get added
-		NSUpdateDynamicServices()
-
 		// hide the window
 		app.hide(nil)
 
 		// wait a bit
 		dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC)), dispatch_get_main_queue()) {
+			// force a refresh so our service is known
+			NSUpdateDynamicServices()
+
 			// if we’re not in service mode
 			if self.appMode != .Service {
 				// show the window
