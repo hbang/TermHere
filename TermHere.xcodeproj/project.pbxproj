@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CF0608281CE8C765003BB13F /* PurchaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0608271CE8C765003BB13F /* PurchaseController.swift */; };
-		CF435B681CF34EB200F794F1 /* TerminalServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1471101CF2B95000A914CB /* TerminalServiceProvider.swift */; };
 		CF435B6C1CF3C06D00F794F1 /* ServicesMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF435B6A1CF3C06D00F794F1 /* ServicesMenu.strings */; };
 		CF9CEE601CE59B1F00A89E71 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CEE5F1CE59B1F00A89E71 /* FinderSync.swift */; };
 		CF9CEE641CE59B1F00A89E71 /* TermHere Finder Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF9CEE5B1CE59B1F00A89E71 /* TermHere Finder Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -22,6 +21,8 @@
 		CFD9B7C81CE5960500947EC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD9B7C71CE5960500947EC8 /* ViewController.swift */; };
 		CFD9B7CA1CE5960500947EC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD9B7C91CE5960500947EC8 /* Assets.xcassets */; };
 		CFD9B7CD1CE5960500947EC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD9B7CB1CE5960500947EC8 /* Main.storyboard */; };
+		CFF6564D1CFC85F8007031AD /* TerminalServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1471101CF2B95000A914CB /* TerminalServiceProvider.swift */; };
+		CFF6564F1CFC860F007031AD /* TerminalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6564E1CFC860F007031AD /* TerminalController.swift */; };
 		CFFF6DAF1CEE0F5A004E5894 /* TermHere Common.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFF6DAE1CEE0F5A004E5894 /* TermHere Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CFFF6DB31CEE0F5A004E5894 /* TermHereCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFF6DAC1CEE0F5A004E5894 /* TermHereCommon.framework */; };
 		CFFF6DB41CEE0F5A004E5894 /* TermHereCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFFF6DAC1CEE0F5A004E5894 /* TermHereCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -99,6 +100,7 @@
 		CFD9B7C91CE5960500947EC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFD9B7CC1CE5960500947EC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFD9B7CE1CE5960500947EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFF6564E1CFC860F007031AD /* TerminalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerminalController.swift; sourceTree = "<group>"; };
 		CFFF6DAC1CEE0F5A004E5894 /* TermHereCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TermHereCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFFF6DAE1CEE0F5A004E5894 /* TermHere Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TermHere Common.h"; sourceTree = "<group>"; };
 		CFFF6DB01CEE0F5A004E5894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				CFFF6DBB1CEE0F6F004E5894 /* Preferences.swift */,
+				CFF6564E1CFC860F007031AD /* TerminalController.swift */,
 				CFFF6DBD1CEE0F7F004E5894 /* Supporting Files */,
 			);
 			path = "TermHere Common";
@@ -452,9 +455,9 @@
 			files = (
 				CFCF12E61CF47AB1007A807F /* AboutViewController.swift in Sources */,
 				CFCF12E01CF46CC4007A807F /* ContainerView.swift in Sources */,
-				CF435B681CF34EB200F794F1 /* TerminalServiceProvider.swift in Sources */,
 				CFD9B7C81CE5960500947EC8 /* ViewController.swift in Sources */,
 				CF0608281CE8C765003BB13F /* PurchaseController.swift in Sources */,
+				CFF6564D1CFC85F8007031AD /* TerminalServiceProvider.swift in Sources */,
 				CFD9B7C61CE5960500947EC8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFFF6DBC1CEE0F6F004E5894 /* Preferences.swift in Sources */,
+				CFF6564F1CFC860F007031AD /* TerminalController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,7 +31,7 @@ class TerminalServiceProvider: NSObject {
 		// hop over to the main queue
 		dispatch_async(dispatch_get_main_queue()) {
 			// launch them!
-			if !self.launch(urls) {
+			if !TerminalController.launch(urls) {
 				// if it failed, show an alert accordingly
 				error.memory = NSLocalizedString("OPENING_APP_FAILED", comment: "Message displayed when the app fails to be opened.")
 
@@ -40,21 +40,6 @@ class TerminalServiceProvider: NSObject {
 				alert.runModal()
 			}
 		}
-	}
-
-	func launch(urls: [NSURL]) -> Bool {
-		let preferences = Preferences.sharedInstance
-
-		// determine the bundle id, falling back to terminal as default
-		let bundleIdentifier = preferences.terminalBundleIdentifier
-
-		// if we don’t know any applescript for the app or it failed for some
-		// reason, fall back to a standard URL open
-		if !NSWorkspace.sharedWorkspace().openURLs(urls, withAppBundleIdentifier: bundleIdentifier, options: .Default, additionalEventParamDescriptor: nil, launchIdentifiers: nil) {
-			return false
-		}
-		
-		return true
 	}
 	
 }
