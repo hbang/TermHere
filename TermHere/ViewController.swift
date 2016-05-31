@@ -37,9 +37,12 @@ class ViewController: NSViewController {
 
 		requestExtensionEnable()
 
-		// set the app to settings mode
+		// set the app to settings mode if needed
 		let appDelegate = NSApplication.sharedApplication().delegate as! AppDelegate
-		appDelegate.appMode = .Settings
+
+		if appDelegate.appMode != .Service {
+			appDelegate.appMode = .Settings
+		}
 	}
 
 	// MARK: - First Run
