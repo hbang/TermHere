@@ -537,6 +537,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "au.com.hbang.TermHere.TermHere-Finder-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "de8518d7-055c-43fd-bc0c-b96c329d7372";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -550,6 +551,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "au.com.hbang.TermHere.TermHere-Finder-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "de8518d7-055c-43fd-bc0c-b96c329d7372";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -647,6 +649,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.hbang.TermHere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7ba9f846-21c7-4fb0-84ba-199af7d075cf";
 			};
 			name = Debug;
 		};
@@ -661,6 +664,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.hbang.TermHere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7ba9f846-21c7-4fb0-84ba-199af7d075cf";
 			};
 			name = Release;
 		};
@@ -679,8 +683,9 @@
 				INFOPLIST_FILE = "TermHere Common/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "au.com.hbang.TermHere-Common";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.hbang.TermHere.TermHere-Common";
 				PRODUCT_NAME = TermHereCommon;
+				PROVISIONING_PROFILE = "1499f64b-91f5-4113-8b46-b6ca39f1126d";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -703,8 +708,9 @@
 				INFOPLIST_FILE = "TermHere Common/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "au.com.hbang.TermHere-Common";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.hbang.TermHere.TermHere-Common";
 				PRODUCT_NAME = TermHereCommon;
+				PROVISIONING_PROFILE = "1499f64b-91f5-4113-8b46-b6ca39f1126d";
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
