@@ -83,41 +83,13 @@ class FinderSync: FIFinderSync {
 				return []
 			}
 
-			var urls: [NSURL] = []
-
-			// if items are selected, loop over them
-			if items.count > 0 {
-				for item in items {
-					var isDirectory: AnyObject?
-
-					do {
-						// is it a directory?
-						try item.getResourceValue(&isDirectory, forKey: NSURLIsDirectoryKey)
-
-						if let result = isDirectory as? NSNumber {
-							if result.boolValue {
-								// add it to the array
-								urls.append(item)
-							}
-						}
-					} catch {
-						NSLog("error while checking if %@ is a directory: %@", item, error as NSError)
-					}
-				}
-			}
-
-			// if we didn’t end up getting any urls, we can assume the user wants to
-			// open a terminal in the current directory
-			if urls.count == 0 {
-				urls.append(target)
-			}
-
-			return urls
+			// if items are selected, use them. otherwise, use the target dir
+			return items.count > 0 ? items : [ target ]
 		}
 	}
 
 	func newTerminal(sender: NSMenuItem) {
-		// launch them all
+		// gotta launch them all
 		TerminalController.launch(urlsToOpen)
 	}
 

@@ -41,5 +41,5 @@ class TerminalServiceProvider: NSObject {
 			}
 		}
 	}
-	
+
 }
