@@ -49,7 +49,7 @@ public class Preferences {
 	}
 
 	public var terminalAppURL: NSURL {
-		get { return preferences.URLForKey("TerminalAppURL")! }
+		get { return NSURL(string: preferences.objectForKey("TerminalAppURL") as! String)! }
 		set { preferences.setURL(newValue, forKey: "TerminalAppURL") }
 	}
 
