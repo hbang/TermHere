@@ -49,6 +49,10 @@ class FinderSync: FIFinderSync {
 			}
 
 		case .ToolbarItemMenu:
+			if preferences.openOnToolbarButtonClick {
+				self.newTerminal(nil)
+				return menu
+			}
 			break
 		}
 
@@ -83,12 +87,19 @@ class FinderSync: FIFinderSync {
 				return []
 			}
 
-			// if items are selected, use them. otherwise, use the target dir
-			return items.count > 0 ? items : [ target ]
+			let preferences = Preferences.sharedInstance
+
+			// if there is no selection, or selection is disabled, use the current
+			// directory. otherwise, use the selected items
+			if preferences.openCurrentDirectory || items.count == 0 {
+				return [ target ]
+			} else {
+				return items
+			}
 		}
 	}
 
-	func newTerminal(sender: NSMenuItem) {
+	func newTerminal(sender: NSMenuItem?) {
 		// gotta launch them all
 		TerminalController.launch(urlsToOpen)
 	}
