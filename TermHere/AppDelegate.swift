@@ -53,7 +53,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 					NSFilenamesPboardType,
 					NSURLPboardType,
 					NSMultipleTextSelectionPboardType
-					], returnTypes: [])
+				], returnTypes: [])
 				
 				// force a refresh so our service is known
 				NSUpdateDynamicServices()
