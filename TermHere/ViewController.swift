@@ -16,7 +16,6 @@ class ViewController: NSViewController {
 
 	@IBOutlet weak var finderToolbarCheckbox: NSButton!
 	@IBOutlet weak var contextMenusCheckbox: NSButton!
-	@IBOutlet weak var openOnToolbarButtonClickCheckbox: NSButton!
 	@IBOutlet weak var openCurrentDirectoryCheckbox: NSButton!
 
 	@IBOutlet weak var newTabRadioButton: NSButton!
@@ -33,7 +32,6 @@ class ViewController: NSViewController {
 		// get the app url or use the default
 		pathControl.URL = preferences.terminalAppURL
 		contextMenusCheckbox.state = preferences.showInContextMenus ? 1 : 0
-		openOnToolbarButtonClickCheckbox.state = preferences.openOnToolbarButtonClick ? 1 : 0
 		openCurrentDirectoryCheckbox.state = preferences.openCurrentDirectory ? 1 : 0
 	}
 
@@ -109,10 +107,6 @@ class ViewController: NSViewController {
 
 	@IBAction func contextMenusChecked(sender: AnyObject) {
 		preferences.showInContextMenus = contextMenusCheckbox.state == NSOnState
-	}
-	
-	@IBAction func openOnToolbarButtonClickChecked(sender: AnyObject) {
-		preferences.openOnToolbarButtonClick = openOnToolbarButtonClickCheckbox.state == NSOnState
 	}
 	
 	@IBAction func openCurrentDirectoryChecked(sender: AnyObject) {

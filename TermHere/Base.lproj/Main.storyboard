@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
     </dependencies>
@@ -187,17 +187,7 @@
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="j85-DA-Ofg">
-                                        <rect key="frame" x="88" y="26" width="250" height="18"/>
-                                        <buttonCell key="cell" type="check" title="Open Terminal on toolbar button click" bezelStyle="regularSquare" imagePosition="left" inset="2" id="Jsx-Bg-tme">
-                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="openOnToolbarButtonClickChecked:" target="XfG-lQ-9wD" id="o8f-LM-GTA"/>
-                                        </connections>
-                                    </button>
-                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="d9g-Ml-zN8">
+                                    <button ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d9g-Ml-zN8">
                                         <rect key="frame" x="88" y="6" width="254" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="b74-nW-4DR"/>
@@ -215,21 +205,18 @@
                                     <constraint firstItem="C1a-DL-hAU" firstAttribute="leading" secondItem="4ta-vO-hQK" secondAttribute="leading" id="3E5-Zq-sml"/>
                                     <constraint firstItem="5dx-sP-OUE" firstAttribute="top" secondItem="4ta-vO-hQK" secondAttribute="top" constant="-1" id="5UK-AB-OTI"/>
                                     <constraint firstItem="hSy-Gi-DiA" firstAttribute="leading" secondItem="NY6-xo-2kn" secondAttribute="leading" id="8bC-Gc-Yv8"/>
-                                    <constraint firstItem="d9g-Ml-zN8" firstAttribute="top" secondItem="j85-DA-Ofg" secondAttribute="bottom" constant="6" symbolic="YES" id="AMe-2J-LfI"/>
+                                    <constraint firstItem="d9g-Ml-zN8" firstAttribute="top" secondItem="hSy-Gi-DiA" secondAttribute="bottom" constant="8" id="Cf4-hI-htR"/>
                                     <constraint firstItem="NY6-xo-2kn" firstAttribute="top" secondItem="DXP-MN-PTQ" secondAttribute="bottom" constant="14" id="DDe-fv-AKv"/>
                                     <constraint firstAttribute="bottom" secondItem="hSy-Gi-DiA" secondAttribute="bottom" constant="50" id="Emi-CT-zji"/>
                                     <constraint firstItem="DXP-MN-PTQ" firstAttribute="leading" secondItem="C1a-DL-hAU" secondAttribute="trailing" constant="8" symbolic="YES" id="K9G-b5-C17"/>
                                     <constraint firstItem="xkm-we-EBK" firstAttribute="leading" secondItem="C1a-DL-hAU" secondAttribute="leading" id="Lbb-bE-D7b"/>
                                     <constraint firstItem="5dx-sP-OUE" firstAttribute="leading" secondItem="DXP-MN-PTQ" secondAttribute="trailing" constant="8" symbolic="YES" id="Qsf-xo-I4r"/>
                                     <constraint firstAttribute="trailing" secondItem="hSy-Gi-DiA" secondAttribute="trailing" id="XZn-n4-fNv"/>
-                                    <constraint firstItem="d9g-Ml-zN8" firstAttribute="leading" secondItem="j85-DA-Ofg" secondAttribute="leading" id="cgc-nt-0lD"/>
                                     <constraint firstItem="DXP-MN-PTQ" firstAttribute="top" secondItem="4ta-vO-hQK" secondAttribute="top" id="ejL-JU-d1S"/>
                                     <constraint firstItem="C1a-DL-hAU" firstAttribute="top" secondItem="4ta-vO-hQK" secondAttribute="top" id="gHm-1D-jyD"/>
-                                    <constraint firstItem="j85-DA-Ofg" firstAttribute="top" secondItem="hSy-Gi-DiA" secondAttribute="bottom" constant="8" symbolic="YES" id="hvj-n4-1QZ"/>
                                     <constraint firstItem="NY6-xo-2kn" firstAttribute="top" secondItem="xkm-we-EBK" secondAttribute="top" constant="2" id="hwT-Qx-2AG"/>
                                     <constraint firstItem="hSy-Gi-DiA" firstAttribute="top" secondItem="NY6-xo-2kn" secondAttribute="bottom" constant="4" id="lbd-JR-hrD"/>
                                     <constraint firstItem="NY6-xo-2kn" firstAttribute="leading" secondItem="DXP-MN-PTQ" secondAttribute="leading" id="lhv-04-ybJ"/>
-                                    <constraint firstItem="j85-DA-Ofg" firstAttribute="leading" secondItem="hSy-Gi-DiA" secondAttribute="leading" id="yN6-UI-UtP"/>
                                     <constraint firstItem="xkm-we-EBK" firstAttribute="width" secondItem="C1a-DL-hAU" secondAttribute="width" id="zMu-bN-mlZ"/>
                                 </constraints>
                             </customView>
@@ -282,7 +269,6 @@
                     <connections>
                         <outlet property="contextMenusCheckbox" destination="NY6-xo-2kn" id="Rdo-as-jJT"/>
                         <outlet property="openCurrentDirectoryCheckbox" destination="d9g-Ml-zN8" id="m7Q-eI-Klp"/>
-                        <outlet property="openOnToolbarButtonClickCheckbox" destination="j85-DA-Ofg" id="Ctv-S0-zkV"/>
                         <outlet property="pathControl" destination="DXP-MN-PTQ" id="1Qt-Pe-Mm5"/>
                         <outlet property="purchaseButton" destination="Sw8-ag-2dl" id="OvV-GA-a64"/>
                     </connections>
@@ -345,10 +331,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="416" height="69"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="minSize" width="401" height="69"/>
+                                            <size key="minSize" width="416" height="69"/>
                                             <size key="maxSize" width="463" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="401" height="69"/>
+                                            <size key="minSize" width="416" height="69"/>
                                             <size key="maxSize" width="463" height="10000000"/>
                                         </textView>
                                     </subviews>
@@ -359,7 +345,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="Or7-8u-DJF">
-                                    <rect key="frame" x="401" y="0.0" width="15" height="69"/>
+                                    <rect key="frame" x="400" y="0.0" width="16" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>

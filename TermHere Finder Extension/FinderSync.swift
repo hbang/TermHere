@@ -39,34 +39,25 @@ class FinderSync: FIFinderSync {
 		// create the menu
 		let menu = NSMenu(title: "")
 
-		// if we're a disabled menu type, stop here
 		let preferences = Preferences.sharedInstance
 
 		switch menuKind {
 		case .ContextualMenuForItems, .ContextualMenuForSidebar, .ContextualMenuForContainer:
+			// if we're a disabled menu type, stop here
 			if !preferences.showInContextMenus {
 				return menu
 			}
 
 		case .ToolbarItemMenu:
-			if preferences.openOnToolbarButtonClick {
-				self.newTerminal(nil)
-				return menu
-			}
-			break
+			// if we're the toolbar item, cheat a little by treating this as our click
+			// action
+			self.newTerminal(nil)
+			return menu
 		}
 
 		// create the new tab item
 		let newTabItem = menu.addItemWithTitle(NSLocalizedString("NEW_TERMINAL_HERE", comment: "Button that opens a new terminal tab."), action: #selector(newTerminal(_:)), keyEquivalent: "X")!
 		newTabItem.target = self
-
-		// if this is the toolbar menu, add a separator and open settings item
-		if menuKind == .ToolbarItemMenu {
-			menu.addItem(NSMenuItem.separatorItem())
-
-			let settingsItem = menu.addItemWithTitle(NSLocalizedString("OPEN_SETTINGS", comment: "Button that opens the TermHere settings."), action: #selector(openSettings(_:)), keyEquivalent: "")!
-			settingsItem.target = self
-		}
 
 		return menu
 	}
@@ -102,11 +93,6 @@ class FinderSync: FIFinderSync {
 	func newTerminal(sender: NSMenuItem?) {
 		// gotta launch them all
 		TerminalController.launch(urlsToOpen)
-	}
-
-	func openSettings(sender: NSMenuItem) {
-		// launch the app
-		NSWorkspace.sharedWorkspace().launchAppWithBundleIdentifier("au.com.hbang.TermHere", options: .Default, additionalEventParamDescriptor: nil, launchIdentifier: nil)
 	}
 
 }
