@@ -38,7 +38,7 @@ public class Preferences {
 			"TerminalAppURL": "file:///Applications/Utilities/Terminal.app",
 			"TerminalAppBundleIdentifier": "com.apple.Terminal",
 
-			"OpenCurrentDirectory": false,
+			"OpenSelection": true,
 			"ShowInContextMenu": true,
 			"TerminalActivationType": ActivationType.NewTab.rawValue
 		])
@@ -64,9 +64,9 @@ public class Preferences {
 		set { preferences.setBool(newValue, forKey: "ShowInContextMenu") }
 	}
 	
-	public var openCurrentDirectory: Bool {
-		get { return preferences.boolForKey("OpenCurrentDirectory") }
-		set { preferences.setBool(newValue, forKey: "OpenCurrentDirectory") }
+	public var openSelection: Bool {
+		get { return preferences.boolForKey("OpenSelection") }
+		set { preferences.setBool(newValue, forKey: "OpenSelection") }
 	}
 
 	public var activationType: ActivationType {

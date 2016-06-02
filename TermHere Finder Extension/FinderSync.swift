@@ -80,12 +80,12 @@ class FinderSync: FIFinderSync {
 
 			let preferences = Preferences.sharedInstance
 
-			// if there is no selection, or selection is disabled, use the current
-			// directory. otherwise, use the selected items
-			if preferences.openCurrentDirectory || items.count == 0 {
-				return [ target ]
-			} else {
+			// if selection is enabled and there are selected items, use them.
+			// otherwise, use the current directory
+			if preferences.openSelection && items.count > 0 {
 				return items
+			} else {
+				return [ target ]
 			}
 		}
 	}
