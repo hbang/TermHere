@@ -1,4 +1,5 @@
-﻿/* Button that opens a new terminal tab. */
+
+/* Button that opens a new terminal tab. */
 "NEW_TERMINAL_HERE" = "Nieuwe Terminal hier";
 
 /* Explanation of what the New Terminal Here button does. */
@@ -6,3 +7,27 @@
 
 /* Button that opens the TermHere settings. */
 "OPEN_SETTINGS" = "Instellingen";
+
+/* Button that chooses the selected app in the open panel. */
+"CHOOSE" = "";
+
+/* Title of the “Choose Application” window. */
+"CHOOSE_APPLICATION" = "";
+
+/* Button that allows a donation to be made. %@ is the donation amount. */
+"DONATE_WITH_PRICE" = "";
+
+/* Message displayed when a donation has successfully been made. */
+"DONATION_SUCCEEDED" = "";
+
+/* OK button label */
+"OK" = "";
+
+/* Message displayed when the app fails to be opened. */
+"OPENING_APP_FAILED" = "";
+
+/* Title of prompt asking the user to enable the extension. */
+"PLEASE_ENABLE" = "";
+
+/* Explanation of how to enable the extension. */
+"PLEASE_ENABLE_EXPLANATION" = "";

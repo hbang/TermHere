@@ -14,6 +14,9 @@
 /* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
 "AYu-sK-qS6.title" = "Hoofdmenu";
 
+/* Class = "NSTextFieldCell"; title = "Enable to open a tab for each item selected. Disable to always use the currently open folder."; ObjectID = "BIn-rM-JgP"; */
+"BIn-rM-JgP.title" = "";
+
 /* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
 "BOF-NM-1cW.title" = "Voorkeuren…";
 
@@ -26,26 +29,20 @@
 /* Class = "NSMenuItem"; title = "TermHere Help"; ObjectID = "FKE-Sm-Kum"; */
 "FKE-Sm-Kum.title" = "TermHere Help";
 
+/* Class = "NSViewController"; title = "About"; ObjectID = "FO0-2H-YkO"; */
+"FO0-2H-YkO.title" = "";
+
 /* Class = "NSButtonCell"; title = "Context menus"; ObjectID = "FlD-PF-2Gy"; */
 "FlD-PF-2Gy.title" = "Contextuele menu's";
 
-/* Class = "NSButtonCell"; title = "New tab"; ObjectID = "IBt-gx-lRF"; */
-"IBt-gx-lRF.title" = "Nieuw tabblad";
-
 /* Class = "NSWindow"; title = "TermHere"; ObjectID = "IQv-IB-iLA"; */
 "IQv-IB-iLA.title" = "TermHere";
-
-/* Class = "NSTextFieldCell"; title = "This feature requires Terminal or iTerm 2.9 or newer."; ObjectID = "JU7-10-Rfa"; */
-"JU7-10-Rfa.title" = "Deze functie vereist Terminal of iTerm 2.9 of nieuwer.";
 
 /* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
 "Kd2-mp-pUS.title" = "Toon alles";
 
 /* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
 "LE2-aR-0XJ.title" = "Alles op voorgrond";
-
-/* Class = "NSButtonCell"; title = "Finder toolbar"; ObjectID = "Lvi-c9-Pl1"; */
-"Lvi-c9-Pl1.title" = "Finder-knoppenbalk";
 
 /* Class = "NSTextFieldCell"; title = "Not seeing it? Make sure TermHere is enabled in the Extensions preferences."; ObjectID = "Msh-Hp-hvC"; */
 "Msh-Hp-hvC.title" = "Werkt het niet? Zorg ervoor dat TermHere is ingeschakeld in de Extensievoorkeuren.";
@@ -77,6 +74,9 @@
 /* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
 "Vdr-fp-XzO.title" = "Verberg andere";
 
+/* Class = "NSTextFieldCell"; title = "Behavior:"; ObjectID = "Wq9-0r-MnR"; */
+"Wq9-0r-MnR.title" = "";
+
 /* Class = "NSButtonCell"; title = "Browse"; ObjectID = "XdH-ej-nuM"; */
 "XdH-ej-nuM.title" = "Blader";
 
@@ -89,11 +89,14 @@
 /* Class = "NSTextFieldCell"; title = "Terminal app:"; ObjectID = "avK-6B-WJJ"; */
 "avK-6B-WJJ.title" = "Terminal-app:";
 
-/* Class = "NSTextFieldCell"; title = "Open in:"; ObjectID = "g4h-wX-vAm"; */
-"g4h-wX-vAm.title" = "Open in:";
+/* Class = "NSWindow"; title = "About"; ObjectID = "c5A-Qm-4tB"; */
+"c5A-Qm-4tB.title" = "";
 
 /* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
 "hz9-B4-Xy5.title" = "Voorzieningen";
+
+/* Class = "NSTextFieldCell"; title = "To show or hide the Finder toolbar button, open Finder and click View → Customize Toolbar."; ObjectID = "itw-J6-gYO"; */
+"itw-J6-gYO.title" = "";
 
 /* Class = "NSButtonCell"; title = "Loading…"; ObjectID = "jcg-5p-aLA"; */
 "jcg-5p-aLA.title" = "Laden…";
@@ -101,8 +104,8 @@
 /* Class = "NSTextFieldCell"; title = "App Version"; ObjectID = "jn0-iS-c8a"; */
 "jn0-iS-c8a.title" = "App-versie";
 
-/* Class = "NSButtonCell"; title = "New window"; ObjectID = "nAS-Zi-dzR"; */
-"nAS-Zi-dzR.title" = "Nieuw venster";
+/* Class = "NSButtonCell"; title = "Open selected items"; ObjectID = "nKp-KI-E50"; */
+"nKp-KI-E50.title" = "";
 
 /* Class = "NSMenu"; title = "TermHere"; ObjectID = "uQy-DD-JDr"; */
 "uQy-DD-JDr.title" = "TermHere";
@@ -112,6 +115,3 @@
 
 /* Class = "NSTextFieldCell"; title = "Show in:"; ObjectID = "xhO-2F-SiW"; */
 "xhO-2F-SiW.title" = "Toon in:";
-
-/* Class = "NSButtonCell"; title = "Last used tab"; ObjectID = "yxC-Y1-TOP"; */
-"yxC-Y1-TOP.title" = "Laatst gebruikt tabblad";

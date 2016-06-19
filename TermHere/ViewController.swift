@@ -59,7 +59,7 @@ class ViewController: NSViewController {
 			let alert = NSAlert()
 			alert.messageText = NSLocalizedString("PLEASE_ENABLE", comment: "Title of prompt asking the user to enable the extension.")
 			alert.informativeText = NSLocalizedString("PLEASE_ENABLE_EXPLANATION", comment: "Explanation of how to enable the extension.")
-			alert.addButtonWithTitle(NSLocalizedString("OK", comment: "OK button label"))
+			alert.addButtonWithTitle(NSLocalizedString("OK", comment: "OK button label."))
 
 			alert.beginSheetModalForWindow(view.window!) { (result: NSModalResponse) in
 				self.openExtensionPreferences()

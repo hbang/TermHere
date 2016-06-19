@@ -1,4 +1,5 @@
-﻿/* Button that chooses the selected app in the open panel. */
+
+/* Button that chooses the selected app in the open panel. */
 "CHOOSE" = "Kies";
 
 /* Title of the “Choose Application” window. */
@@ -9,6 +10,9 @@
 
 /* Message displayed when a donation has successfully been made. */
 "DONATION_SUCCEEDED" = "Bedankt voor je donatie.";
+
+/* OK button label */
+"OK" = "";
 
 /* Message displayed when the app fails to be opened. */
 "OPENING_APP_FAILED" = "Kon de app niet starten omdat er een onbekende fout is opgetreden.";

@@ -1,4 +1,4 @@
-﻿/* Button that chooses the selected app in the open panel. */
+/* Button that chooses the selected app in the open panel. */
 "CHOOSE" = "Choose";
 
 /* Title of the “Choose Application” window. */
@@ -9,6 +9,9 @@
 
 /* Message displayed when a donation has successfully been made. */
 "DONATION_SUCCEEDED" = "Thank you for your donation.";
+
+/* OK button label. */
+"OK" = "OK";
 
 /* Message displayed when the app fails to be opened. */
 "OPENING_APP_FAILED" = "Couldn’t launch the app because an unknown error occurred.";
