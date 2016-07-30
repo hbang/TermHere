@@ -5,7 +5,7 @@
 	<key>DONATE_WITH_PRICE</key>
 	<string>Faire don de %@</string>
 	<key>DONATION_MESSAGE</key>
-	<string>Si vous trouvez cette app utile, please pensez à faire un don au développeur pour le remercier.</string>
+	<string>Si vous trouvez cette app utile, s'il vous plaît pensez à faire un don au développeur pour le remercier.</string>
 	<key>DONATION_SUCCEEDED</key>
 	<string>Merci pour votre donation.</string>
 </dict>
