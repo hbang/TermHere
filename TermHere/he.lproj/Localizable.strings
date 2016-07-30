@@ -4,34 +4,34 @@
 <dict>
 	<!-- Label displayed while something is loading. -->
 	<key>LOADING</key>
-	<string>Laden…</string>
+	<string>טוען...</string>
 
 	<!-- OK button label. -->
 	<key>OK</key>
-	<string>OK</string>
+	<string>אישור</string>
 
 	<!-- Title of prompt asking the user to enable the extension. -->
 	<key>PLEASE_ENABLE</key>
-	<string>Activeer A.U.B. de extentie om TermHere te gebruiken.</string>
+	<string>כדי להתחיל להשתמש בTermHere, אנא אפשר/י את ההרחבה.</string>
 
 	<!-- Explanation of how to enable the extension. -->
 	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>Klik op OK om de Extentie instellingen te openen, dan vervolgends onder TermHere, activeer de checkbox naast "Finder".</string>
+	<string>הקש/י אישור כדי לפתוח את הגדרות ההרחבה. תחת TermHere, הקש/י על תיבת הסימון על יד ״מכתבה״.</string>
 
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
-	<string>Kies</string>
+	<string>בחר</string>
 
 	<!-- Title of the open panel. -->
 	<key>CHOOSE_APPLICATION</key>
-	<string>Kies Applicatie</string>
+	<string>בחר/י אפליקציה</string>
 
 	<!-- Title of the About window. -->
 	<key>ABOUT</key>
-	<string>Over</string>
+	<string>אודות</string>
 
 	<!-- Message displayed when the app fails to be opened. -->
 	<key>OPENING_APP_FAILED</key>
-	<string>Kon de Applicatie niet laden omdat er een onbekende fout is opgetreden.</string>
+	<string>נכשל בפתיחת האפליקציה מכיוון שתקלה לא ידועה אירעה.</string>
 </dict>
 </plist>

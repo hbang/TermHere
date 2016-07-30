@@ -21,7 +21,6 @@
 	<key>TERMINAL_APP</key>
 	<string>Terminal Applicatie:</string>
 	<key>TROUBLESHOOTING_NOTE</key>
-	<string>Indien u het niet ziet, controleer of TermHere is toegestaan in Extentie Instellingen
-</string>
+	<string>Indien u het niet ziet, controleer of TermHere is toegestaan in Extentie Instellingen</string>
 </dict>
 </plist>
