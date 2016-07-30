@@ -1,23 +1,37 @@
-/* Button that chooses the selected app in the open panel. */
-"CHOOSE" = "Choose";
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Label displayed while something is loading. -->
+	<key>LOADING</key>
+	<string>Loading…</string>
 
-/* Title of the “Choose Application” window. */
-"CHOOSE_APPLICATION" = "Choose Application";
+	<!-- OK button label. -->
+	<key>OK</key>
+	<string>OK</string>
 
-/* Button that allows a donation to be made. %@ is the donation amount. */
-"DONATE_WITH_PRICE" = "Donate %@";
+	<!-- Title of prompt asking the user to enable the extension. -->
+	<key>PLEASE_ENABLE</key>
+	<string>To start using TermHere, please enable the extension.</string>
 
-/* Message displayed when a donation has successfully been made. */
-"DONATION_SUCCEEDED" = "Thank you for your donation.";
+	<!-- Explanation of how to enable the extension. -->
+	<key>PLEASE_ENABLE_EXPLANATION</key>
+	<string>Click OK to open the Extensions preferences. Under TermHere, click the checkbox next to “Finder”.</string>
 
-/* OK button label. */
-"OK" = "OK";
+	<!-- Button that chooses the selected app in the open panel. -->
+	<key>CHOOSE</key>
+	<string>Choose</string>
 
-/* Message displayed when the app fails to be opened. */
-"OPENING_APP_FAILED" = "Couldn’t launch the app because an unknown error occurred.";
+	<!-- Title of the open panel. -->
+	<key>CHOOSE_APPLICATION</key>
+	<string>Choose Application</string>
 
-/* Title of prompt asking the user to enable the extension. */
-"PLEASE_ENABLE" = "To start using TermHere, please enable the extension.";
+	<!-- Title of the About window. -->
+	<key>ABOUT</key>
+	<string>About</string>
 
-/* Explanation of how to enable the extension. */
-"PLEASE_ENABLE_EXPLANATION" = "Click OK to open the Extensions preferences. Under TermHere, click the checkbox next to “Finder”.";
+	<!-- Message displayed when the app fails to be opened. -->
+	<key>OPENING_APP_FAILED</key>
+	<string>Couldn’t launch the app because an unknown error occurred.</string>
+</dict>
+</plist>
