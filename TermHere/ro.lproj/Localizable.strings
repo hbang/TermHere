@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Label displayed while something is loading. -->
+	<key>LOADING</key>
+	<string>Incarcare…</string>
+
+	<!-- OK button label. -->
+	<key>OK</key>
+	<string>OK</string>
+
+	<!-- Title of prompt asking the user to enable the extension. -->
+	<key>PLEASE_ENABLE</key>
+	<string>Pentru a folosi TermHere, trebuie sa activezi extensia.</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>PLEASE_ENABLE_EXPLANATION</key>
+	<string>Apasa OK pentru a deschide preferintele Extensilor. Sub TermHere, activeaza optiunea “Finder”.</string>
+
+	<!-- Button that chooses the selected app in the open panel. -->
+	<key>CHOOSE</key>
+	<string>Alege</string>
+
+	<!-- Title of the open panel. -->
+	<key>CHOOSE_APPLICATION</key>
+	<string>Alege Aplicatia</string>
+
+	<!-- Title of the About window. -->
+	<key>ABOUT</key>
+	<string>Despre</string>
+
+	<!-- Message displayed when the app fails to be opened. -->
+	<key>OPENING_APP_FAILED</key>
+	<string>Nu s-a putut lansa aplicatia din cauza unei erori necunoscute.</string>
+</dict>
+</plist>

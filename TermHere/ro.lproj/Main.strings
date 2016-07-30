@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BROWSE</key>
+	<string>Cauta</string>
+	<key>OPEN_IN</key>
+	<string>Deschide in:</string>
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Aceasta optiune necesita Terminal sau iTerm 2.9 sau o versiune mai recenta.</string>
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>Ultimul tab folosit</string>
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>Tab nou</string>
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>Fereastra noua</string>
+	<key>SHOW_IN</key>
+	<string>Arata in:</string>
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>Meniu contextual</string>
+	<key>TERMINAL_APP</key>
+	<string>Aplicatie terminal:</string>
+	<key>TROUBLESHOOTING_NOTE</key>
+	<string>Nu o vezi? Asigura-te ca TermHere este activat in preferintele Extensilor.</string>
+</dict>
+</plist>
