@@ -1,24 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Label displayed while something is loading. -->
+	<key>LOADING</key>
+	<string>Laden…</string>
 
-/* Button that chooses the selected app in the open panel. */
-"CHOOSE" = "Kies";
+	<!-- OK button label. -->
+	<key>OK</key>
+	<string>OK</string>
 
-/* Title of the “Choose Application” window. */
-"CHOOSE_APPLICATION" = "Kies programma";
+	<!-- Title of prompt asking the user to enable the extension. -->
+	<key>PLEASE_ENABLE</key>
+	<string>Activeer A.U.B. de extentie om TermHere te gebruiken.</string>
 
-/* Button that allows a donation to be made. %@ is the donation amount. */
-"DONATE_WITH_PRICE" = "Doneer %@";
+	<!-- Explanation of how to enable the extension. -->
+	<key>PLEASE_ENABLE_EXPLANATION</key>
+	<string>Klik op OK om de Extentie instellingen te openen, dan vervolgends onder TermHere, activeer de checkbox naast "Finder"</string>
 
-/* Message displayed when a donation has successfully been made. */
-"DONATION_SUCCEEDED" = "Bedankt voor je donatie.";
+	<!-- Button that chooses the selected app in the open panel. -->
+	<key>CHOOSE</key>
+	<string>Kies</string>
 
-/* OK button label */
-"OK" = "";
+	<!-- Title of the open panel. -->
+	<key>CHOOSE_APPLICATION</key>
+	<string>Kies Applicatie</string>
 
-/* Message displayed when the app fails to be opened. */
-"OPENING_APP_FAILED" = "Kon de app niet starten omdat er een onbekende fout is opgetreden.";
+	<!-- Title of the About window. -->
+	<key>ABOUT</key>
+	<string>Over</string>
 
-/* Title of prompt asking the user to enable the extension. */
-"PLEASE_ENABLE" = "Schakel de extensie in om TermHere te gebruiken.";
-
-/* Explanation of how to enable the extension. */
-"PLEASE_ENABLE_EXPLANATION" = "Klik op OK om de Extensievoorkeuren te openen. Klik bij TermHere op het vakje naast 'Finder'.";
+	<!-- Message displayed when the app fails to be opened. -->
+	<key>OPENING_APP_FAILED</key>
+	<string>Kon de Applicatie niet laden omdat er een onbekende fout is opgetreden.</string>
+</dict>
+</plist>

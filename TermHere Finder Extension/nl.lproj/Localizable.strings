@@ -1,33 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Button that opens a new terminal tab. -->
+	<key>NEW_TERMINAL_HERE</key>
+	<string>Nieuw Terminal Tabblad</string>
 
-/* Button that opens a new terminal tab. */
-"NEW_TERMINAL_HERE" = "Nieuwe Terminal hier";
-
-/* Explanation of what the New Terminal Here button does. */
-"NEW_TERMINAL_HERE_TOOLTIP" = "Open een Terminal-tabblad in deze map";
-
-/* Button that opens the TermHere settings. */
-"OPEN_SETTINGS" = "Instellingen";
-
-/* Button that chooses the selected app in the open panel. */
-"CHOOSE" = "";
-
-/* Title of the “Choose Application” window. */
-"CHOOSE_APPLICATION" = "";
-
-/* Button that allows a donation to be made. %@ is the donation amount. */
-"DONATE_WITH_PRICE" = "";
-
-/* Message displayed when a donation has successfully been made. */
-"DONATION_SUCCEEDED" = "";
-
-/* OK button label */
-"OK" = "";
-
-/* Message displayed when the app fails to be opened. */
-"OPENING_APP_FAILED" = "";
-
-/* Title of prompt asking the user to enable the extension. */
-"PLEASE_ENABLE" = "";
-
-/* Explanation of how to enable the extension. */
-"PLEASE_ENABLE_EXPLANATION" = "";
+	<!-- Explanation of what the New Terminal Here button does. -->
+	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
+	<string>Open een Terminal Scherm in deze locatie.</string>
+</dict>
+</plist>
