@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Label displayed while something is loading. -->
+	<key>LOADING</key>
+	<string>Caricamento...</string>
+
+	<!-- OK button label. -->
+	<key>OK</key>
+	<string>OK</string>
+
+	<!-- Title of prompt asking the user to enable the extension. -->
+	<key>PLEASE_ENABLE</key>
+	<string>Per iniziare a usare TermHere, per favore abilita l'estensione.</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>PLEASE_ENABLE_EXPLANATION</key>
+	<string>Clicca OK per aprire le impostazioni delle estensioni. Sotto TermHere, fare clic sulla checkbox accanto a "Finder".</string>
+
+	<!-- Button that chooses the selected app in the open panel. -->
+	<key>CHOOSE</key>
+	<string>Scegli</string>
+
+	<!-- Title of the open panel. -->
+	<key>CHOOSE_APPLICATION</key>
+	<string>Scegli applicazione</string>
+
+	<!-- Title of the About window. -->
+	<key>ABOUT</key>
+	<string>Info</string>
+
+	<!-- Message displayed when the app fails to be opened. -->
+	<key>OPENING_APP_FAILED</key>
+	<string>Non posso lanciare l'app a causa di un errore sconosciuto.</string>
+</dict>
+</plist>
