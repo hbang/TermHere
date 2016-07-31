@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BROWSE</key>
+	<string>浏览</string>
+	<key>OPEN_IN</key>
+	<string>打开在:</string>
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>此功能需要终端或者iTerm 2.9或更新.</string>
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>上次使用的页面</string>
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>新页面</string>
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>新窗口</string>
+	<key>SHOW_IN</key>
+	<string>显示在:</string>
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>内容菜单</string>
+	<key>TERMINAL_APP</key>
+	<string>终端程序:</string>
+	<key>TROUBLESHOOTING_NOTE</key>
+	<string>没看到?请确保TermHere在扩展程序设置中开启了.</string>
+</dict>
+</plist>

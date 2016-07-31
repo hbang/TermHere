@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Button that opens a new terminal tab. -->
+	<key>NEW_TERMINAL_HERE</key>
+	<string>新的终端程序</string>
+
+	<!-- Explanation of what the New Terminal Here button does. -->
+	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
+	<string>在这个目录下打开New Terminal</string>
+</dict>
+</plist>
