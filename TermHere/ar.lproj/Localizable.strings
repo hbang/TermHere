@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Label displayed while something is loading. -->
+	<key>LOADING</key>
+	<string>...جار التحميل</string>
+
+	<!-- OK button label. -->
+	<key>OK</key>
+	<string>موافق</string>
+
+	<!-- Title of prompt asking the user to enable the extension. -->
+	<key>PLEASE_ENABLE</key>
+	<string>.للبدء في استخدام مصطلح هنا، يرجى تمكين الملحق</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>PLEASE_ENABLE_EXPLANATION</key>
+	<string>انقر فوق موافق لفتح تفضيلات ملحقات. تحت مصطلح هنا، انقر فوق خانة الاختيار بجانب "الكشاف"</string>
+
+	<!-- Button that chooses the selected app in the open panel. -->
+	<key>CHOOSE</key>
+	<string>اختار</string>
+
+	<!-- Title of the open panel. -->
+	<key>CHOOSE_APPLICATION</key>
+	<string>اختيار التطبيق</string>
+
+	<!-- Title of the About window. -->
+	<key>ABOUT</key>
+	<string>حول</string>
+
+	<!-- Message displayed when the app fails to be opened. -->
+	<key>OPENING_APP_FAILED</key>
+	<string>.لا يمكن إطلاق التطبيق بسبب حدوث خطأ غير معروف</string>
+</dict>
+</plist>
