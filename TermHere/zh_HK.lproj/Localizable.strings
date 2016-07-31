@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Label displayed while something is loading. -->
+	<key>LOADING</key>
+	<string>載入中…</string>
+
+	<!-- OK button label. -->
+	<key>OK</key>
+	<string>OK</string>
+
+	<!-- Title of prompt asking the user to enable the extension. -->
+	<key>PLEASE_ENABLE</key>
+	<string>要開始使用 TermHere，請在「延伸功能」裡啟用。</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>PLEASE_ENABLE_EXPLANATION</key>
+	<string>點擊 OK 來打開「延伸功能」設定。在 TermHere 下點選「Finder」旁的複選框。</string>
+
+	<!-- Button that chooses the selected app in the open panel. -->
+	<key>CHOOSE</key>
+	<string>選擇</string>
+
+	<!-- Title of the open panel. -->
+	<key>CHOOSE_APPLICATION</key>
+	<string>選擇應用程式</string>
+
+	<!-- Title of the About window. -->
+	<key>ABOUT</key>
+	<string>關於</string>
+
+	<!-- Message displayed when the app fails to be opened. -->
+	<key>OPENING_APP_FAILED</key>
+	<string>無法啟動 App 因為未知的錯誤產生。</string>
+</dict>
+</plist>
