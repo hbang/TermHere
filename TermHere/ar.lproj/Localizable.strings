@@ -16,7 +16,7 @@
 
 	<!-- Explanation of how to enable the extension. -->
 	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>انقر فوق موافق لفتح تفضيلات ملحقات. تحت مصطلح هنا، انقر فوق خانة الاختيار بجانب "الكشاف"</string>
+	<string>انقر فوق موافق لفتح تفضيلات ملحقات. تحت مصطلح هنا، انقر فوق خانة الاختيار بجانب "Finder"</string>
 
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
