@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BROWSE</key>
+	<string>ब्राउज</string>
+	<key>OPEN_IN</key>
+	<string>में खुलेगा:</string>
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>यह सुविधा टर्मिनल या iTerm 2.9 या नए की आवश्यकता है।</string>
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>अंतिम टैब</string>
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>अंतिम टैब...</string>
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>नयी खिड़की</string>
+	<key>SHOW_IN</key>
+	<string>में दिखाएं:</string>
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>संदर्भ मेनू</string>
+	<key>TERMINAL_APP</key>
+	<string>टर्मिनल अनुप्रयोग:</string>
+	<key>TROUBLESHOOTING_NOTE</key>
+	<string>नहीं यह देखकर? सुनिश्चित करें कि TermHere एक्सटेंशन वरीयताओं में सक्षम है।</string>
+</dict>
+</plist>
