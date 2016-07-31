@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BROWSE</key>
+	<string>Pregledavanje</string>
+	<key>OPEN_IN</key>
+	<string>Otvori u:</string>
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Ovo svojstvo zahtjeva Terminal ili iTerm 2.9 ili noviji.</string>
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>Zadnje korištena kartica</string>
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>Nova kartica</string>
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>Novi prozor</string>
+	<key>SHOW_IN</key>
+	<string>Prikaži u:</string>
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>Kontekst izbornika</string>
+	<key>TERMINAL_APP</key>
+	<string>Terminal aplikacija:</string>
+	<key>TROUBLESHOOTING_NOTE</key>
+	<string>Ne vidiš ju? Provjeri je li TermHere uključen u postavkama proširenja.</string>
+</dict>
+</plist>
