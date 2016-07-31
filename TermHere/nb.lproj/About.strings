@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DONATE_WITH_PRICE</key>
+	<string>Donate %@</string>
+	<key>DONATION_MESSAGE</key>
+	<string>Hvis dette programmet er nyttig for deg , kan du vurdere å sende en liten donasjon til utvikler å si takk.</string>
+	<key>DONATION_SUCCEEDED</key>
+	<string>Takk for donasjonen.</string>
+</dict>
+</plist>

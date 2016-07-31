@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Knappen som åpner en ny terminal fane. -->
+	<key>NEW_TERMINAL_HERE</key>
+	<string>Ny Terminal Her</string>
+
+	<!-- Forklaring på hva den nye Terminal Her knapp gjør  -->
+	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
+	<string>Åpne en terminal i denne katalogen</string>
+</dict>
+</plist>
