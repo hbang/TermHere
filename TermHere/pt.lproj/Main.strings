@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BROWSE</key>
+	<string>Procurar</string>
+	<key>OPEN_IN</key>
+	<string>Abrir em:</string>
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Esta função requer Terminal ou iTerm 2.9 ou mais recente.</string>
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>Aba usado mais recentemente</string>
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>Nova aba</string>
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>Nova janela</string>
+	<key>SHOW_IN</key>
+	<string>Mostra em:</string>
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>Menus de contexto</string>
+	<key>TERMINAL_APP</key>
+	<string>Aplicativo Terminal:</string>
+	<key>TROUBLESHOOTING_NOTE</key>
+	<string>Não estando vendo? Verifique que TermHere esta ativado nas preferências das extensões.</string>
+</dict>
+</plist>
