@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BROWSE</key>
+	<string>Browse</string>
+	<key>OPEN_IN</key>
+	<string>Öppna i:</string>
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Denna funktion kräver Terminal eller iTemr 2.9 eller nyare.</string>
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>Senast använda tab</string>
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>Ny tab</string>
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>Nytt fönster</string>
+	<key>SHOW_IN</key>
+	<string>Visa i:</string>
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>Kontextmenyer</string>
+	<key>TERMINAL_APP</key>
+	<string>Terminal app:</string>
+	<key>TROUBLESHOOTING_NOTE</key>
+	<string>Ser du inget? Säkerställ att TermHere är aktiverat i tilläggsinställningarna.</string>
+</dict>
+</plist>
