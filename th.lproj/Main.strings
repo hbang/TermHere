@@ -7,7 +7,7 @@
 	<key>OPEN_IN</key>
 	<string>เปิดใน:</string>
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>คุณสมบัตินี้อาศับ Terminal หรือ iTerm 2.9 หรือใหม่กว่า</string>
+	<string>คุณสมบัตินี้อาศัย Terminal หรือ iTerm 2.9 ขึ้นไป</string>
 	<key>OPEN_IN_LAST_USED_TAB</key>
 	<string>แท็ปที่ใช้ล่าสุด</string>
 	<key>OPEN_IN_NEW_TAB</key>
