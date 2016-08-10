@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BROWSE</key>
+	<string>Переглянути</string>
+	<key>OPEN_IN</key>
+	<string>Відкрити у:</string>
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Ця можливість вимагає Terminal або iTerm 2.9 або новіше.</string>
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>Остання використана вкладка</string>
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>Нова вкладка</string>
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>Нове вікно</string>
+	<key>SHOW_IN</key>
+	<string>Відобразити у:</string>
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>Контекстне меню</string>
+	<key>TERMINAL_APP</key>
+	<string>Програма Терміналу:</string>
+	<key>TROUBLESHOOTING_NOTE</key>
+	<string>Не працює? Упевніться, що TermHere ввімкнено у налаштуваннях Розширень.</string>
+</dict>
+</plist>
