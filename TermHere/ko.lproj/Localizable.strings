@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
@@ -12,7 +12,7 @@
 
 	<!-- Title of prompt asking the user to enable the extension. -->
 	<key>PLEASE_ENABLE</key>
-	<string>TermHere을 사용하시기전에 확장 프로그램을 활성화 해주세요.</string>
+	<string>TermHere을 사용하시기 전에 확장 프로그램을 활성화해주세요.</string>
 
 	<!-- Explanation of how to enable the extension. -->
 	<key>PLEASE_ENABLE_EXPLANATION</key>
