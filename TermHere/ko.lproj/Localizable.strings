@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Label displayed while something is loading. -->
+	<key>LOADING</key>
+	<string>로딩중…</string>
+
+	<!-- OK button label. -->
+	<key>OK</key>
+	<string>확인</string>
+
+	<!-- Title of prompt asking the user to enable the extension. -->
+	<key>PLEASE_ENABLE</key>
+	<string>TermHere을 사용하시기전에 확장 프로그램을 활성화 해주세요.</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>PLEASE_ENABLE_EXPLANATION</key>
+	<string>확인 버튼을 누르면 확장 프로그램 환경설정이 열립니다. TermHere 아래에 있는 Finder 체크박스를 클릭해주세요.</string>
+
+	<!-- Button that chooses the selected app in the open panel. -->
+	<key>CHOOSE</key>
+	<string>선택</string>
+
+	<!-- Title of the open panel. -->
+	<key>CHOOSE_APPLICATION</key>
+	<string>응용 프로그램 선택</string>
+
+	<!-- Title of the About window. -->
+	<key>ABOUT</key>
+	<string>TermHere에 관하여</string>
+
+	<!-- Message displayed when the app fails to be opened. -->
+	<key>OPENING_APP_FAILED</key>
+	<string>알 수 없는 오류가 발생하여 프로그램을 실행할 수 없습니다.</string>
+</dict>
+</plist>
