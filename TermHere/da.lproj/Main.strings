@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BROWSE</key>
+	<string>Browse</string>
+	<key>OPEN_IN</key>
+	<string>Åbn i:</string>
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Denne funktion kræver “Terminal“ eller “iTerm“ 2.9 eller nyere.</string>
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>Senest brugte fane</string>
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>Ny fane</string>
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>Nyt vindue</string>
+	<key>SHOW_IN</key>
+	<string>Vis i:</string>
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>Kontekstmenuer</string>
+	<key>TERMINAL_APP</key>
+	<string>Terminal program:</string>
+	<key>TROUBLESHOOTING_NOTE</key>
+	<string>Kan du ikke se det? Vær sikker på at “TermHere“ er slået til i “Udvidelser“ indstillingsvinduet.</string>
+</dict>
+</plist>
