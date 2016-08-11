@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BROWSE</key>
+	<string>Navegar</string>
+	<key>OPEN_IN</key>
+	<string>Obrir en:</string>
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Aquesta característica necessita el Terminal o l'iTerm 2.9 com a mínim.</string>
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>Pestanya més recent</string>
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>Pestanya nova</string>
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>Finestra nova</string>
+	<key>SHOW_IN</key>
+	<string>Mostrar en:</string>
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>Menús contextuals</string>
+	<key>TERMINAL_APP</key>
+	<string>App de Terminal:</string>
+	<key>TROUBLESHOOTING_NOTE</key>
+	<string>No ho veieu? Reviseu si el TermHere està activat a les preferències d'Extensions.</string>
+</dict>
+</plist>
