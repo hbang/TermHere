@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Label displayed while something is loading. -->
+	<key>LOADING</key>
+	<string>Yükleniyor…</string>
+
+	<!-- OK button label. -->
+	<key>OK</key>
+	<string>Tamam</string>
+
+	<!-- Title of prompt asking the user to enable the extension. -->
+	<key>PLEASE_ENABLE</key>
+	<string>TermHere kullanmaya başlamak için, lütfen uzantıyı aktive edin.</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>PLEASE_ENABLE_EXPLANATION</key>
+	<string>Tamama basarak uzantılar tercih panelini açın. TermHere altında, “Finder”ın yanındaki onay kutusunu işaretleyin.</string>
+
+	<!-- Button that chooses the selected app in the open panel. -->
+	<key>CHOOSE</key>
+	<string>Seç</string>
+
+	<!-- Title of the open panel. -->
+	<key>CHOOSE_APPLICATION</key>
+	<string>Uygulama seç</string>
+
+	<!-- Title of the About window. -->
+	<key>ABOUT</key>
+	<string>Hakkında</string>
+
+	<!-- Message displayed when the app fails to be opened. -->
+	<key>OPENING_APP_FAILED</key>
+	<string>Bilinmeyen bir hatadan dolayı uygulama açılamadı.</string>
+</dict>
+</plist>
