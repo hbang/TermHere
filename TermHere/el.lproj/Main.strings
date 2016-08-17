@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BROWSE</key>
+	<string>Περιήγηση</string>
+	<key>OPEN_IN</key>
+	<string>Άνοιγμα σε:</string>
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Αυτή η δυνατότητα απαιτεί Terminal ή Term 2.9 ή νεότερο.</string>
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>Καρτέλα τελευταίας χρήσης</string>
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>Νέα καρτέλα</string>
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>Νέο παράθυρο</string>
+	<key>SHOW_IN</key>
+	<string>Εμφάνηση σε:</string>
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>Μενού context</string>
+	<key>TERMINAL_APP</key>
+	<string>Εφαρμογή Terminal:</string>
+	<key>TROUBLESHOOTING_NOTE</key>
+	<string>Δεν το βλέπετε; Σιγουρευτείτε ότι το TermHere είναι ενεργοποιημένο στις ρυθμήσεις επεκτάσεων.</string>
+</dict>
+</plist>
