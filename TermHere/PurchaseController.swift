@@ -9,7 +9,7 @@
 import Cocoa
 import StoreKit
 
-let PurchaseControllerReceivedProductsNotification = "PurchaseControllerReceivedProductsNotification"
+let PurchaseControllerReceivedProductsNotification = Notification.Name(rawValue: "PurchaseControllerReceivedProductsNotification")
 let PurchaseControllerDonationProductIdentifier = "au.com.hbang.TermHere.DonationTier5"
 
 class PurchaseController: NSObject, SKPaymentTransactionObserver, SKProductsRequestDelegate {
@@ -55,7 +55,7 @@ class PurchaseController: NSObject, SKPaymentTransactionObserver, SKProductsRequ
 			products = response.products
 
 			// send a notification
-			NotificationCenter.default.post(Notification(name: Notification.Name(rawValue: PurchaseControllerReceivedProductsNotification), object: products))
+			NotificationCenter.default.post(Notification(name: PurchaseControllerReceivedProductsNotification, object: products))
 		}
 	}
 	
@@ -75,7 +75,7 @@ class PurchaseController: NSObject, SKPaymentTransactionObserver, SKProductsRequ
 
 		case .purchased, .restored, .deferred:
 			let alert = NSAlert()
-			alert.messageText = NSLocalizedString("DONATION_SUCCEEDED", comment: "Message displayed when a donation has successfully been made.")
+			alert.messageText = NSLocalizedString("DONATION_SUCCEEDED", tableName: "About", comment: "Message displayed when a donation has successfully been made.")
 			alert.runModal()
 
 		case .failed:

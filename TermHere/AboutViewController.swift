@@ -22,7 +22,7 @@ class AboutViewController: NSViewController {
 		super.viewDidLoad()
 
 		// listen for purchase info received notifications
-		NotificationCenter.default.addObserver(self, selector: #selector(receivedPurchaseInfo(_:)), name: NSNotification.Name(rawValue: PurchaseControllerReceivedProductsNotification), object: nil)
+		NotificationCenter.default.addObserver(self, selector: #selector(receivedPurchaseInfo(_:)), name: PurchaseControllerReceivedProductsNotification, object: nil)
 
 		// fill in the labels
 		let bundle = Bundle.main
@@ -52,7 +52,7 @@ class AboutViewController: NSViewController {
 
 		// enable the button and set the price label
 		purchaseButton.isEnabled = true
-		purchaseButton.title = NSString(format: NSLocalizedString("DONATE_WITH_PRICE", comment: "Button that allows a donation to be made. %@ is the donation amount.") as NSString, price) as String
+		purchaseButton.title = NSString(format: NSLocalizedString("DONATE_WITH_PRICE", tableName: "About", comment: "Button that allows a donation to be made. %@ is the donation amount.") as NSString, price) as String
 	}
 
 	@IBAction func purchaseClicked(_ sender: AnyObject) {
