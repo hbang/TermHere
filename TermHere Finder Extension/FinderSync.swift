@@ -12,13 +12,13 @@ import TermHereCommon
 
 class FinderSync: FIFinderSync {
 
-	let finderController = FIFinderSyncController.defaultController()
+	let finderController = FIFinderSyncController.default()
 
 	override init() {
 		super.init()
 
 		// set ourselves as “watching” everything by setting / as our root
-		finderController.directoryURLs = [ NSURL(fileURLWithPath: "/") ]
+		finderController.directoryURLs = [ URL(fileURLWithPath: "/") ]
 	}
 
 	// MARK: - Toolbar item
@@ -32,23 +32,23 @@ class FinderSync: FIFinderSync {
 	}
 
 	override var toolbarItemImage: NSImage {
-		return NSBundle.mainBundle().imageForResource("toolbar-terminal")!
+		return Bundle.main.image(forResource: "toolbar-terminal")!
 	}
 
-	override func menuForMenuKind(menuKind: FIMenuKind) -> NSMenu {
+	override func menu(for menuKind: FIMenuKind) -> NSMenu {
 		// create the menu
 		let menu = NSMenu(title: "")
 
 		let preferences = Preferences.sharedInstance
 
 		switch menuKind {
-		case .ContextualMenuForItems, .ContextualMenuForSidebar, .ContextualMenuForContainer:
+		case .contextualMenuForItems, .contextualMenuForSidebar, .contextualMenuForContainer:
 			// if we're a disabled menu type, stop here
 			if !preferences.showInContextMenus {
 				return menu
 			}
 
-		case .ToolbarItemMenu:
+		case .toolbarItemMenu:
 			// if we're the toolbar item, cheat a little by treating this as our click
 			// action
 			self.newTerminal(nil)
@@ -56,7 +56,7 @@ class FinderSync: FIFinderSync {
 		}
 
 		// create the new tab item
-		let newTabItem = menu.addItemWithTitle(NSLocalizedString("NEW_TERMINAL_HERE", comment: "Button that opens a new terminal tab."), action: #selector(newTerminal(_:)), keyEquivalent: "X")!
+		let newTabItem = menu.addItem(withTitle: NSLocalizedString("NEW_TERMINAL_HERE", comment: "Button that opens a new terminal tab."), action: #selector(newTerminal(_:)), keyEquivalent: "X")
 		newTabItem.target = self
 
 		return menu
@@ -64,7 +64,7 @@ class FinderSync: FIFinderSync {
 
 	// MARK: - Callbacks
 
-	var urlsToOpen: [NSURL] {
+	var urlsToOpen: [URL] {
 		get {
 			// get the current directory and selected items, bail out if either is nil
 			// (which shouldn’t be possible, but still)
@@ -90,9 +90,9 @@ class FinderSync: FIFinderSync {
 		}
 	}
 
-	func newTerminal(sender: NSMenuItem?) {
+	func newTerminal(_ sender: NSMenuItem?) {
 		// gotta launch them all
-		TerminalController.launch(urlsToOpen)
+		_ = TerminalController.launch(urlsToOpen)
 	}
 
 }

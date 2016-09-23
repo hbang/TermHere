@@ -9,42 +9,42 @@
 import Cocoa
 
 enum AppMode: UInt {
-	case Unknown
-	case Service, Settings
+	case unknown
+	case service, settings
 }
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-	var appMode = AppMode.Unknown {
+	var appMode = AppMode.unknown {
 		didSet {
-			let app = NSApplication.sharedApplication()
+			let app = NSApplication.shared()
 
 			// set the activation policy accordingly (mostly, whether the dock icon
 			// shows or not)
 			switch appMode {
-			case .Unknown, .Service:
-				app.setActivationPolicy(.Accessory)
+			case .unknown, .service:
+				app.setActivationPolicy(.accessory)
 				
-			case .Settings:
-				app.setActivationPolicy(.Regular)
+			case .settings:
+				app.setActivationPolicy(.regular)
 			}
 		}
 	}
 
 	// MARK: - App Delegate
 
-	func applicationDidFinishLaunching(notification: NSNotification) {
+	func applicationDidFinishLaunching(_ notification: Notification) {
 		// hide the window
-		let app = NSApplication.sharedApplication()
+		let app = NSApplication.shared()
 		app.hide(nil)
 
 		// wait a bit
-		dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_SEC)), dispatch_get_main_queue()) {
+		DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
 			// if we’re not in service mode
-			if self.appMode != .Service {
+			if self.appMode != .service {
 				// show the window
-				app.activateIgnoringOtherApps(true)
+				app.activate(ignoringOtherApps: true)
 
 				// register ourself
 				app.servicesProvider = TerminalServiceProvider()
@@ -61,9 +61,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		}
 	}
 
-	func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {
+	func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
 		// we should only quit if we’ve been manually invoked
-		return appMode == .Settings
+		return appMode == .settings
 	}
 
 }

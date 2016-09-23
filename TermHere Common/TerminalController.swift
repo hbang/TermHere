@@ -9,9 +9,9 @@
 import Foundation
 import Cocoa
 
-public class TerminalController {
+open class TerminalController {
 
-	public class func launch(urls: [NSURL]) -> Bool {
+	open class func launch(_ urls: [URL]) -> Bool {
 		let finalURLs = urlsToOpen(urls)
 		let preferences = Preferences.sharedInstance
 
@@ -20,37 +20,34 @@ public class TerminalController {
 
 		// if we don’t know any applescript for the app or it failed for some
 		// reason, fall back to a standard URL open
-		if !NSWorkspace.sharedWorkspace().openURLs(finalURLs, withAppBundleIdentifier: bundleIdentifier, options: .Default, additionalEventParamDescriptor: nil, launchIdentifiers: nil) {
+		if !NSWorkspace.shared().open(finalURLs, withAppBundleIdentifier: bundleIdentifier, options: .default, additionalEventParamDescriptor: nil, launchIdentifiers: nil) {
 			return false
 		}
 
 		return true
 	}
 
-	class func isDirectory(url: NSURL) -> Bool {
-		var value: AnyObject?
-
+	class func isDirectory(_ url: URL) -> Bool {
 		do {
 			// is it a directory?
-			try url.getResourceValue(&value, forKey: NSURLIsDirectoryKey)
+			let values = try url.resourceValues(forKeys: [ .isDirectoryKey ])
 
-			if let result = value as? NSNumber {
-				return result.boolValue
-			}
+			// if it worked, return the result
+			return values.isDirectory!
 		} catch {
-			NSLog("error while checking if %@ is a directory: %@", url, error as NSError)
+			NSLog("error while checking if \(url) is a directory: \(error)")
 		}
 
 		// we’ll just take a risk and say yes
 		return true
 	}
 
-	class func urlsToOpen(urls: [NSURL]) -> [NSURL] {
+	class func urlsToOpen(_ urls: [URL]) -> [URL] {
 		// if the url is a file, use its parent directory
-		let dirs = urls.map { isDirectory($0) ? $0 : $0.URLByDeletingLastPathComponent! }
+		let dirs = urls.map { isDirectory($0) ? $0 : $0.deletingLastPathComponent() }
 
 		// filter out uniques, sort, and return
-		return Array(Set(dirs)).sort { $0.absoluteString < $1.absoluteString }
+		return Array(Set(dirs)).sorted { $0.absoluteString < $1.absoluteString }
 	}
 
 }
