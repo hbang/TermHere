@@ -29,7 +29,7 @@ class ViewController: NSViewController {
 		super.viewDidLoad()
 
 		// get the app url or use the default
-		pathControl.URL = preferences.terminalAppURL
+		pathControl.url = preferences.terminalAppURL
 		contextMenusCheckbox.state = preferences.showInContextMenus ? 1 : 0
 		openSelectionCheckbox.state = preferences.openSelection ? 1 : 0
 	}
@@ -40,10 +40,10 @@ class ViewController: NSViewController {
 		requestExtensionEnable()
 
 		// set the app to settings mode if needed
-		let appDelegate = NSApplication.sharedApplication().delegate as! AppDelegate
+		let appDelegate = NSApplication.shared().delegate as! AppDelegate
 
-		if appDelegate.appMode != .Service {
-			appDelegate.appMode = .Settings
+		if appDelegate.appMode != .service {
+			appDelegate.appMode = .settings
 		}
 	}
 
@@ -59,11 +59,11 @@ class ViewController: NSViewController {
 			let alert = NSAlert()
 			alert.messageText = NSLocalizedString("PLEASE_ENABLE", comment: "Title of prompt asking the user to enable the extension.")
 			alert.informativeText = NSLocalizedString("PLEASE_ENABLE_EXPLANATION", comment: "Explanation of how to enable the extension.")
-			alert.addButtonWithTitle(NSLocalizedString("OK", comment: "OK button label."))
+			alert.addButton(withTitle: NSLocalizedString("OK", comment: "OK button label."))
 
-			alert.beginSheetModalForWindow(view.window!) { (result: NSModalResponse) in
+			alert.beginSheetModal(for: view.window!, completionHandler: { (result: NSModalResponse) in
 				self.openExtensionPreferences()
-			}
+			}) 
 		}
 	}
 
@@ -71,10 +71,10 @@ class ViewController: NSViewController {
 
 	func openExtensionPreferences() {
 		// open the pref pane for extensions
-		NSWorkspace.sharedWorkspace().openURL(NSURL(fileURLWithPath: "/System/Library/PreferencePanes/Extensions.prefPane"))
+		NSWorkspace.shared().open(URL(fileURLWithPath: "/System/Library/PreferencePanes/Extensions.prefPane"))
 	}
 
-	@IBAction func browseClicked(sender: AnyObject) {
+	@IBAction func browseClicked(_ sender: AnyObject) {
 		// set up the open panel
 		let panel = NSOpenPanel()
 		panel.title = NSLocalizedString("CHOOSE_APPLICATION", comment: "Title of the “Choose Application” window.")
@@ -84,46 +84,46 @@ class ViewController: NSViewController {
 
 		// configure the selected item. set the path to open to, then the filename
 		// to highlight
-		panel.directoryURL = pathControl.URL!.URLByDeletingLastPathComponent
-		panel.nameFieldStringValue = pathControl.URL!.lastPathComponent!
+		panel.directoryURL = pathControl.url!.deletingLastPathComponent()
+		panel.nameFieldStringValue = pathControl.url!.lastPathComponent
 		panel.prompt = NSLocalizedString("CHOOSE", comment: "Button that chooses the selected app in the open panel.")
 
 		// show the panel and define our callback
-		panel.beginSheetModalForWindow(view.window!) { (result: NSModalResponse) in
+		panel.beginSheetModal(for: view.window!) { (result: NSModalResponse) in
 			// hopefully they clicked ok
 			if result == NSModalResponseOK {
 				// set the url on the path control and commit to preferences
-				let url = panel.URLs[0]
-				self.pathControl.URL = url
+				let url = panel.urls[0]
+				self.pathControl.url = url
 				self.preferences.terminalAppURL = url
 
 				// also get the bundle identifier
-				let bundle = NSBundle(URL: url)
+				let bundle = Bundle(url: url)
 				self.preferences.terminalBundleIdentifier = bundle!.bundleIdentifier!
 			}
 		}
 	}
 
-	@IBAction func contextMenusChecked(sender: AnyObject) {
+	@IBAction func contextMenusChecked(_ sender: AnyObject) {
 		preferences.showInContextMenus = contextMenusCheckbox.state == NSOnState
 	}
 	
-	@IBAction func openSelectionChanged(sender: AnyObject) {
+	@IBAction func openSelectionChanged(_ sender: AnyObject) {
 		preferences.openSelection = openSelectionCheckbox.state == NSOnState
 	}
 
-	@IBAction func openInChanged(sender: AnyObject) {
+	@IBAction func openInChanged(_ sender: AnyObject) {
 		// set the preference according to the selected button
 		if newTabRadioButton.state == NSOnState {
-			preferences.activationType = .NewTab
+			preferences.activationType = .newTab
 		} else if newWindowRadioButton.state == NSOnState {
-			preferences.activationType = .NewWindow
+			preferences.activationType = .newWindow
 		} else if lastTabRadioButton.state == NSOnState {
-			preferences.activationType = .SameTab
+			preferences.activationType = .sameTab
 		}
 	}
 
-	@IBAction func openPreferencesClicked(sender: AnyObject) {
+	@IBAction func openPreferencesClicked(_ sender: AnyObject) {
 		openExtensionPreferences()
 	}
 	

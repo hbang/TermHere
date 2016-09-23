@@ -22,44 +22,44 @@ class AboutViewController: NSViewController {
 		super.viewDidLoad()
 
 		// listen for purchase info received notifications
-		NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(receivedPurchaseInfo(_:)), name: PurchaseControllerReceivedProductsNotification, object: nil)
+		NotificationCenter.default.addObserver(self, selector: #selector(receivedPurchaseInfo(_:)), name: NSNotification.Name(rawValue: PurchaseControllerReceivedProductsNotification), object: nil)
 
 		// fill in the labels
-		let bundle = NSBundle.mainBundle()
+		let bundle = Bundle.main
 		let info = bundle.infoDictionary!
 
 		nameLabel.stringValue = "\(info["CFBundleName"]!) \(info["CFBundleShortVersionString"]!) (\(info["CFBundleVersion"]!))"
 		copyrightLabel.stringValue = info["NSHumanReadableCopyright"] as! String
 
-		guard let data = NSData(contentsOfURL: bundle.URLForResource("Credits", withExtension: "rtf")!) else {
+		guard let data = try? Data(contentsOf: bundle.url(forResource: "Credits", withExtension: "rtf")!) else {
 			NSLog("whoa, the credits failed to load?")
 			return
 		}
 
-		textView.textStorage!.appendAttributedString(NSAttributedString(RTF: data, documentAttributes: nil)!)
+		textView.textStorage!.append(NSAttributedString(rtf: data, documentAttributes: nil)!)
 	}
 
-	func receivedPurchaseInfo(notification: NSNotification) {
+	func receivedPurchaseInfo(_ notification: Notification) {
 		let products = notification.object as! [SKProduct]
 		let product = products[0]
 
 		// format the price as a currency string
-		let formatter = NSNumberFormatter()
-		formatter.numberStyle = .CurrencyStyle
+		let formatter = NumberFormatter()
+		formatter.numberStyle = .currency
 		formatter.locale = product.priceLocale
 
-		let price = formatter.stringFromNumber(product.price!)!
+		let price = formatter.string(from: product.price)!
 
 		// enable the button and set the price label
-		purchaseButton.enabled = true
-		purchaseButton.title = NSString(format: NSLocalizedString("DONATE_WITH_PRICE", comment: "Button that allows a donation to be made. %@ is the donation amount."), price) as String
+		purchaseButton.isEnabled = true
+		purchaseButton.title = NSString(format: NSLocalizedString("DONATE_WITH_PRICE", comment: "Button that allows a donation to be made. %@ is the donation amount.") as NSString, price) as String
 	}
 
-	@IBAction func purchaseClicked(sender: AnyObject) {
+	@IBAction func purchaseClicked(_ sender: AnyObject) {
 		purchaseController.purchase()
 	}
 
-	@IBAction func closeClicked(sender: AnyObject) {
+	@IBAction func closeClicked(_ sender: AnyObject) {
 		view.window!.close()
 	}
 

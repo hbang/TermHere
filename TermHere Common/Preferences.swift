@@ -9,30 +9,30 @@
 import Foundation
 
 public enum ActivationType: UInt, CustomStringConvertible {
-	case NewTab
-	case NewWindow
-	case SameTab
+	case newTab
+	case newWindow
+	case sameTab
 
 	public var description: String {
 		switch self {
-		case .NewTab:
+		case .newTab:
 			return "NewTab"
-		case .NewWindow:
+		case .newWindow:
 			return "NewWindow"
-		case .SameTab:
+		case .sameTab:
 			return "SameTab"
 		}
 	}
 }
 
-public class Preferences {
+open class Preferences {
 
-	public static let sharedInstance = Preferences()
+	open static let sharedInstance = Preferences()
 
-	let preferences = NSUserDefaults(suiteName: "N2LN9ZT493.group.au.com.hbang.TermHere")!
+	let preferences = UserDefaults(suiteName: "N2LN9ZT493.group.au.com.hbang.TermHere")!
 
 	init() {
-		preferences.registerDefaults([
+		preferences.register(defaults: [
 			"HadFirstRun": false,
 
 			"TerminalAppURL": "file:///Applications/Utilities/Terminal.app",
@@ -40,38 +40,38 @@ public class Preferences {
 
 			"OpenSelection": true,
 			"ShowInContextMenu": true,
-			"TerminalActivationType": ActivationType.NewTab.rawValue
+			"TerminalActivationType": ActivationType.newTab.rawValue
 		])
 	}
 
-	public var hadFirstRun: Bool {
-		get { return preferences.boolForKey("HadFirstRun") }
-		set { preferences.setBool(newValue, forKey: "HadFirstRun") }
+	open var hadFirstRun: Bool {
+		get { return preferences.bool(forKey: "HadFirstRun") }
+		set { preferences.set(newValue, forKey: "HadFirstRun") }
 	}
 
-	public var terminalAppURL: NSURL {
-		get { return NSURL(string: preferences.objectForKey("TerminalAppURL") as! String)! }
-		set { preferences.setURL(newValue, forKey: "TerminalAppURL") }
+	open var terminalAppURL: URL {
+		get { return URL(string: preferences.object(forKey: "TerminalAppURL") as! String)! }
+		set { preferences.set(newValue, forKey: "TerminalAppURL") }
 	}
 
-	public var terminalBundleIdentifier: String {
-		get { return preferences.stringForKey("TerminalAppBundleIdentifier")! }
-		set { preferences.setObject(newValue, forKey: "TerminalAppBundleIdentifier") }
+	open var terminalBundleIdentifier: String {
+		get { return preferences.string(forKey: "TerminalAppBundleIdentifier")! }
+		set { preferences.set(newValue, forKey: "TerminalAppBundleIdentifier") }
 	}
 
-	public var showInContextMenus: Bool {
-		get { return preferences.boolForKey("ShowInContextMenu") }
-		set { preferences.setBool(newValue, forKey: "ShowInContextMenu") }
+	open var showInContextMenus: Bool {
+		get { return preferences.bool(forKey: "ShowInContextMenu") }
+		set { preferences.set(newValue, forKey: "ShowInContextMenu") }
 	}
 	
-	public var openSelection: Bool {
-		get { return preferences.boolForKey("OpenSelection") }
-		set { preferences.setBool(newValue, forKey: "OpenSelection") }
+	open var openSelection: Bool {
+		get { return preferences.bool(forKey: "OpenSelection") }
+		set { preferences.set(newValue, forKey: "OpenSelection") }
 	}
 
-	public var activationType: ActivationType {
-		get { return ActivationType(rawValue: preferences.objectForKey("TerminalActivationType") as? UInt ?? 0)! }
-		set { preferences.setObject(newValue.rawValue, forKey: "TerminalActivationType") }
+	open var activationType: ActivationType {
+		get { return ActivationType(rawValue: preferences.object(forKey: "TerminalActivationType") as? UInt ?? 0)! }
+		set { preferences.set(newValue.rawValue, forKey: "TerminalActivationType") }
 	}
 	
 }

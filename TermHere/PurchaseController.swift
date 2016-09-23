@@ -20,12 +20,12 @@ class PurchaseController: NSObject, SKPaymentTransactionObserver, SKProductsRequ
 		super.init()
 
 		// add ourselves as an observer and get the list of products
-		SKPaymentQueue.defaultQueue().addTransactionObserver(self)
+		SKPaymentQueue.default().add(self)
 		getProducts()
 	}
 
 	deinit {
-		SKPaymentQueue.defaultQueue().removeTransactionObserver(self)
+		SKPaymentQueue.default().remove(self)
 	}
 
 	// MARK: - Purchase
@@ -42,53 +42,50 @@ class PurchaseController: NSObject, SKPaymentTransactionObserver, SKProductsRequ
 		let product = products.filter { $0.productIdentifier == PurchaseControllerDonationProductIdentifier }.first!
 
 		// make the payment
-		let payment = SKMutablePayment.paymentWithProduct(product) as! SKMutablePayment
-		SKPaymentQueue.defaultQueue().addPayment(payment)
+		let payment = SKMutablePayment(product: product)
+		SKPaymentQueue.default().add(payment)
 	}
 
 	// MARK: - SKProductsRequestDelegate
 
-	func productsRequest(request: SKProductsRequest, didReceiveResponse response: SKProductsResponse) {
+	func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
 		// as long as we have something
-		if response.products != nil && response.products!.count > 0 {
+		if response.products.count > 0 {
 			// set our variable
-			products = response.products!
+			products = response.products
 
 			// send a notification
-			NSNotificationCenter.defaultCenter().postNotification(NSNotification(name: PurchaseControllerReceivedProductsNotification, object: products))
+			NotificationCenter.default.post(Notification(name: Notification.Name(rawValue: PurchaseControllerReceivedProductsNotification), object: products))
 		}
 	}
 	
-	func request(request: SKRequest, didFailWithError error: NSError?) {
-		if error != nil {
-			NSLog("loading products failed? %@", error!)
-		}
+	func request(_ request: SKRequest, didFailWithError error: Error) {
+		NSLog("loading products failed? \(error)")
 	}
 
 	// MARK: - SKPaymentTransactionObserver
 
-	func paymentQueue(queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
+	func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
 		// TODO: NSAlert stuff should not be here
 		let transaction = transactions[0]
 
 		switch transaction.transactionState {
-		case SKPaymentTransactionStatePurchasing:
+		case .purchasing:
 			break
 
-		case SKPaymentTransactionStatePurchased, SKPaymentTransactionStateRestored, SKPaymentTransactionStateDeferred:
+		case .purchased, .restored, .deferred:
 			let alert = NSAlert()
 			alert.messageText = NSLocalizedString("DONATION_SUCCEEDED", comment: "Message displayed when a donation has successfully been made.")
 			alert.runModal()
 
-		case SKPaymentTransactionStateFailed:
-			if transaction.error!.code != SKErrorPaymentCancelled {
+		case .failed:
+			// it seems we have to cast to NSError to get the code? that doesn’t
+			// sound right…
+			let error = transaction.error! as NSError
+			if error.code != SKError.paymentCancelled.rawValue {
 				let alert = NSAlert(error: transaction.error!)
 				alert.runModal()
 			}
-
-		default:
-			// stupid anonymous enums
-			break
 		}
 	}
 
