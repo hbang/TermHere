@@ -1059,6 +1059,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WARNING_LDFLAGS = "-Weverything";
 			};
 			name = Debug;
 		};
@@ -1099,6 +1100,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				WARNING_LDFLAGS = "-Weverything";
 			};
 			name = Release;
 		};
