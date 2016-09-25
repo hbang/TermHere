@@ -29,6 +29,7 @@
 		<string>tell application &quot;iTerm2&quot;
 			tell (current window)
 				tell (current session) of (create tab with default profile)
+					activate
 					write text command
 				end tell
 			end tell
@@ -36,12 +37,14 @@
 		<key>NewWindow</key>
 		<string>tell application &quot;iTerm2&quot;
 			tell (current session) of (create window with default profile)
+				activate
 				write text command
 			end tell
 		end tell</string>
 		<key>SameTab</key>
 		<string>tell application &quot;iTerm2&quot;
 			tell (current session) of (current window)
+				activate
 				write text command
 			end tell
 		end tell</string>
