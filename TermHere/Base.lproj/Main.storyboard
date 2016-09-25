@@ -127,126 +127,166 @@
             <objects>
                 <viewController title="TermHere" showSeguePresentationStyle="single" id="XfG-lQ-9wD" customClass="ViewController" customModule="TermHere" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="495" height="322"/>
+                        <rect key="frame" x="0.0" y="0.0" width="495" height="334"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="4ta-vO-hQK" customClass="ContainerView" customModule="TermHere" customModuleProvider="target">
-                                <rect key="frame" x="12" y="79" width="471" height="231"/>
+                                <rect key="frame" x="12" y="91" width="471" height="231"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="C1a-DL-hAU">
-                                        <rect key="frame" x="-2" y="214" width="86" height="17"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Terminal app:" id="avK-6B-WJJ">
+                                        <rect key="frame" x="-2" y="214" width="100" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="TERMINAL_APP" id="avK-6B-WJJ">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="TERMINAL_APP"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <pathControl verticalHuggingPriority="750" horizontalCompressionResistancePriority="749" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DXP-MN-PTQ">
-                                        <rect key="frame" x="90" y="211" width="300" height="20"/>
+                                        <rect key="frame" x="104" y="211" width="276" height="20"/>
                                         <pathCell key="cell" controlSize="small" selectable="YES" refusesFirstResponder="YES" alignment="left" id="FCu-Eu-FAk">
                                             <font key="font" metaFont="smallSystem"/>
                                             <url key="url" string="file:///Applications/Utilities/Terminal.app/"/>
                                         </pathCell>
                                     </pathControl>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5dx-sP-OUE">
-                                        <rect key="frame" x="392" y="204" width="85" height="32"/>
-                                        <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XdH-ej-nuM">
+                                        <rect key="frame" x="382" y="204" width="95" height="32"/>
+                                        <buttonCell key="cell" type="push" title="BROWSE" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XdH-ej-nuM">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="browseClicked:" target="XfG-lQ-9wD" id="J72-ry-WFI"/>
                                         </connections>
                                     </button>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xkm-we-EBK">
-                                        <rect key="frame" x="-2" y="182" width="86" height="17"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Show in:" id="xhO-2F-SiW">
+                                        <rect key="frame" x="-2" y="182" width="100" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="SHOW_IN" id="xhO-2F-SiW">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="SHOW_IN"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NY6-xo-2kn">
-                                        <rect key="frame" x="88" y="181" width="114" height="18"/>
-                                        <buttonCell key="cell" type="check" title="Context menus" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="FlD-PF-2Gy">
+                                        <rect key="frame" x="102" y="181" width="198" height="18"/>
+                                        <buttonCell key="cell" type="check" title="SHOW_IN_CONTEXT_MENUS" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="FlD-PF-2Gy">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="contextMenusChecked:" target="XfG-lQ-9wD" id="gVg-PO-Dm4"/>
                                         </connections>
                                     </button>
                                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" placeholderIntrinsicWidth="381" placeholderIntrinsicHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hSy-Gi-DiA">
-                                        <rect key="frame" x="88" y="151" width="385" height="28"/>
-                                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" title="To show or hide the Finder toolbar button, open Finder and click View → Customize Toolbar." id="itw-J6-gYO">
+                                        <rect key="frame" x="102" y="151" width="371" height="28"/>
+                                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" title="SHOW_IN_TOOLBAR_EXPLANATION" id="itw-J6-gYO">
                                             <font key="font" metaFont="smallSystem"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LOS-8R-vlQ">
-                                        <rect key="frame" x="-2" y="122" width="86" height="17"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Behavior:" id="Wq9-0r-MnR">
+                                        <rect key="frame" x="-2" y="122" width="100" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="BEHAVIOR" id="Wq9-0r-MnR">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="BEHAVIOR"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="d9g-Ml-zN8">
-                                        <rect key="frame" x="88" y="121" width="147" height="18"/>
-                                        <buttonCell key="cell" type="check" title="Open selected items" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="nKp-KI-E50">
+                                        <rect key="frame" x="102" y="121" width="173" height="18"/>
+                                        <buttonCell key="cell" type="check" title="OPEN_SELECTED_ITEMS" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="nKp-KI-E50">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="openSelectionChanged:" target="XfG-lQ-9wD" id="XjE-xt-87C"/>
                                         </connections>
                                     </button>
                                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" placeholderIntrinsicWidth="381" placeholderIntrinsicHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hJI-7g-zoC">
-                                        <rect key="frame" x="88" y="91" width="385" height="28"/>
-                                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" title="Enable to open a tab for each item selected. Disable to always use the currently open folder." id="BIn-rM-JgP">
+                                        <rect key="frame" x="102" y="91" width="371" height="28"/>
+                                        <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" title="OPEN_SELECTED_ITEMS_EXPLANATION" id="BIn-rM-JgP">
                                             <font key="font" metaFont="smallSystem"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XhO-bQ-VIc">
-                                        <rect key="frame" x="-2" y="60" width="86" height="17"/>
+                                        <rect key="frame" x="-2" y="60" width="100" height="17"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="OPEN_IN" id="iad-vX-5XC">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="OPEN_IN"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="YJS-aL-kd6">
-                                        <rect key="frame" x="90" y="17" width="381" height="60"/>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="YJS-aL-kd6" customClass="ContainerView" customModule="TermHere" customModuleProvider="target">
+                                        <rect key="frame" x="104" y="17" width="367" height="60"/>
                                         <subviews>
                                             <button translatesAutoresizingMaskIntoConstraints="NO" id="Zir-Op-ZXe">
-                                                <rect key="frame" x="0.0" y="42" width="384" height="18"/>
+                                                <rect key="frame" x="-2" y="42" width="371" height="18"/>
                                                 <buttonCell key="cell" type="radio" title="OPEN_IN_NEW_TAB" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="cTw-1l-bFp">
                                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="openInChanged:" target="XfG-lQ-9wD" id="14H-fg-W9o"/>
                                                 </connections>
                                             </button>
                                             <button translatesAutoresizingMaskIntoConstraints="NO" id="RcF-mR-gYg">
-                                                <rect key="frame" x="0.0" y="21" width="384" height="18"/>
+                                                <rect key="frame" x="-2" y="21" width="371" height="18"/>
                                                 <buttonCell key="cell" type="radio" title="OPEN_IN_NEW_WINDOW" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="aTW-23-9nv">
                                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="openInChanged:" target="XfG-lQ-9wD" id="HK4-cO-1Hb"/>
                                                 </connections>
                                             </button>
                                             <button translatesAutoresizingMaskIntoConstraints="NO" id="2gx-xX-Ovz">
-                                                <rect key="frame" x="0.0" y="0.0" width="384" height="18"/>
-                                                <buttonCell key="cell" type="radio" title="OPEN_IN_SAME_TAB" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="DmO-zy-uYz">
+                                                <rect key="frame" x="-2" y="0.0" width="371" height="18"/>
+                                                <buttonCell key="cell" type="radio" title="OPEN_IN_LAST_USED_TAB" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="DmO-zy-uYz">
                                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="openInChanged:" target="XfG-lQ-9wD" id="Oha-1I-BJG"/>
                                                 </connections>
@@ -259,18 +299,22 @@
                                             <constraint firstItem="RcF-mR-gYg" firstAttribute="top" secondItem="Zir-Op-ZXe" secondAttribute="bottom" constant="5" id="Om3-01-OyU"/>
                                             <constraint firstItem="Zir-Op-ZXe" firstAttribute="leading" secondItem="RcF-mR-gYg" secondAttribute="leading" id="VJw-aE-IDZ"/>
                                             <constraint firstItem="2gx-xX-Ovz" firstAttribute="top" secondItem="RcF-mR-gYg" secondAttribute="bottom" constant="5" id="XVn-92-alS"/>
-                                            <constraint firstItem="Zir-Op-ZXe" firstAttribute="leading" secondItem="YJS-aL-kd6" secondAttribute="leading" constant="1" id="g3A-rE-FVF"/>
-                                            <constraint firstAttribute="trailing" secondItem="Zir-Op-ZXe" secondAttribute="trailing" constant="-1" id="oN0-Ts-7dD"/>
+                                            <constraint firstItem="Zir-Op-ZXe" firstAttribute="leading" secondItem="YJS-aL-kd6" secondAttribute="leading" constant="-1" id="g3A-rE-FVF"/>
+                                            <constraint firstAttribute="trailing" secondItem="Zir-Op-ZXe" secondAttribute="trailing" id="oN0-Ts-7dD"/>
                                             <constraint firstItem="RcF-mR-gYg" firstAttribute="centerY" secondItem="YJS-aL-kd6" secondAttribute="centerY" id="pLF-Yw-n0W"/>
                                         </constraints>
                                     </customView>
                                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" placeholderIntrinsicWidth="381" placeholderIntrinsicHeight="14" translatesAutoresizingMaskIntoConstraints="NO" id="fvt-T0-Mxh">
-                                        <rect key="frame" x="88" y="0.0" width="385" height="14"/>
+                                        <rect key="frame" x="102" y="0.0" width="385" height="14"/>
                                         <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" title="OPEN_IN_COMPATIBILITY_NOTE" id="CWx-A5-ZtV">
                                             <font key="font" metaFont="smallSystem"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="OPEN_IN_COMPATIBILITY_NOTE"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -313,21 +357,27 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="326" id="Eed-Ae-NR4"/>
                                 </constraints>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Not seeing it? Make sure TermHere is enabled in the Extensions preferences." id="Msh-Hp-hvC">
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="TROUBLESHOOTING_NOTE" id="Msh-Hp-hvC">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="Gam-j7-DQE">
-                                <rect key="frame" x="340" y="31" width="149" height="32"/>
+                                <rect key="frame" x="340" y="43" width="149" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="137" id="iXX-tA-uh3"/>
                                 </constraints>
-                                <buttonCell key="cell" type="push" title="Open Preferences" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Due-74-LRw">
+                                <buttonCell key="cell" type="push" title="OPEN_PREFERENCES" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Due-74-LRw">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="openPreferencesClicked:" target="XfG-lQ-9wD" id="jy9-z0-MNs"/>
                                 </connections>
@@ -337,10 +387,13 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="55" id="2j1-cn-BRk"/>
                                 </constraints>
-                                <buttonCell key="cell" type="push" title="About" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3H8-3a-ttT">
+                                <buttonCell key="cell" type="push" title="ABOUT" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3H8-3a-ttT">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="smallSystem"/>
                                 </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Localizable"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="FO0-2H-YkO" kind="sheet" id="Mpr-ac-JiP"/>
                                 </connections>
@@ -350,7 +403,7 @@
                             <constraint firstItem="4ta-vO-hQK" firstAttribute="leading" secondItem="ctC-dy-Shm" secondAttribute="leading" id="2DX-6C-EGA"/>
                             <constraint firstItem="4ta-vO-hQK" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="C5Y-g8-UdM"/>
                             <constraint firstAttribute="bottom" secondItem="Fvo-0h-JfF" secondAttribute="bottom" constant="11" id="LJo-BC-cdZ"/>
-                            <constraint firstItem="ctC-dy-Shm" firstAttribute="top" secondItem="4ta-vO-hQK" secondAttribute="bottom" constant="8" symbolic="YES" id="TIw-aF-AA3"/>
+                            <constraint firstItem="ctC-dy-Shm" firstAttribute="top" secondItem="4ta-vO-hQK" secondAttribute="bottom" constant="20" id="TIw-aF-AA3"/>
                             <constraint firstItem="4ta-vO-hQK" firstAttribute="trailing" secondItem="Gam-j7-DQE" secondAttribute="trailing" id="XEm-6n-g4x"/>
                             <constraint firstItem="4ta-vO-hQK" firstAttribute="centerX" secondItem="Fvo-0h-JfF" secondAttribute="centerX" id="bSe-nz-pLi"/>
                             <constraint firstItem="4ta-vO-hQK" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="12" id="cXC-kf-De4"/>
@@ -400,12 +453,15 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="fnX-Yt-TmH">
-                                <rect key="frame" x="10" y="49" width="349" height="28"/>
-                                <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" title="If this app is useful to you, please consider sending a small donation to the developer to say thanks." id="NCD-Yd-LL3">
+                                <rect key="frame" x="10" y="49" width="349" height="14"/>
+                                <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" title="DONATION_MESSAGE" id="NCD-Yd-LL3">
                                     <font key="font" metaFont="smallSystem"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="About"/>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="Sw8-ag-2dl">
                                 <rect key="frame" x="356" y="43" width="77" height="28"/>
@@ -418,16 +474,16 @@
                                 </connections>
                             </button>
                             <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eY-0w-clI">
-                                <rect key="frame" x="12" y="87" width="416" height="69"/>
+                                <rect key="frame" x="12" y="73" width="416" height="83"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="12P-8g-hQS">
-                                    <rect key="frame" x="0.0" y="0.0" width="416" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="416" height="83"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView editable="NO" drawsBackground="NO" importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="Cxa-0J-SyY">
-                                            <rect key="frame" x="0.0" y="0.0" width="416" height="69"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="416" height="83"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="minSize" width="416" height="69"/>
+                                            <size key="minSize" width="416" height="83"/>
                                             <size key="maxSize" width="463" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
@@ -439,7 +495,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="Or7-8u-DJF">
-                                    <rect key="frame" x="400" y="0.0" width="16" height="69"/>
+                                    <rect key="frame" x="400" y="0.0" width="16" height="83"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -458,6 +514,9 @@ DQ
                                         <action selector="closeClicked:" target="FO0-2H-YkO" id="Bae-jV-BhR"/>
                                     </connections>
                                 </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Localizable"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="QKF-4C-pNO">
                                 <rect key="frame" x="12" y="166" width="416" height="64"/>

@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BEHAVIOR</key>
+	<string>Behavior</string>
 	<key>BROWSE</key>
 	<string>Browse</string>
 	<key>OPEN_IN</key>
@@ -14,10 +16,18 @@
 	<string>New tab</string>
 	<key>OPEN_IN_NEW_WINDOW</key>
 	<string>New window</string>
+	<key>OPEN_PREFERENCES</key>
+	<string>Open Preferences</string>
+	<key>OPEN_SELECTED_ITEMS</key>
+	<string>Open selected items</string>
+	<key>OPEN_SELECTED_ITEMS_EXPLANATION</key>
+	<string>Enable to open a tab for each item selected. Disable to always use the currently open folder.</string>
 	<key>SHOW_IN</key>
 	<string>Show in:</string>
 	<key>SHOW_IN_CONTEXT_MENUS</key>
 	<string>Context menus</string>
+	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
+	<string>To show or hide the Finder toolbar button, open Finder and click View → Customize Toolbar.</string>
 	<key>TERMINAL_APP</key>
 	<string>Terminal app:</string>
 	<key>TROUBLESHOOTING_NOTE</key>

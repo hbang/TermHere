@@ -27,6 +27,7 @@
 		CFEAA42A1D97B45900D91B9E /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEAA4291D97B45900D91B9E /* String+Additions.swift */; };
 		CFF6564D1CFC85F8007031AD /* TerminalServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1471101CF2B95000A914CB /* TerminalServiceProvider.swift */; };
 		CFF6564F1CFC860F007031AD /* TerminalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6564E1CFC860F007031AD /* TerminalController.swift */; };
+		CFFE52781D97DE4F00D91B9E /* CocoaLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFE52771D97DE4F00D91B9E /* CocoaLocalization.swift */; };
 		CFFF6DAF1CEE0F5A004E5894 /* TermHere Common.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFF6DAE1CEE0F5A004E5894 /* TermHere Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CFFF6DB31CEE0F5A004E5894 /* TermHereCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFF6DAC1CEE0F5A004E5894 /* TermHereCommon.framework */; };
 		CFFF6DB41CEE0F5A004E5894 /* TermHereCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFFF6DAC1CEE0F5A004E5894 /* TermHereCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -293,6 +294,7 @@
 		CFD9B7CE1CE5960500947EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFEAA4291D97B45900D91B9E /* String+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Additions.swift"; sourceTree = "<group>"; };
 		CFF6564E1CFC860F007031AD /* TerminalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerminalController.swift; sourceTree = "<group>"; };
+		CFFE52771D97DE4F00D91B9E /* CocoaLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaLocalization.swift; sourceTree = "<group>"; };
 		CFFF6DAC1CEE0F5A004E5894 /* TermHereCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TermHereCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFFF6DAE1CEE0F5A004E5894 /* TermHere Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TermHere Common.h"; sourceTree = "<group>"; };
 		CFFF6DB01CEE0F5A004E5894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -447,9 +449,18 @@
 				CFCF12E31CF4792D007A807F /* Controllers */,
 				CFCF12E41CF47A90007A807F /* Views */,
 				CFD9B7CB1CE5960500947EC8 /* Main.storyboard */,
+				CFFE52791D97DE5600D91B9E /* Categories */,
 				CF9CEE761CE5B65E00A89E71 /* Supporting Files */,
 			);
 			path = TermHere;
+			sourceTree = "<group>";
+		};
+		CFFE52791D97DE5600D91B9E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CFFE52771D97DE4F00D91B9E /* CocoaLocalization.swift */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		CFFF6DAD1CEE0F5A004E5894 /* TermHere Common */ = {
@@ -695,6 +706,7 @@
 				CFCF12E61CF47AB1007A807F /* AboutViewController.swift in Sources */,
 				CFCF12E01CF46CC4007A807F /* ContainerView.swift in Sources */,
 				CFD9B7C81CE5960500947EC8 /* ViewController.swift in Sources */,
+				CFFE52781D97DE4F00D91B9E /* CocoaLocalization.swift in Sources */,
 				CF0608281CE8C765003BB13F /* PurchaseController.swift in Sources */,
 				CFF6564D1CFC85F8007031AD /* TerminalServiceProvider.swift in Sources */,
 				CFD9B7C61CE5960500947EC8 /* AppDelegate.swift in Sources */,
