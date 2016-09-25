@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CF0608281CE8C765003BB13F /* PurchaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0608271CE8C765003BB13F /* PurchaseController.swift */; };
+		CF28CF701D97A2BA00D91B9E /* AppleScriptCommands.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFFF6DC01CEEFCE0004E5894 /* AppleScriptCommands.plist */; };
 		CF435B6C1CF3C06D00F794F1 /* ServicesMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF435B6A1CF3C06D00F794F1 /* ServicesMenu.strings */; };
 		CF57D2041D958FDE00D91B9E /* About.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF57D2001D958FDE00D91B9E /* About.strings */; };
 		CF57D2051D958FDE00D91B9E /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF57D2021D958FDE00D91B9E /* Main.strings */; };
@@ -23,6 +24,7 @@
 		CFD9B7C81CE5960500947EC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD9B7C71CE5960500947EC8 /* ViewController.swift */; };
 		CFD9B7CA1CE5960500947EC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD9B7C91CE5960500947EC8 /* Assets.xcassets */; };
 		CFD9B7CD1CE5960500947EC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD9B7CB1CE5960500947EC8 /* Main.storyboard */; };
+		CFEAA42A1D97B45900D91B9E /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEAA4291D97B45900D91B9E /* String+Additions.swift */; };
 		CFF6564D1CFC85F8007031AD /* TerminalServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1471101CF2B95000A914CB /* TerminalServiceProvider.swift */; };
 		CFF6564F1CFC860F007031AD /* TerminalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6564E1CFC860F007031AD /* TerminalController.swift */; };
 		CFFF6DAF1CEE0F5A004E5894 /* TermHere Common.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFF6DAE1CEE0F5A004E5894 /* TermHere Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -289,6 +291,7 @@
 		CFD9B7C91CE5960500947EC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFD9B7CC1CE5960500947EC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFD9B7CE1CE5960500947EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFEAA4291D97B45900D91B9E /* String+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Additions.swift"; sourceTree = "<group>"; };
 		CFF6564E1CFC860F007031AD /* TerminalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerminalController.swift; sourceTree = "<group>"; };
 		CFFF6DAC1CEE0F5A004E5894 /* TermHereCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TermHereCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFFF6DAE1CEE0F5A004E5894 /* TermHere Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TermHere Common.h"; sourceTree = "<group>"; };
@@ -327,7 +330,6 @@
 			isa = PBXGroup;
 			children = (
 				CF9CEE5F1CE59B1F00A89E71 /* FinderSync.swift */,
-				CF9CEE691CE5A77B00A89E71 /* Assets.xcassets */,
 				CF9CEE5D1CE59B1F00A89E71 /* Supporting Files */,
 			);
 			path = "TermHere Finder Extension";
@@ -336,6 +338,7 @@
 		CF9CEE5D1CE59B1F00A89E71 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CF9CEE691CE5A77B00A89E71 /* Assets.xcassets */,
 				CF9CEE791CE5B67200A89E71 /* Localization */,
 				CF9CEE611CE59B1F00A89E71 /* Info.plist */,
 				CF9CEE5E1CE59B1F00A89E71 /* TermHere_Finder_Extension.entitlements */,
@@ -346,6 +349,7 @@
 		CF9CEE761CE5B65E00A89E71 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CFD9B7C91CE5960500947EC8 /* Assets.xcassets */,
 				CF9CEE781CE5B66C00A89E71 /* Localization */,
 				CF9CEE7B1CE5B6B000A89E71 /* Resources */,
 				CF9CEE6D1CE5AD6600A89E71 /* TermHere.entitlements */,
@@ -375,7 +379,6 @@
 		CF9CEE7B1CE5B6B000A89E71 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CFFF6DC01CEEFCE0004E5894 /* AppleScriptCommands.plist */,
 				CF9CEE6B1CE5A91000A89E71 /* Credits.rtf */,
 				CFD9B7CE1CE5960500947EC8 /* Info.plist */,
 			);
@@ -444,7 +447,6 @@
 				CFCF12E31CF4792D007A807F /* Controllers */,
 				CFCF12E41CF47A90007A807F /* Views */,
 				CFD9B7CB1CE5960500947EC8 /* Main.storyboard */,
-				CFD9B7C91CE5960500947EC8 /* Assets.xcassets */,
 				CF9CEE761CE5B65E00A89E71 /* Supporting Files */,
 			);
 			path = TermHere;
@@ -455,6 +457,7 @@
 			children = (
 				CFFF6DBB1CEE0F6F004E5894 /* Preferences.swift */,
 				CFF6564E1CFC860F007031AD /* TerminalController.swift */,
+				CFEAA4291D97B45900D91B9E /* String+Additions.swift */,
 				CFFF6DBD1CEE0F7F004E5894 /* Supporting Files */,
 			);
 			path = "TermHere Common";
@@ -463,6 +466,7 @@
 		CFFF6DBD1CEE0F7F004E5894 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CFFF6DC01CEEFCE0004E5894 /* AppleScriptCommands.plist */,
 				CFFF6DAE1CEE0F5A004E5894 /* TermHere Common.h */,
 				CFFF6DB01CEE0F5A004E5894 /* Info.plist */,
 			);
@@ -669,6 +673,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF28CF701D97A2BA00D91B9E /* AppleScriptCommands.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,6 +707,7 @@
 			files = (
 				CFFF6DBC1CEE0F6F004E5894 /* Preferences.swift in Sources */,
 				CFF6564F1CFC860F007031AD /* TerminalController.swift in Sources */,
+				CFEAA42A1D97B45900D91B9E /* String+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1097,7 +1103,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.hbang.TermHere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1115,7 +1120,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.hbang.TermHere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

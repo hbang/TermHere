@@ -8,6 +8,11 @@
 	<array>
 		<string>N2LN9ZT493.group.au.com.hbang.TermHere</string>
 	</array>
+	<key>com.apple.security.temporary-exception.apple-events</key>
+	<array>
+		<string>com.apple.Terminal</string>
+		<string>com.googlecode.iterm2</string>
+	</array>
 	<key>com.apple.security.files.user-selected.read-only</key>
 	<true/>
 </dict>
