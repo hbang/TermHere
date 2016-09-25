@@ -28,10 +28,21 @@ class ViewController: NSViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		// get the app url or use the default
+		// set the values of the controls
 		pathControl.url = preferences.terminalAppURL
 		contextMenusCheckbox.state = preferences.showInContextMenus ? 1 : 0
 		openSelectionCheckbox.state = preferences.openSelection ? 1 : 0
+
+		switch preferences.activationType {
+		case .newTab:
+			newTabRadioButton.state = NSOnState
+
+		case .newWindow:
+			newWindowRadioButton.state = NSOnState
+
+		case .sameTab:
+			lastTabRadioButton.state = NSOnState
+		}
 	}
 
 	override func viewDidAppear() {
