@@ -2,35 +2,60 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BEHAVIOR</key>
-	<string>Behavior</string>
-	<key>BROWSE</key>
-	<string>Browse</string>
-	<key>OPEN_IN</key>
-	<string>Open in:</string>
-	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>This feature requires Terminal or iTerm 2.9 or newer.</string>
-	<key>OPEN_IN_LAST_USED_TAB</key>
-	<string>Last used tab</string>
-	<key>OPEN_IN_NEW_TAB</key>
-	<string>New tab</string>
-	<key>OPEN_IN_NEW_WINDOW</key>
-	<string>New window</string>
-	<key>OPEN_PREFERENCES</key>
-	<string>Open Preferences</string>
-	<key>OPEN_SELECTED_ITEMS</key>
-	<string>Open selected items</string>
-	<key>OPEN_SELECTED_ITEMS_EXPLANATION</key>
-	<string>Enable to open a tab for each item selected. Disable to always use the currently open folder.</string>
-	<key>SHOW_IN</key>
-	<string>Show in:</string>
-	<key>SHOW_IN_CONTEXT_MENUS</key>
-	<string>Context menus</string>
-	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
-	<string>To show or hide the Finder toolbar button, open Finder and click View → Customize Toolbar.</string>
+	<!-- Label for choosing the terminal app to use. -->
 	<key>TERMINAL_APP</key>
 	<string>Terminal app:</string>
+
+	<!-- Button that opens a panel to choose the terminal app. -->
+	<key>BROWSE</key>
+	<string>Browse</string>
+
+	<!-- Label for the display preferences. -->
+	<key>SHOW_IN</key>
+	<string>Show in:</string>
+
+	<!-- Checkbox that toggles displaying the button in context menus. -->
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>Context menus</string>
+
+	<!-- Label that explains how to toggle the toolbar button. -->
+	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
+	<string>To show or hide the Finder toolbar button, open Finder and click View → Customize Toolbar.</string>
+
+	<!-- Label for the behavior preferences. -->
+	<key>BEHAVIOR</key>
+	<string>Behavior:</string>
+
+	<!-- Checkbox that toggles opening selected items, vs opening the current folder. -->
+	<key>OPEN_SELECTED_ITEMS</key>
+	<string>Open selected items</string>
+
+	<!-- Explanation of how the above checkbox works. -->
+	<key>OPEN_SELECTED_ITEMS_EXPLANATION</key>
+	<string>Enable to open a tab for each item selected. Disable to always use the currently open folder.</string>
+
+	<!-- Label for the “open in” radio buttons. -->
+	<key>OPEN_IN</key>
+	<string>Open in:</string>
+
+	<!-- Radio button for	creating a new tab. -->
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>New tab</string>
+
+	<!-- Radio button for creating a new window. -->
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>New window</string>
+
+	<!-- Radio button for reusing the last tab. -->
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>Last used tab</string>
+
+	<!-- Label explaining how to enable TermHere if it is disabled. -->
 	<key>TROUBLESHOOTING_NOTE</key>
 	<string>Not seeing it? Make sure TermHere is enabled in the Extensions preferences.</string>
+
+	<!-- Button that opens the Preferences app. -->
+	<key>OPEN_PREFERENCES</key>
+	<string>Open Preferences</string>
 </dict>
 </plist>
