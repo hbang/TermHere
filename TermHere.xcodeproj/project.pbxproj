@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CF0608281CE8C765003BB13F /* PurchaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0608271CE8C765003BB13F /* PurchaseController.swift */; };
 		CF28CF701D97A2BA00D91B9E /* AppleScriptCommands.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFFF6DC01CEEFCE0004E5894 /* AppleScriptCommands.plist */; };
 		CF435B6C1CF3C06D00F794F1 /* ServicesMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF435B6A1CF3C06D00F794F1 /* ServicesMenu.strings */; };
 		CF57D2041D958FDE00D91B9E /* About.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF57D2001D958FDE00D91B9E /* About.strings */; };
@@ -84,7 +83,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CF0608271CE8C765003BB13F /* PurchaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseController.swift; sourceTree = "<group>"; };
 		CF1471101CF2B95000A914CB /* TerminalServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TerminalServiceProvider.swift; path = TermHere/TerminalServiceProvider.swift; sourceTree = SOURCE_ROOT; };
 		CF14F2051D9590DB00D91B9E /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/About.strings; sourceTree = "<group>"; };
 		CF14F2061D9590DB00D91B9E /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -404,14 +402,6 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
-		CFCF12E31CF4792D007A807F /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				CF0608271CE8C765003BB13F /* PurchaseController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
 		CFCF12E41CF47A90007A807F /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -446,7 +436,6 @@
 				CFD9B7C51CE5960500947EC8 /* AppDelegate.swift */,
 				CFCF12E11CF47912007A807F /* Service */,
 				CFCF12E21CF47915007A807F /* View Controllers */,
-				CFCF12E31CF4792D007A807F /* Controllers */,
 				CFCF12E41CF47A90007A807F /* Views */,
 				CFD9B7CB1CE5960500947EC8 /* Main.storyboard */,
 				CFFE52791D97DE5600D91B9E /* Categories */,
@@ -707,7 +696,6 @@
 				CFCF12E01CF46CC4007A807F /* ContainerView.swift in Sources */,
 				CFD9B7C81CE5960500947EC8 /* ViewController.swift in Sources */,
 				CFFE52781D97DE4F00D91B9E /* CocoaLocalization.swift in Sources */,
-				CF0608281CE8C765003BB13F /* PurchaseController.swift in Sources */,
 				CFF6564D1CFC85F8007031AD /* TerminalServiceProvider.swift in Sources */,
 				CFD9B7C61CE5960500947EC8 /* AppDelegate.swift in Sources */,
 			);

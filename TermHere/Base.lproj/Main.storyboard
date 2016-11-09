@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A313a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
         <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
@@ -419,7 +420,6 @@
                         <outlet property="newWindowRadioButton" destination="RcF-mR-gYg" id="XNv-sb-kbD"/>
                         <outlet property="openSelectionCheckbox" destination="d9g-Ml-zN8" id="sDY-A1-iHY"/>
                         <outlet property="pathControl" destination="DXP-MN-PTQ" id="1Qt-Pe-Mm5"/>
-                        <outlet property="purchaseButton" destination="Sw8-ag-2dl" id="OvV-GA-a64"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -452,38 +452,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="440" height="240"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="fnX-Yt-TmH">
-                                <rect key="frame" x="10" y="49" width="349" height="14"/>
-                                <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" title="DONATION_MESSAGE" id="NCD-Yd-LL3">
-                                    <font key="font" metaFont="smallSystem"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="About"/>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <button horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="Sw8-ag-2dl">
-                                <rect key="frame" x="356" y="43" width="77" height="28"/>
-                                <buttonCell key="cell" type="push" title="Loading…" bezelStyle="rounded" alignment="center" controlSize="small" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jcg-5p-aLA">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="smallSystem"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="purchaseClicked:" target="FO0-2H-YkO" id="gBd-7x-MC2"/>
-                                </connections>
-                            </button>
                             <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eY-0w-clI">
-                                <rect key="frame" x="12" y="73" width="416" height="83"/>
+                                <rect key="frame" x="12" y="49" width="416" height="107"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="12P-8g-hQS">
-                                    <rect key="frame" x="0.0" y="0.0" width="416" height="83"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="416" height="107"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView editable="NO" drawsBackground="NO" importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="Cxa-0J-SyY">
-                                            <rect key="frame" x="0.0" y="0.0" width="416" height="83"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="416" height="107"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="minSize" width="416" height="83"/>
+                                            <size key="minSize" width="416" height="107"/>
                                             <size key="maxSize" width="463" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
@@ -495,7 +474,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="Or7-8u-DJF">
-                                    <rect key="frame" x="400" y="0.0" width="16" height="83"/>
+                                    <rect key="frame" x="400" y="0.0" width="16" height="107"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -575,26 +554,20 @@ DQ
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="2eY-0w-clI" secondAttribute="trailing" constant="12" id="2xP-nL-x8L"/>
                             <constraint firstAttribute="trailing" secondItem="2eY-0w-clI" secondAttribute="trailing" constant="12" id="3PS-jK-Ci6"/>
-                            <constraint firstItem="Sw8-ag-2dl" firstAttribute="leading" secondItem="fnX-Yt-TmH" secondAttribute="trailing" constant="4" id="5oZ-q4-3ZG"/>
-                            <constraint firstItem="fnX-Yt-TmH" firstAttribute="top" secondItem="2eY-0w-clI" secondAttribute="bottom" constant="10" id="HNx-P6-PCJ"/>
+                            <constraint firstItem="erF-a4-cEu" firstAttribute="top" secondItem="2eY-0w-clI" secondAttribute="bottom" constant="16" id="6IW-bH-chK"/>
                             <constraint firstItem="2eY-0w-clI" firstAttribute="leading" secondItem="zDv-8l-BLc" secondAttribute="leading" constant="12" id="HPy-N4-WcP"/>
                             <constraint firstAttribute="trailing" secondItem="QKF-4C-pNO" secondAttribute="trailing" constant="12" id="USr-di-NHH"/>
                             <constraint firstAttribute="bottom" secondItem="erF-a4-cEu" secondAttribute="bottom" constant="12" id="cbe-Mg-yIW"/>
-                            <constraint firstItem="Sw8-ag-2dl" firstAttribute="bottom" secondItem="fnX-Yt-TmH" secondAttribute="bottom" id="ezG-1r-EaA"/>
-                            <constraint firstItem="erF-a4-cEu" firstAttribute="top" secondItem="fnX-Yt-TmH" secondAttribute="bottom" constant="16" id="gDg-zh-aDG"/>
                             <constraint firstItem="2eY-0w-clI" firstAttribute="top" secondItem="QKF-4C-pNO" secondAttribute="bottom" constant="10" id="ial-2Z-o2j"/>
                             <constraint firstItem="erF-a4-cEu" firstAttribute="centerX" secondItem="zDv-8l-BLc" secondAttribute="centerX" id="lHP-wK-cRr"/>
-                            <constraint firstItem="fnX-Yt-TmH" firstAttribute="leading" secondItem="zDv-8l-BLc" secondAttribute="leading" constant="12" id="tn2-Mm-PVv"/>
                             <constraint firstItem="QKF-4C-pNO" firstAttribute="top" secondItem="zDv-8l-BLc" secondAttribute="top" constant="10" id="uWO-C2-rsW"/>
                             <constraint firstItem="2eY-0w-clI" firstAttribute="leading" secondItem="zDv-8l-BLc" secondAttribute="leading" constant="12" id="w6N-y9-Ngb"/>
-                            <constraint firstAttribute="trailing" secondItem="Sw8-ag-2dl" secondAttribute="trailing" constant="12" id="y7H-su-6I4"/>
                             <constraint firstItem="QKF-4C-pNO" firstAttribute="leading" secondItem="zDv-8l-BLc" secondAttribute="leading" constant="12" id="znf-pJ-BPx"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="copyrightLabel" destination="Tmb-ZU-BNM" id="87v-Fn-1VB"/>
                         <outlet property="nameLabel" destination="bum-x3-RVo" id="JSm-ac-7T4"/>
-                        <outlet property="purchaseButton" destination="Sw8-ag-2dl" id="Wbv-Oh-2eI"/>
                         <outlet property="textView" destination="Cxa-0J-SyY" id="sPG-MU-13v"/>
                     </connections>
                 </viewController>
