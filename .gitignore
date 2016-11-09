@@ -18,6 +18,5 @@ profile
 DerivedData
 .idea/
 
-# CocoaPods
-Pods
-Podfile.lock
+# Carthage
+Carthage/
