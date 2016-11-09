@@ -67,5 +67,7 @@
 			</array>
 		</dict>
 	</array>
+	<key>SUFeedURL</key>
+	<string>https://cdn.hbang.ws/updates/termhere.xml</string>
 </dict>
 </plist>

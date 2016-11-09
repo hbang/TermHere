@@ -23,6 +23,12 @@
                                                 <segue destination="Te1-KI-xzI" kind="show" id="GWU-1B-VZB"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="Check for Updates…" id="qGU-LZ-iKJ">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="checkForUpdates:" target="sy3-Vm-8MN" id="1C8-es-hVJ"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
                                         <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
@@ -100,8 +106,13 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TermHere" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TermHere" customModuleProvider="target">
+                    <connections>
+                        <outlet property="updater" destination="sy3-Vm-8MN" id="7HZ-op-Hu1"/>
+                    </connections>
+                </customObject>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="sy3-Vm-8MN" customClass="SUUpdater"/>
             </objects>
             <point key="canvasLocation" x="75.5" y="-28"/>
         </scene>

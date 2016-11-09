@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import Sparkle
 
 enum AppMode: UInt {
 	case unknown
@@ -15,6 +16,8 @@ enum AppMode: UInt {
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
+
+	@IBOutlet weak var updater: SUUpdater!
 
 	var appMode = AppMode.unknown {
 		didSet {
