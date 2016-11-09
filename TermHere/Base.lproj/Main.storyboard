@@ -153,7 +153,6 @@
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="TERMINAL_APP"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
@@ -185,7 +184,6 @@
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="SHOW_IN"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
@@ -221,7 +219,6 @@
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="BEHAVIOR"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
@@ -257,7 +254,6 @@
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="OPEN_IN"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
@@ -324,7 +320,6 @@
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="OPEN_IN_COMPATIBILITY_NOTE"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
