@@ -2,25 +2,60 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<!-- Label for choosing the terminal app to use. -->
+	<key>TERMINAL_APP</key>
+	<string>터미널 앱:</string>
+
+	<!-- Button that opens a panel to choose the terminal app. -->
 	<key>BROWSE</key>
 	<string>찾아보기</string>
-	<key>OPEN_IN</key>
-	<string>열기:</string>
-	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>이 기능은 Terminal이나 iTerm 2.9 이상을 필요로 합니다.</string>
-	<key>OPEN_IN_LAST_USED_TAB</key>
-	<string>최근 사용 열기</string>
-	<key>OPEN_IN_NEW_TAB</key>
-	<string>새탭</string>
-	<key>OPEN_IN_NEW_WINDOW</key>
-	<string>새창</string>
+
+	<!-- Label for the display preferences. -->
 	<key>SHOW_IN</key>
-	<string>보이기:</string>
+	<string>다음으로 보기:</string>
+
+	<!-- Checkbox that toggles displaying the button in context menus. -->
 	<key>SHOW_IN_CONTEXT_MENUS</key>
-	<string>바로가기 메뉴</string>
-	<key>TERMINAL_APP</key>
-	<string>터미널 프로그램:</string>
+	<string>문맥 메뉴</string>
+
+	<!-- Label that explains how to toggle the toolbar button. -->
+	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
+	<string>파인더의 툴바 바튼을 보이거나 숨기려면, 파인더를 열고 보기 → 툴바 사용자설정 을 사용하세요.</string>
+
+	<!-- Label for the behavior preferences. -->
+	<key>BEHAVIOR</key>
+	<string>동작:</string>
+
+	<!-- Checkbox that toggles opening selected items, vs opening the current folder. -->
+	<key>OPEN_SELECTED_ITEMS</key>
+	<string>선택한 항목 실행</string>
+
+	<!-- Explanation of how the above checkbox works. -->
+	<key>OPEN_SELECTED_ITEMS_EXPLANATION</key>
+	<string>활성화하면 각각 선택한 항목들마다 탭을 엽니다. 비활성화시 현재 열린 폴더를 사용합니다.</string>
+
+	<!-- Label for the “open in” radio buttons. -->
+	<key>OPEN_IN</key>
+	<string>다음으로 열기:</string>
+
+	<!-- Radio button for	creating a new tab. -->
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>새 탭</string>
+
+	<!-- Radio button for creating a new window. -->
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>새 창</string>
+
+	<!-- Radio button for reusing the last tab. -->
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>마지막으로 연 탭</string>
+
+	<!-- Label explaining how to enable TermHere if it is disabled. -->
 	<key>TROUBLESHOOTING_NOTE</key>
-	<string>보이지 않나요? 확장 프로그램 환경설정에서 TermHere가 활성화 되어있는지 확인해보세요.</string>
+	<string>안 보이나요? TermHere가 확장 설정에서 사용상태인지 확인해주세요.</string>
+
+	<!-- Button that opens the Preferences app. -->
+	<key>OPEN_PREFERENCES</key>
+	<string>설정 열기</string>
 </dict>
 </plist>
