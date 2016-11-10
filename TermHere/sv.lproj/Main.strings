@@ -2,25 +2,60 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BROWSE</key>
-	<string>Browse</string>
-	<key>OPEN_IN</key>
-	<string>Öppna i:</string>
-	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>Denna funktion kräver Terminal eller iTemr 2.9 eller nyare.</string>
-	<key>OPEN_IN_LAST_USED_TAB</key>
-	<string>Senast använda tab</string>
-	<key>OPEN_IN_NEW_TAB</key>
-	<string>Ny tab</string>
-	<key>OPEN_IN_NEW_WINDOW</key>
-	<string>Nytt fönster</string>
-	<key>SHOW_IN</key>
-	<string>Visa i:</string>
-	<key>SHOW_IN_CONTEXT_MENUS</key>
-	<string>Kontextmenyer</string>
+	<!-- Label for choosing the terminal app to use. -->
 	<key>TERMINAL_APP</key>
 	<string>Terminal app:</string>
+
+	<!-- Button that opens a panel to choose the terminal app. -->
+	<key>BROWSE</key>
+	<string>Bläddra</string>
+
+	<!-- Label for the display preferences. -->
+	<key>SHOW_IN</key>
+	<string>Visa i:</string>
+
+	<!-- Checkbox that toggles displaying the button in context menus. -->
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>Undermenyer</string>
+
+	<!-- Label that explains how to toggle the toolbar button. -->
+	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
+	<string>För att visa eller dölja Finder-menyraden, öppna Finder och klicka Visa → Anpassa menyrad.</string>
+
+	<!-- Label for the behavior preferences. -->
+	<key>BEHAVIOR</key>
+	<string>Beteende:</string>
+
+	<!-- Checkbox that toggles opening selected items, vs opening the current folder. -->
+	<key>OPEN_SELECTED_ITEMS</key>
+	<string>Öppna valt objekt</string>
+
+	<!-- Explanation of how the above checkbox works. -->
+	<key>OPEN_SELECTED_ITEMS_EXPLANATION</key>
+	<string>Aktivera för att öppna en flik för varje valt objekt, inaktivera för att öppna i befintlig mapp.</string>
+
+	<!-- Label for the “open in” radio buttons. -->
+	<key>OPEN_IN</key>
+	<string>Öppna i:</string>
+
+	<!-- Radio button for	creating a new tab. -->
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>Ny flik</string>
+
+	<!-- Radio button for creating a new window. -->
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>Nytt fönster</string>
+
+	<!-- Radio button for reusing the last tab. -->
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>Senast använd flik</string>
+
+	<!-- Label explaining how to enable TermHere if it is disabled. -->
 	<key>TROUBLESHOOTING_NOTE</key>
-	<string>Ser du inget? Säkerställ att TermHere är aktiverat i tilläggsinställningarna.</string>
+	<string>Ser du inget? Se till att TermHere är aktiverat i Tilläggsinställningar.</string>
+
+	<!-- Button that opens the Preferences app. -->
+	<key>OPEN_PREFERENCES</key>
+	<string>Öppna inställningar</string>
 </dict>
 </plist>
