@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BEHAVIOR</key>
+	<string>行為:</string>
+	<key>BROWSE</key>
+	<string>瀏覽</string>
+	<key>OPEN_IN</key>
+	<string>開啟在:</string>
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>最後使用的標籤</string>
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>新的標籤</string>
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>新的視窗</string>
+	<key>OPEN_PREFERENCES</key>
+	<string>開啟設定</string>
+	<key>OPEN_SELECTED_ITEMS</key>
+	<string>開啟選取的項目</string>
+	<key>OPEN_SELECTED_ITEMS_EXPLANATION</key>
+	<string>啟用來為每個選擇的項目開啟標籤。關閉來總是使用目前開啟的資料夾。</string>
+	<key>SHOW_IN</key>
+	<string>顯示在:</string>
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>右鍵選單</string>
+	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
+	<string>要顯示或隱藏 Finder 工具列按鈕，開啟 Finder 並且選取檢視然後自定工具列。</string>
+	<key>TERMINAL_APP</key>
+	<string>終端機程式:</string>
+	<key>TROUBLESHOOTING_NOTE</key>
+	<string>沒有看見? 請確認 TermHere 在延伸功能設定中啟用。</string>
+</dict>
+</plist>

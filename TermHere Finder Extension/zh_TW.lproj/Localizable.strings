@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NEW_TERMINAL_HERE</key>
+	<string>在此開啟新的終端機</string>
+	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
+	<string>在這個目錄開啟終端機</string>
+</dict>
+</plist>
