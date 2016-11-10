@@ -2,25 +2,61 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BROWSE</key>
-	<string>Prehľadávať</string>
-	<key>OPEN_IN</key>
-	<string>Otvoriť v:</string>
-	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>Táto funkcia vyžaduje Terminal alebo iTerm 2.9 alebo novší.</string>
-	<key>OPEN_IN_LAST_USED_TAB</key>
-	<string>Posledný použitý tab</string>
-	<key>OPEN_IN_NEW_TAB</key>
-	<string>Nový tab</string>
-	<key>OPEN_IN_NEW_WINDOW</key>
-	<string>Nové okno</string>
-	<key>SHOW_IN</key>
-	<string>Zobraziť v:</string>
-	<key>SHOW_IN_CONTEXT_MENUS</key>
-	<string>Kontextové menu</string>
+	<!-- Label for choosing the terminal app to use. -->
 	<key>TERMINAL_APP</key>
 	<string>Aplikácia Terminálu:</string>
+
+	<!-- Button that opens a panel to choose the terminal app. -->
+	<key>BROWSE</key>
+	<string>Prehľadávať</string>
+
+	<!-- Label for the display preferences. -->
+	<key>SHOW_IN</key>
+	<string>Ukazovať v:</string>
+
+	<!-- Checkbox that toggles displaying the button in context menus. -->
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>Kontextové menu</string>
+
+	<!-- Label that explains how to toggle the toolbar button. -->
+	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
+	<string>Pre zobrazenie alebo skrytie Finder tlačidla v paneli s nástrojmi, otvorte Finder a kliknite na Zobraziť → Prispôsobiť panel s nástrojmi</string>
+
+	<!-- Label for the behavior preferences. -->
+	<key>BEHAVIOR</key>
+	<string>Správanie:</string>
+
+	<!-- Checkbox that toggles opening selected items, vs opening the current folder. -->
+	<key>OPEN_SELECTED_ITEMS</key>
+	<string>Otvoriť označené položky</string>
+
+	<!-- Explanation of how the above checkbox works. -->
+	<key>OPEN_SELECTED_ITEMS_EXPLANATION</key>
+	<string>Enable to open a tab for each item selected. Disable to always use the currently open folder.</string>
+	<string>Zapnite pre otvorenie tabu pre každú označenú položku. Vypnite pre stále použitie aktuálne otvoreného priečinka.</string>
+
+	<!-- Label for the “open in” radio buttons. -->
+	<key>OPEN_IN</key>
+	<string>Otvoriť v:</string>
+
+	<!-- Radio button for	creating a new tab. -->
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>Novom tabe</string>
+
+	<!-- Radio button for creating a new window. -->
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>Novom okne</string>
+
+	<!-- Radio button for reusing the last tab. -->
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>Naposledy použitom tabe</string>
+
+	<!-- Label explaining how to enable TermHere if it is disabled. -->
 	<key>TROUBLESHOOTING_NOTE</key>
 	<string>Ak sa menu nezobrazuje, uistite sa, že je TermHere zapnutý v Rozšíreniach.</string>
+
+	<!-- Button that opens the Preferences app. -->
+	<key>OPEN_PREFERENCES</key>
+	<string>Otvoriť Rozšírenia</string>
 </dict>
 </plist>
