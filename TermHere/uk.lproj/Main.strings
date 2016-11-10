@@ -2,25 +2,60 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<!-- Label for choosing the terminal app to use. -->
+	<key>TERMINAL_APP</key>
+	<string>Програма терміналу:</string>
+
+	<!-- Button that opens a panel to choose the terminal app. -->
 	<key>BROWSE</key>
-	<string>Переглянути</string>
+	<string>Перегляд папки</string>
+
+	<!-- Label for the display preferences. -->
+	<key>SHOW_IN</key>
+	<string>Показувати у:</string>
+
+	<!-- Checkbox that toggles displaying the button in context menus. -->
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>Контекстні меню</string>
+
+	<!-- Label that explains how to toggle the toolbar button. -->
+	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
+	<string>Щоб відобразити або приховати кнопку на панелі інструментів Finder, відкрийте Finder і натисніть Вигляд → Налаштування панелі інструментів.</string>
+
+	<!-- Label for the behavior preferences. -->
+	<key>BEHAVIOR</key>
+	<string>Поведінка:</string>
+
+	<!-- Checkbox that toggles opening selected items, vs opening the current folder. -->
+	<key>OPEN_SELECTED_ITEMS</key>
+	<string>Відкрити обрані елементи</string>
+
+	<!-- Explanation of how the above checkbox works. -->
+	<key>OPEN_SELECTED_ITEMS_EXPLANATION</key>
+	<string>Ввімкніть, щоб відкривати вкладку для кожного обраного елемента. Вимкніть, щоб завжди використовувати поточну відкриту папку.</string>
+
+	<!-- Label for the “open in” radio buttons. -->
 	<key>OPEN_IN</key>
 	<string>Відкрити у:</string>
-	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>Ця можливість вимагає Terminal або iTerm 2.9 або новіше.</string>
-	<key>OPEN_IN_LAST_USED_TAB</key>
-	<string>Остання використана вкладка</string>
+
+	<!-- Radio button for	creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>Нова вкладка</string>
+
+	<!-- Radio button for creating a new window. -->
 	<key>OPEN_IN_NEW_WINDOW</key>
 	<string>Нове вікно</string>
-	<key>SHOW_IN</key>
-	<string>Відобразити у:</string>
-	<key>SHOW_IN_CONTEXT_MENUS</key>
-	<string>Контекстне меню</string>
-	<key>TERMINAL_APP</key>
-	<string>Програма Терміналу:</string>
+
+	<!-- Radio button for reusing the last tab. -->
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>Остання використана вкладка</string>
+
+	<!-- Label explaining how to enable TermHere if it is disabled. -->
 	<key>TROUBLESHOOTING_NOTE</key>
-	<string>Не працює? Упевніться, що TermHere ввімкнено у налаштуваннях Розширень.</string>
+	<string>Не бачите? Впевніться що TermHere ввімкнено у налаштуваннях Додатки.</string>
+
+	<!-- Button that opens the Preferences app. -->
+	<key>OPEN_PREFERENCES</key>
+	<string>Відкрити налаштування</string>
 </dict>
 </plist>
