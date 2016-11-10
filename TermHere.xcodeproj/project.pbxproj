@@ -9,14 +9,15 @@
 /* Begin PBXBuildFile section */
 		CF28CF701D97A2BA00D91B9E /* AppleScriptCommands.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFFF6DC01CEEFCE0004E5894 /* AppleScriptCommands.plist */; };
 		CF435B6C1CF3C06D00F794F1 /* ServicesMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF435B6A1CF3C06D00F794F1 /* ServicesMenu.strings */; };
+		CF4CB4191DD429DA00D91B9E /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = CF4CB4171DD429DA00D91B9E /* Credits.html */; };
 		CF57D2051D958FDE00D91B9E /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF57D2021D958FDE00D91B9E /* Main.strings */; };
 		CF9CEE601CE59B1F00A89E71 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CEE5F1CE59B1F00A89E71 /* FinderSync.swift */; };
 		CF9CEE641CE59B1F00A89E71 /* TermHere Finder Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF9CEE5B1CE59B1F00A89E71 /* TermHere Finder Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CF9CEE6A1CE5A77B00A89E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9CEE691CE5A77B00A89E71 /* Assets.xcassets */; };
-		CF9CEE6C1CE5A91000A89E71 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CF9CEE6B1CE5A91000A89E71 /* Credits.rtf */; };
 		CF9CEE721CE5B55100A89E71 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF9CEE701CE5B55100A89E71 /* Localizable.strings */; };
 		CF9CEE751CE5B57D00A89E71 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF9CEE731CE5B57D00A89E71 /* Localizable.strings */; };
 		CFAD6C561DD354C400D91B9E /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD6C501DD34B4C00D91B9E /* Sparkle.framework */; };
+		CFAD6C591DD422C100D91B9E /* credits.css in Resources */ = {isa = PBXBuildFile; fileRef = CFAD6C581DD422C100D91B9E /* credits.css */; };
 		CFCF12E01CF46CC4007A807F /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF12DF1CF46CC4007A807F /* ContainerView.swift */; };
 		CFCF12E61CF47AB1007A807F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF12E51CF47AB1007A807F /* AboutViewController.swift */; };
 		CFD9B7C61CE5960500947EC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD9B7C51CE5960500947EC8 /* AppDelegate.swift */; };
@@ -182,6 +183,9 @@
 		CF28CF6E1D95923500D91B9E /* zh_CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_CN; path = zh_CN.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CF28CF6F1D95923A00D91B9E /* zh_HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_HK; path = zh_HK.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CF435B6B1CF3C06D00F794F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
+		CF4CB4181DD429DA00D91B9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/Credits.html; sourceTree = "<group>"; };
+		CF4CB41A1DD429E000D91B9E /* en_AU */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "en_AU"; path = "en_AU.lproj/Credits.html"; sourceTree = "<group>"; };
+		CF4CB41B1DD429E300D91B9E /* en_GB */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "en_GB"; path = "en_GB.lproj/Credits.html"; sourceTree = "<group>"; };
 		CF57D2031D958FDE00D91B9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		CF57D4371D95902C00D91B9E /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CF57D4381D95902C00D91B9E /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
@@ -239,11 +243,11 @@
 		CF9CEE5F1CE59B1F00A89E71 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
 		CF9CEE611CE59B1F00A89E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF9CEE691CE5A77B00A89E71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CF9CEE6B1CE5A91000A89E71 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		CF9CEE6D1CE5AD6600A89E71 /* TermHere.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TermHere.entitlements; sourceTree = "<group>"; };
 		CF9CEE711CE5B55100A89E71 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CF9CEE741CE5B57D00A89E71 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CFAD6C501DD34B4C00D91B9E /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = ../Carthage/Build/Mac/Sparkle.framework; sourceTree = "<group>"; };
+		CFAD6C581DD422C100D91B9E /* credits.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = credits.css; sourceTree = "<group>"; };
 		CFCF12DF1CF46CC4007A807F /* ContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		CFCF12E51CF47AB1007A807F /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		CFCF12E81CF5ED80007A807F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -328,6 +332,7 @@
 				CF57D2021D958FDE00D91B9E /* Main.strings */,
 				CF9CEE701CE5B55100A89E71 /* Localizable.strings */,
 				CF435B6A1CF3C06D00F794F1 /* ServicesMenu.strings */,
+				CF4CB4171DD429DA00D91B9E /* Credits.html */,
 			);
 			name = Localization;
 			sourceTree = "<group>";
@@ -343,7 +348,7 @@
 		CF9CEE7B1CE5B6B000A89E71 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CF9CEE6B1CE5A91000A89E71 /* Credits.rtf */,
+				CFAD6C581DD422C100D91B9E /* credits.css */,
 				CFD9B7CE1CE5960500947EC8 /* Info.plist */,
 			);
 			name = Resources;
@@ -632,9 +637,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAD6C591DD422C100D91B9E /* credits.css in Resources */,
 				CFD9B7CA1CE5960500947EC8 /* Assets.xcassets in Resources */,
 				CF9CEE721CE5B55100A89E71 /* Localizable.strings in Resources */,
-				CF9CEE6C1CE5A91000A89E71 /* Credits.rtf in Resources */,
+				CF4CB4191DD429DA00D91B9E /* Credits.html in Resources */,
 				CFD9B7CD1CE5960500947EC8 /* Main.storyboard in Resources */,
 				CF57D2051D958FDE00D91B9E /* Main.strings in Resources */,
 				CF435B6C1CF3C06D00F794F1 /* ServicesMenu.strings in Resources */,
@@ -765,6 +771,16 @@
 				CF14F2541D95914700D91B9E /* zh_HK */,
 			);
 			name = ServicesMenu.strings;
+			sourceTree = "<group>";
+		};
+		CF4CB4171DD429DA00D91B9E /* Credits.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF4CB4181DD429DA00D91B9E /* en */,
+				CF4CB41A1DD429E000D91B9E /* en_AU */,
+				CF4CB41B1DD429E300D91B9E /* en_GB */,
+			);
+			name = Credits.html;
 			sourceTree = "<group>";
 		};
 		CF57D2021D958FDE00D91B9E /* Main.strings */ = {

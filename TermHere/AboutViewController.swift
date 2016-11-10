@@ -25,12 +25,12 @@ class AboutViewController: NSViewController {
 		nameLabel.stringValue = "\(info["CFBundleName"]!) \(info["CFBundleShortVersionString"]!) (\(info["CFBundleVersion"]!))"
 		copyrightLabel.stringValue = info["NSHumanReadableCopyright"] as! String
 
-		guard let data = try? Data(contentsOf: bundle.url(forResource: "Credits", withExtension: "rtf")!) else {
+		guard let data = try? Data(contentsOf: bundle.url(forResource: "Credits", withExtension: "html")!) else {
 			NSLog("whoa, the credits failed to load?")
 			return
 		}
 
-		textView.textStorage!.append(NSAttributedString(rtf: data, documentAttributes: nil)!)
+		textView.textStorage!.append(NSAttributedString(html: data, baseURL: bundle.resourceURL!, documentAttributes: nil)!)
 	}
 
 	@IBAction func closeClicked(_ sender: AnyObject) {
