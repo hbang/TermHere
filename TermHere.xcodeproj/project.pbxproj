@@ -939,7 +939,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "TermHere Finder Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "au.com.hbang.TermHere.TermHere-Finder-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "ws.hbang.TermHere.TermHere-Finder-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -956,7 +956,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "TermHere Finder Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "au.com.hbang.TermHere.TermHere-Finder-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "ws.hbang.TermHere.TermHere-Finder-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -1074,7 +1074,7 @@
 				);
 				INFOPLIST_FILE = TermHere/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = au.com.hbang.TermHere;
+				PRODUCT_BUNDLE_IDENTIFIER = ws.hbang.TermHere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1095,7 +1095,7 @@
 				);
 				INFOPLIST_FILE = TermHere/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = au.com.hbang.TermHere;
+				PRODUCT_BUNDLE_IDENTIFIER = ws.hbang.TermHere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1118,7 +1118,7 @@
 				INFOPLIST_FILE = "TermHere Common/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "au.com.hbang.TermHere.TermHere-Common";
+				PRODUCT_BUNDLE_IDENTIFIER = "ws.hbang.TermHere.TermHere-Common";
 				PRODUCT_NAME = TermHereCommon;
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -1146,7 +1146,7 @@
 				INFOPLIST_FILE = "TermHere Common/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "au.com.hbang.TermHere.TermHere-Common";
+				PRODUCT_BUNDLE_IDENTIFIER = "ws.hbang.TermHere.TermHere-Common";
 				PRODUCT_NAME = TermHereCommon;
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
