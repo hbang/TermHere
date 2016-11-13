@@ -2,25 +2,60 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<!-- Label for choosing the terminal app to use. -->
+	<key>TERMINAL_APP</key>
+	<string>Terminal Uygulaması:</string>
+
+	<!-- Button that opens a panel to choose the terminal app. -->
 	<key>BROWSE</key>
-	<string>Gözat</string>
+	<string>Ara</string>
+
+	<!-- Label for the display preferences. -->
+	<key>SHOW_IN</key>
+	<string>Şununla göster:</string>
+
+	<!-- Checkbox that toggles displaying the button in context menus. -->
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>Durum menüsü</string>
+
+	<!-- Label that explains how to toggle the toolbar button. -->
+	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
+	<string>Bulucu kısmını göstermek ya da gizlemek için, Bulucu'yu açın ve Görünüm → Araç Çubuğunu Özelleştir'e tıklayın.</string>
+
+	<!-- Label for the behavior preferences. -->
+	<key>BEHAVIOR</key>
+	<string>Davranış:</string>
+
+	<!-- Checkbox that toggles opening selected items, vs opening the current folder. -->
+	<key>OPEN_SELECTED_ITEMS</key>
+	<string>Seçili olanları aç</string>
+
+	<!-- Explanation of how the above checkbox works. -->
+	<key>OPEN_SELECTED_ITEMS_EXPLANATION</key>
+	<string>Her seçim için yeni bir sekme açmak için etkinleştirin. Her seferinde bulunduğunuz klasörü açmak için kapatın</string>
+
+	<!-- Label for the “open in” radio buttons. -->
 	<key>OPEN_IN</key>
-	<string>Şurada aç:</string>
-	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>Bu özellik Terminal veya iTerm 2.9 ya da daha yenisini gerektiriyor.</string>
-	<key>OPEN_IN_LAST_USED_TAB</key>
-	<string>Son kullanılan sekme</string>
+	<string>Şununla aç:</string>
+
+	<!-- Radio button for	creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>Yeni sekme</string>
+
+	<!-- Radio button for creating a new window. -->
 	<key>OPEN_IN_NEW_WINDOW</key>
-	<string>Yeni pencere</string>
-	<key>SHOW_IN</key>
-	<string>Şurada göster:</string>
-	<key>SHOW_IN_CONTEXT_MENUS</key>
-	<string>İçerik menüleri</string>
-	<key>TERMINAL_APP</key>
-	<string>Terminal uygulaması:</string>
+	<string>Yeni pencere </string>
+
+	<!-- Radio button for reusing the last tab. -->
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>Son sekme</string>
+
+	<!-- Label explaining how to enable TermHere if it is disabled. -->
 	<key>TROUBLESHOOTING_NOTE</key>
-	<string>Çalışmıyor mu? TermHereın Uzantılar tercih paneli altında aktif olduğundan emin olun.</string>
+	<string>Burada bulamadın mı? TermHere'in uzantılar seçeneklerinde etkinleştirilmiş olduğundan emin olun.</string>
+
+	<!-- Button that opens the Preferences app. -->
+	<key>OPEN_PREFERENCES</key>
+	<string>Seçenekleri aç</string>
 </dict>
 </plist>
