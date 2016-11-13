@@ -29,7 +29,7 @@ open class Preferences {
 
 	open static let sharedInstance = Preferences()
 
-	let preferences = UserDefaults(suiteName: "N2LN9ZT493.group.au.com.hbang.TermHere")!
+	let preferences = UserDefaults(suiteName: "N2LN9ZT493.group.ws.hbang.TermHere")!
 
 	init() {
 		preferences.register(defaults: [
