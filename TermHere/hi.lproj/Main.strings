@@ -2,25 +2,60 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<!-- Label for choosing the terminal app to use. --> 
+	<key>TERMINAL_APP</key>
+	<string>टर्मिनल ऐप:</string>
+
+	<!-- Button that opens a panel to choose the terminal app. -->
 	<key>BROWSE</key>
 	<string>ब्राउज</string>
-	<key>OPEN_IN</key>
-	<string>में खुलेगा:</string>
-	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>यह सुविधा टर्मिनल या iTerm 2.9 या नए की आवश्यकता है।</string>
-	<key>OPEN_IN_LAST_USED_TAB</key>
-	<string>अंतिम टैब</string>
-	<key>OPEN_IN_NEW_TAB</key>
-	<string>अंतिम टैब...</string>
-	<key>OPEN_IN_NEW_WINDOW</key>
-	<string>नयी खिड़की</string>
+
+	<!-- Label for the display preferences. -->
 	<key>SHOW_IN</key>
-	<string>में दिखाएं:</string>
+	<string>कहाँ दिखाएं:</string>
+
+	<!-- Checkbox that toggles displaying the button in context menus. -->
 	<key>SHOW_IN_CONTEXT_MENUS</key>
 	<string>संदर्भ मेनू</string>
-	<key>TERMINAL_APP</key>
-	<string>टर्मिनल अनुप्रयोग:</string>
+
+	<!-- Label that explains how to toggle the toolbar button. -->
+	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
+	<string>खोजक पट्टी बटन को दिखाने या छिपाने के लिए खोजकर खोले और → अनुकूलित टूलबार पर क्लिक करें। </string>
+
+	<!-- Label for the behavior preferences. -->
+	<key>BEHAVIOR</key>
+	<string>व्यवहार:</string>
+
+	<!-- Checkbox that toggles opening selected items, vs opening the current folder. -->
+	<key>OPEN_SELECTED_ITEMS</key>
+	<string>चयनित आइटम को खोले</string>
+
+	<!-- Explanation of how the above checkbox works. -->
+	<key>OPEN_SELECTED_ITEMS_EXPLANATION</key>
+	<string>चुने गए प्रत्येक आइटम के लिए एक नए टैब खोलने के लिए इसे सक्षम करें। हमेशा वर्तमान में खुले फ़ोल्डर का उपयोग करने के लिए इसे अक्षम करें। </string>
+
+	<!-- Label for the “open in” radio buttons. -->
+	<key>OPEN_IN</key>
+	<string>किसमें खोले:</string>
+
+	<!-- Radio button for   creating a new tab. -->
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>नया टैब</string>
+
+	<!-- Radio button for creating a new window. -->
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>नयी खिड़की</string>
+
+	<!-- Radio button for reusing the last tab. -->
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>अंतिम इस्तेमाल किया गया टैब</string>
+
+	<!-- Label explaining how to enable TermHere if it is disabled. -->
 	<key>TROUBLESHOOTING_NOTE</key>
-	<string>नहीं यह देखकर? सुनिश्चित करें कि TermHere एक्सटेंशन वरीयताओं में सक्षम है।</string>
-</dict>
+	<string>नहीं दिख रहा? सुनिश्चित करें कि TermHere एक्सटेंशन प्राथमिकताएं में चालू है।</string>
+
+	<!-- Button that opens the Preferences app. -->
+	<key>OPEN_PREFERENCES</key>
+	<string>प्राथमिकताएं खोलें</string>
+</dict> 
 </plist>

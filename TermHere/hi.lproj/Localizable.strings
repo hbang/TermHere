@@ -28,7 +28,7 @@
 
 	<!-- Title of the About window. -->
 	<key>ABOUT</key>
-<string>के बारे में</string>
+    <string>के बारे में</string>
 
 	<!-- Message displayed when the app fails to be opened. -->
 	<key>OPENING_APP_FAILED</key>
