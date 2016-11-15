@@ -32,7 +32,6 @@
 
 	<!-- Explanation of how the above checkbox works. -->
 	<key>OPEN_SELECTED_ITEMS_EXPLANATION</key>
-	<string>Enable to open a tab for each item selected. Disable to always use the currently open folder.</string>
 	<string>Zapnite pre otvorenie tabu pre každú označenú položku. Vypnite pre stále použitie aktuálne otvoreného priečinka.</string>
 
 	<!-- Label for the “open in” radio buttons. -->
