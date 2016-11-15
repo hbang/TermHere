@@ -2,25 +2,60 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BROWSE</key>
-	<string>Cari</string>
-	<key>OPEN_IN</key>
-	<string>Buka dalam:</string>
-	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>Ciri-ciri ini memerlukan Terminal atau iTerm 2.9 atau yang terbaru.</string>
-	<key>OPEN_IN_LAST_USED_TAB</key>
-	<string>Tab terakhir yang digunakan</string>
-	<key>OPEN_IN_NEW_TAB</key>
-	<string>Tab Baru</string>
-	<key>OPEN_IN_NEW_WINDOW</key>
-	<string>Teringkap baru</string>
-	<key>SHOW_IN</key>
-	<string>Tunjuk dalam:</string>
-	<key>SHOW_IN_CONTEXT_MENUS</key>
-	<string>Konteks menu</string>
+	<!-- Label for choosing the terminal app to use. -->
 	<key>TERMINAL_APP</key>
 	<string>App Terminal:</string>
+
+	<!-- Button that opens a panel to choose the terminal app. -->
+	<key>BROWSE</key>
+	<string>Cari</string>
+
+	<!-- Label for the display preferences. -->
+	<key>SHOW_IN</key>
+	<string>Tunjuk dalam:</string>
+
+	<!-- Checkbox that toggles displaying the button in context menus. -->
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>Menu Konteks</string>
+
+	<!-- Label that explains how to toggle the toolbar button. -->
+	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
+	<string>Untuk tunjuk atau sorok butang bar alat Carian, buka Carian dan klik Lihat → Ubahsuai Bar alat.</string>
+
+	<!-- Label for the behavior preferences. -->
+	<key>BEHAVIOR</key>
+	<string>Kelakuan:</string>
+
+	<!-- Checkbox that toggles opening selected items, vs opening the current folder. -->
+	<key>OPEN_SELECTED_ITEMS</key>
+	<string>Buka barang terpilih</string>
+
+	<!-- Explanation of how the above checkbox works. -->
+	<key>OPEN_SELECTED_ITEMS_EXPLANATION</key>
+	<string>Membolehkan untuk buka tab untuk setiap barang yang terpilih. Dimansuhkan untuk sentiasa menggunakan folder yang sedang terbuka.</string>
+
+	<!-- Label for the “open in” radio buttons. -->
+	<key>OPEN_IN</key>
+	<string>Buka dalam:</string>
+
+	<!-- Radio button for	creating a new tab. -->
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>Tab baru</string>
+
+	<!-- Radio button for creating a new window. -->
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>Tetingkap baru</string>
+
+	<!-- Radio button for reusing the last tab. -->
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>Tab kali terakhir digunakan</string>
+
+	<!-- Label explaining how to enable TermHere if it is disabled. -->
 	<key>TROUBLESHOOTING_NOTE</key>
-	<string>Tidak dapat melihatnya? Pastikan TermHere telah dibolehkan di dalam pilihan Extensi.</string>
+	<string>Tidak dapat melihatnya? Pastikan TermHere telah dibolehkan dalam pilihan Sambungan.</string>
+
+	<!-- Button that opens the Preferences app. -->
+	<key>OPEN_PREFERENCES</key>
+	<string>Buka Pilihan</string>
 </dict>
 </plist>
