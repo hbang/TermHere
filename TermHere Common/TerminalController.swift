@@ -30,6 +30,11 @@ open class TerminalController: NSObject {
 		if let commands = TerminalController.applescriptCommands[bundleIdentifier] {
 			// if the command is known, get its applescript
 			if let command = commands[activationType.description] {
+				// ensure the app is running by launching it. this usually would bring
+				// all of its windows to the front, which is awful, so we ask it to not
+				// do that. the applescript will activate just the window in question
+				NSWorkspace.shared().launchApplication(withBundleIdentifier: bundleIdentifier, options: .withoutActivation, additionalEventParamDescriptor: nil, launchIdentifier: nil)
+
 				// create an applescript object, wrapped in a function
 				let applescript = NSAppleScript(source: "on runCommand(command)\n" + command + "\nend runCommand")
 
