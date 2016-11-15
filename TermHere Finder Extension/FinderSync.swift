@@ -51,7 +51,8 @@ class FinderSync: FIFinderSync {
 		case .toolbarItemMenu:
 			// if we're the toolbar item, cheat a little by treating this as our click
 			// action
-			self.newTerminal(nil)
+			newTerminal(nil)
+
 			return menu
 		}
 
@@ -92,7 +93,11 @@ class FinderSync: FIFinderSync {
 
 	func newTerminal(_ sender: NSMenuItem?) {
 		// gotta launch them all
-		_ = TerminalController.launch(urlsToOpen)
+		let urls = urlsToOpen
+
+		DispatchQueue.global(qos: .userInteractive).async {
+			_ = TerminalController.launch(urls)
+		}
 	}
 
 }
