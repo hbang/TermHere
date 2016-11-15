@@ -2,25 +2,60 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<!-- Label for choosing the terminal app to use. -->
+	<key>TERMINAL_APP</key>
+	<string>Terminal:</string>
+
+	<!-- Button that opens a panel to choose the terminal app. -->
 	<key>BROWSE</key>
 	<string>Przeglądaj</string>
+
+	<!-- Label for the display preferences. -->
+	<key>SHOW_IN</key>
+	<string>Wyświetl w:</string>
+
+	<!-- Checkbox that toggles displaying the button in context menus. -->
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>Menu kontekstowym</string>
+
+	<!-- Label that explains how to toggle the toolbar button. -->
+	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
+	<string>Aby wyświetlić/schować pasek narzędzi (Finder), otwórz  Finder i przejdź do Wyświetlanie → Edytuj pasek narzędzi.</string>
+
+	<!-- Label for the behavior preferences. -->
+	<key>BEHAVIOR</key>
+	<string>Zachowanie:</string>
+
+	<!-- Checkbox that toggles opening selected items, vs opening the current folder. -->
+	<key>OPEN_SELECTED_ITEMS</key>
+	<string>Otwórz wybrane elementy</string>
+
+	<!-- Explanation of how the above checkbox works. -->
+	<key>OPEN_SELECTED_ITEMS_EXPLANATION</key>
+	<string>Uruchom, aby wyświetlić kartę dla każdego elementu z osobna. Wyłącz, aby używać folderu.</string>
+
+	<!-- Label for the “open in” radio buttons. -->
 	<key>OPEN_IN</key>
 	<string>Otwórz w:</string>
-	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>Ta funkcja wymaga Terminala lub iTerm (w wersji 2.9 lub nowszej).</string>
-	<key>OPEN_IN_LAST_USED_TAB</key>
-	<string>Ostatnio używana zakładka</string>
+
+	<!-- Radio button for	creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
-	<string>Nowa zakładka</string>
+	<string>Nowej karcie</string>
+
+	<!-- Radio button for creating a new window. -->
 	<key>OPEN_IN_NEW_WINDOW</key>
-	<string>Nowe okno</string>
-	<key>SHOW_IN</key>
-	<string>Pokaż w:</string>
-	<key>SHOW_IN_CONTEXT_MENUS</key>
-	<string>Menu kontekstowe</string>
-	<key>TERMINAL_APP</key>
-	<string>Terminal app:</string>
+	<string>Nowym oknie</string>
+
+	<!-- Radio button for reusing the last tab. -->
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>Ostatnio używana karta</string>
+
+	<!-- Label explaining how to enable TermHere if it is disabled. -->
 	<key>TROUBLESHOOTING_NOTE</key>
-	<string>Nie masz dostępu? Upewnij się, że TermHere jest włączony w ustawieniach rozszerzeń.</string>
+	<string>Nie działa? Upewnij się, że TermHere jest włączony w ustawieniach rozszerzeń.</string>
+
+	<!-- Button that opens the Preferences app. -->
+	<key>OPEN_PREFERENCES</key>
+	<string>Otwórz ustawienia</string>
 </dict>
 </plist>
