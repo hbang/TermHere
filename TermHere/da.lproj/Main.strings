@@ -2,25 +2,60 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<!-- Label for choosing the terminal app to use. -->
+	<key>TERMINAL_APP</key>
+	<string>Terminal-emulator:</string>
+
+	<!-- Button that opens a panel to choose the terminal app. -->
 	<key>BROWSE</key>
-	<string>Browse</string>
-	<key>OPEN_IN</key>
-	<string>Åbn i:</string>
-	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>Denne funktion kræver “Terminal“ eller “iTerm“ 2.9 eller nyere.</string>
-	<key>OPEN_IN_LAST_USED_TAB</key>
-	<string>Senest brugte fane</string>
-	<key>OPEN_IN_NEW_TAB</key>
-	<string>Ny fane</string>
-	<key>OPEN_IN_NEW_WINDOW</key>
-	<string>Nyt vindue</string>
+	<string>Vælg</string>
+
+	<!-- Label for the display preferences. -->
 	<key>SHOW_IN</key>
 	<string>Vis i:</string>
+
+	<!-- Checkbox that toggles displaying the button in context menus. -->
 	<key>SHOW_IN_CONTEXT_MENUS</key>
 	<string>Kontekstmenuer</string>
-	<key>TERMINAL_APP</key>
-	<string>Terminal program:</string>
+
+	<!-- Label that explains how to toggle the toolbar button. -->
+	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
+	<string>For at vise eller skjule Finder-værktøjslinje-knappen, åbn Finder, og klik på Oversigt → Indstil værktøjslinje…</string>
+
+	<!-- Label for the behavior preferences. -->
+	<key>BEHAVIOR</key>
+	<string>Opførsel:</string>
+
+	<!-- Checkbox that toggles opening selected items, vs opening the current folder. -->
+	<key>OPEN_SELECTED_ITEMS</key>
+	<string>Åbn valgte emner</string>
+
+	<!-- Explanation of how the above checkbox works. -->
+	<key>OPEN_SELECTED_ITEMS_EXPLANATION</key>
+	<string>Slå til for at åbne en fane for hvert valgt emne. Slå fra for altid at bruge den mappe, der i øjeblikket er åben.</string>
+
+	<!-- Label for the “open in” radio buttons. -->
+	<key>OPEN_IN</key>
+	<string>Åbn i:</string>
+
+	<!-- Radio button for	creating a new tab. -->
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>Ny fane</string>
+
+	<!-- Radio button for creating a new window. -->
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>Nyt vindue</string>
+
+	<!-- Radio button for reusing the last tab. -->
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>Senest brugte fane</string>
+
+	<!-- Label explaining how to enable TermHere if it is disabled. -->
 	<key>TROUBLESHOOTING_NOTE</key>
-	<string>Kan du ikke se det? Vær sikker på at “TermHere“ er slået til i “Udvidelser“ indstillingsvinduet.</string>
+	<string>Kan du ikke se det? Vær sikker på, at "TermHere" er slået til i "Udvidelser" i indstillingsvinduet.</string>
+
+	<!-- Button that opens the Preferences app. -->
+	<key>OPEN_PREFERENCES</key>
+	<string>Åbn indstillinger</string>
 </dict>
 </plist>
