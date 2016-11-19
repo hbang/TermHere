@@ -2,25 +2,60 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<!-- Label for choosing the terminal app to use. -->
+	<key>TERMINAL_APP</key>
+	<string>Terminálová aplikace:</string>
+
+	<!-- Button that opens a panel to choose the terminal app. -->
 	<key>BROWSE</key>
-	<string>Prohlížet</string>
-	<key>OPEN_IN</key>
-	<string>Otevřít v:</string>
-	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>Tato funkce vyžaduje Terminal nebo iTerm 2.9 a výš.</string>
-	<key>OPEN_IN_LAST_USED_TAB</key>
-	<string>Poslední použitý tab</string>
-	<key>OPEN_IN_NEW_TAB</key>
-	<string>Nový tab</string>
-	<key>OPEN_IN_NEW_WINDOW</key>
-	<string>Nové okno</string>
+	<string>Procházet</string>
+
+	<!-- Label for the display preferences. -->
 	<key>SHOW_IN</key>
-	<string>Ukázat v:</string>
+	<string>Zobrazit v:</string>
+
+	<!-- Checkbox that toggles displaying the button in context menus. -->
 	<key>SHOW_IN_CONTEXT_MENUS</key>
 	<string>Kontextová menu</string>
-	<key>TERMINAL_APP</key>
-	<string>Aplikace pro terminál:</string>
+
+	<!-- Label that explains how to toggle the toolbar button. -->
+	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
+	<string>K zobrazení nebo skrytí ikony v nástrojovém panelu ve Finderu, otevřete Finder, klikněte Zobrazení -> Přizpůsobení panelu.</string>
+
+	<!-- Label for the behavior preferences. -->
+	<key>BEHAVIOR</key>
+	<string>Chování:</string>
+
+	<!-- Checkbox that toggles opening selected items, vs opening the current folder. -->
+	<key>OPEN_SELECTED_ITEMS</key>
+	<string>Otevřít vybrané položky</string>
+
+	<!-- Explanation of how the above checkbox works. -->
+	<key>OPEN_SELECTED_ITEMS_EXPLANATION</key>
+	<string>Povolit otevírání jiné záložky pro každou položku zvlášť. Vypnout pro použití aktuálně otevřené složky.</string>
+
+	<!-- Label for the “open in” radio buttons. -->
+	<key>OPEN_IN</key>
+	<string>Otevřít v:</string>
+
+	<!-- Radio button for	creating a new tab. -->
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>Nové záložka</string>
+
+	<!-- Radio button for creating a new window. -->
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>Nové okno</string>
+
+	<!-- Radio button for reusing the last tab. -->
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>Poslední použitá záložka</string>
+
+	<!-- Label explaining how to enable TermHere if it is disabled. -->
 	<key>TROUBLESHOOTING_NOTE</key>
-	<string>Nevidíte to? Ujistěte se, že máte TermHere povolený v nastavení pro doplňky.</string>
+	<string>Nevidíte tu možnost? Ujištěte se, že TermHere máte povolený v záložce "Rozšíření" v nastavení.</string>
+
+	<!-- Button that opens the Preferences app. -->
+	<key>OPEN_PREFERENCES</key>
+	<string>Otevřít nastavení</string>
 </dict>
 </plist>
