@@ -50,7 +50,7 @@
 			<key>NSMessage</key>
 			<string>launchTerminal</string>
 			<key>NSPortName</key>
-			<string>TermHere</string>
+			<string>ws.hbang.TermHere.TermHere-Service</string>
 			<key>NSRequiredContext</key>
 			<dict>
 				<key>NSServiceCategory</key>
@@ -68,6 +68,6 @@
 		</dict>
 	</array>
 	<key>SUFeedURL</key>
-	<string>https://cdn.hbang.ws/updates/termhere.xml</string>
+	<string>https://hbangstorage.blob.core.windows.net/hbangcdn/updates/termhere.xml</string>
 </dict>
 </plist>

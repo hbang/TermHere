@@ -14,10 +14,6 @@ import TermHereCommon
 class TerminalServiceProvider: NSObject {
 
 	func launchTerminal(_ pasteboard: NSPasteboard, userData: String, error: AutoreleasingUnsafeMutablePointer<NSString?>) {
-		// immediately tell the app delegate so our dock icon is hidden
-		let appDelegate = NSApplication.shared().delegate as! AppDelegate
-		appDelegate.appMode = .service
-
 		// get the selected filenames
 		guard let filenames = pasteboard.propertyList(forType: NSFilenamesPboardType) as? [String] else {
 			// nothing? huh. ok

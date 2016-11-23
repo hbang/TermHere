@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CF28CF701D97A2BA00D91B9E /* AppleScriptCommands.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFFF6DC01CEEFCE0004E5894 /* AppleScriptCommands.plist */; };
-		CF435B6C1CF3C06D00F794F1 /* ServicesMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF435B6A1CF3C06D00F794F1 /* ServicesMenu.strings */; };
+		CF3AE0D71DE43D1D00D91B9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AE0D61DE43D1D00D91B9E /* AppDelegate.swift */; };
+		CF3AE0D81DE43DD100D91B9E /* TerminalServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1471101CF2B95000A914CB /* TerminalServiceProvider.swift */; };
+		CF3AE0DA1DE43E0E00D91B9E /* TermHere Service.service in Embed Services */ = {isa = PBXBuildFile; fileRef = CF3AE0D01DE43C1D00D91B9E /* TermHere Service.service */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CF3AE0DD1DE43FEF00D91B9E /* ServicesMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF435B6A1CF3C06D00F794F1 /* ServicesMenu.strings */; };
+		CF3AE0E11DE4433600D91B9E /* ServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AE0E01DE4433600D91B9E /* ServiceController.swift */; };
 		CF4CB4191DD429DA00D91B9E /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = CF4CB4171DD429DA00D91B9E /* Credits.html */; };
 		CF57D2051D958FDE00D91B9E /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF57D2021D958FDE00D91B9E /* Main.strings */; };
 		CF9CEE601CE59B1F00A89E71 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CEE5F1CE59B1F00A89E71 /* FinderSync.swift */; };
@@ -25,7 +29,6 @@
 		CFD9B7CA1CE5960500947EC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD9B7C91CE5960500947EC8 /* Assets.xcassets */; };
 		CFD9B7CD1CE5960500947EC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD9B7CB1CE5960500947EC8 /* Main.storyboard */; };
 		CFEAA42A1D97B45900D91B9E /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEAA4291D97B45900D91B9E /* String+Additions.swift */; };
-		CFF6564D1CFC85F8007031AD /* TerminalServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1471101CF2B95000A914CB /* TerminalServiceProvider.swift */; };
 		CFF6564F1CFC860F007031AD /* TerminalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6564E1CFC860F007031AD /* TerminalController.swift */; };
 		CFFE52781D97DE4F00D91B9E /* CocoaLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFE52771D97DE4F00D91B9E /* CocoaLocalization.swift */; };
 		CFFF6DAF1CEE0F5A004E5894 /* TermHere Common.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFF6DAE1CEE0F5A004E5894 /* TermHere Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,6 +38,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CF3AE0DB1DE43E3900D91B9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFD9B7BA1CE5960500947EC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF3AE0CF1DE43C1D00D91B9E;
+			remoteInfo = "TermHere Service";
+		};
+		CF3AE0E21DE447F200D91B9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFD9B7BA1CE5960500947EC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFFF6DAB1CEE0F5A004E5894;
+			remoteInfo = "TermHere Common";
+		};
 		CF9CEE621CE59B1F00A89E71 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CFD9B7BA1CE5960500947EC8 /* Project object */;
@@ -59,6 +76,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		CF3AE0D91DE43E0800D91B9E /* Embed Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 12;
+			files = (
+				CF3AE0DA1DE43E0E00D91B9E /* TermHere Service.service in Embed Services */,
+			);
+			name = "Embed Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF9CEE681CE59B1F00A89E71 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,7 +112,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CF1471101CF2B95000A914CB /* TerminalServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TerminalServiceProvider.swift; path = TermHere/TerminalServiceProvider.swift; sourceTree = SOURCE_ROOT; };
+		CF1471101CF2B95000A914CB /* TerminalServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TerminalServiceProvider.swift; path = "TermHere Service/TerminalServiceProvider.swift"; sourceTree = SOURCE_ROOT; };
 		CF14F2061D9590DB00D91B9E /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CF14F2071D9590DB00D91B9E /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Main.strings; sourceTree = "<group>"; };
 		CF14F2081D9590DB00D91B9E /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
@@ -182,6 +210,10 @@
 		CF28CF6D1D95923000D91B9E /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CF28CF6E1D95923500D91B9E /* zh_CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_CN; path = zh_CN.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CF28CF6F1D95923A00D91B9E /* zh_HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_HK; path = zh_HK.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CF3AE0D01DE43C1D00D91B9E /* TermHere Service.service */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TermHere Service.service"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF3AE0D21DE43C1D00D91B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF3AE0D61DE43D1D00D91B9E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF3AE0E01DE4433600D91B9E /* ServiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceController.swift; sourceTree = "<group>"; };
 		CF435B6B1CF3C06D00F794F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
 		CF4CB4181DD429DA00D91B9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/Credits.html; sourceTree = "<group>"; };
 		CF4CB41A1DD429E000D91B9E /* en_AU */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en_AU; path = en_AU.lproj/Credits.html; sourceTree = "<group>"; };
@@ -268,6 +300,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CF3AE0CD1DE43C1D00D91B9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF9CEE581CE59B1F00A89E71 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,6 +333,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF3AE0D11DE43C1D00D91B9E /* TermHere Service */ = {
+			isa = PBXGroup;
+			children = (
+				CF3AE0D61DE43D1D00D91B9E /* AppDelegate.swift */,
+				CF1471101CF2B95000A914CB /* TerminalServiceProvider.swift */,
+				CF3AE0DF1DE43FFD00D91B9E /* Supporting Files */,
+			);
+			path = "TermHere Service";
+			sourceTree = "<group>";
+		};
+		CF3AE0DE1DE43FF800D91B9E /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				CF435B6A1CF3C06D00F794F1 /* ServicesMenu.strings */,
+			);
+			name = Localization;
+			sourceTree = "<group>";
+		};
+		CF3AE0DF1DE43FFD00D91B9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF3AE0DE1DE43FF800D91B9E /* Localization */,
+				CF3AE0D21DE43C1D00D91B9E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		CF9CEE5C1CE59B1F00A89E71 /* TermHere Finder Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,7 +397,6 @@
 			children = (
 				CF57D2021D958FDE00D91B9E /* Main.strings */,
 				CF9CEE701CE5B55100A89E71 /* Localizable.strings */,
-				CF435B6A1CF3C06D00F794F1 /* ServicesMenu.strings */,
 				CF4CB4171DD429DA00D91B9E /* Credits.html */,
 			);
 			name = Localization;
@@ -365,7 +430,7 @@
 		CFCF12E11CF47912007A807F /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				CF1471101CF2B95000A914CB /* TerminalServiceProvider.swift */,
+				CF3AE0E01DE4433600D91B9E /* ServiceController.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -393,6 +458,7 @@
 				CFD9B7C41CE5960500947EC8 /* TermHere */,
 				CF9CEE5C1CE59B1F00A89E71 /* TermHere Finder Extension */,
 				CFFF6DAD1CEE0F5A004E5894 /* TermHere Common */,
+				CF3AE0D11DE43C1D00D91B9E /* TermHere Service */,
 				CFD9B7C31CE5960500947EC8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -403,6 +469,7 @@
 				CFD9B7C21CE5960500947EC8 /* TermHere.app */,
 				CF9CEE5B1CE59B1F00A89E71 /* TermHere Finder Extension.appex */,
 				CFFF6DAC1CEE0F5A004E5894 /* TermHereCommon.framework */,
+				CF3AE0D01DE43C1D00D91B9E /* TermHere Service.service */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -464,6 +531,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		CF3AE0CF1DE43C1D00D91B9E /* TermHere Service */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF3AE0D51DE43C1D00D91B9E /* Build configuration list for PBXNativeTarget "TermHere Service" */;
+			buildPhases = (
+				CF3AE0CC1DE43C1D00D91B9E /* Sources */,
+				CF3AE0CD1DE43C1D00D91B9E /* Frameworks */,
+				CF3AE0CE1DE43C1D00D91B9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF3AE0E31DE447F200D91B9E /* PBXTargetDependency */,
+			);
+			name = "TermHere Service";
+			productName = "TermHere Service";
+			productReference = CF3AE0D01DE43C1D00D91B9E /* TermHere Service.service */;
+			productType = "com.apple.product-type.bundle";
+		};
 		CF9CEE5A1CE59B1F00A89E71 /* TermHere Finder Extension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF9CEE671CE59B1F00A89E71 /* Build configuration list for PBXNativeTarget "TermHere Finder Extension" */;
@@ -491,12 +576,14 @@
 				CFD9B7C01CE5960500947EC8 /* Resources */,
 				CF9CEE681CE59B1F00A89E71 /* Embed App Extensions */,
 				CFFF6DB81CEE0F5A004E5894 /* Embed Frameworks */,
+				CF3AE0D91DE43E0800D91B9E /* Embed Services */,
 				CFAD6C571DD3558200D91B9E /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				CF9CEE631CE59B1F00A89E71 /* PBXTargetDependency */,
+				CF3AE0DC1DE43E3900D91B9E /* PBXTargetDependency */,
 				CFFF6DB21CEE0F5A004E5894 /* PBXTargetDependency */,
 			);
 			name = TermHere;
@@ -532,6 +619,12 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "HASHBANG Productions";
 				TargetAttributes = {
+					CF3AE0CF1DE43C1D00D91B9E = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = N2LN9ZT493;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
 					CF9CEE5A1CE59B1F00A89E71 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = N2LN9ZT493;
@@ -618,12 +711,21 @@
 			targets = (
 				CFD9B7C11CE5960500947EC8 /* TermHere */,
 				CF9CEE5A1CE59B1F00A89E71 /* TermHere Finder Extension */,
+				CF3AE0CF1DE43C1D00D91B9E /* TermHere Service */,
 				CFFF6DAB1CEE0F5A004E5894 /* TermHere Common */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CF3AE0CE1DE43C1D00D91B9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3AE0DD1DE43FEF00D91B9E /* ServicesMenu.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF9CEE591CE59B1F00A89E71 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -643,7 +745,6 @@
 				CF4CB4191DD429DA00D91B9E /* Credits.html in Resources */,
 				CFD9B7CD1CE5960500947EC8 /* Main.storyboard in Resources */,
 				CF57D2051D958FDE00D91B9E /* Main.strings in Resources */,
-				CF435B6C1CF3C06D00F794F1 /* ServicesMenu.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,6 +777,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CF3AE0CC1DE43C1D00D91B9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3AE0D71DE43D1D00D91B9E /* AppDelegate.swift in Sources */,
+				CF3AE0D81DE43DD100D91B9E /* TerminalServiceProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF9CEE571CE59B1F00A89E71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -691,8 +801,8 @@
 				CFCF12E61CF47AB1007A807F /* AboutViewController.swift in Sources */,
 				CFCF12E01CF46CC4007A807F /* ContainerView.swift in Sources */,
 				CFD9B7C81CE5960500947EC8 /* ViewController.swift in Sources */,
+				CF3AE0E11DE4433600D91B9E /* ServiceController.swift in Sources */,
 				CFFE52781D97DE4F00D91B9E /* CocoaLocalization.swift in Sources */,
-				CFF6564D1CFC85F8007031AD /* TerminalServiceProvider.swift in Sources */,
 				CFD9B7C61CE5960500947EC8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -710,6 +820,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CF3AE0DC1DE43E3900D91B9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF3AE0CF1DE43C1D00D91B9E /* TermHere Service */;
+			targetProxy = CF3AE0DB1DE43E3900D91B9E /* PBXContainerItemProxy */;
+		};
+		CF3AE0E31DE447F200D91B9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFFF6DAB1CEE0F5A004E5894 /* TermHere Common */;
+			targetProxy = CF3AE0E21DE447F200D91B9E /* PBXContainerItemProxy */;
+		};
 		CF9CEE631CE59B1F00A89E71 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CF9CEE5A1CE59B1F00A89E71 /* TermHere Finder Extension */;
@@ -771,6 +891,7 @@
 				CF14F2541D95914700D91B9E /* zh_HK */,
 			);
 			name = ServicesMenu.strings;
+			path = ../TermHere;
 			sourceTree = "<group>";
 		};
 		CF4CB4171DD429DA00D91B9E /* Credits.html */ = {
@@ -930,6 +1051,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CF3AE0D31DE43C1D00D91B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = N2LN9ZT493;
+				INFOPLIST_FILE = "TermHere Service/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "ws.hbang.TermHere.TermHere-Service";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				WRAPPER_EXTENSION = service;
+			};
+			name = Debug;
+		};
+		CF3AE0D41DE43C1D00D91B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = N2LN9ZT493;
+				INFOPLIST_FILE = "TermHere Service/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "ws.hbang.TermHere.TermHere-Service";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				WRAPPER_EXTENSION = service;
+			};
+			name = Release;
+		};
 		CF9CEE651CE59B1F00A89E71 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1159,6 +1325,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CF3AE0D51DE43C1D00D91B9E /* Build configuration list for PBXNativeTarget "TermHere Service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF3AE0D31DE43C1D00D91B9E /* Debug */,
+				CF3AE0D41DE43C1D00D91B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CF9CEE671CE59B1F00A89E71 /* Build configuration list for PBXNativeTarget "TermHere Finder Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
