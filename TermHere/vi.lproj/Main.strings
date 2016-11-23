@@ -2,25 +2,60 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BROWSE</key>
-	<string>Duyệt</string>
-	<key>OPEN_IN</key>
-	<string>Mở bằng:</string>
-	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>Tính năng này yêu cầu Terminal hoặc iTerm 2.9 trở lên.</string>
-	<key>OPEN_IN_LAST_USED_TAB</key>
-	<string>Thẻ được sử dụng cuối cùng</string>
-	<key>OPEN_IN_NEW_TAB</key>
-	<string>Thẻ mới</string>
-	<key>OPEN_IN_NEW_WINDOW</key>
-	<string>Cửa sổ mới</string>
-	<key>SHOW_IN</key>
-	<string>Hiện trong:</string>
-	<key>SHOW_IN_CONTEXT_MENUS</key>
-	<string>Danh mục bối cảnh</string>
+	<!-- Label for choosing the terminal app to use. -->
 	<key>TERMINAL_APP</key>
 	<string>Ứng dụng Terminal:</string>
+
+	<!-- Button that opens a panel to choose the terminal app. -->
+	<key>BROWSE</key>
+	<string>Tìm kiếm</string>
+
+	<!-- Label for the display preferences. -->
+	<key>SHOW_IN</key>
+	<string>Hiển thị trong:</string>
+
+	<!-- Checkbox that toggles displaying the button in context menus. -->
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>Trình Đơn Ngữ Cảnh</string>
+
+	<!-- Label that explains how to toggle the toolbar button. -->
+	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
+	<string>Để hiển thị hoặc ẩn các nút trong thanh công cụ Finder, mở Finder và chọn View sau đó chọn Customize Toolbar.</string>
+
+	<!-- Label for the behavior preferences. -->
+	<key>BEHAVIOR</key>
+	<string>Các hành vi:</string>
+
+	<!-- Checkbox that toggles opening selected items, vs opening the current folder. -->
+	<key>OPEN_SELECTED_ITEMS</key>
+	<string>Mở các mục đã chọn</string>
+
+	<!-- Explanation of how the above checkbox works. -->
+	<key>OPEN_SELECTED_ITEMS_EXPLANATION</key>
+	<string>Sau khi được kích hoạt mỗi tính năng sẻ mở một tab cho mỗi mục đã chọn. Tắt để luôn sử dụng các mục đang mở.</string>
+
+	<!-- Label for the “open in” radio buttons. -->
+	<key>OPEN_IN</key>
+	<string>Mở trong:</string>
+
+	<!-- Radio button for	creating a new tab. -->
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>Tab mới</string>
+
+	<!-- Radio button for creating a new window. -->
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>Window mới</string>
+
+	<!-- Radio button for reusing the last tab. -->
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>Tab cuối cùng sử dụng</string>
+
+	<!-- Label explaining how to enable TermHere if it is disabled. -->
 	<key>TROUBLESHOOTING_NOTE</key>
-	<string>Không thấy nó? Hãy chắc chắn TermHere đang được mở trong tùy chỉnh Extensions.</string>
+	<string>Không thấy được TermHere hoạt động? Hãy kiểm tra rằng TermHere đã được kích hoạt trong Cài Đặt.</string>
+
+	<!-- Button that opens the Preferences app. -->
+	<key>OPEN_PREFERENCES</key>
+	<string>Mở Tuỳ Chọn</string>
 </dict>
 </plist>
