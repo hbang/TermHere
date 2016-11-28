@@ -4,62 +4,62 @@
 <dict>
 	<!-- Label for choosing the terminal app to use. -->
 	<key>TERMINAL_APP</key>
-	<string>터미널 앱:</string>
+	<string>終端機 App:</string>
 
 	<!-- Button that opens a panel to choose the terminal app. -->
 	<key>BROWSE</key>
-	<string>찾아보기</string>
+	<string>瀏覽</string>
 
 	<!-- Label for the display preferences. -->
 	<key>SHOW_IN</key>
-	<string>다음으로 보기:</string>
+	<string>顯示在:</string>
 
 	<!-- Checkbox that toggles displaying the button in context menus. -->
 	<key>SHOW_IN_CONTEXT_MENUS</key>
-	<string>문맥 메뉴</string>
+	<string>右鍵選單</string>
 
 	<!-- Label that explains how to toggle the toolbar button. -->
 	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
-	<string>파인더의 툴바 바튼을 보이거나 숨기려면, 파인더를 열고 보기 → 툴바 사용자설정 을 사용하세요.</string>
+	<string>要顯示或隱藏 Finder 工具列按鈕，開啟 Finder 並且選取檢視然後自定工具列。</string>
 
 	<!-- Label for the behavior preferences. -->
 	<key>BEHAVIOR</key>
-	<string>동작:</string>
+	<string>行為:</string>
 
 	<!-- Checkbox that toggles opening selected items, vs opening the current folder. -->
 	<key>OPEN_SELECTED_ITEMS</key>
-	<string>선택한 항목 실행</string>
+	<string>開啟選取的項目</string>
 
 	<!-- Explanation of how the above checkbox works. -->
 	<key>OPEN_SELECTED_ITEMS_EXPLANATION</key>
-	<string>활성화하면 각각 선택한 항목들마다 탭을 엽니다. 비활성화시 현재 열린 폴더를 사용합니다.</string>
+	<string>啟用來為每個選擇的項目開啟標籤。關閉來總是使用目前開啟的資料夾。</string>
 
 	<!-- Label for the “open in” radio buttons. -->
 	<key>OPEN_IN</key>
-	<string>다음으로 열기:</string>
+	<string>開啟在:</string>
 
 	<!-- Note for the apps TermHere supports. -->
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>這個功能需要 Terminal 或者 iTerm 2.9 或更新的版本</string>
+	<string>這個功能需要 Terminal 或者 iTerm 2.9 或更新的版本。</string>
 
 	<!-- Radio button for creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
-	<string>새 탭</string>
+	<string>新的標籤頁</string>
 
 	<!-- Radio button for creating a new window. -->
 	<key>OPEN_IN_NEW_WINDOW</key>
-	<string>새 창</string>
+	<string>新的視窗</string>
 
 	<!-- Radio button for reusing the last tab. -->
 	<key>OPEN_IN_LAST_USED_TAB</key>
-	<string>마지막으로 연 탭</string>
+	<string>最後使用的標籤頁</string>
 
 	<!-- Label explaining how to enable TermHere if it is disabled. -->
 	<key>TROUBLESHOOTING_NOTE</key>
-	<string>안 보이나요? TermHere가 확장 설정에서 사용상태인지 확인해주세요.</string>
+	<string>沒有看見? 請確認在延伸設定中啟用 TermHere。</string>
 
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
-	<string>설정 열기</string>
+	<string>開啟設定</string>
 </dict>
 </plist>
