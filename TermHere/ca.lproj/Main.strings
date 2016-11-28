@@ -38,7 +38,11 @@
 	<key>OPEN_IN</key>
 	<string>Obrir en:</string>
 
-	<!-- Radio button for	creating a new tab. -->
+	<!-- Note for the apps TermHere supports. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Aquesta característica necessita el Terminal o l'iTerm 2.9 com a mínim.</string>
+	
+	<!-- Radio button for creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>Pestanya nova</string>
 

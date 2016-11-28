@@ -38,7 +38,11 @@
 	<key>OPEN_IN</key>
 	<string>Otvoriť v:</string>
 
-	<!-- Radio button for	creating a new tab. -->
+	<!-- Note for the apps TermHere supports. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Táto funkcia vyžaduje Terminal alebo iTerm 2.9 alebo novší.</string>
+
+	<!-- Radio button for creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>Novom tabe</string>
 

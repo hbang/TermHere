@@ -38,7 +38,11 @@
 	<key>OPEN_IN</key>
 	<string>Buka dalam:</string>
 
-	<!-- Radio button for	creating a new tab. -->
+	<!-- Note for the apps TermHere supports. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Ciri-ciri ini memerlukan Terminal atau iTerm 2.9 atau yang terbaru.</string>
+
+	<!-- Radio button for creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>Tab baru</string>
 

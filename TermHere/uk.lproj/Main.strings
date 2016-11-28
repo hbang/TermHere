@@ -38,7 +38,11 @@
 	<key>OPEN_IN</key>
 	<string>Відкрити у:</string>
 
-	<!-- Radio button for	creating a new tab. -->
+	<!-- Note for the apps TermHere supports. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Ця можливість вимагає Terminal або iTerm 2.9 або новіше.</string>
+
+	<!-- Radio button for creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>Нова вкладка</string>
 

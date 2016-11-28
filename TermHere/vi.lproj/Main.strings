@@ -38,7 +38,11 @@
 	<key>OPEN_IN</key>
 	<string>Mở trong:</string>
 
-	<!-- Radio button for	creating a new tab. -->
+	<!-- Note for the apps TermHere supports. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Tính năng này yêu cầu Terminal hoặc iTerm 2.9 trở lên.</string>
+
+	<!-- Radio button for creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>Tab mới</string>
 

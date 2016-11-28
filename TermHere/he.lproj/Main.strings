@@ -38,7 +38,11 @@
 	<key>OPEN_IN</key>
 	<string>פתח ב:</string>
 
-	<!-- Radio button for	creating a new tab. -->
+	<!-- Note for the apps TermHere supports. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>תכונה זו דורשת התקנה של מסוף או iTerm 2גרסה 2.9 או חדש יותר.</string>
+
+	<!-- Radio button for creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>כרטיסייה חדשה</string>
 

@@ -36,9 +36,13 @@
 
 	<!-- Label for the “open in” radio buttons. -->
 	<key>OPEN_IN</key>
-	<string>Åpne i:</string>
+	<string>Åpne i:</string
 
-	<!-- Radio button for	creating a new tab. -->
+	<!-- Note for the apps TermHere supports. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Denne funksjonen krever Terminal eller iTerm 2.9 eller nyere.</string>
+
+	<!-- Radio button for creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>Ny fane</string>
 

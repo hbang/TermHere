@@ -38,7 +38,11 @@
 	<key>OPEN_IN</key>
 	<string>開くモード:</string>
 
-	<!-- Radio button for	creating a new tab. -->
+	<!-- Note for the apps TermHere supports. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>この機能を使ってために「ターミナル」それとも「iTerm 2.9」は必要です.</string>
+
+	<!-- Radio button for creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>新しいタブ</string>
 

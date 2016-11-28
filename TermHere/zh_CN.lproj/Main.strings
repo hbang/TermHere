@@ -38,7 +38,11 @@
 	<key>OPEN_IN</key>
 	<string>打开方式：</string>
 
-	<!-- Radio button for	creating a new tab. -->
+	<!-- Note for the apps TermHere supports. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>此功能需要终端或者iTerm 2.9或更新.</string>
+
+	<!-- Radio button for creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>新标签</string>
 

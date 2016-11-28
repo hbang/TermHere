@@ -38,7 +38,11 @@
 	<key>OPEN_IN</key>
 	<string>فتح فى:</string>
 
-	<!-- Radio button for	creating a new tab. -->
+	<!-- Note for the apps TermHere supports. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>.أو أحدثiTerm 2.9 تتطلب هذه الميزة محطة مقابل</string>
+
+	<!-- Radio button for creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>تبويب جديد</string>
 

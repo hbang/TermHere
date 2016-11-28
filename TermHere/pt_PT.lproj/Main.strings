@@ -38,7 +38,11 @@
 	<key>OPEN_IN</key>
 	<string>Abrir em:</string>
 
-	<!-- Radio button for	creating a new tab. -->
+	<!-- Note for the apps TermHere supports. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Esta funcionalidade requer o Terminal ou o iTerm 2.9 ou superior.</string>
+
+	<!-- Radio button for creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>Nova aba</string>
 

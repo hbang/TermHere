@@ -38,7 +38,11 @@
 	<key>OPEN_IN</key>
 	<string>Otvori u:</string>
 
-	<!-- Radio button for	creating a new tab. -->
+	<!-- Note for the apps TermHere supports. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Ovo svojstvo zahtjeva Terminal ili iTerm 2.9 ili noviji.</string>
+
+	<!-- Radio button for creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>Nova kartica</string>
 
