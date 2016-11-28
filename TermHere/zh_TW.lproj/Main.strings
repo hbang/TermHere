@@ -38,6 +38,10 @@
 	<key>OPEN_IN</key>
 	<string>다음으로 열기:</string>
 
+	<!-- Note for the apps TermHere supports. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>這個功能需要 Terminal 或者 iTerm 2.9 或更新的版本</string>
+
 	<!-- Radio button for creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>새 탭</string>
