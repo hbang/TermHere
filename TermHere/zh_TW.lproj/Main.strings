@@ -4,7 +4,7 @@
 <dict>
 	<!-- Label for choosing the terminal app to use. -->
 	<key>TERMINAL_APP</key>
-	<string>終端機 App:</string>
+	<string>終端機程式:</string>
 
 	<!-- Button that opens a panel to choose the terminal app. -->
 	<key>BROWSE</key>
