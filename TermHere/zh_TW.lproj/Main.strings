@@ -56,7 +56,7 @@
 
 	<!-- Label explaining how to enable TermHere if it is disabled. -->
 	<key>TROUBLESHOOTING_NOTE</key>
-	<string>沒有看見? 請確認在延伸設定中啟用 TermHere。</string>
+	<string>沒有看見? 請先確認延伸設定中有啟用 TermHere。</string>
 
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
