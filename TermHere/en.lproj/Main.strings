@@ -11,8 +11,12 @@
 	<string>Browse</string>
 
 	<!-- Label for the display preferences. -->
-	<key>SHOW_IN</key>
-	<string>Show in:</string>
+	<key>SHOW_ITEMS</key>
+	<string>Show items:</string>
+
+	<!-- Label for checkbox for “Open in [editor name]” button. -->
+	<key>OPEN_IN_EDITOR</key>
+	<string>Open in Editor</string>
 
 	<!-- Checkbox that toggles displaying the button in context menus. -->
 	<key>SHOW_IN_CONTEXT_MENUS</key>

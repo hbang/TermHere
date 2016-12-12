@@ -2,12 +2,34 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<!-- Button that opens a new terminal tab. -->
-	<key>NEW_TERMINAL_HERE</key>
-	<string>New Terminal Here</string>
+<!-- Button that opens the file in an app. %@ is the app name. -->
+<key>OPEN_IN_APP</key>
+<string>Open in %@</string>
 
-	<!-- Explanation of what the New Terminal Here button does. -->
-	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
-	<string>Open a terminal in this directory</string>
+<!-- Tooltip explaining what the Open in Terminal button does. -->
+<key>NEW_TERMINAL_HERE_TOOLTIP</key>
+<string>Open a terminal in this directory</string>
+
+<!-- Button that edits the file in an app. %@ is the app name. -->
+<key>EDIT_IN_APP</key>
+<string>Edit in %@</string>
+
+<!-- Tooltip explaining what the Open in Editor button does. -->
+<key>EDIT_IN_APP_TOOLTIP</key>
+<string>Open %@ to the current file or directory</string>
+
+<!-- Button that executes the file in an app. %@ is the app name. -->
+<key>EXECUTE_IN_APP</key>
+<string>Execute in %@</string>
+
+<!-- Tooltip explaining what the button does. -->
+<key>EXECUTE_IN_APP_TOOLTIP</key>
+<string>Open %@ and execute the current file</string>
+
+<key>NOT_EXECUTABLE_TITLE</key>
+<string>Could not open %@ because it is not an executable file.</string>
+
+<key>NOT_EXECUTABLE_MESSAGE</key>
+<string>Mark the file as executable to continue.</string>
 </dict>
 </plist>

@@ -8,6 +8,11 @@
 
 import Foundation
 
+public enum EditorType: UInt {
+	case app
+	case command
+}
+
 public enum ActivationType: UInt, CustomStringConvertible {
 	case newTab
 	case newWindow
@@ -38,8 +43,19 @@ open class Preferences {
 			"TerminalAppURL": "file:///Applications/Utilities/Terminal.app",
 			"TerminalAppBundleIdentifier": "com.apple.Terminal",
 
-			"OpenSelection": true,
+			"EditorType": EditorType.app.rawValue,
+			"EditorAppURL": "file:///Applications/TextEdit.app",
+			"EditorAppBundleIdentifier": "com.apple.TextEdit",
+			"EditorCommand": "nano",
+
+			"ShowOpenInTerminal": true,
+			"ShowOpenInEditor": true,
+			
 			"ShowInContextMenu": true,
+			"ShowAsSubmenu": false,
+
+			"OpenSelection": true,
+
 			"TerminalActivationType": ActivationType.newTab.rawValue
 		])
 	}
@@ -59,14 +75,54 @@ open class Preferences {
 		set { preferences.set(newValue, forKey: "TerminalAppBundleIdentifier") }
 	}
 
+	open var editorType: EditorType {
+		get { return EditorType(rawValue: preferences.object(forKey: "EditorType") as? UInt ?? 0)! }
+		set { preferences.set(newValue.rawValue, forKey: "EditorType") }
+	}
+
+	open var editorAppURL: URL {
+		get { return URL(string: preferences.object(forKey: "EditorAppURL") as! String)! }
+		set { preferences.set(newValue, forKey: "EditorAppURL") }
+	}
+
+	open var editorBundleIdentifier: String {
+		get { return preferences.string(forKey: "EditorAppBundleIdentifier")! }
+		set { preferences.set(newValue, forKey: "EditorAppBundleIdentifier") }
+	}
+
+	open var editorCommand: String {
+		get { return preferences.string(forKey: "EditorCommand")! }
+		set { preferences.set(newValue, forKey: "EditorCommand") }
+	}
+
+	open var showOpenInTerminal: Bool {
+		get { return preferences.bool(forKey: "ShowOpenInTerminal") }
+		set { preferences.set(newValue, forKey: "ShowOpenInTerminal") }
+	}
+
+	open var showOpenInEditor: Bool {
+		get { return preferences.bool(forKey: "ShowOpenInEditor") }
+		set { preferences.set(newValue, forKey: "ShowOpenInEditor") }
+	}
+
+	open var showExecuteFile: Bool {
+		get { return preferences.bool(forKey: "ShowExecuteFile") }
+		set { preferences.set(newValue, forKey: "ShowExecuteFile") }
+	}
+
+	open var openSelection: Bool {
+		get { return preferences.bool(forKey: "OpenSelection") }
+		set { preferences.set(newValue, forKey: "OpenSelection") }
+	}
+
 	open var showInContextMenus: Bool {
 		get { return preferences.bool(forKey: "ShowInContextMenu") }
 		set { preferences.set(newValue, forKey: "ShowInContextMenu") }
 	}
-	
-	open var openSelection: Bool {
-		get { return preferences.bool(forKey: "OpenSelection") }
-		set { preferences.set(newValue, forKey: "OpenSelection") }
+
+	open var showAsSubmenu: Bool {
+		get { return preferences.bool(forKey: "ShowAsSubmenu") }
+		set { preferences.set(newValue, forKey: "ShowAsSubmenu") }
 	}
 
 	open var activationType: ActivationType {
