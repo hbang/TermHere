@@ -31,7 +31,6 @@
 		CFEAA42A1D97B45900D91B9E /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEAA4291D97B45900D91B9E /* String+Additions.swift */; };
 		CFF6564F1CFC860F007031AD /* TerminalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6564E1CFC860F007031AD /* TerminalController.swift */; };
 		CFFE52781D97DE4F00D91B9E /* CocoaLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFE52771D97DE4F00D91B9E /* CocoaLocalization.swift */; };
-		CFFF6DAF1CEE0F5A004E5894 /* TermHere Common.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFF6DAE1CEE0F5A004E5894 /* TermHere Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CFFF6DB31CEE0F5A004E5894 /* TermHereCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFF6DAC1CEE0F5A004E5894 /* TermHereCommon.framework */; };
 		CFFF6DB41CEE0F5A004E5894 /* TermHereCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFFF6DAC1CEE0F5A004E5894 /* TermHereCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CFFF6DBC1CEE0F6F004E5894 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF6DBB1CEE0F6F004E5894 /* Preferences.swift */; };
@@ -319,7 +318,6 @@
 		CFF6564E1CFC860F007031AD /* TerminalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerminalController.swift; sourceTree = "<group>"; };
 		CFFE52771D97DE4F00D91B9E /* CocoaLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaLocalization.swift; sourceTree = "<group>"; };
 		CFFF6DAC1CEE0F5A004E5894 /* TermHereCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TermHereCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFFF6DAE1CEE0F5A004E5894 /* TermHere Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TermHere Common.h"; sourceTree = "<group>"; };
 		CFFF6DB01CEE0F5A004E5894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFFF6DBB1CEE0F6F004E5894 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		CFFF6DC01CEEFCE0004E5894 /* AppleScriptCommands.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppleScriptCommands.plist; path = TermHere/AppleScriptCommands.plist; sourceTree = SOURCE_ROOT; };
@@ -537,7 +535,6 @@
 			isa = PBXGroup;
 			children = (
 				CFFF6DC01CEEFCE0004E5894 /* AppleScriptCommands.plist */,
-				CFFF6DAE1CEE0F5A004E5894 /* TermHere Common.h */,
 				CFFF6DB01CEE0F5A004E5894 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -550,7 +547,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFFF6DAF1CEE0F5A004E5894 /* TermHere Common.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
