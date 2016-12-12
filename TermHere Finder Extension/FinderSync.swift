@@ -49,8 +49,7 @@ class FinderSync: FIFinderSync {
 			}
 
 		case .toolbarItemMenu:
-			// if we're the toolbar item, cheat a little by treating this as our click
-			// action
+			// if we're the toolbar item, cheat a little by treating this as our click action
 			newTerminal(nil)
 
 			return menu
@@ -67,8 +66,8 @@ class FinderSync: FIFinderSync {
 
 	var urlsToOpen: [URL] {
 		get {
-			// get the current directory and selected items, bail out if either is nil
-			// (which shouldn’t be possible, but still)
+			// get the current directory and selected items, bail out if either is nil (which shouldn’t be
+			// possible, but still)
 			guard let target = finderController.targetedURL() else {
 				NSLog("target is nil – attempting to open from an unknown path?")
 				return []
@@ -81,8 +80,8 @@ class FinderSync: FIFinderSync {
 
 			let preferences = Preferences.sharedInstance
 
-			// if selection is enabled and there are selected items, use them.
-			// otherwise, use the current directory
+			// if opening selection is enabled and there are selected items, use them. otherwise, use the
+			// current directory
 			if preferences.openSelection && items.count > 0 {
 				return items
 			} else {

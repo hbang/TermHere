@@ -86,8 +86,7 @@ class ViewController: NSViewController {
 		// only allow selecting app bundles
 		panel.allowedFileTypes = [ kUTTypeApplicationBundle as String ]
 
-		// configure the selected item. set the path to open to, then the filename
-		// to highlight
+		// configure the selected item. set the path to open to, then the filename to highlight
 		panel.directoryURL = pathControl.url!.deletingLastPathComponent()
 		panel.nameFieldStringValue = pathControl.url!.lastPathComponent
 		panel.prompt = NSLocalizedString("CHOOSE", comment: "Button that chooses the selected app in the open panel.")

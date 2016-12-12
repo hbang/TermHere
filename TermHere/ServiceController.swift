@@ -26,9 +26,8 @@ class ServiceController: NSObject {
 	}
 
 	func relaunch() {
-		// terminate any previous instance of the service process (as it might be
-		// an outdated build), wait for the termination if needed, and then launch
-		// a new instance of it
+		// terminate any previous instance of the service process (as it might be an outdated build),
+		// wait for the termination if needed, and then launch a new instance of it
 
 		// get the list of running apps
 		let apps = NSWorkspace.shared().runningApplications
@@ -36,8 +35,8 @@ class ServiceController: NSObject {
 		// loop over to find our service app
 		for (_, app) in apps.enumerated() {
 			if app.bundleIdentifier == "ws.hbang.TermHere.TermHere-Service" {
-				// keep a strong reference to this object around so it doesn’t get
-				// deallocated before our KVO callback (would have been) fired
+				// keep a strong reference to this object around so it doesn’t get deallocated before our
+				// KVO callback (would have been) fired
 				runningApp = app
 				break
 			}
