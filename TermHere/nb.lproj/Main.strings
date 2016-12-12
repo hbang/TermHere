@@ -36,7 +36,7 @@
 
 	<!-- Label for the “open in” radio buttons. -->
 	<key>OPEN_IN</key>
-	<string>Åpne i:</string
+	<string>Åpne i:</string>
 
 	<!-- Note for the apps TermHere supports. -->
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
