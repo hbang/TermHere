@@ -16,6 +16,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	let serviceController = ServiceController()
 
+	// MARK: - App delegate
+
 	func applicationDidFinishLaunching(_ notification: Notification) {
 		// in case of an upgrade, quit and relaunch the service app
 		do {
@@ -33,6 +35,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
 		// quit after the window is closed
 		return true
+	}
+
+	// MARK: - Actions
+
+	@IBAction func showHelp(_ sender: NSMenuItem) {
+		NSWorkspace.shared().open(URL(string: "https://hbang.ws/support/")!)
 	}
 
 }
