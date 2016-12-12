@@ -370,17 +370,9 @@
 			path = "TermHere Service";
 			sourceTree = "<group>";
 		};
-		CF3AE0DE1DE43FF800D91B9E /* Localization */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Localization;
-			sourceTree = "<group>";
-		};
 		CF3AE0DF1DE43FFD00D91B9E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CF3AE0DE1DE43FF800D91B9E /* Localization */,
 				CF3AE0D21DE43C1D00D91B9E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -662,7 +654,7 @@
 					CF9CEE5A1CE59B1F00A89E71 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = N2LN9ZT493;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 1;
@@ -675,7 +667,7 @@
 					CFD9B7C11CE5960500947EC8 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = N2LN9ZT493;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 1;
@@ -688,7 +680,7 @@
 					CFFF6DAB1CEE0F5A004E5894 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = N2LN9ZT493;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
