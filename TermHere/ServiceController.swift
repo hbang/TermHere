@@ -16,16 +16,17 @@ class ServiceController: NSObject {
 
 	var runningApp: NSRunningApplication?
 
-	func launch() {
+	func launch() throws {
 		// launch a fresh instance
 		do {
 			try NSWorkspace.shared().launchApplication(at: ServiceController.serviceURL, options: .async, configuration: [:])
 		} catch {
 			NSLog("failed to launch the service: \(error.localizedDescription)")
+			throw error
 		}
 	}
 
-	func relaunch() {
+	func relaunch() throws {
 		// terminate any previous instance of the service process (as it might be an outdated build),
 		// wait for the termination if needed, and then launch a new instance of it
 
@@ -44,7 +45,11 @@ class ServiceController: NSObject {
 
 		if runningApp == nil {
 			// if no running app was found, then we can go ahead and launch it now
-			launch()
+			do {
+				try launch()
+			} catch {
+				throw error
+			}
 		} else {
 			// register for KVO notifications
 			runningApp!.addObserver(self, forKeyPath: "isTerminated", options: NSKeyValueObservingOptions(), context: nil)
@@ -71,7 +76,11 @@ class ServiceController: NSObject {
 			runningApp = nil
 
 			// launch a new instance
-			launch()
+			do {
+				try launch()
+			} catch {
+				// ¯\_(ツ)_/¯
+			}
 		}
 	}
 

@@ -18,7 +18,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	func applicationDidFinishLaunching(_ notification: Notification) {
 		// in case of an upgrade, quit and relaunch the service app
-		serviceController.relaunch()
+		do {
+			try serviceController.relaunch()
+		} catch {
+			// naw. show an alert
+			let alert = NSAlert(error: error)
+			alert.runModal()
+		}
 
 		// force a check for updates
 		updater.checkForUpdatesInBackground()
