@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
@@ -12,11 +12,11 @@
 
 	<!-- Title of prompt asking the user to enable the extension. -->
 	<key>PLEASE_ENABLE</key>
-	<string>Activeer A.U.B. de extentie om TermHere te gebruiken.</string>
+	<string>Schakel de extensie in om gebruik temakrn van TermHere.</string>
 
 	<!-- Explanation of how to enable the extension. -->
 	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>Klik op OK om de Extentie instellingen te openen, dan vervolgends onder TermHere, activeer de checkbox naast "Finder".</string>
+	<string>Klik op OK om de Extensievoorkeuren te openen. Onder TermHere, klik op het selectievakje naast 'Finder'.</string>
 
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
@@ -24,7 +24,7 @@
 
 	<!-- Title of the open panel. -->
 	<key>CHOOSE_APPLICATION</key>
-	<string>Kies Applicatie</string>
+	<string>Kies programma</string>
 
 	<!-- Title of the About window. -->
 	<key>ABOUT</key>
@@ -32,6 +32,6 @@
 
 	<!-- Message displayed when the app fails to be opened. -->
 	<key>OPENING_APP_FAILED</key>
-	<string>Kon de Applicatie niet laden omdat er een onbekende fout is opgetreden.</string>
+	<string>Kan de app niet starten omdat er een onbekende fout is opgetreden.</string>
 </dict>
 </plist>
