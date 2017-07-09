@@ -38,10 +38,6 @@
 	<key>OPEN_IN</key>
 	<string>Otwórz w:</string>
 
-	<!-- Note for the apps TermHere supports. -->
-	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>Ta funkcja wymaga Terminala lub iTerm (w wersji 2.9 lub nowszej).</string>
-
 	<!-- Radio button for creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>Nowej karcie</string>
@@ -53,6 +49,10 @@
 	<!-- Radio button for reusing the last tab. -->
 	<key>OPEN_IN_LAST_USED_TAB</key>
 	<string>Ostatnio używana karta</string>
+
+	<!-- Label that explains compatibility of the above options. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Ta funkcja wymaga Terminala lub iTerm (w wersji 2.9 lub nowszej).</string>
 
 	<!-- Label explaining how to enable TermHere if it is disabled. -->
 	<key>TROUBLESHOOTING_NOTE</key>

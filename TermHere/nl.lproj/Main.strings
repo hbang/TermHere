@@ -2,95 +2,95 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-<!-- Label for choosing the terminal app to use. -->
-<key>TERMINAL_APP</key>
-<string>Terminal-app:</string>
+	<!-- Label for choosing the terminal app to use. -->
+	<key>TERMINAL_APP</key>
+	<string>Terminal-app:</string>
 
-<!-- Button that opens a panel to choose an app. -->
-<key>BROWSE</key>
-<string>Blader</string>
+	<!-- Button that opens a panel to choose an app. -->
+	<key>BROWSE</key>
+	<string>Blader</string>
 
-<!-- Label for choosing the editor app to use. -->
-<key>EDITOR</key>
-<string>Editor:</string>
+	<!-- Label for choosing the editor app to use. -->
+	<key>EDITOR</key>
+	<string>Editor:</string>
 
-<!-- Radio button for choosing to use an app as the editor. -->
-<key>EDITOR_APP</key>
-<string>App:</string>
+	<!-- Radio button for choosing to use an app as the editor. -->
+	<key>EDITOR_APP</key>
+	<string>App:</string>
 
-<!-- Radio button for choosing to use a terminal command as the editor. -->
-<key>EDITOR_COMMAND</key>
-<string>Commando:</string>
+	<!-- Radio button for choosing to use a terminal command as the editor. -->
+	<key>EDITOR_COMMAND</key>
+	<string>Commando:</string>
 
-<!-- Label for the display preferences. -->
-<key>SHOW_IN</key>
-<string>Toon in:</string>
+	<!-- Label for the display preferences. -->
+	<key>SHOW_IN</key>
+	<string>Toon in:</string>
 
-<key>SHOW_ITEMS</key>
-<string>Toon items:</string>
+	<key>SHOW_ITEMS</key>
+	<string>Toon items:</string>
 
-<!-- Checkbox that toggles “Open in [terminal name]” button. -->
-<key>OPEN_IN_TERMINAL</key>
-<string>Open in terminal</string>
+	<!-- Checkbox that toggles “Open in [terminal name]” button. -->
+	<key>OPEN_IN_TERMINAL</key>
+	<string>Open in terminal</string>
 
-<!-- Checkbox that toggles “Open in [editor name]” button. -->
-<key>OPEN_IN_EDITOR</key>
-<string>Open in editor</string>
+	<!-- Checkbox that toggles “Open in [editor name]” button. -->
+	<key>OPEN_IN_EDITOR</key>
+	<string>Open in editor</string>
 
-<!-- Checkbox that toggles “Execute button” button. -->
-<key>EXECUTE_FILE</key>
-<string>Voer bestand uit</string>
+	<!-- Checkbox that toggles “Execute button” button. -->
+	<key>EXECUTE_FILE</key>
+	<string>Voer bestand uit</string>
 
-<!-- Checkbox that toggles displaying the buttons in context menus. -->
-<key>SHOW_IN_CONTEXT_MENUS</key>
-<string>Contextuele menu's</string>
+	<!-- Checkbox that toggles displaying the buttons in context menus. -->
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>Contextuele menu's</string>
 
-<!-- Checkbox that toggles showing the buttons as a submenu. -->
-<key>SHOW_AS_SUBMENU</key>
-<string>In submenu</string>
+	<!-- Checkbox that toggles showing the buttons as a submenu. -->
+	<key>SHOW_AS_SUBMENU</key>
+	<string>In submenu</string>
 
-<!-- Label that explains how to toggle the toolbar button. -->
-<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
-<string>Open Finder en klik op 'Weergave → Pas knoppenbalk aan…' om de knop in de Finder-knoppenbalk te tonen of verbergen.</string>
+	<!-- Label that explains how to toggle the toolbar button. -->
+	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
+	<string>Open Finder en klik op 'Weergave → Pas knoppenbalk aan…' om de knop in de Finder-knoppenbalk te tonen of verbergen.</string>
 
-<!-- Label for the behavior preferences. -->
-<key>BEHAVIOR</key>
-<string>Gedrag:</string>
+	<!-- Label for the behavior preferences. -->
+	<key>BEHAVIOR</key>
+	<string>Gedrag:</string>
 
-<!-- Checkbox that toggles opening selected items, vs opening the current folder. -->
-<key>OPEN_SELECTED_ITEMS</key>
-<string>Open geselecteerde items</string>
+	<!-- Checkbox that toggles opening selected items, vs opening the current folder. -->
+	<key>OPEN_SELECTED_ITEMS</key>
+	<string>Open geselecteerde items</string>
 
-<!-- Explanation of how the above checkbox works. -->
-<key>OPEN_SELECTED_ITEMS_EXPLANATION</key>
-<string>Schakel dit in om een tabblad te openen voor elk geselecteerd item. Schakel dit uit om altijd gebruik maken van de geopende map.</string>
+	<!-- Explanation of how the above checkbox works. -->
+	<key>OPEN_SELECTED_ITEMS_EXPLANATION</key>
+	<string>Schakel dit in om een tabblad te openen voor elk geselecteerd item. Schakel dit uit om altijd gebruik maken van de geopende map.</string>
 
-<!-- Label for the “open in” radio buttons. -->
-<key>OPEN_IN</key>
-<string>Open in:</string>
+	<!-- Label for the “open in” radio buttons. -->
+	<key>OPEN_IN</key>
+	<string>Open in:</string>
 
-<!-- Radio button for	creating a new tab. -->
-<key>OPEN_IN_NEW_TAB</key>
-<string>Nieuw tabblad</string>
+	<!-- Radio button for	creating a new tab. -->
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>Nieuw tabblad</string>
 
-<!-- Radio button for creating a new window. -->
-<key>OPEN_IN_NEW_WINDOW</key>
-<string>Nieuw venster</string>
+	<!-- Radio button for creating a new window. -->
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>Nieuw venster</string>
 
-<!-- Radio button for reusing the last tab. -->
-<key>OPEN_IN_LAST_USED_TAB</key>
-<string>Laatst gebruikt tabblad</string>
+	<!-- Radio button for reusing the last tab. -->
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>Laatst gebruikt tabblad</string>
 
-<!-- Label that explains compatibility of the above options. -->
-<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-<string>Deze functie vereist Terminal of iTerm 2.9 of nieuwer.</string>
+	<!-- Label that explains compatibility of the above options. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Deze functie vereist Terminal of iTerm 2.9 of nieuwer.</string>
 
-<!-- Label explaining how to enable TermHere if it is disabled. -->
-<key>TROUBLESHOOTING_NOTE</key>
-<string>Werkt het niet? Zorg ervoor dat TermHere is ingeschakeld in de Extensievoorkeuren.</string>
+	<!-- Label explaining how to enable TermHere if it is disabled. -->
+	<key>TROUBLESHOOTING_NOTE</key>
+	<string>Werkt het niet? Zorg ervoor dat TermHere is ingeschakeld in de Extensievoorkeuren.</string>
 
-<!-- Button that opens the Preferences app. -->
-<key>OPEN_PREFERENCES</key>
-<string>Open Systeemvoorkeuren</string>
+	<!-- Button that opens the Preferences app. -->
+	<key>OPEN_PREFERENCES</key>
+	<string>Open Systeemvoorkeuren</string>
 </dict>
 </plist>

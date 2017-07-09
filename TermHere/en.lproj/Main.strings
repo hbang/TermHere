@@ -10,17 +10,44 @@
 	<key>BROWSE</key>
 	<string>Browse</string>
 
+	<!-- Label for choosing the editor app to use. -->
+	<key>EDITOR</key>
+	<string>Editor:</string>
+
+	<!-- Radio button for choosing to use an app as the editor. -->
+	<key>EDITOR_APP</key>
+	<string>App:</string>
+
+	<!-- Radio button for choosing to use a terminal command as the editor. -->
+	<key>EDITOR_COMMAND</key>
+	<string>Command:</string>
+
 	<!-- Label for the display preferences. -->
+	<key>SHOW_IN</key>
+	<string>Show in:</string>
+
 	<key>SHOW_ITEMS</key>
 	<string>Show items:</string>
+
+	<!-- Checkbox that toggles “Open in [terminal name]” button. -->
+	<key>OPEN_IN_TERMINAL</key>
+	<string>Open in terminal</string>
 
 	<!-- Label for checkbox for “Open in [editor name]” button. -->
 	<key>OPEN_IN_EDITOR</key>
 	<string>Open in Editor</string>
 
+	<!-- Checkbox that toggles “Execute button” button. -->
+	<key>EXECUTE_FILE</key>
+	<string>Execute file</string>
+
 	<!-- Checkbox that toggles displaying the button in context menus. -->
 	<key>SHOW_IN_CONTEXT_MENUS</key>
 	<string>Context menus</string>
+
+	<!-- Checkbox that toggles showing the buttons as a submenu. -->
+	<key>SHOW_AS_SUBMENU</key>
+	<string>In submenu</string>
 
 	<!-- Label that explains how to toggle the toolbar button. -->
 	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
@@ -42,10 +69,6 @@
 	<key>OPEN_IN</key>
 	<string>Open in:</string>
 
-	<!-- Note for the apps TermHere supports. -->
-	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>This feature requires Terminal or iTerm 2.9 or newer.</string>
-
 	<!-- Radio button for creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>New tab</string>
@@ -57,6 +80,10 @@
 	<!-- Radio button for reusing the last tab. -->
 	<key>OPEN_IN_LAST_USED_TAB</key>
 	<string>Last used tab</string>
+
+	<!-- Label that explains compatibility of the above options. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>This feature requires Terminal or iTerm 2.9 or newer.</string>
 
 	<!-- Label explaining how to enable TermHere if it is disabled. -->
 	<key>TROUBLESHOOTING_NOTE</key>

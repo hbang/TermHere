@@ -38,10 +38,6 @@
 	<key>OPEN_IN</key>
 	<string>다음으로 열기:</string>
 
-	<!-- Note for the apps TermHere supports. -->
-	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>이 기능은 Terminal이나 iTerm 2.9 이상을 필요로 합니다.</string>
-
 	<!-- Radio button for creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>새 탭</string>
@@ -53,6 +49,10 @@
 	<!-- Radio button for reusing the last tab. -->
 	<key>OPEN_IN_LAST_USED_TAB</key>
 	<string>마지막으로 연 탭</string>
+	
+	<!-- Label that explains compatibility of the above options. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>이 기능은 Terminal이나 iTerm 2.9 이상을 필요로 합니다.</string>
 
 	<!-- Label explaining how to enable TermHere if it is disabled. -->
 	<key>TROUBLESHOOTING_NOTE</key>

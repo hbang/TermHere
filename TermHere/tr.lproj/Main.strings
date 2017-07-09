@@ -38,10 +38,6 @@
 	<key>OPEN_IN</key>
 	<string>Şununla aç:</string>
 
-	<!-- Note for the apps TermHere supports. -->
-	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>Bu özellik Terminal veya iTerm 2.9 ya da daha yenisini gerektiriyor.</string>
-
 	<!-- Radio button for creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>Yeni sekme</string>
@@ -53,6 +49,10 @@
 	<!-- Radio button for reusing the last tab. -->
 	<key>OPEN_IN_LAST_USED_TAB</key>
 	<string>Son sekme</string>
+
+	<!-- Label that explains compatibility of the above options. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Bu özellik Terminal veya iTerm 2.9 ya da daha yenisini gerektiriyor.</string>
 
 	<!-- Label explaining how to enable TermHere if it is disabled. -->
 	<key>TROUBLESHOOTING_NOTE</key>
