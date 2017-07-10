@@ -2,12 +2,34 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<!-- Button that opens a new terminal tab. -->
-	<key>NEW_TERMINAL_HERE</key>
-	<string>Nový Terminál tu</string>
+	<!-- Button that opens the file in an app. %@ is the app name. -->
+	<key>OPEN_IN_APP</key>
+	<string>Otvoriť v %@</string>
 
 	<!-- Tooltip explaining what the Open in Terminal button does. -->
 	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
 	<string>Otvoriť Terminál v tomto priečinku.</string>
+
+	<!-- Button that edits the file in an app. %@ is the app name. -->
+	<key>EDIT_IN_APP</key>
+	<string>Upraviť v %@</string>
+
+	<!-- Tooltip explaining what the Open in Editor button does. -->
+	<key>EDIT_IN_APP_TOOLTIP</key>
+	<string>Otvorí %@ do aktuálneho súboru alebo zložky</string>
+
+	<!-- Button that executes the file in an app. %@ is the app name. -->
+	<key>EXECUTE_IN_APP</key>
+	<string>Spustiť v %@</string>
+
+	<!-- Tooltip explaining what the button does. -->
+	<key>EXECUTE_IN_APP_TOOLTIP</key>
+	<string>Otvorí %@ a spustí aktuálny súbor</string>
+
+	<key>NOT_EXECUTABLE_TITLE</key>
+	<string>Nie je možné otvoriť %@ pretože to nie je spustiteľný súbor.</string>
+
+	<key>NOT_EXECUTABLE_MESSAGE</key>
+	<string>Pre pokračovanie označte súbor ako spustiteľný.</string>
 </dict>
 </plist>
