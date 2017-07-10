@@ -2,11 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<!-- Knappen som åpner en ny terminal fane. -->
+	<!-- Button that opens a new terminal tab. -->
 	<key>NEW_TERMINAL_HERE</key>
 	<string>Ny Terminal Her</string>
 
-	<!-- Forklaring på hva den nye Terminal Her knapp gjør  -->
+	<!-- Tooltip explaining what the Open in Terminal button does. -->
 	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
 	<string>Åpne en terminal i denne katalogen</string>
 </dict>

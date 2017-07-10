@@ -6,7 +6,7 @@
 	<key>NEW_TERMINAL_HERE</key>
 	<string>Νέο Terminal εδώ</string>
 
-	<!-- Explanation of what the New Terminal Here button does. -->
+	<!-- Tooltip explaining what the Open in Terminal button does. -->
 	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
 	<string>Άνοιγμα παραθύρου Terminal σε αυτή την τοποθεσία</string>
 </dict>

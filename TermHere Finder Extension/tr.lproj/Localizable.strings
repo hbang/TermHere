@@ -6,7 +6,7 @@
 	<key>NEW_TERMINAL_HERE</key>
 	<string>Buradan yeni Terminal aç</string>
 
-	<!-- Explanation of what the New Terminal Here button does. -->
+	<!-- Tooltip explaining what the Open in Terminal button does. -->
 	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
 	<string>Bu dizinden yeni Terminal sekmesi açar</string>
 </dict>

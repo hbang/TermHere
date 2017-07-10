@@ -6,7 +6,7 @@
 	<key>NEW_TERMINAL_HERE</key>
 	<string>Nieuw Terminal-tabblad</string>
 
-	<!-- Explanation of what the New Terminal Here button does. -->
+	<!-- Tooltip explaining what the Open in Terminal button does. -->
 	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
 	<string>Open een Terminal-venster met deze locatie.</string>
 </dict>

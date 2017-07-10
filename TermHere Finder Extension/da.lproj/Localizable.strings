@@ -2,12 +2,34 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<!-- Button that opens a new terminal tab. -->
-	<key>NEW_TERMINAL_HERE</key>
-	<string>Nyt terminalvindue her</string>
+	<!-- Button that opens the file in an app. %@ is the app name. -->
+	<key>OPEN_IN_APP</key>
+	<string>Åbn i %@</string>
 
-	<!-- Explanation of what the New Terminal Here button does. -->
+	<!-- Tooltip explaining what the Open in Terminal button does. -->
 	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
 	<string>Åbn et terminalvindue i denne mappe</string>
+
+	<!-- Button that edits the file in an app. %@ is the app name. -->
+	<key>EDIT_IN_APP</key>
+	<string>Rediger i %@</string>
+
+	<!-- Tooltip explaining what the Open in Editor button does. -->
+	<key>EDIT_IN_APP_TOOLTIP</key>
+	<string>Åbn %@ til den nuværende fil eller mappe</string>
+
+	<!-- Button that executes the file in an app. %@ is the app name. -->
+	<key>EXECUTE_IN_APP</key>
+	<string>Eksekver i %@</string>
+
+	<!-- Tooltip explaining what the button does. -->
+	<key>EXECUTE_IN_APP_TOOLTIP</key>
+	<string>Åbn %@ og eksekver den nuværende fil</string>
+
+	<key>NOT_EXECUTABLE_TITLE</key>
+	<string>Kunne ikke åbne %@, fordi det ikke er en eksekverbar fil.</string>
+
+	<key>NOT_EXECUTABLE_MESSAGE</key>
+	<string>Marker filen som eksekverbar for at fortsætte.</string>
 </dict>
 </plist>

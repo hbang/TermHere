@@ -6,7 +6,7 @@
 	<key>NEW_TERMINAL_HERE</key>
 	<string>Nuevo Terminal Aquí</string>
 
-	<!-- Explanation of what the New Terminal Here button does. -->
+	<!-- Tooltip explaining what the Open in Terminal button does. -->
 	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
 	<string>Abre un terminal en este directorio.</string>
 </dict>

@@ -6,7 +6,7 @@
 	<key>NEW_TERMINAL_HERE</key>
 	<string>以終端機開啟</string>
 
-	<!-- Explanation of what the New Terminal Here button does. -->
+	<!-- Tooltip explaining what the Open in Terminal button does. -->
 	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
 	<string>以終端機開啟當前目錄</string>
 </dict>

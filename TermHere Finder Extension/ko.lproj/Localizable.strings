@@ -2,12 +2,34 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<!-- Button that opens a new terminal tab. -->
-	<key>NEW_TERMINAL_HERE</key>
-	<string>새 터미널</string>
+	<!-- Button that opens the file in an app. %@ is the app name. -->
+	<key>OPEN_IN_APP</key>
+	<string>%@에서 열기</string>
 
-	<!-- Explanation of what the New Terminal Here button does. -->
+	<!-- Tooltip explaining what the Open in Terminal button does. -->
 	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
 	<string>이 경로에서 터미널 열기</string>
+
+	<!-- Button that edits the file in an app. %@ is the app name. -->
+	<key>EDIT_IN_APP</key>
+	<string>%@에서 편집</string>
+
+	<!-- Tooltip explaining what the Open in Editor button does. -->
+	<key>EDIT_IN_APP_TOOLTIP</key>
+	<string>%@로 현재 파일이나 디렉토리를 엽니다</string>
+
+	<!-- Button that executes the file in an app. %@ is the app name. -->
+	<key>EXECUTE_IN_APP</key>
+	<string>%@에서 실행</string>
+
+	<!-- Tooltip explaining what the button does. -->
+	<key>EXECUTE_IN_APP_TOOLTIP</key>
+	<string>%@을 열고 현재 파일을 실행합니다</string>
+
+	<key>NOT_EXECUTABLE_TITLE</key>
+	<string>실행 파일이 아니므로 %@을 열 수 없습니다.</string>
+
+	<key>NOT_EXECUTABLE_MESSAGE</key>
+	<string>이 파일을 실행 가능하도록 표기 후 계속 진행하세요.</string>
 </dict>
 </plist>
