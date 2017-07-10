@@ -10,13 +10,44 @@
 	<key>BROWSE</key>
 	<string>浏览</string>
 
+	<!-- Label for choosing the editor app to use. -->
+	<key>EDITOR</key>
+	<string>编辑器:</string>
+
+	<!-- Radio button for choosing to use an app as the editor. -->
+	<key>EDITOR_APP</key>
+	<string>App:</string>
+
+	<!-- Radio button for choosing to use a terminal command as the editor. -->
+	<key>EDITOR_COMMAND</key>
+	<string>命令:</string>
+
 	<!-- Label for the display preferences. -->
 	<key>SHOW_IN</key>
 	<string>显示于：</string>
 
+	<key>SHOW_ITEMS</key>
+	<string>显示项目:</string>
+
+	<!-- Checkbox that toggles “Open in [terminal name]” button. -->
+	<key>OPEN_IN_TERMINAL</key>
+	<string>在终端中打开</string>
+
+	<!-- Label for checkbox for “Open in [editor name]” button. -->
+	<key>OPEN_IN_EDITOR</key>
+	<string>在编辑器中打开</string>
+
+	<!-- Checkbox that toggles “Execute button” button. -->
+	<key>EXECUTE_FILE</key>
+	<string>执行文件</string>
+
 	<!-- Checkbox that toggles displaying the button in context menus. -->
 	<key>SHOW_IN_CONTEXT_MENUS</key>
 	<string>右键菜单</string>
+
+	<!-- Checkbox that toggles showing the buttons as a submenu. -->
+	<key>SHOW_AS_SUBMENU</key>
+	<string>在子菜单中显示</string>
 
 	<!-- Label that explains how to toggle the toolbar button. -->
 	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
