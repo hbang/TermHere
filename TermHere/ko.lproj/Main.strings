@@ -10,13 +10,44 @@
 	<key>BROWSE</key>
 	<string>찾아보기</string>
 
+	<!-- Label for choosing the editor app to use. -->
+	<key>EDITOR</key>
+	<string>에디터:</string>
+
+	<!-- Radio button for choosing to use an app as the editor. -->
+	<key>EDITOR_APP</key>
+	<string>앱:</string>
+
+	<!-- Radio button for choosing to use a terminal command as the editor. -->
+	<key>EDITOR_COMMAND</key>
+	<string>명령어:</string>
+
 	<!-- Label for the display preferences. -->
 	<key>SHOW_IN</key>
 	<string>다음으로 보기:</string>
 
+	<key>SHOW_ITEMS</key>
+	<string>항목 보기:</string>
+  
+    <!-- Checkbox that toggles “Open in [terminal name]” button. -->
+	<key>OPEN_IN_TERMINAL</key>
+	<string>터미널에서 열기</string>
+
+	<!-- Label for checkbox for “Open in [editor name]” button. -->
+	<key>OPEN_IN_EDITOR</key>
+	<string>에디터로 열기</string>
+  
+    <!-- Checkbox that toggles “Execute button” button. -->
+	<key>EXECUTE_FILE</key>
+	<string>파일 실행</string>
+
 	<!-- Checkbox that toggles displaying the button in context menus. -->
 	<key>SHOW_IN_CONTEXT_MENUS</key>
 	<string>문맥 메뉴</string>
+
+	<!-- Checkbox that toggles showing the buttons as a submenu. -->
+	<key>SHOW_AS_SUBMENU</key>
+	<string>하위메뉴로 보기</string>
 
 	<!-- Label that explains how to toggle the toolbar button. -->
 	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
