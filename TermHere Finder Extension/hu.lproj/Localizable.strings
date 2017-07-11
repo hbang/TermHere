@@ -2,12 +2,34 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<!-- Button that opens a new terminal tab. -->
-	<key>NEW_TERMINAL_HERE</key>
-	<string>Új helyi Terminál</string>
+	<!-- Button that opens the file in an app. %@ is the app name. -->
+	<key>OPEN_IN_APP</key>
+	<string>Megnyitás %@ban</string>
 
 	<!-- Tooltip explaining what the Open in Terminal button does. -->
 	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
 	<string>Új terminál nyitása ebben a könyvtárban</string>
+
+	<!-- Button that edits the file in an app. %@ is the app name. -->
+	<key>EDIT_IN_APP</key>
+	<string>Szerkesztés %@ban</string>
+
+	<!-- Tooltip explaining what the Open in Editor button does. -->
+	<key>EDIT_IN_APP_TOOLTIP</key>
+	<string>Megnyitja a %@-t a jelenlegi könyvtárba.</string>
+
+	<!-- Button that executes the file in an app. %@ is the app name. -->
+	<key>EXECUTE_IN_APP</key>
+	<string>Végrehajtás %@-ban</string>
+
+	<!-- Tooltip explaining what the button does. -->
+	<key>EXECUTE_IN_APP_TOOLTIP</key>
+	<string>Megnyitja az alkalmazást,majd futtattja a fájlt.</string>
+
+	<key>NOT_EXECUTABLE_TITLE</key>
+	<string>Nem lehet megnyitni a %@-t,mivel a kijelölt fájl nem futtatható..</string>
+
+	<key>NOT_EXECUTABLE_MESSAGE</key>
+	<string>Jelölje meg a fájlt futtathatóként,hogy folytassa.</string>
 </dict>
 </plist>
