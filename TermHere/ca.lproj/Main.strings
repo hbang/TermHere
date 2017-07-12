@@ -10,13 +10,44 @@
 	<key>BROWSE</key>
 	<string>Navegar</string>
 
+	<!-- Label for choosing the editor app to use. -->
+	<key>EDITOR</key>
+	<string>Editor:</string>
+
+	<!-- Radio button for choosing to use an app as the editor. -->
+	<key>EDITOR_APP</key>
+	<string>App:</string>
+
+	<!-- Radio button for choosing to use a terminal command as the editor. -->
+	<key>EDITOR_COMMAND</key>
+	<string>Comanda:</string>
+
 	<!-- Label for the display preferences. -->
 	<key>SHOW_IN</key>
 	<string>Mostrar en:</string>
 
+	<key>SHOW_ITEMS</key>
+	<string>Mostrar elements:</string>
+
+	<!-- Checkbox that toggles “Open in [terminal name]” button. -->
+	<key>OPEN_IN_TERMINAL</key>
+	<string>Obrir en terminal</string>
+
+	<!-- Label for checkbox for “Open in [editor name]” button. -->
+	<key>OPEN_IN_EDITOR</key>
+	<string>Obrir en Editor</string>
+  
+    <!-- Checkbox that toggles “Execute button” button. -->
+	<key>EXECUTE_FILE</key>
+	<string>Executar fitxer</string>
+
 	<!-- Checkbox that toggles displaying the button in context menus. -->
 	<key>SHOW_IN_CONTEXT_MENUS</key>
 	<string>Menús contextuals</string>
+
+	<!-- Checkbox that toggles showing the buttons as a submenu. -->
+	<key>SHOW_AS_SUBMENU</key>
+	<string>En un submenú</string>
 
 	<!-- Label that explains how to toggle the toolbar button. -->
 	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>

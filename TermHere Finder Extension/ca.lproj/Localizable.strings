@@ -2,12 +2,34 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<!-- Button that opens a new terminal tab. -->
-	<key>NEW_TERMINAL_HERE</key>
-	<string>Obrir un nou terminal aquí</string>
+	<!-- Button that opens the file in an app. %@ is the app name. -->
+	<key>OPEN_IN_APP</key>
+	<string>Obrir amb %@</string>
 
 	<!-- Tooltip explaining what the Open in Terminal button does. -->
 	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
 	<string>Obrir un nou terminal en aquesta carpeta</string>
+
+	<!-- Button that edits the file in an app. %@ is the app name. -->
+	<key>EDIT_IN_APP</key>
+	<string>Editar amb %@</string>
+
+	<!-- Tooltip explaining what the Open in Editor button does. -->
+	<key>EDIT_IN_APP_TOOLTIP</key>
+	<string>Obrir %@ amb el fitxer o carpeta actual</string>
+
+	<!-- Button that executes the file in an app. %@ is the app name. -->
+	<key>EXECUTE_IN_APP</key>
+	<string>Executar amb %@</string>
+
+	<!-- Tooltip explaining what the button does. -->
+	<key>EXECUTE_IN_APP_TOOLTIP</key>
+	<string>Obrir %@ i executar-hi el fitxer actual</string>
+
+	<key>NOT_EXECUTABLE_TITLE</key>
+	<string>No s'ha pogut obrir %@ perquè no és un fitxer executable.</string>
+
+	<key>NOT_EXECUTABLE_MESSAGE</key>
+	<string>Marqueu el fitxer com a executable per continuar.</string>
 </dict>
 </plist>
