@@ -40,7 +40,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	// MARK: - Actions
 
 	@IBAction func showHelp(_ sender: NSMenuItem) {
-		NSWorkspace.shared().open(URL(string: "https://hbang.ws/support/")!)
+		NSWorkspace.shared.open(URL(string: "https://hbang.ws/support/")!)
 	}
 
 }

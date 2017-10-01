@@ -33,7 +33,7 @@ open class TerminalController: NSObject {
 				// ensure the app is running by launching it. this usually would bring all of its windows to
 				// the front, which is awful, so we ask it to not do that. the applescript will activate
 				// just the window in question
-				NSWorkspace.shared().launchApplication(withBundleIdentifier: bundleIdentifier, options: .withoutActivation, additionalEventParamDescriptor: nil, launchIdentifier: nil)
+				NSWorkspace.shared.launchApplication(withBundleIdentifier: bundleIdentifier, options: .withoutActivation, additionalEventParamDescriptor: nil, launchIdentifier: nil)
 
 				// create an applescript object, wrapped in a function
 				let applescript = NSAppleScript(source: "on runCommand(command)\n" + command + "\nend runCommand")
@@ -77,7 +77,7 @@ open class TerminalController: NSObject {
 		// if we don’t know any applescript for the app or it failed for some reason, fall back to a
 		// standard URL open
 		NSLog("opening \(finalURLs) using \(bundleIdentifier)")
-		if !NSWorkspace.shared().open(finalURLs, withAppBundleIdentifier: bundleIdentifier, options: .default, additionalEventParamDescriptor: nil, launchIdentifiers: nil) {
+		if !NSWorkspace.shared.open(finalURLs, withAppBundleIdentifier: bundleIdentifier, options: .default, additionalEventParamDescriptor: nil, launchIdentifiers: nil) {
 			return false
 		}
 

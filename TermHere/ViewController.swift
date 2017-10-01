@@ -44,18 +44,18 @@ class ViewController: NSViewController {
 		// set the values of the controls
 		terminalPathControl.url = preferences.terminalAppURL
 		editorPathControl.url = preferences.editorAppURL
-		openInTerminalCheckbox.state = preferences.showInContextMenus ? 1 : 0
-		openSelectionCheckbox.state = preferences.openSelection ? 1 : 0
+		openInTerminalCheckbox.state = preferences.showInContextMenus ? .on : .off
+		openSelectionCheckbox.state = preferences.openSelection ? .on : .off
 
 		switch preferences.activationType {
 		case .newTab:
-			newTabRadioButton.state = NSOnState
+			newTabRadioButton.state = .on
 
 		case .newWindow:
-			newWindowRadioButton.state = NSOnState
+			newWindowRadioButton.state = .on
 
 		case .sameTab:
-			lastTabRadioButton.state = NSOnState
+			lastTabRadioButton.state = .on
 		}
 	}
 
@@ -79,7 +79,7 @@ class ViewController: NSViewController {
 			alert.informativeText = NSLocalizedString("PLEASE_ENABLE_EXPLANATION", comment: "Explanation of how to enable the extension.")
 			alert.addButton(withTitle: NSLocalizedString("OK", comment: "OK button label."))
 
-			alert.beginSheetModal(for: view.window!, completionHandler: { (result: NSModalResponse) in
+			alert.beginSheetModal(for: view.window!, completionHandler: { (_) in
 				self.openExtensionPreferences()
 			})
 		}
@@ -87,7 +87,7 @@ class ViewController: NSViewController {
 
 	func openExtensionPreferences() {
 		// open the pref pane for extensions
-		NSWorkspace.shared().open(URL(fileURLWithPath: "/System/Library/PreferencePanes/Extensions.prefPane"))
+		NSWorkspace.shared.open(URL(fileURLWithPath: "/System/Library/PreferencePanes/Extensions.prefPane"))
 	}
 
 	// MARK: - Callbacks
@@ -108,9 +108,9 @@ class ViewController: NSViewController {
 		panel.prompt = NSLocalizedString("CHOOSE", comment: "Button that chooses the selected app in the open panel.")
 
 		// show the panel and define our callback
-		panel.beginSheetModal(for: view.window!) { (result: NSModalResponse) in
+		panel.beginSheetModal(for: view.window!) { (result: NSApplication.ModalResponse) in
 			// hopefully they clicked ok
-			if result == NSModalResponseOK {
+			if result == .OK {
 				// get the url that was selected and set it on the path control
 				let url = panel.urls[0]
 				pathControl.url = url
@@ -139,9 +139,9 @@ class ViewController: NSViewController {
 	}
 
 	@IBAction func editorTypeChanged(_ sender: AnyObject) {
-		if editorAppRadioButton.state == NSOnState {
+		if editorAppRadioButton.state == .on {
 			preferences.editorType = .app
-		} else if editorCommandRadioButton.state == NSOnState {
+		} else if editorCommandRadioButton.state == .on {
 			preferences.editorType = .command
 		}
 
@@ -165,36 +165,36 @@ class ViewController: NSViewController {
 	}
 
 	@IBAction func showOpenInTerminalChanged(_ sender: AnyObject) {
-		preferences.showOpenInTerminal = openInTerminalCheckbox.state == NSOnState
+		preferences.showOpenInTerminal = openInTerminalCheckbox.state == .on
 	}
 
 	@IBAction func showOpenInEditorChanged(_ sender: AnyObject) {
-		preferences.showOpenInEditor = openInEditorCheckbox.state == NSOnState
+		preferences.showOpenInEditor = openInEditorCheckbox.state == .on
 	}
 
 	@IBAction func showExecuteFileChanged(_ sender: AnyObject) {
-		preferences.showExecuteFile = executeFileCheckbox.state == NSOnState
+		preferences.showExecuteFile = executeFileCheckbox.state == .on
 	}
 
 	@IBAction func contextMenusChanged(_ sender: AnyObject) {
-		preferences.showInContextMenus = contextMenusCheckbox.state == NSOnState
+		preferences.showInContextMenus = contextMenusCheckbox.state == .on
 	}
 
 	@IBAction func submenuChanged(_ sender: AnyObject) {
-		preferences.showAsSubmenu = submenuCheckbox.state == NSOnState
+		preferences.showAsSubmenu = submenuCheckbox.state == .on
 	}
 
 	@IBAction func openSelectionChanged(_ sender: AnyObject) {
-		preferences.openSelection = openSelectionCheckbox.state == NSOnState
+		preferences.openSelection = openSelectionCheckbox.state == .on
 	}
 
 	@IBAction func openInChanged(_ sender: AnyObject) {
 		// set the preference according to the selected button
-		if newTabRadioButton.state == NSOnState {
+		if newTabRadioButton.state == .on {
 			preferences.activationType = .newTab
-		} else if newWindowRadioButton.state == NSOnState {
+		} else if newWindowRadioButton.state == .on {
 			preferences.activationType = .newWindow
-		} else if lastTabRadioButton.state == NSOnState {
+		} else if lastTabRadioButton.state == .on {
 			preferences.activationType = .sameTab
 		}
 	}

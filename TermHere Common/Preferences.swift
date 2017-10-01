@@ -66,7 +66,7 @@ open class Preferences {
 	}
 
 	open var terminalAppURL: URL {
-		get { return URL(string: preferences.object(forKey: "TerminalAppURL") as! String)! }
+		get { return URL(fileURLWithPath: preferences.object(forKey: "TerminalAppURL") as! String) }
 		set { preferences.set(newValue, forKey: "TerminalAppURL") }
 	}
 
@@ -81,7 +81,7 @@ open class Preferences {
 	}
 
 	open var editorAppURL: URL {
-		get { return URL(string: preferences.object(forKey: "EditorAppURL") as! String)! }
+		get { return URL(fileURLWithPath: preferences.object(forKey: "EditorAppURL") as! String) }
 		set { preferences.set(newValue, forKey: "EditorAppURL") }
 	}
 

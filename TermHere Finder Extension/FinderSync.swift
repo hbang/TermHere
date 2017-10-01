@@ -32,7 +32,7 @@ class FinderSync: FIFinderSync {
 	}
 
 	override var toolbarItemImage: NSImage {
-		return Bundle.main.image(forResource: "toolbar-terminal")!
+		return #imageLiteral(resourceName: "toolbar-terminal")
 	}
 
 	override func menu(for menuKind: FIMenuKind) -> NSMenu {
@@ -90,7 +90,7 @@ class FinderSync: FIFinderSync {
 		}
 	}
 
-	func newTerminal(_ sender: NSMenuItem?) {
+	@objc func newTerminal(_ sender: NSMenuItem?) {
 		// gotta launch them all
 		let urls = urlsToOpen
 

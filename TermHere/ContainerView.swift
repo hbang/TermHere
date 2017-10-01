@@ -10,9 +10,9 @@ import Cocoa
 
 class ContainerView : NSView {
 
-	override var alignmentRectInsets: EdgeInsets {
+	override var alignmentRectInsets: NSEdgeInsets {
 		get {
-			return EdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
+			return NSEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
 		}
 	}
 

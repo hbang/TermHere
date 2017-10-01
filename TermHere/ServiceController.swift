@@ -19,7 +19,7 @@ class ServiceController: NSObject {
 	func launch() throws {
 		// launch a fresh instance
 		do {
-			try NSWorkspace.shared().launchApplication(at: ServiceController.serviceURL, options: .async, configuration: [:])
+			try NSWorkspace.shared.launchApplication(at: ServiceController.serviceURL, options: .async, configuration: [:])
 		} catch {
 			NSLog("failed to launch the service: \(error.localizedDescription)")
 			throw error
@@ -31,7 +31,7 @@ class ServiceController: NSObject {
 		// wait for the termination if needed, and then launch a new instance of it
 
 		// get the list of running apps
-		let apps = NSWorkspace.shared().runningApplications
+		let apps = NSWorkspace.shared.runningApplications
 
 		// loop over to find our service app
 		for (_, app) in apps.enumerated() {
@@ -63,7 +63,7 @@ class ServiceController: NSObject {
 
 	override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
 		guard let app = object as? NSRunningApplication else {
-			NSLog("huh? what is \(object)?")
+			NSLog("huh? what is \(String(describing: object))?")
 			return
 		}
 
