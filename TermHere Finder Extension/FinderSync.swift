@@ -132,7 +132,7 @@ extension FinderSync {
 		// hop over to the main queue
 		DispatchQueue.main.async {
 			// launch them!
-			let service = TerminalController.serviceName(forAppURL: appURL, fallbackAppURL: fallbackAppURL, fallbackService: fallbackService)
+			let service = ServiceRunner.serviceName(forAppURL: appURL, fallbackAppURL: fallbackAppURL, fallbackService: fallbackService)
 			_ = ServiceRunner.run(service: service, withFileURLs: urls)
 		}
 	}

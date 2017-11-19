@@ -12,13 +12,11 @@
 		CF57D2051D958FDE00D91B9E /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF57D2021D958FDE00D91B9E /* Main.strings */; };
 		CF5D33FC1FBAD1DE00480680 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF6DBB1CEE0F6F004E5894 /* Preferences.swift */; };
 		CF5D33FD1FBAD1DF00480680 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF6DBB1CEE0F6F004E5894 /* Preferences.swift */; };
-		CF5D34001FBAD1E400480680 /* TerminalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6564E1CFC860F007031AD /* TerminalController.swift */; };
 		CF5D34021FBAD1E900480680 /* NSPasteboard+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE9821F899EF400E5F48F /* NSPasteboard+Additions.swift */; };
 		CF5D34031FBAD1E900480680 /* NSPasteboard+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE9821F899EF400E5F48F /* NSPasteboard+Additions.swift */; };
 		CF5D34051FBAD1ED00480680 /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEAA4291D97B45900D91B9E /* String+Additions.swift */; };
 		CF5D34061FBAD1EE00480680 /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEAA4291D97B45900D91B9E /* String+Additions.swift */; };
 		CF5D340D1FBE97F600480680 /* ServiceRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5D340C1FBE97F600480680 /* ServiceRunner.swift */; };
-		CF5D340F1FBE99A200480680 /* ServiceRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5D340C1FBE97F600480680 /* ServiceRunner.swift */; };
 		CF66BECB1FC1BB6400585587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF66BECA1FC1BB6300585587 /* Assets.xcassets */; };
 		CF66BED41FC1BB8B00585587 /* TermHere Service.app in Embed Services */ = {isa = PBXBuildFile; fileRef = CF66BEC61FC1BB6300585587 /* TermHere Service.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CF66BED71FC1BC1F00585587 /* TermHereServiceApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AE0D61DE43D1D00D91B9E /* TermHereServiceApplication.swift */; };
@@ -32,9 +30,6 @@
 		CF66BEE51FC1BEF000585587 /* OpenPanelAccessoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF66BEE21FC1BEF000585587 /* OpenPanelAccessoryViewController.swift */; };
 		CF66BEE61FC1BEF000585587 /* OpenPanelAccessoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF66BEE31FC1BEF000585587 /* OpenPanelAccessoryViewController.xib */; };
 		CF66BEE71FC1BEF000585587 /* SandboxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF66BEE41FC1BEF000585587 /* SandboxController.swift */; };
-		CF66BEE91FC1C0D000585587 /* SandboxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF66BEE41FC1BEF000585587 /* SandboxController.swift */; };
-		CF66BEEA1FC1C0D000585587 /* OpenPanelAccessoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF66BEE21FC1BEF000585587 /* OpenPanelAccessoryViewController.swift */; };
-		CF66BEEB1FC1C0D000585587 /* OpenPanelAccessoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF66BEE31FC1BEF000585587 /* OpenPanelAccessoryViewController.xib */; };
 		CF9CEE601CE59B1F00A89E71 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9CEE5F1CE59B1F00A89E71 /* FinderSync.swift */; };
 		CF9CEE641CE59B1F00A89E71 /* TermHere Finder Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF9CEE5B1CE59B1F00A89E71 /* TermHere Finder Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CF9CEE6A1CE5A77B00A89E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9CEE691CE5A77B00A89E71 /* Assets.xcassets */; };
@@ -732,7 +727,6 @@
 			files = (
 				CF9CEE6A1CE5A77B00A89E71 /* Assets.xcassets in Resources */,
 				CFB54A591FBEC4BD00FF54E4 /* Localizable.strings in Resources */,
-				CF66BEEB1FC1C0D000585587 /* OpenPanelAccessoryViewController.xib in Resources */,
 				CF9CEE751CE5B57D00A89E71 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -792,14 +786,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF66BEEA1FC1C0D000585587 /* OpenPanelAccessoryViewController.swift in Sources */,
 				CF9CEE601CE59B1F00A89E71 /* FinderSync.swift in Sources */,
 				CF5D34031FBAD1E900480680 /* NSPasteboard+Additions.swift in Sources */,
 				CF5D34061FBAD1EE00480680 /* String+Additions.swift in Sources */,
 				CFF789461F88A11F0082B82D /* VolumeManager.swift in Sources */,
 				CF5D33FD1FBAD1DF00480680 /* Preferences.swift in Sources */,
-				CF66BEE91FC1C0D000585587 /* SandboxController.swift in Sources */,
-				CF5D34001FBAD1E400480680 /* TerminalController.swift in Sources */,
 				CF5D340D1FBE97F600480680 /* ServiceRunner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -817,7 +808,6 @@
 				CF3AE0E11DE4433600D91B9E /* ServiceController.swift in Sources */,
 				CFFE52781D97DE4F00D91B9E /* CocoaLocalization.swift in Sources */,
 				CFD9B7C61CE5960500947EC8 /* AppDelegate.swift in Sources */,
-				CF5D340F1FBE99A200480680 /* ServiceRunner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
