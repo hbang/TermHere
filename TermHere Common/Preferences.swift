@@ -43,12 +43,12 @@ open class Preferences {
 		preferences.register(defaults: [
 			"HadFirstRun": false,
 
-			"TerminalAppURL": Preferences.fallbackTerminalAppURL,
+			"TerminalAppURL": Preferences.fallbackTerminalAppURL.path,
 			"ShowInContextMenu": true,
 			"OpenSelection": true,
 			"TerminalActivationType": ActivationType.newTab.rawValue,
 			
-			"EditorAppURL": Preferences.fallbackEditorAppURL,
+			"EditorAppURL": Preferences.fallbackEditorAppURL.path,
 			"EditorShowInContextMenu": true,
 			
 			"*SandboxBookmarks": [:]
@@ -62,7 +62,7 @@ open class Preferences {
 
 	open var terminalAppURL: URL {
 		get { return URL(fileURLWithPath: preferences.object(forKey: "TerminalAppURL") as! String) }
-		set { preferences.set(newValue, forKey: "TerminalAppURL") }
+		set { preferences.set(newValue.path, forKey: "TerminalAppURL") }
 	}
 	
 	open var terminalShowInContextMenu: Bool {
@@ -82,7 +82,7 @@ open class Preferences {
 
 	open var editorAppURL: URL {
 		get { return URL(fileURLWithPath: preferences.object(forKey: "EditorAppURL") as! String) }
-		set { preferences.set(newValue, forKey: "EditorAppURL") }
+		set { preferences.set(newValue.path, forKey: "EditorAppURL") }
 	}
 	
 	open var editorShowInContextMenu: Bool {
