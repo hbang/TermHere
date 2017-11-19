@@ -34,3 +34,25 @@ extension NSButton {
 	}
 
 }
+
+extension NSBox {
+	
+	@IBInspectable var localizationTable: String {
+		get { return "" }
+		set {
+			title = localize(title, table: newValue)
+		}
+	}
+	
+}
+
+extension NSMenuItem {
+	
+	@IBInspectable var localizationTable: String {
+		get { return "" }
+		set {
+			title = localize(title, table: newValue)
+		}
+	}
+	
+}

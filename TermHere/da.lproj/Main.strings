@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
@@ -87,7 +87,7 @@
 
 	<!-- Label explaining how to enable TermHere if it is disabled. -->
 	<key>TROUBLESHOOTING_NOTE</key>
-	<string>Kan du ikke se det? Vær sikker på, at "TermHere" er slået til i "Udvidelser" i indstillingsvinduet.</string>
+	<string>Kan du ikke se det? Vær sikker på, at “TermHere” er slået til i “Udvidelser” i indstillingsvinduet.</string>
 
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>

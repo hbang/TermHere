@@ -11,12 +11,8 @@
 	<string>Browse</string>
 
 	<!-- Label for choosing the editor app to use. -->
-	<key>EDITOR</key>
-	<string>Editor:</string>
-
-	<!-- Radio button for choosing to use an app as the editor. -->
 	<key>EDITOR_APP</key>
-	<string>App:</string>
+	<string>Editor app:</string>
 
 	<!-- Radio button for choosing to use a terminal command as the editor. -->
 	<key>EDITOR_COMMAND</key>
@@ -31,7 +27,7 @@
 
 	<!-- Checkbox that toggles “Open in [terminal name]” button. -->
 	<key>OPEN_IN_TERMINAL</key>
-	<string>Open in terminal</string>
+	<string>Open in Terminal</string>
 
 	<!-- Label for checkbox for “Open in [editor name]” button. -->
 	<key>OPEN_IN_EDITOR</key>
