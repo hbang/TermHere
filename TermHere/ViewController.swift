@@ -8,31 +8,17 @@
 
 import Cocoa
 import CoreServices
-import TermHereCommon
 
 class ViewController: NSViewController {
 
 	@IBOutlet weak var terminalPathControl: NSPathControl!
-
-	@IBOutlet weak var editorAppRadioButton: NSButton!
-	@IBOutlet weak var editorCommandRadioButton: NSButton!
-
-	@IBOutlet weak var editorPathControl: NSPathControl!
-	@IBOutlet weak var editorBrowseButton: NSButton!
-	@IBOutlet weak var editorCommandTextField: NSTextField!
-
-	@IBOutlet weak var openInTerminalCheckbox: NSButton!
-	@IBOutlet weak var openInEditorCheckbox: NSButton!
-	@IBOutlet weak var executeFileCheckbox: NSButton!
-
-	@IBOutlet weak var contextMenusCheckbox: NSButtonCell!
-	@IBOutlet weak var submenuCheckbox: NSButton!
-
+	@IBOutlet weak var terminalContextMenusCheckbox: NSButtonCell!
 	@IBOutlet weak var openSelectionCheckbox: NSButton!
-
-	@IBOutlet weak var newTabRadioButton: NSButton!
-	@IBOutlet weak var newWindowRadioButton: NSButton!
-	@IBOutlet weak var lastTabRadioButton: NSButton!
+	
+	@IBOutlet weak var terminalOpenInPopUpButton: NSPopUpButton!
+	
+	@IBOutlet weak var editorPathControl: NSPathControl!
+	@IBOutlet weak var editorContextMenusCheckbox: NSButton!
 
 	let preferences = Preferences.sharedInstance
 
@@ -44,19 +30,7 @@ class ViewController: NSViewController {
 		// set the values of the controls
 		terminalPathControl.url = preferences.terminalAppURL
 		editorPathControl.url = preferences.editorAppURL
-		openInTerminalCheckbox.state = preferences.showInContextMenus ? .on : .off
 		openSelectionCheckbox.state = preferences.openSelection ? .on : .off
-
-		switch preferences.activationType {
-		case .newTab:
-			newTabRadioButton.state = .on
-
-		case .newWindow:
-			newWindowRadioButton.state = .on
-
-		case .sameTab:
-			lastTabRadioButton.state = .on
-		}
 	}
 
 	override func viewDidAppear() {
@@ -92,7 +66,7 @@ class ViewController: NSViewController {
 
 	// MARK: - Callbacks
 
-	typealias BrowseForAppCompletion = (_ path: URL, _ bundleIdentifier: String) -> Void
+	typealias BrowseForAppCompletion = (_ path: URL) -> Void
 
 	func browseForApp(pathControl: NSPathControl, completion: @escaping BrowseForAppCompletion) {
 		// set up the open panel
@@ -115,73 +89,30 @@ class ViewController: NSViewController {
 				let url = panel.urls[0]
 				pathControl.url = url
 
-				// also get the bundle
-				let bundle = Bundle(url: url)
-
 				// call the callback
-				completion(url, bundle!.bundleIdentifier!)
+				completion(url)
 			}
 		}
 	}
 
 	@IBAction func terminalBrowseClicked(_ sender: AnyObject) {
-		browseForApp(pathControl: terminalPathControl) { (url: URL, bundleIdentifier: String) in
+		browseForApp(pathControl: terminalPathControl) { (url: URL) in
 			self.preferences.terminalAppURL = url
-			self.preferences.terminalBundleIdentifier = bundleIdentifier
 		}
 	}
 
 	@IBAction func editorBrowseClicked(_ sender: AnyObject) {
-		browseForApp(pathControl: editorPathControl) { (url: URL, bundleIdentifier: String) in
+		browseForApp(pathControl: editorPathControl) { (url: URL) in
 			self.preferences.editorAppURL = url
-			self.preferences.editorBundleIdentifier = bundleIdentifier
 		}
 	}
-
-	@IBAction func editorTypeChanged(_ sender: AnyObject) {
-		if editorAppRadioButton.state == .on {
-			preferences.editorType = .app
-		} else if editorCommandRadioButton.state == .on {
-			preferences.editorType = .command
-		}
-
-		switch preferences.editorType {
-		case .app:
-			editorPathControl.isEnabled = true
-			editorBrowseButton.isEnabled = true
-			editorCommandTextField.isEnabled = false
-			editorBrowseButton.becomeFirstResponder()
-
-		case .command:
-			editorPathControl.isEnabled = false
-			editorBrowseButton.isEnabled = false
-			editorCommandTextField.isEnabled = true
-			editorCommandTextField.becomeFirstResponder()
-		}
+	
+	@IBAction func terminalContextMenusChanged(_ sender: AnyObject) {
+		preferences.terminalShowInContextMenu = terminalContextMenusCheckbox.state == .on
 	}
-
-	@IBAction func editorCommandChanged(_ sender: AnyObject) {
-		preferences.editorCommand = editorCommandTextField.stringValue
-	}
-
-	@IBAction func showOpenInTerminalChanged(_ sender: AnyObject) {
-		preferences.showOpenInTerminal = openInTerminalCheckbox.state == .on
-	}
-
-	@IBAction func showOpenInEditorChanged(_ sender: AnyObject) {
-		preferences.showOpenInEditor = openInEditorCheckbox.state == .on
-	}
-
-	@IBAction func showExecuteFileChanged(_ sender: AnyObject) {
-		preferences.showExecuteFile = executeFileCheckbox.state == .on
-	}
-
-	@IBAction func contextMenusChanged(_ sender: AnyObject) {
-		preferences.showInContextMenus = contextMenusCheckbox.state == .on
-	}
-
-	@IBAction func submenuChanged(_ sender: AnyObject) {
-		preferences.showAsSubmenu = submenuCheckbox.state == .on
+	
+	@IBAction func editorContextMenusChanged(_ sender: AnyObject) {
+		preferences.editorShowInContextMenu = editorContextMenusCheckbox.state == .on
 	}
 
 	@IBAction func openSelectionChanged(_ sender: AnyObject) {
@@ -189,14 +120,8 @@ class ViewController: NSViewController {
 	}
 
 	@IBAction func openInChanged(_ sender: AnyObject) {
-		// set the preference according to the selected button
-		if newTabRadioButton.state == .on {
-			preferences.activationType = .newTab
-		} else if newWindowRadioButton.state == .on {
-			preferences.activationType = .newWindow
-		} else if lastTabRadioButton.state == .on {
-			preferences.activationType = .sameTab
-		}
+		// set the preference according to the selected item’s tag
+		preferences.terminalActivationType = ActivationType(rawValue: UInt(terminalOpenInPopUpButton.selectedItem!.tag))!
 	}
 
 	@IBAction func openPreferencesClicked(_ sender: AnyObject) {

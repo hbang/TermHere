@@ -3,9 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -18,12 +20,14 @@
 	<string>1.3</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
-	<key>LSBackgroundOnly</key>
+	<key>LSMinimumSystemVersion</key>
+	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<key>LSUIElement</key>
 	<true/>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2017 HASHBANG Productions. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>NSApplication</string>
+	<string>TermHereServiceApplication</string>
 	<key>NSServices</key>
 	<array>
 		<dict>
@@ -40,7 +44,7 @@
 			<key>NSMessage</key>
 			<string>launchTerminal</string>
 			<key>NSPortName</key>
-			<string>ws.hbang.TermHere.TermHere-Service</string>
+			<string>TermHere-Service</string>
 			<key>NSRequiredContext</key>
 			<dict>
 				<key>NSServiceCategory</key>
@@ -50,11 +54,11 @@
 			</dict>
 			<key>NSSendTypes</key>
 			<array>
-				<string>NSStringPboardType</string>
 				<string>NSFilenamesPboardType</string>
-				<string>NSURLPboardType</string>
-				<string>NSMultipleTextSelectionPboardType</string>
+				<string>public.plain-text</string>
 			</array>
+			<key>NSTimeout</key>
+			<string>2000</string>
 		</dict>
 		<dict>
 			<key>NSKeyEquivalent</key>
@@ -70,7 +74,7 @@
 			<key>NSMessage</key>
 			<string>launchEditor</string>
 			<key>NSPortName</key>
-			<string>ws.hbang.TermHere.TermHere-Service</string>
+			<string>TermHere-Service</string>
 			<key>NSRequiredContext</key>
 			<dict>
 				<key>NSServiceCategory</key>
@@ -80,12 +84,14 @@
 			</dict>
 			<key>NSSendTypes</key>
 			<array>
-				<string>NSStringPboardType</string>
 				<string>NSFilenamesPboardType</string>
-				<string>NSURLPboardType</string>
-				<string>NSMultipleTextSelectionPboardType</string>
+				<string>public.plain-text</string>
 			</array>
+			<key>NSTimeout</key>
+			<string>2000</string>
 		</dict>
 	</array>
+	<key>NSSupportsSuddenTermination</key>
+	<true/>
 </dict>
 </plist>

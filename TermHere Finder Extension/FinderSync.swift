@@ -8,27 +8,38 @@
 
 import Cocoa
 import FinderSync
-import TermHereCommon
 
 class FinderSync: FIFinderSync {
 
 	let finderController = FIFinderSyncController.default()
+	let preferences = Preferences.sharedInstance
 
 	override init() {
 		super.init()
 
-		// set ourselves as “watching” everything by setting / as our root
+		// as a safe initial fallback, start off using / as our only root directory
 		finderController.directoryURLs = [ URL(fileURLWithPath: "/") ]
+		
+		// ensure VolumeManager’s shared instance has been instantiated
+		_ = VolumeManager.shared
+		
+		// set up our notification observer
+		NotificationCenter.default.addObserver(forName: VolumeManager.VolumesDidChangeNotification, object: nil, queue: OperationQueue.current!) { (notification) in
+			// set ourselves as “watching” everything by setting each volume as our root
+			self.finderController.directoryURLs = Set(notification.object as! [URL])
+		}
 	}
+	
+}
 
-	// MARK: - Toolbar item
+extension FinderSync {
 
 	override var toolbarItemName: String {
-		return NSLocalizedString("NEW_TERMINAL_HERE", comment: "Button that opens a new terminal tab.")
+		return "TermHere"
 	}
 
 	override var toolbarItemToolTip: String {
-		return NSLocalizedString("NEW_TERMINAL_HERE_TOOLTIP", comment: "Explanation of what the New Terminal Here button does.")
+		return NSLocalizedString("NEW_TERMINAL_HERE_TOOLTIP", comment: "Explanation of what the Open in Terminal button does.")
 	}
 
 	override var toolbarItemImage: NSImage {
@@ -39,32 +50,34 @@ class FinderSync: FIFinderSync {
 		// create the menu
 		let menu = NSMenu(title: "")
 
-		let preferences = Preferences.sharedInstance
-
-		switch menuKind {
-		case .contextualMenuForItems, .contextualMenuForSidebar, .contextualMenuForContainer:
-			// if we're a disabled menu type, stop here
-			if !preferences.showInContextMenus {
-				return menu
-			}
-
-		case .toolbarItemMenu:
-			// if we're the toolbar item, cheat a little by treating this as our click action
-			newTerminal(nil)
-
-			return menu
-		}
-
 		// create the new tab item
-		let newTabItem = menu.addItem(withTitle: NSLocalizedString("NEW_TERMINAL_HERE", comment: "Button that opens a new terminal tab."), action: #selector(newTerminal(_:)), keyEquivalent: "X")
-		newTabItem.target = self
+		if preferences.terminalShowInContextMenu {
+			let appURL = preferences.terminalAppURL
+			let title = String(format: NSLocalizedString("OPEN_IN_APP", comment: "Button that opens a new terminal tab."), nameForApp(url: appURL))
+			
+			let newTabItem = menu.addItem(withTitle: title, action: #selector(newTerminal(_:)), keyEquivalent: "X")
+			newTabItem.target = self
+			newTabItem.image = NSWorkspace.shared.icon(forFile: appURL.path)
+		}
+		
+		// create the editor item
+		if preferences.editorShowInContextMenu {
+			let appURL = preferences.editorAppURL
+			let title = String(format: NSLocalizedString("EDIT_IN_APP", comment: "Button that opens the file in a text editor."), nameForApp(url: appURL))
+			
+			let openInEditorItem = menu.addItem(withTitle: title, action: #selector(openEditor(_:)), keyEquivalent: "E")
+			openInEditorItem.target = self
+			openInEditorItem.image = NSWorkspace.shared.icon(forFile: appURL.path)
+		}
 
 		return menu
 	}
+	
+}
 
-	// MARK: - Callbacks
+extension FinderSync {
 
-	var urlsToOpen: [URL] {
+	private var urlsToOpen: [URL] {
 		get {
 			// get the current directory and selected items, bail out if either is nil (which shouldn’t be
 			// possible, but still)
@@ -78,8 +91,6 @@ class FinderSync: FIFinderSync {
 				return []
 			}
 
-			let preferences = Preferences.sharedInstance
-
 			// if opening selection is enabled and there are selected items, use them. otherwise, use the
 			// current directory
 			if preferences.openSelection && items.count > 0 {
@@ -89,14 +100,49 @@ class FinderSync: FIFinderSync {
 			}
 		}
 	}
-
-	@objc func newTerminal(_ sender: NSMenuItem?) {
-		// gotta launch them all
-		let urls = urlsToOpen
-
-		DispatchQueue.global(qos: .userInteractive).async {
-			_ = TerminalController.launch(urls)
+	
+	private func nameForApp(url: URL) -> String {
+		var name: String?
+		
+		do {
+			// get the localized name – the filename may be different from what the user usually sees
+			let result = try url.resourceValues(forKeys: [ .localizedNameKey ])
+			name = result.localizedName
+		} catch {
+			NSLog("failed to get name of app, may not exist? \(error)")
 		}
+		
+		// if we didn’t get a name, fall back to the filename
+		if name == nil {
+			name = url.lastPathComponent
+		}
+		
+		// remove the .app suffix if it exists, using this wonderful mess of swift over-designed api
+		if name!.hasSuffix(".app") {
+			let endIndex = name!.index(name!.endIndex, offsetBy: -4)
+			name = String(name![name!.startIndex..<endIndex])
+		}
+		
+		return name ?? url.deletingPathExtension().lastPathComponent
+	}
+	
+	func runSelectedFiles(withAppURL appURL: URL, fallbackAppURL: URL, fallbackService: String) {
+		let urls = urlsToOpen
+		
+		// hop over to the main queue
+		DispatchQueue.main.async {
+			// launch them!
+			let service = TerminalController.serviceName(forAppURL: appURL, fallbackAppURL: fallbackAppURL, fallbackService: fallbackService)
+			_ = ServiceRunner.run(service: service, withFileURLs: urls)
+		}
+	}
+	
+	@objc func newTerminal(_ sender: NSMenuItem?) {
+		runSelectedFiles(withAppURL: preferences.terminalAppURL, fallbackAppURL: Preferences.fallbackTerminalAppURL, fallbackService: "New Terminal Here")
+	}
+	
+	@objc func openEditor(_ sender: NSMenuItem?) {
+		runSelectedFiles(withAppURL: preferences.editorAppURL, fallbackAppURL: Preferences.fallbackEditorAppURL, fallbackService: "Open in Editor")
 	}
 
 }

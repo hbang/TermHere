@@ -6,82 +6,104 @@
 //  Copyright © 2016 HASHBANG Productions. All rights reserved.
 //
 
-import Foundation
 import Cocoa
 import Carbon
 
 open class TerminalController: NSObject {
+	
+	open class func serviceName(forAppURL appURL: URL, fallbackAppURL: URL, fallbackService: String) -> String {
+		// get the bundle for the user specified app, or our fallback if necessary
+		guard let bundle = Bundle(url: appURL) ?? Bundle(url: fallbackAppURL) else {
+			fatalError("specified app and fallback app not found!")
+		}
+		
+		return serviceName(forBundle: bundle) ?? fallbackService
+	}
+	
+	class func serviceName(forBundle bundle: Bundle) -> String? {
+		let activationType = Preferences.sharedInstance.terminalActivationType
+		var serviceName: String? = nil
+		
+		// if we’re aware of a service we can directly use, we definitely want to use that. otherwise
+		// we’re stuck trying a url open via NSWorkspace
+		if bundle.bundleIdentifier! == "com.apple.Terminal" {
+			switch activationType {
+			case .newTab, .sameTab:
+				serviceName = "New Terminal Tab at Folder"
+				break
+				
+			case .newWindow:
+				serviceName = "New Terminal at Folder"
+				break
+			}
+		} else if bundle.bundleIdentifier! == "com.googlecode.iterm2" {
+			switch activationType {
+			case .newTab, .sameTab:
+				serviceName = "New iTerm2 Tab Here"
+				break
+				
+			case .newWindow:
+				serviceName = "New iTerm2 Window Here"
+				break
+			}
+		}
+		
+		return serviceName
+	}
 
-	static let applescriptCommands: [String: [String: String]] = {
-		let bundle = Bundle(for: TerminalController.self)
-		let url = bundle.url(forResource: "AppleScriptCommands", withExtension: "plist")!
-		return NSDictionary(contentsOf: url) as! [String: [String: String]]
-	}()
-
-	open class func launch(_ urls: [URL]) -> Bool {
+	open class func launch(urls: [URL], withAppURL appURL: URL, fallbackAppURL: URL, retryIfNeeded: Bool = true) throws {
 		let finalURLs = urlsToOpen(urls)
-		let preferences = Preferences.sharedInstance
-
-		// determine the bundle id, falling back to terminal as default
-		let bundleIdentifier = preferences.terminalBundleIdentifier
-		let activationType = preferences.activationType
-
-		// if the app is known, get its commands dictionary
-		if let commands = TerminalController.applescriptCommands[bundleIdentifier] {
-			// if the command is known, get its applescript
-			if let command = commands[activationType.description] {
-				// ensure the app is running by launching it. this usually would bring all of its windows to
-				// the front, which is awful, so we ask it to not do that. the applescript will activate
-				// just the window in question
-				NSWorkspace.shared.launchApplication(withBundleIdentifier: bundleIdentifier, options: .withoutActivation, additionalEventParamDescriptor: nil, launchIdentifier: nil)
-
-				// create an applescript object, wrapped in a function
-				let applescript = NSAppleScript(source: "on runCommand(command)\n" + command + "\nend runCommand")
-
-				var hadError = false
-
-				// loop over urls to open
-				for url in urls {
-					// create our argument list
-					let parameters = NSAppleEventDescriptor.list()
-					parameters.insert(NSAppleEventDescriptor(string: TerminalController.command(for: url)), at: 0)
-
-					// use this legacy api monstrosity to create an apple event that calls
-					// the function for us
-					let event = NSAppleEventDescriptor(eventClass: AEEventClass(UInt(kASAppleScriptSuite)), eventID: AEEventID(UInt(kASSubroutineEvent)), targetDescriptor: NSAppleEventDescriptor.null(), returnID: AEReturnID(Int(kAutoGenerateReturnID)), transactionID: AETransactionID(UInt(kAnyTransactionID)))
-					event.setDescriptor(parameters, forKeyword: AEKeyword(UInt(keyDirectObject)))
-					event.setDescriptor(NSAppleEventDescriptor(string: "runCommand"), forKeyword: AEKeyword(UInt(keyASSubroutineName)))
-
-					// execute it
-					var errorInfo: NSDictionary?
-					applescript!.executeAppleEvent(event, error: &errorInfo)
-
-					// if we got an error
-					// executeAppleEvent() is meant to be nullable, but isn’t
-					// http://www.openradar.me/26404391
-					if errorInfo != nil {
-						// log and fall through to the fallback
-						NSLog("opening %@ via applescript failed! %@", bundleIdentifier, errorInfo!)
-						hadError = true
-						break
-					}
-				}
-
-				// if all went well, we’re done
-				if !hadError {
-					return true
-				}
+		
+		// get the bundle for the user specified app, or our fallback if necessary
+		guard let bundle = Bundle(url: appURL) ?? Bundle(url: fallbackAppURL) else {
+			fatalError("specified app and fallback app not found!")
+		}
+		
+		let service = serviceName(forBundle: bundle)
+		
+		if service != nil {
+			NSLog("opening \(finalURLs) using service \(service!)")
+			
+			// run, and if it succeeds, we can return
+			if ServiceRunner.run(service: service!, withFileURLs: finalURLs) {
+				return
 			}
 		}
 
-		// if we don’t know any applescript for the app or it failed for some reason, fall back to a
+		// if we don’t know any service for the app or it failed for some reason, fall back to a
 		// standard URL open
-		NSLog("opening \(finalURLs) using \(bundleIdentifier)")
-		if !NSWorkspace.shared.open(finalURLs, withAppBundleIdentifier: bundleIdentifier, options: .default, additionalEventParamDescriptor: nil, launchIdentifiers: nil) {
-			return false
+		NSLog("opening \(finalURLs) using \(bundle.bundleIdentifier!)")
+		
+		do {
+			// try just directly opening it first
+			try NSWorkspace.shared.open(finalURLs, withApplicationAt: bundle.bundleURL, options: .default, configuration: [:])
+		} catch {
+			let nserror = error as NSError
+			let underlyingError = nserror.userInfo[NSUnderlyingErrorKey] as? NSError ?? NSError()
+			
+			// if it fails, check if the error is due to permissions. if so, we have to do our workaround
+			if nserror.domain == NSCocoaErrorDomain && underlyingError.domain == NSOSStatusErrorDomain
+				&& underlyingError.code == permErr && retryIfNeeded == true {
+				// do the open panel permission routine thingy, then try calling ourself again ensuring we
+				// specify not to retry again which would cause an infinite loop
+				let bookmarks = SandboxController.getBookmarks(urls: urls)
+				bookmarks.forEach { (url) in
+					if !url.startAccessingSecurityScopedResource() {
+						NSLog("failed to get access to \(url)")
+					}
+				}
+				
+				try launch(urls: bookmarks, withAppURL: appURL, fallbackAppURL: fallbackAppURL, retryIfNeeded: false)
+				
+				bookmarks.forEach { (url) in
+					let nsurl = url as NSURL
+					_ = Timer.scheduledTimer(timeInterval: 5, target: nsurl, selector: #selector(nsurl.stopAccessingSecurityScopedResource), userInfo: nil, repeats: false)
+				}
+			} else {
+				NSLog("failed to open: \(error)")
+				throw error
+			}
 		}
-
-		return true
 	}
 
 	class func isDirectory(_ url: URL) -> Bool {
@@ -101,12 +123,13 @@ open class TerminalController: NSObject {
 
 	class func urlsToOpen(_ urls: [URL]) -> [URL] {
 		// if the url is a file, use its parent directory
-		let dirs = urls.map { isDirectory($0) ? $0 : $0.deletingLastPathComponent() }
+		let dirs = urls.map { isDirectory($0) ? $0 : URL(fileURLWithPath: $0.deletingLastPathComponent().path, isDirectory: true) }
 
 		// filter out uniques, sort, and return
 		return Array(Set(dirs)).sorted { $0.absoluteString < $1.absoluteString }
 	}
 
+	// (not currently used)
 	class func command(for url: URL) -> String {
 		// start with the path
 		var command = url.path

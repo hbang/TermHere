@@ -47,7 +47,7 @@
 
 	<!-- Checkbox that toggles showing the buttons as a submenu. -->
 	<key>SHOW_AS_SUBMENU</key>
-	</string>Vis i undermenu</string>
+	<string>Vis i undermenu</string>
 
 	<!-- Label that explains how to toggle the toolbar button. -->
 	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>

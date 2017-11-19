@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="OpenPanelAccessoryViewController" customModule="TermHere_Finder_Extension" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="VIs-Gq-pUN" id="5Aj-Cy-ZZL"/>
+                <outlet property="view" destination="MDA-iL-Gjl" id="RYV-hs-LDK"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="MDA-iL-Gjl">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="33"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="gua-x8-33f">
+                    <rect key="frame" x="0.0" y="0.0" width="31" height="33"/>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="kMG-sD-YQy">
+                    <rect key="frame" x="381" y="0.0" width="30" height="33"/>
+                </customView>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="VIs-Gq-pUN">
+                    <rect key="frame" x="29" y="8" width="354" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="bCv-tm-kbc"/>
+                    </constraints>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Multiline Label" id="FQJ-9Q-uCE">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kMG-sD-YQy" secondAttribute="trailing" id="0if-MY-A7C"/>
+                <constraint firstItem="VIs-Gq-pUN" firstAttribute="leading" secondItem="gua-x8-33f" secondAttribute="trailing" id="3wf-CC-7ja"/>
+                <constraint firstItem="VIs-Gq-pUN" firstAttribute="top" secondItem="MDA-iL-Gjl" secondAttribute="top" constant="8" id="5Uc-f9-tYg"/>
+                <constraint firstAttribute="bottom" secondItem="VIs-Gq-pUN" secondAttribute="bottom" constant="8" id="8gM-ps-ToJ"/>
+                <constraint firstItem="kMG-sD-YQy" firstAttribute="leading" secondItem="VIs-Gq-pUN" secondAttribute="trailing" id="D4a-74-N7v"/>
+                <constraint firstItem="VIs-Gq-pUN" firstAttribute="centerX" secondItem="MDA-iL-Gjl" secondAttribute="centerX" id="X6r-e1-937"/>
+                <constraint firstAttribute="bottom" secondItem="gua-x8-33f" secondAttribute="bottom" id="agc-T3-YUv"/>
+                <constraint firstItem="gua-x8-33f" firstAttribute="leading" secondItem="MDA-iL-Gjl" secondAttribute="leading" id="fig-kn-OcE"/>
+                <constraint firstAttribute="bottom" secondItem="kMG-sD-YQy" secondAttribute="bottom" id="jzu-Vc-HjJ"/>
+                <constraint firstItem="kMG-sD-YQy" firstAttribute="top" secondItem="MDA-iL-Gjl" secondAttribute="top" id="u6M-sx-Lqq"/>
+                <constraint firstItem="gua-x8-33f" firstAttribute="top" secondItem="MDA-iL-Gjl" secondAttribute="top" id="xhv-zX-pr7"/>
+            </constraints>
+            <point key="canvasLocation" x="-31.5" y="154.5"/>
+        </customView>
+    </objects>
+</document>

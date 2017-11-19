@@ -11,7 +11,7 @@ import Cocoa
 class ServiceController: NSObject {
 
 	class var serviceURL: URL {
-		return Bundle.main.sharedSupportURL!.appendingPathComponent("TermHere Service.service").absoluteURL
+		return Bundle.main.sharedSupportURL!.appendingPathComponent("TermHere Service.app").absoluteURL
 	}
 
 	var runningApp: NSRunningApplication?
@@ -25,17 +25,43 @@ class ServiceController: NSObject {
 			throw error
 		}
 	}
+	
+	func launchIfNeeded() throws {
+		// get service bundle id
+		let serviceBundleID = Bundle(url: ServiceController.serviceURL)!.bundleIdentifier
+		
+		// get the list of running apps
+		let apps = NSWorkspace.shared.runningApplications
+		
+		// loop over to find our service app
+		for (_, app) in apps.enumerated() {
+			if app.bundleIdentifier == serviceBundleID {
+				// we’re running, so we don’t have to do anything
+				return
+			}
+		}
+		
+		// we haven’t found the app, so it isn’t running. launch it now
+		do {
+			try launch()
+		} catch {
+			throw error
+		}
+	}
 
 	func relaunch() throws {
 		// terminate any previous instance of the service process (as it might be an outdated build),
 		// wait for the termination if needed, and then launch a new instance of it
+		
+		// get service bundle id
+		let serviceBundleID = Bundle(url: ServiceController.serviceURL)!.bundleIdentifier
 
 		// get the list of running apps
 		let apps = NSWorkspace.shared.runningApplications
 
 		// loop over to find our service app
 		for (_, app) in apps.enumerated() {
-			if app.bundleIdentifier == "ws.hbang.TermHere.TermHere-Service" {
+			if app.bundleIdentifier == serviceBundleID {
 				// keep a strong reference to this object around so it doesn’t get deallocated before our
 				// KVO callback (would have been) fired
 				runningApp = app
