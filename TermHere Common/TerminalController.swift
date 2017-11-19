@@ -55,6 +55,7 @@ open class TerminalController: NSObject {
 				
 				try launch(urls: bookmarks, withAppURL: appURL, fallbackAppURL: fallbackAppURL, retryIfNeeded: false)
 				
+				// sorta cheating, not sure what’s going on at the moment really
 				bookmarks.forEach { (url) in
 					let nsurl = url as NSURL
 					_ = Timer.scheduledTimer(timeInterval: 5, target: nsurl, selector: #selector(nsurl.stopAccessingSecurityScopedResource), userInfo: nil, repeats: false)

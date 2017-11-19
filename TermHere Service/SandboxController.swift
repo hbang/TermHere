@@ -104,11 +104,6 @@ class SandboxController {
 			return
 		}
 		
-		if !url.startAccessingSecurityScopedResource() {
-			NSLog("failed to get access to \(url)")
-			return
-		}
-		
 		do {
 			let data = try url.bookmarkData(options: .withSecurityScope, includingResourceValuesForKeys: [ .isDirectoryKey ], relativeTo: nil)
 			bookmarks[broadURL.path] = data
@@ -116,9 +111,6 @@ class SandboxController {
 		} catch {
 			NSLog("storing bookmark for url \(url) failed: \(error)")
 		}
-		
-		let nsurl = url as NSURL
-		_ = Timer.scheduledTimer(timeInterval: 5, target: nsurl, selector: #selector(nsurl.stopAccessingSecurityScopedResource), userInfo: nil, repeats: false)
 	}
 	
 }
