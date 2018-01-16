@@ -31,5 +31,9 @@
 
 	<key>NOT_EXECUTABLE_MESSAGE</key>
 	<string>Tanda fail sebagai pembuka untuk maju.</string>
+
+	<!-- Message displayed in a file open panel asking the user to give permission to read the folder. %@ is the folder path. -->
+	<key>GRANT_SANDBOX_PERMISSION_MESSAGE</key>
+	<string>TermHere memerlukan kebenaran untuk mengakses sesetengah fail. Klik buka untuk memberikan TermHere akses kepada %@.<string>
 </dict>
 </plist>
