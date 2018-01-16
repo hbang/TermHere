@@ -31,5 +31,9 @@
 
 	<key>NOT_EXECUTABLE_MESSAGE</key>
 	<string>Tandai fail yang dapat dieksekusi untuk melanjutkan.</string>
+
+	<!-- Message displayed in a file open panel asking the user to give permission to read the folder. %@ is the folder path. -->
+	<key>GRANT_SANDBOX_PERMISSION_MESSAGE</key>
+	<string>TermHere memerlukan permisi untuk akses beberapa arsip. Tekan buka untuk berikan TermHere permisi pada %@.<string>
 </dict>
 </plist>
