@@ -31,5 +31,9 @@
 
 	<key>NOT_EXECUTABLE_MESSAGE</key>
 	<string>Marquez le fichier comme exécutable pour continuer.</string>
+
+	<!-- Message displayed in a file open panel asking the user to give permission to read the folder. %@ is the folder path. -->
+	<key>GRANT_SANDBOX_PERMISSION_MESSAGE</key>
+	<string>TermHere a besoin d’une permission pour accéder à certains fichiers. Cliquez sur Ouvrir pour donner à TermHere un accès à %@.</string>
 </dict>
 </plist>
