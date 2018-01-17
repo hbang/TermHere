@@ -9,5 +9,9 @@
 	<!-- Tooltip explaining what the Open in Terminal button does. -->
 	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
 	<string>在这个目录下打开New Terminal</string>
+
+	<!-- Message displayed in a file open panel asking the user to give permission to read the folder. %@ is the folder path. -->
+	<key>GRANT_SANDBOX_PERMISSION_MESSAGE</key>
+	<string>TermHere 需要某些文件的访问权限。单击 "打开" 来授权 TermHere 访问 %@.</string>
 </dict>
 </plist>
