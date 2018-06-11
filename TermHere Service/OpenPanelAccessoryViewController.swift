@@ -13,7 +13,7 @@ class OpenPanelAccessoryViewController: NSViewController {
 	@IBOutlet var label: NSTextField!
 	
 	init() {
-		super.init(nibName: NSNib.Name(rawValue: "OpenPanelAccessoryViewController"), bundle: nil)
+		super.init(nibName: NSNib.Name("OpenPanelAccessoryViewController"), bundle: nil)
 	}
 	
 	required init?(coder: NSCoder) {

@@ -32,10 +32,10 @@ public enum ActivationType: UInt, CustomStringConvertible {
 
 open class Preferences {
 
-	open static let sharedInstance = Preferences()
+	public static let sharedInstance = Preferences()
 	
-	open static let fallbackTerminalAppURL = URL(string: "file:///Applications/Utilities/Terminal.app")!
-	open static let fallbackEditorAppURL = URL(string: "file:///Applications/TextEdit.app")!
+	public static let fallbackTerminalAppURL = URL(string: "file:///Applications/Utilities/Terminal.app")!
+	public static let fallbackEditorAppURL = URL(string: "file:///Applications/TextEdit.app")!
 
 	let preferences = UserDefaults(suiteName: "N2LN9ZT493.group.ws.hbang.TermHere")!
 

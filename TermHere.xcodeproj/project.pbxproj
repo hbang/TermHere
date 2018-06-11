@@ -37,7 +37,6 @@
 		CF9CEE751CE5B57D00A89E71 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF9CEE731CE5B57D00A89E71 /* Localizable.strings */; };
 		CFAD6C561DD354C400D91B9E /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAD6C501DD34B4C00D91B9E /* Sparkle.framework */; };
 		CFAD6C591DD422C100D91B9E /* credits.css in Resources */ = {isa = PBXBuildFile; fileRef = CFAD6C581DD422C100D91B9E /* credits.css */; };
-		CFB54A591FBEC4BD00FF54E4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF9CEE701CE5B55100A89E71 /* Localizable.strings */; };
 		CFCF12E01CF46CC4007A807F /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF12DF1CF46CC4007A807F /* ContainerView.swift */; };
 		CFCF12E61CF47AB1007A807F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF12E51CF47AB1007A807F /* AboutViewController.swift */; };
 		CFD9B7C61CE5960500947EC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD9B7C51CE5960500947EC8 /* AppDelegate.swift */; };
@@ -608,18 +607,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "HASHBANG Productions";
 				TargetAttributes = {
 					CF66BEC51FC1BB6300585587 = {
 						CreatedOnToolsVersion = 9.1;
 						DevelopmentTeam = N2LN9ZT493;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					CF9CEE5A1CE59B1F00A89E71 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = N2LN9ZT493;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1000;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 1;
@@ -632,7 +632,7 @@
 					CFD9B7C11CE5960500947EC8 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = N2LN9ZT493;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1000;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 1;
@@ -726,7 +726,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF9CEE6A1CE5A77B00A89E71 /* Assets.xcassets in Resources */,
-				CFB54A591FBEC4BD00FF54E4 /* Localizable.strings in Resources */,
 				CF9CEE751CE5B57D00A89E71 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -760,7 +759,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1073,7 +1072,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "au.com.hbang.TermHere.TermHere-Service";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1095,7 +1094,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "au.com.hbang.TermHere.TermHere-Service";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -1113,7 +1112,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1131,7 +1130,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -1149,12 +1148,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1207,12 +1208,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1262,7 +1265,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ws.hbang.TermHere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1284,7 +1287,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ws.hbang.TermHere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
