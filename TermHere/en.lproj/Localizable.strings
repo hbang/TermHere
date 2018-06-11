@@ -18,6 +18,10 @@
 	<key>CHOOSE_APPLICATION</key>
 	<string>Choose Application</string>
 
+	<!-- Title of the Help window. -->
+	<key>HELP</key>
+	<string>Help</string>
+
 	<!-- Title of the About window. -->
 	<key>ABOUT</key>
 	<string>About</string>

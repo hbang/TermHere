@@ -419,7 +419,7 @@
                                             <font key="font" metaFont="smallSystem"/>
                                         </buttonCell>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Main"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationTable" value="Localizable"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="Kf3-2V-GjR" kind="modal" id="Flo-TS-opm"/>
