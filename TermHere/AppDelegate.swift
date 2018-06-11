@@ -7,12 +7,17 @@
 //
 
 import Cocoa
+
+#if !SANDBOX
 import Sparkle
+#endif
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-	@IBOutlet weak var updater: SUUpdater!
+#if !SANDBOX
+	let updater = SUUpdater.shared()!
+#endif
 
 	let serviceController = ServiceController()
 
@@ -20,16 +25,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	func applicationDidFinishLaunching(_ notification: Notification) {
 		// in case of an upgrade, quit and relaunch the service app
-		do {
-			try serviceController.relaunch()
-		} catch {
-			// naw. show an alert
-			let alert = NSAlert(error: error)
-			alert.runModal()
+		if Preferences.sharedInstance.hadFirstRun {
+			do {
+				try serviceController.relaunch()
+			} catch {
+				// naw. show an alert
+				let alert = NSAlert(error: error)
+				alert.runModal()
+			}
 		}
 
-		// force a check for updates
+#if !SANDBOX
+		// force a check for updates, since this app won’t be opened very often
 		updater.checkForUpdatesInBackground()
+#endif
 	}
 
 	func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
@@ -41,6 +50,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	@IBAction func showHelp(_ sender: NSMenuItem) {
 		NSWorkspace.shared.open(URL(string: "https://hbang.ws/support/")!)
+	}
+	
+	@IBAction func checkForUpdates(_ sender: NSMenuItem) {
+#if SANDBOX
+		// open the app store page
+		NSWorkspace.shared.open(URL(string: "macappstores://itunes.apple.com/app/id1114363220?mt=12")!)
+#else
+		// forward the command to sparkle
+		updater.checkForUpdates(sender)
+#endif
 	}
 
 }

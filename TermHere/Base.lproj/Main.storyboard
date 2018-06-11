@@ -28,7 +28,7 @@
                                         <menuItem title="Check for Updates…" id="qGU-LZ-iKJ">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
-                                                <action selector="checkForUpdates:" target="sy3-Vm-8MN" id="1C8-es-hVJ"/>
+                                                <action selector="checkForUpdates:" target="Voe-Tx-rLC" id="lnN-Uu-ADx"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
@@ -108,13 +108,8 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TermHere" customModuleProvider="target">
-                    <connections>
-                        <outlet property="updater" destination="sy3-Vm-8MN" id="7HZ-op-Hu1"/>
-                    </connections>
-                </customObject>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TermHere" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <customObject id="sy3-Vm-8MN" customClass="SUUpdater"/>
             </objects>
             <point key="canvasLocation" x="75.5" y="-28"/>
         </scene>
