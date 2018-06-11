@@ -35,9 +35,18 @@ open class TerminalController: NSObject {
 		NSLog("opening \(finalURLs) using \(bundle.bundleIdentifier!)")
 		
 		do {
-			// try just directly opening it first
+			// try just directly opening it first. this may fail if the app doesn’t specify the selected
+			// type as one it can open, creating an amusing error that says the error isn’t meant to exist
+			// any more… within the error?
 			try NSWorkspace.shared.open(finalURLs, withApplicationAt: bundle.bundleURL, options: .default, configuration: [:])
 		} catch {
+			// try falling back to the previous method we used that works sweet af, but doesn’t let us
+			// know anything except boolean success/failure because idk, it’s just weird. this works way
+			// better than any other option on yosemite/elcap than sierra
+			if NSWorkspace.shared.open(finalURLs, withAppBundleIdentifier: bundle.bundleIdentifier, options: .default, additionalEventParamDescriptor: nil, launchIdentifiers: nil) {
+				return
+			}
+			
 			let nserror = error as NSError
 			let underlyingError = nserror.userInfo[NSUnderlyingErrorKey] as? NSError ?? NSError()
 			

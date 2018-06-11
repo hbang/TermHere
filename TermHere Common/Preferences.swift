@@ -37,7 +37,7 @@ open class Preferences {
 	public static let fallbackTerminalAppURL = URL(string: "file:///Applications/Utilities/Terminal.app")!
 	public static let fallbackEditorAppURL = URL(string: "file:///Applications/TextEdit.app")!
 
-	let preferences = UserDefaults(suiteName: "N2LN9ZT493.group.ws.hbang.TermHere")!
+	let preferences = UserDefaults(suiteName: "N2LN9ZT493.group.au.com.hbang.TermHere")!
 
 	init() {
 		preferences.register(defaults: [
