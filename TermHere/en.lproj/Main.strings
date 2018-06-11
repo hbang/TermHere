@@ -85,8 +85,24 @@
 	<key>TROUBLESHOOTING_NOTE</key>
 	<string>Not seeing it? Make sure TermHere is enabled in the Extensions preferences.</string>
 
+	<key>SET_UP_TERMHERE</key>
+	<string>Set up TermHere</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>ENABLE_EXTENSION_EXPLANATION</key>
+	<string>Click to open the Extensions preferences. Under TermHere, click the checkbox next to “Finder”.</string>
+
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
 	<string>Open Preferences</string>
+
+	<key>LAUNCH_SERVICE_EXPLANATION</key>
+	<string>You may need to accept a security confirmation prompt to start the TermHere Service.</string>
+
+	<key>LAUNCH_SERVICE</key>
+	<string>Start Service</string>
+
+	<key>DONE</key>
+	<string>Done</string>
 </dict>
 </plist>

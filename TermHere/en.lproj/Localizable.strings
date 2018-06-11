@@ -6,17 +6,9 @@
 	<key>LOADING</key>
 	<string>Loading…</string>
 
-	<!-- OK button label. -->
-	<key>OK</key>
-	<string>OK</string>
-
-	<!-- Title of prompt asking the user to enable the extension. -->
-	<key>PLEASE_ENABLE</key>
-	<string>To start using TermHere, please enable the extension.</string>
-
-	<!-- Explanation of how to enable the extension. -->
-	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>Click OK to open the Extensions preferences. Under TermHere, click the checkbox next to “Finder”.</string>
+	<!-- Done button label. -->
+	<key>DONE</key>
+	<string>Done</string>
 
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>

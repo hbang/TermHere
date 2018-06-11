@@ -44,24 +44,15 @@ class ViewController: NSViewController {
 	func requestExtensionEnable() {
 		// if this is the first run
 		if preferences.hadFirstRun == false {
-			// set hadFirstRun so this won’t activate again
+			// set hadFirstRun so this won’t activate again, then show the setup window
 			preferences.hadFirstRun = true
-
-			// construct and show an alert asking to enable the extension
-			let alert = NSAlert()
-			alert.messageText = NSLocalizedString("PLEASE_ENABLE", comment: "Title of prompt asking the user to enable the extension.")
-			alert.informativeText = NSLocalizedString("PLEASE_ENABLE_EXPLANATION", comment: "Explanation of how to enable the extension.")
-			alert.addButton(withTitle: NSLocalizedString("OK", comment: "OK button label."))
-
-			alert.beginSheetModal(for: view.window!, completionHandler: { (_) in
-				self.openExtensionPreferences()
-			})
+			showSetupWindow()
 		}
 	}
-
-	func openExtensionPreferences() {
-		// open the pref pane for extensions
-		NSWorkspace.shared.open(URL(fileURLWithPath: "/System/Library/PreferencePanes/Extensions.prefPane"))
+	
+	func showSetupWindow() {
+		let newWindow = storyboard!.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("setupWindowController")) as! NSWindowController
+		newWindow.showWindow(self)
 	}
 
 	// MARK: - Callbacks
@@ -122,10 +113,6 @@ class ViewController: NSViewController {
 	@IBAction func openInChanged(_ sender: AnyObject) {
 		// set the preference according to the selected item’s tag
 		preferences.terminalActivationType = ActivationType(rawValue: UInt(terminalOpenInPopUpButton.selectedItem!.tag))!
-	}
-
-	@IBAction func openPreferencesClicked(_ sender: AnyObject) {
-		openExtensionPreferences()
 	}
 	
 }

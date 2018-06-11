@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF3057B220CEB33F004F1263 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3057B120CEB33F004F1263 /* SetupViewController.swift */; };
 		CF3AE0E11DE4433600D91B9E /* ServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3AE0E01DE4433600D91B9E /* ServiceController.swift */; };
 		CF4CB4191DD429DA00D91B9E /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = CF4CB4171DD429DA00D91B9E /* Credits.html */; };
 		CF57D2051D958FDE00D91B9E /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF57D2021D958FDE00D91B9E /* Main.strings */; };
@@ -160,6 +161,7 @@
 		CF28CF6E1D95923500D91B9E /* zh_CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_CN; path = zh_CN.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CF28CF6F1D95923A00D91B9E /* zh_HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_HK; path = zh_HK.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CF2FE9821F899EF400E5F48F /* NSPasteboard+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPasteboard+Additions.swift"; sourceTree = "<group>"; };
+		CF3057B120CEB33F004F1263 /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		CF3AE0D21DE43C1D00D91B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF3AE0D61DE43D1D00D91B9E /* TermHereServiceApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermHereServiceApplication.swift; sourceTree = "<group>"; };
 		CF3AE0E01DE4433600D91B9E /* ServiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceController.swift; sourceTree = "<group>"; };
@@ -448,6 +450,7 @@
 			children = (
 				CFD9B7C71CE5960500947EC8 /* ViewController.swift */,
 				CFCF12E51CF47AB1007A807F /* AboutViewController.swift */,
+				CF3057B120CEB33F004F1263 /* SetupViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -792,6 +795,7 @@
 				CF5D33FC1FBAD1DE00480680 /* Preferences.swift in Sources */,
 				CFCF12E01CF46CC4007A807F /* ContainerView.swift in Sources */,
 				CFD9B7C81CE5960500947EC8 /* ViewController.swift in Sources */,
+				CF3057B220CEB33F004F1263 /* SetupViewController.swift in Sources */,
 				CF5D34021FBAD1E900480680 /* NSPasteboard+Additions.swift in Sources */,
 				CF5D34051FBAD1ED00480680 /* String+Additions.swift in Sources */,
 				CF3AE0E11DE4433600D91B9E /* ServiceController.swift in Sources */,
