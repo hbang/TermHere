@@ -102,7 +102,7 @@
 	<key>DONE</key>
 	<string>Done</string>
 
-	<!-- Label for the
+	<!-- Label recommending the user contributes a tip (donation). -->
 	<key>TIP_JAR_EXPLANATION</key>
 	<string>If this app is useful to you, please consider contributing to our tip jar.</string>
 
