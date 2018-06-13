@@ -8,7 +8,7 @@
 
 	<!-- Done button label. -->
 	<key>DONE</key>
-	<string>Done</string>
+	<string>Готово</string>
 
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
@@ -17,6 +17,10 @@
 	<!-- Title of the open panel. -->
 	<key>CHOOSE_APPLICATION</key>
 	<string>Выбрать Приложение</string>
+
+	<!-- Title of the Help window. -->
+	<key>HELP</key>
+	<string>Помощь</string>
 
 	<!-- Title of the About window. -->
 	<key>ABOUT</key>

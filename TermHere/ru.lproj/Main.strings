@@ -82,8 +82,44 @@
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>Эта функция требует наличия терминала или iTerm 2.9 и новее.</string>
 
+	<!-- Title of the setup window. -->
+	<key>SET_UP_TERMHERE</key>
+	<string>Настроить TermHere</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>ENABLE_EXTENSION_EXPLANATION</key>
+	<string>Кликните, чтобы открыть настройки расширений. Поставьте галочку рядом с Finder под TermHere.</string>
+
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
-	<string>Открыть системные настройки</string>
+	<string>Открыть настройки</string>
+
+	<!-- Explanation of how to start the service. -->
+	<key>LAUNCH_SERVICE_EXPLANATION</key>
+	<string>Вам может потребоваться согласиться с уведомлением о безопасности, чтобы запустить сервис TermHere.</string>
+
+	<!-- Button that starts the service. -->
+	<key>LAUNCH_SERVICE</key>
+	<string>Запустить сервис</string>
+
+	<!-- Button that dismisses a popup window. -->
+	<key>DONE</key>
+	<string>Готово</string>
+
+	<!-- Label recommending the user contributes a tip (donation). -->
+	<key>TIP_JAR_EXPLANATION</key>
+	<string>Если это приложение Вам пригодилось, то Вы можете сделать пожертвование в нашу копилку.</string>
+
+	<!-- Button that opens the tip jar webpage. -->
+	<key>TIP_JAR_SITE</key>
+	<string>Пожертвовать…</string>
+
+	<!-- Button that sends a tip. %@ is the defined tip amount. -->
+	<key>TIP_JAR_AMOUNT</key>
+	<string>Пожертвовать %@</string>
+
+	<!-- Displayed on the tip button while it loads the tip amount. -->
+	<key>LOADING</key>
+	<string>Загрузка…</string>
 </dict>
 </plist>
