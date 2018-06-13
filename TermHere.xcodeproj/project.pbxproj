@@ -306,7 +306,6 @@
 		CFF6564E1CFC860F007031AD /* TerminalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerminalController.swift; sourceTree = "<group>"; };
 		CFF789451F88A11F0082B82D /* VolumeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeManager.swift; sourceTree = "<group>"; };
 		CFFE52771D97DE4F00D91B9E /* CocoaLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaLocalization.swift; sourceTree = "<group>"; };
-		CFFF6DB01CEE0F5A004E5894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFFF6DBB1CEE0F6F004E5894 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -522,17 +521,8 @@
 				CFF6564E1CFC860F007031AD /* TerminalController.swift */,
 				CF5D340C1FBE97F600480680 /* ServiceRunner.swift */,
 				CFA831451FC17E1F00EEECC0 /* Categories */,
-				CFFF6DBD1CEE0F7F004E5894 /* Supporting Files */,
 			);
 			path = "TermHere Common";
-			sourceTree = "<group>";
-		};
-		CFFF6DBD1CEE0F7F004E5894 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CFFF6DB01CEE0F5A004E5894 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

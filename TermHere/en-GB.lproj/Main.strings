@@ -22,9 +22,6 @@
 	<key>SHOW_IN</key>
 	<string>Show in:</string>
 
-	<key>SHOW_ITEMS</key>
-	<string>Show items:</string>
-
 	<!-- Checkbox that toggles “Open in [terminal name]” button. -->
 	<key>OPEN_IN_TERMINAL</key>
 	<string>Open in terminal</string>
@@ -92,13 +89,44 @@
 	<key>OPEN_PREFERENCES</key>
 	<string>Open Preferences</string>
 
+	<!-- Title of the setup window. -->
+	<key>SET_UP_TERMHERE</key>
+	<string>Set up TermHere</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>ENABLE_EXTENSION_EXPLANATION</key>
+	<string>Click to open the Extensions preferences. Under TermHere, click the checkbox next to “Finder”.</string>
+
+	<!-- Button that opens the Preferences app. -->
+	<key>OPEN_PREFERENCES</key>
+	<string>Open Preferences</string>
+
+	<!-- Explanation of how to start the service. -->
 	<key>LAUNCH_SERVICE_EXPLANATION</key>
 	<string>You may need to accept a security confirmation prompt to start the TermHere Service.</string>
 
+	<!-- Button that starts the service. -->
 	<key>LAUNCH_SERVICE</key>
 	<string>Start Service</string>
 
+	<!-- Button that dismisses a popup window. -->
 	<key>DONE</key>
 	<string>Done</string>
+
+	<!-- Label for the
+	<key>TIP_JAR_EXPLANATION</key>
+	<string>If this app is useful to you, please consider contributing to our tip jar.</string>
+
+	<!-- Button that opens the tip jar webpage. -->
+	<key>TIP_JAR_SITE</key>
+	<string>Tip…</string>
+
+	<!-- Button that sends a tip. %@ is the defined tip amount. -->
+	<key>TIP_JAR_AMOUNT</key>
+	<string>Tip %@</string>
+
+	<!-- Displayed on the tip button while it loads the tip amount. -->
+	<key>LOADING</key>
+	<string>Loading…</string>
 </dict>
 </plist>
