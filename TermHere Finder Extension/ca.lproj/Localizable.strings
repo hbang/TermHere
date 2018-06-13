@@ -31,5 +31,9 @@
 
 	<key>NOT_EXECUTABLE_MESSAGE</key>
 	<string>Marqueu el fitxer com a executable per continuar.</string>
+
+	<!-- Message displayed in a file open panel asking the user to give permission to read the folder. %@ is the folder path. -->
+	<key>GRANT_SANDBOX_PERMISSION_MESSAGE</key>
+	<string>El TermHere necessita permís per accedir a alguns fitxers. Apreteu Obrir per donar-li accés a %@.</string>
 </dict>
 </plist>

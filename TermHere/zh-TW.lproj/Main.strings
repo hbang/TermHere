@@ -54,8 +54,44 @@
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>這個功能需要 Terminal 或者 iTerm 2.9 或更新的版本。</string>
 
+	<!-- Title of the setup window. -->
+	<key>SET_UP_TERMHERE</key>
+	<string>建立TermHere</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>ENABLE_EXTENSION_EXPLANATION</key>
+	<string>點擊打開擴展選項。在TermHere下，在“Finder”旁邊點擊複選框.</string>
+
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
-	<string>開啟設定</string>
+	<string>打開首選項</string>
+
+	<!-- Explanation of how to start the service. -->
+	<key>LAUNCH_SERVICE_EXPLANATION</key>
+	<string>你可能需要接受一個安全確認提示才能运行TermHere。</string>
+
+	<!-- Button that starts the service. -->
+	<key>LAUNCH_SERVICE</key>
+	<string>运行</string>
+
+	<!-- Button that dismisses a popup window. -->
+	<key>DONE</key>
+	<string>完成</string>
+	
+	<!-- Label recommending the user contributes a tip (donation). -->
+	<key>TIP_JAR_EXPLANATION</key>
+	<string>如果你覺得這個程序是有用的，請考慮貢獻給我們的小費罐子。</string>
+
+	<!-- Button that opens the tip jar webpage. -->
+	<key>TIP_JAR_SITE</key>
+	<string>給小費</string>
+
+	<!-- Button that sends a tip. %@ is the defined tip amount. -->
+	<key>TIP_JAR_AMOUNT</key>
+	<string>小費%@</string>
+
+	<!-- Displayed on the tip button while it loads the tip amount. -->
+	<key>LOADING</key>
+	<string>裝載……</string>
 </dict>
 </plist>

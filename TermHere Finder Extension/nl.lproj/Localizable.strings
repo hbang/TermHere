@@ -31,5 +31,9 @@
 
 	<key>NOT_EXECUTABLE_MESSAGE</key>
 	<string>Markeer het bestand als uitvoerbaar om verder te gaan.</string>
+
+	<!-- Message displayed in a file open panel asking the user to give permission to read the folder. %@ is the folder path. -->
+	<key>GRANT_SANDBOX_PERMISSION_MESSAGE</key>
+	<string>TermHere heeft toegang tot sommige bestanden nodig. Druk op Openen om TermHere toegang te geven tot %@.</string>
 </dict>
 </plist>

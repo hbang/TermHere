@@ -31,5 +31,9 @@
 
 	<key>NOT_EXECUTABLE_MESSAGE</key>
 	<string>Marcar el archivo como ejecutable para continuar.</string>
+
+	<!-- Message displayed in a file open panel asking the user to give permission to read the folder. %@ is the folder path. -->
+	<key>GRANT_SANDBOX_PERMISSION_MESSAGE</key>
+	<string>TermHere necesita permiso para acceder a algunos ficheros. Aprete Abrir para darle aceso a %@.</string>
 </dict>
 </plist>

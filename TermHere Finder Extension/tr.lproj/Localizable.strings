@@ -32,5 +32,8 @@
 	<key>NOT_EXECUTABLE_MESSAGE</key>
 	<string>Devam etmek için dosyayı çalıştırılabilir olarak işaretleyin.</string>
 
+	<!-- Message displayed in a file open panel asking the user to give permission to read the folder. %@ is the folder path. -->
+	<key>GRANT_SANDBOX_PERMISSION_MESSAGE</key>
+	<string>TermHere'ın dosyalara erişimi için izne ihtiyacı var. Aç'a basarak TermHere'ın %@ erişimine izin verin.</string>
 </dict>
 </plist>

@@ -6,6 +6,10 @@
 	<key>LOADING</key>
 	<string>Carregant…</string>
 
+	<!-- Done button label. -->
+	 <key>DONE</key>
+	 <string>Fet</string>
+
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>Triar</string>
@@ -13,6 +17,10 @@
 	<!-- Title of the open panel. -->
 	<key>CHOOSE_APPLICATION</key>
 	<string>Tria una aplicació</string>
+
+	<!-- Title of the Help window. -->
+	<key>HELP</key>
+	<string>Ajuda</string>
 
 	<!-- Title of the About window. -->
 	<key>ABOUT</key>

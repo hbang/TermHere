@@ -6,6 +6,10 @@
 	<key>LOADING</key>
 	<string>載入中…</string>
 
+	<!-- Done button label. -->
+  	<key>DONE</key>
+    <string>完成</string>
+
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>選取</string>
@@ -13,6 +17,10 @@
 	<!-- Title of the open panel. -->
 	<key>CHOOSE_APPLICATION</key>
 	<string>選取程式</string>
+
+	<!-- Title of the Help window. -->
+  	<key>HELP</key>
+  	<string>援助</string>
 
 	<!-- Title of the About window. -->
 	<key>ABOUT</key>
