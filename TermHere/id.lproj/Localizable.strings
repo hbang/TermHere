@@ -6,18 +6,6 @@
 	<key>LOADING</key>
 	<string>Loading…</string>
 
-	<!-- OK button label. -->
-	<key>OK</key>
-	<string>OK</string>
-
-	<!-- Title of prompt asking the user to enable the extension. -->
-	<key>PLEASE_ENABLE</key>
-	<string>Untuk mulai menggunakan TermHere, tolong nyalakan extension.</string>
-
-	<!-- Explanation of how to enable the extension. -->
-	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>Klik OK untuk membuka pengaturan extensions. Di bawah TermHere, klik kotak di sebelah “Finder”.</string>
-
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>Pilih</string>

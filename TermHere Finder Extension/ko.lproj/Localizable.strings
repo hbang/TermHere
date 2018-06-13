@@ -31,5 +31,9 @@
 
 	<key>NOT_EXECUTABLE_MESSAGE</key>
 	<string>이 파일을 실행 가능하도록 표기 후 계속 진행하세요.</string>
+
+	<!-- Message displayed in a file open panel asking the user to give permission to read the folder. %@ is the folder path. -->
+	<key>GRANT_SANDBOX_PERMISSION_MESSAGE</key>
+	<string>일부 파일에 접근하려면 TermHere에 권한이 필요합니다. 열기를 선택하여 TermHere에 %@ 접근 권한을 제공해주세요.</string>
 </dict>
 </plist>

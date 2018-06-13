@@ -6,18 +6,6 @@
 	<key>LOADING</key>
 	<string>טוען...</string>
 
-	<!-- OK button label. -->
-	<key>OK</key>
-	<string>אישור</string>
-
-	<!-- Title of prompt asking the user to enable the extension. -->
-	<key>PLEASE_ENABLE</key>
-	<string>כדי להתחיל להשתמש בTermHere, אנא אפשר/י את ההרחבה.</string>
-
-	<!-- Explanation of how to enable the extension. -->
-	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>הקש/י אישור כדי לפתוח את הגדרות ההרחבה. תחת TermHere, הקש/י על תיבת הסימון על יד ״מכתבה״.</string>
-
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>בחר</string>

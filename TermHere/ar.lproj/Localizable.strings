@@ -6,18 +6,6 @@
 	<key>LOADING</key>
 	<string>...جار التحميل</string>
 
-	<!-- OK button label. -->
-	<key>OK</key>
-	<string>موافق</string>
-
-	<!-- Title of prompt asking the user to enable the extension. -->
-	<key>PLEASE_ENABLE</key>
-	<string>.للبدء في استخدام مصطلح هنا، يرجى تمكين الملحق</string>
-
-	<!-- Explanation of how to enable the extension. -->
-	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>انقر فوق موافق لفتح تفضيلات ملحقات. تحت مصطلح هنا، انقر فوق خانة الاختيار بجانب "Finder"</string>
-
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>اختار</string>

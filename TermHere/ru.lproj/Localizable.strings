@@ -2,21 +2,28 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>ABOUT</key>
-	<string>О приложении</string>
-	<key>CHOOSE</key>
-	<string>Выбрать</string>
-	<key>CHOOSE_APPLICATION</key>
-	<string>Выбрать Приложение</string>
+	<!-- Label displayed while something is loading. -->
 	<key>LOADING</key>
 	<string>Загрузка...</string>
-	<key>OK</key>
-	<string>ОК</string>
+
+	<!-- Done button label. -->
+	<key>DONE</key>
+	<string>Done</string>
+
+	<!-- Button that chooses the selected app in the open panel. -->
+	<key>CHOOSE</key>
+	<string>Выбрать</string>
+
+	<!-- Title of the open panel. -->
+	<key>CHOOSE_APPLICATION</key>
+	<string>Выбрать Приложение</string>
+
+	<!-- Title of the About window. -->
+	<key>ABOUT</key>
+	<string>О приложении</string>
+
+	<!-- Message displayed when the app fails to be opened. -->
 	<key>OPENING_APP_FAILED</key>
 	<string>Не удалось запустить приложение: возникла неизвестная ошибка.</string>
-	<key>PLEASE_ENABLE</key>
-	<string>Чтобы начать пользоваться TermHere, включите расширение.</string>
-	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>Нажмите ОК, чтобы открыть настройки расширений. Под графой "TermHere" поставьте галочку около "Finder".</string>
 </dict>
 </plist>

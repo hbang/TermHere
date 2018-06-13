@@ -54,10 +54,6 @@
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>Tato funkce vyžaduje Terminal nebo iTerm 2.9 a výš.</string>
 
-	<!-- Label explaining how to enable TermHere if it is disabled. -->
-	<key>TROUBLESHOOTING_NOTE</key>
-	<string>Nevidíte tu možnost? Ujištěte se, že TermHere máte povolený v záložce "Rozšíření" v nastavení.</string>
-
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
 	<string>Otevřít nastavení</string>

@@ -6,18 +6,6 @@
 	<key>LOADING</key>
 	<string>Načítavanie...</string>
 
-	<!-- OK button label. -->
-	<key>OK</key>
-	<string>OK</string>
-
-	<!-- Title of prompt asking the user to enable the extension. -->
-	<key>PLEASE_ENABLE</key>
-	<string>Pre začatie používania TermHere, prosím zapnite rozšírenie.</string>
-
-	<!-- Explanation of how to enable the extension. -->
-	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>Kliknite OK pre otvorenie Rozšírenia. Pod TermHere odkliknite "Finder".</string>
-
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>Vybrať</string>

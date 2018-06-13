@@ -6,18 +6,6 @@
 	<key>LOADING</key>
 	<string>लोड हो रहा है…</string>
 
-	<!-- OK button label. -->
-	<key>OK</key>
-	<string>ठीक</string>
-
-	<!-- Title of prompt asking the user to enable the extension. -->
-	<key>PLEASE_ENABLE</key>
-	<string>TermHere का उपयोग शुरू करने के लिए, विस्तार सक्षम करें।</string>
-
-	<!-- Explanation of how to enable the extension. -->
-	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>एक्सटेंशन वरीयताओं को खोलने के लिए ठीक क्लिक करें। TermHere के तहत, "खोजक" करने के लिए अगले चेकबॉक्स क्लिक करें।</string>
-
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>चुनें</string>

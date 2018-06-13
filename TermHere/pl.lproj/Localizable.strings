@@ -6,18 +6,6 @@
 	<key>LOADING</key>
 	<string>Wczytywanie…</string>
 
-	<!-- OK button label. -->
-	<key>OK</key>
-	<string>Ok</string>
-
-	<!-- Title of prompt asking the user to enable the extension. -->
-	<key>PLEASE_ENABLE</key>
-	<string>Jeżeli chcesz używać TermHere,musisz włączyć jego rozszerzenie.</string>
-
-	<!-- Explanation of how to enable the extension. -->
-	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>Kliknij na Ok, aby włączyć ustawienia. W TermHere zaznacz okienko obok “Finder”.</string>
-
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>Wybierz</string>

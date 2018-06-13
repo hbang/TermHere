@@ -54,10 +54,6 @@
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>この機能を使ってために「ターミナル」それとも「iTerm 2.9」は必要です.</string>
 
-	<!-- Label explaining how to enable TermHere if it is disabled. -->
-	<key>TROUBLESHOOTING_NOTE</key>
-	<string>表示されませんか？ TermHereを拡張設定で有効して下さい。</string>
-
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
 	<string>設定を開く</string>

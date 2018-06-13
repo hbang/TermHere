@@ -54,10 +54,6 @@
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>Aceasta optiune necesita Terminal sau iTerm 2.9 sau o versiune mai recenta.</string>
 
-	<!-- Label explaining how to enable TermHere if it is disabled. -->
-	<key>TROUBLESHOOTING_NOTE</key>
-	<string>Nu se afișează? Asigură-te ca TermHere este activat în preferințele pentru Extensii.</string>
-
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
 	<string>Deschide Preferințele</string>

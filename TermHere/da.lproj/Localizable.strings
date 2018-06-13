@@ -6,17 +6,9 @@
 	<key>LOADING</key>
 	<string>Indlæser…</string>
 
-	<!-- OK button label. -->
-	<key>OK</key>
-	<string>OK</string>
-
-	<!-- Title of prompt asking the user to enable the extension. -->
-	<key>PLEASE_ENABLE</key>
-	<string>Aktivér udvidelsen for at begynde at bruge “TermHere“..</string>
-
-	<!-- Explanation of how to enable the extension. -->
-	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>Tryk “OK“ for at åbne “Udvidelser“ indstillingsvinduet. Tryk på checkboksen ud for “Finder“ under “TermHere“.</string>
+	<!-- Done button label. -->
+  	<key>DONE</key>
+  	<string>Færdig</string>
 
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
@@ -25,6 +17,10 @@
 	<!-- Title of the open panel. -->
 	<key>CHOOSE_APPLICATION</key>
 	<string>Vælg program</string>
+
+	<!-- Title of the Help window. -->
+  	<key>HELP</key>
+  	<string>Hjælp</string>
 
 	<!-- Title of the About window. -->
 	<key>ABOUT</key>

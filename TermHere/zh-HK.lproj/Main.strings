@@ -2,25 +2,40 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BROWSE</key>
-	<string>瀏覽</string>
-	<key>OPEN_IN</key>
-	<string>打開：</string>
-	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>本功能需要「終端機」或 iTerm 2.9 或更新的版本。</string>
-	<key>OPEN_IN_LAST_USED_TAB</key>
-	<string>最後使用的標籤頁</string>
-	<key>OPEN_IN_NEW_TAB</key>
-	<string>新標籤頁</string>
-	<key>OPEN_IN_NEW_WINDOW</key>
-	<string>新視窗</string>
-	<key>SHOW_IN</key>
-	<string>顯示於:</string>
-	<key>SHOW_IN_CONTEXT_MENUS</key>
-	<string>右鍵選項</string>
+	<!-- Label for choosing the terminal app to use. -->
 	<key>TERMINAL_APP</key>
 	<string>終端機：</string>
-	<key>TROUBLESHOOTING_NOTE</key>
-	<string>沒有看見？請確認 TermHere 已於「延伸功能」裡啟用。</string>
+
+	<!-- Button that opens a panel to choose the terminal app. -->
+	<key>BROWSE</key>
+	<string>瀏覽</string>
+
+	<!-- Label for the display preferences. -->
+	<key>SHOW_IN</key>
+	<string>顯示於:</string>
+
+	<!-- Checkbox that toggles displaying the button in context menus. -->
+	<key>SHOW_IN_CONTEXT_MENUS</key>
+	<string>右鍵選項</string>
+
+	<!-- Label for the “open in” radio buttons. -->
+	<key>OPEN_IN</key>
+	<string>打開：</string>
+
+	<!-- Radio button for creating a new tab. -->
+	<key>OPEN_IN_NEW_TAB</key>
+	<string>新標籤頁</string>
+
+	<!-- Radio button for creating a new window. -->
+	<key>OPEN_IN_NEW_WINDOW</key>
+	<string>新視窗</string>
+
+	<!-- Radio button for reusing the last tab. -->
+	<key>OPEN_IN_LAST_USED_TAB</key>
+	<string>最後使用的標籤頁</string>
+
+	<!-- Label that explains compatibility of the above options. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>本功能需要「終端機」或 iTerm 2.9 或更新的版本。</string>
 </dict>
 </plist>

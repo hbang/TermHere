@@ -6,17 +6,9 @@
 	<key>LOADING</key>
 	<string>로딩중…</string>
 
-	<!-- OK button label. -->
-	<key>OK</key>
-	<string>확인</string>
-
-	<!-- Title of prompt asking the user to enable the extension. -->
-	<key>PLEASE_ENABLE</key>
-	<string>TermHere을 사용하시기 전에 확장 프로그램을 활성화해주세요.</string>
-
-	<!-- Explanation of how to enable the extension. -->
-	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>확인 버튼을 누르면 확장 프로그램 환경설정이 열립니다. TermHere 아래에 있는 Finder 체크박스를 클릭해주세요.</string>
+	<!-- Done button label. -->
+  	<key>DONE</key>
+  	<string>완료</string>
 
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
@@ -25,6 +17,10 @@
 	<!-- Title of the open panel. -->
 	<key>CHOOSE_APPLICATION</key>
 	<string>응용 프로그램 선택</string>
+
+	<!-- Title of the Help window. -->
+  	<key>HELP</key>
+  	<string>도움말</string>
 
 	<!-- Title of the About window. -->
 	<key>ABOUT</key>

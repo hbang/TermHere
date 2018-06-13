@@ -26,9 +26,6 @@
 	<key>SHOW_IN</key>
 	<string>다음으로 보기:</string>
 
-	<key>SHOW_ITEMS</key>
-	<string>항목 보기:</string>
-  
     <!-- Checkbox that toggles “Open in [terminal name]” button. -->
 	<key>OPEN_IN_TERMINAL</key>
 	<string>터미널에서 열기</string>
@@ -85,12 +82,44 @@
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>이 기능은 Terminal이나 iTerm 2.9 이상을 필요로 합니다.</string>
 
-	<!-- Label explaining how to enable TermHere if it is disabled. -->
-	<key>TROUBLESHOOTING_NOTE</key>
-	<string>안 보이나요? TermHere가 확장 설정에서 사용상태인지 확인해주세요.</string>
+	<!-- Title of the setup window. -->
+	<key>SET_UP_TERMHERE</key>
+	<string>TermHere 설정</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>ENABLE_EXTENSION_EXPLANATION</key>
+	<string>이곳을 눌러서 확장 설정을 엽니다. TermHere 안의 “Finder” 옆에 있는 체크박스를 선택하세요.</string>
 
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
 	<string>설정 열기</string>
+
+	<!-- Explanation of how to start the service. -->
+	<key>LAUNCH_SERVICE_EXPLANATION</key>
+	<string>TermHere 서비스를 시작하기 위해 필요한 보안 확인 창이 나타날 수도 있습니다.</string>
+
+	<!-- Button that starts the service. -->
+	<key>LAUNCH_SERVICE</key>
+	<string>서비스 시작</string>
+
+	<!-- Button that dismisses a popup window. -->
+	<key>DONE</key>
+	<string>완료</string>
+	
+	<!-- Label recommending the user contributes a tip (donation). -->
+	<key>TIP_JAR_EXPLANATION</key>
+	<string>이 앱을 유용하게 사용하셨다면, 저희 팁 항아리에 기부를 고려해주시면 감사하겠습니다.</string>
+
+	<!-- Button that opens the tip jar webpage. -->
+	<key>TIP_JAR_SITE</key>
+	<string>팁 주기…</string>
+
+	<!-- Button that sends a tip. %@ is the defined tip amount. -->
+	<key>TIP_JAR_AMOUNT</key>
+	<string>팁 %@ 주기</string>
+
+	<!-- Displayed on the tip button while it loads the tip amount. -->
+	<key>LOADING</key>
+	<string>불러오는 중…</string>
 </dict>
 </plist>

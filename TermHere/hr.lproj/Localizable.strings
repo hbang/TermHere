@@ -6,18 +6,6 @@
 	<key>LOADING</key>
 	<string>Učitavanje…</string>
 
-	<!-- OK button label. -->
-	<key>OK</key>
-	<string>U redu</string>
-
-	<!-- Title of prompt asking the user to enable the extension. -->
-	<key>PLEASE_ENABLE</key>
-	<string>Za korištenje TermHere molimo omogući proširenje.</string>
-
-	<!-- Explanation of how to enable the extension. -->
-	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>Pritisni na U redu za otvaranje postavki proširenja. Pod TermHere pritisni na okvir pored “Finder”.</string>
-
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>Izaberi</string>

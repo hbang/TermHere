@@ -26,9 +26,6 @@
 	<key>SHOW_IN</key>
 	<string>Vis i:</string>
 
-	<key>SHOW_ITEMS</key>
-	<string>Vis emner:</string>
-
 	<!-- Checkbox that toggles “Open in [terminal name]” button. -->
 	<key>OPEN_IN_TERMINAL</key>
 	<string>Åbn i terminal</string>
@@ -85,12 +82,44 @@
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>Denne funktion kræver “Terminal“ eller “iTerm“ 2.9 eller nyere.</string>
 
-	<!-- Label explaining how to enable TermHere if it is disabled. -->
-	<key>TROUBLESHOOTING_NOTE</key>
-	<string>Kan du ikke se det? Vær sikker på, at “TermHere” er slået til i “Udvidelser” i indstillingsvinduet.</string>
+	<!-- Title of the setup window. -->
+	<key>SET_UP_TERMHERE</key>
+	<string>Sæt TermHere op</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>ENABLE_EXTENSION_EXPLANATION</key>
+	<string>Tryk for at åbne Udvidelser-indstillingerne. Tryk på afkrydsningsfeltet under TermHere, ud for “Finder”.</string>
 
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
-	<string>Åbn indstillinger</string>
+	<string>Åben indstillinger</string>
+
+	<!-- Explanation of how to start the service. -->
+	<key>LAUNCH_SERVICE_EXPLANATION</key>
+	<string>Du er måske nødt til at acceptere en sikkerhedsbekræftelsesprompt for at starte TermHere-tjenesten.</string>
+
+	<!-- Button that starts the service. -->
+	<key>LAUNCH_SERVICE</key>
+	<string>Start tjeneste</string>
+
+	<!-- Button that dismisses a popup window. -->
+	<key>DONE</key>
+	<string>Færdig</string>
+	
+	<!-- Label recommending the user contributes a tip (donation). -->
+	<key>TIP_JAR_EXPLANATION</key>
+	<string>Hvis du synes, at dette program er brugbart, så overvej venligst at donere lidt drikkepenge.</string>
+
+	<!-- Button that opens the tip jar webpage. -->
+	<key>TIP_JAR_SITE</key>
+	<string>Drikkepenge…</string>
+
+	<!-- Button that sends a tip. %@ is the defined tip amount. -->
+	<key>TIP_JAR_AMOUNT</key>
+	<string>Giv %@ i drikkepenge</string>
+
+	<!-- Displayed on the tip button while it loads the tip amount. -->
+	<key>LOADING</key>
+	<string>Indlæser…</string>
 </dict>
 </plist>

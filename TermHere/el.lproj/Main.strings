@@ -54,10 +54,6 @@
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>Αυτή η δυνατότητα απαιτεί Terminal ή Term 2.9 ή νεότερο.</string>
 
-	<!-- Label explaining how to enable TermHere if it is disabled. -->
-	<key>TROUBLESHOOTING_NOTE</key>
-	<string>Δεν το είδατε αυτο; Σιγουρευτείτε οτι το TermHere είναι ενεργοποίημενο στις προτιμήσεις των επεκτάσεων.</string>
-
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
 	<string>Άνοιγμα Προτίμησεων</string>

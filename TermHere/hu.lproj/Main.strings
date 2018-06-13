@@ -26,9 +26,6 @@
 	<key>SHOW_IN</key>
 	<string>Megjelenítés mint:</string>
 
-	<key>SHOW_ITEMS</key>
-	<string>Elemek mutatása:</string>
-
 	<!-- Checkbox that toggles “Open in [terminal name]” button. -->
 	<key>OPEN_IN_TERMINAL</key>
 	<string>Megnyitás Terminálban</string>
@@ -84,10 +81,6 @@
 	<!-- Radio button for reusing the last tab. -->
 	<key>OPEN_IN_LAST_USED_TAB</key>
 	<string>Utolsó használt lap</string>
-
-	<!-- Label explaining how to enable TermHere if it is disabled. -->
-	<key>TROUBLESHOOTING_NOTE</key>
-	<string>Nincs változás? Gyozodjön meg,hogy a TermHere be van kapcsolva a Bovítmények menüpontban</string>
 
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>

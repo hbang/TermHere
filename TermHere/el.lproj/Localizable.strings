@@ -6,18 +6,6 @@
 	<key>LOADING</key>
 	<string>Φόρτωση…</string>
 
-	<!-- OK button label. -->
-	<key>OK</key>
-	<string>OK</string>
-
-	<!-- Title of prompt asking the user to enable the extension. -->
-	<key>PLEASE_ENABLE</key>
-	<string>Για να αρχίσετε τη χρήση του TermHere, ενεργοποιήστε την επέκταση.</string>
-
-	<!-- Explanation of how to enable the extension. -->
-	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>Πατήστε ΟΚ για να ανοίξουν οι ρυθμίσεις των επεκτάσεων. Κάτω από το TermHere, πατήστε το κουτάκι δίπλα από το "Finder".</string>
-
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>Επιλέξτε</string>

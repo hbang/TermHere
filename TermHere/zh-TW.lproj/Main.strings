@@ -54,10 +54,6 @@
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>這個功能需要 Terminal 或者 iTerm 2.9 或更新的版本。</string>
 
-	<!-- Label explaining how to enable TermHere if it is disabled. -->
-	<key>TROUBLESHOOTING_NOTE</key>
-	<string>沒有看見? 請先確認延伸設定中有啟用 TermHere。</string>
-
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
 	<string>開啟設定</string>

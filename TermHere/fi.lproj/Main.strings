@@ -50,10 +50,6 @@
 	<key>OPEN_IN_LAST_USED_TAB</key>
 	<string>Viimeksi käytetty välilehti</string>
 
-	<!-- Label explaining how to enable TermHere if it is disabled. -->
-	<key>TROUBLESHOOTING_NOTE</key>
-	<string>Etkö näe sitä? Varmista, että TermHere on kytketty päälle lisöosien asetuksista.</string>
-
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
 	<string>Avaa asetukset</string>

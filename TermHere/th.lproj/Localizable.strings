@@ -6,18 +6,6 @@
 	<key>LOADING</key>
 	<string>กำลังโหลด…</string>
 
-	<!-- OK button label. -->
-	<key>OK</key>
-	<string>ตกลง</string>
-
-	<!-- Title of prompt asking the user to enable the extension. -->
-	<key>PLEASE_ENABLE</key>
-	<string>หากจะใช้ TermHere ให้เปิดการทำงานส่วนเสริม</string>
-
-	<!-- Explanation of how to enable the extension. -->
-	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>กดตกลงเพื่อเปิดหน้าการตั้งค่าของส่วนเสริม โดยเลือกเครื่องหมายถูกถัดจาก “Finder” ใต้ TermHere</string>
-
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>เลือก</string>

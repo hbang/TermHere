@@ -26,9 +26,6 @@
 	<key>SHOW_IN</key>
 	<string>Mostra:</string>
 
-	<key>SHOW_ITEMS</key>
-	<string>Mostra elementi:</string>
-
 	<!-- Checkbox that toggles “Open in [terminal name]” button. -->
 	<key>OPEN_IN_TERMINAL</key>
 	<string>Apri nel terminale</string>
@@ -85,12 +82,44 @@
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>Questa funzione richiede l'app "Terminal" o iTerm 2.9 o successive.</string>
 
-	<!-- Label explaining how to enable TermHere if it is disabled. -->
-	<key>TROUBLESHOOTING_NOTE</key>
-	<string>Non lo vedi? Assicurati che TermHere sia abilitato nelle preferenze delle Estensioni.</string>
+	<!-- Title of the setup window. -->
+	<key>SET_UP_TERMHERE</key>
+	<string>Imposta TermHere</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>ENABLE_EXTENSION_EXPLANATION</key>
+	<string>Clicca per aprire le preferenze delle Estensioni. Sotto TermHere, clicca la spunta vicino a "Finder".</string>
 
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
-	<string>Apri Impostazioni</string>
+	<string>Apri le Impostazioni</string>
+
+	<!-- Explanation of how to start the service. -->
+	<key>LAUNCH_SERVICE_EXPLANATION</key>
+	<string>Potresti dover accettare un avviso di conferma di sicurezza per far avviare il servizio di TermHere.</string>
+
+	<!-- Button that starts the service. -->
+	<key>LAUNCH_SERVICE</key>
+	<string>Avvia il servizio</string>
+
+	<!-- Button that dismisses a popup window. -->
+	<key>DONE</key>
+	<string>Fatto</string>
+	
+	<!-- Label recommending the user contributes a tip (donation). -->
+	<key>TIP_JAR_EXPLANATION</key>
+	<string>Se questa app ti è utile, per favore considera di contribuire al nostro barattolo delle mance.</string>
+
+	<!-- Button that opens the tip jar webpage. -->
+	<key>TIP_JAR_SITE</key>
+	<string>Dai una mancia…</string>
+
+	<!-- Button that sends a tip. %@ is the defined tip amount. -->
+	<key>TIP_JAR_AMOUNT</key>
+	<string>Dai una mancia di %@</string>
+
+	<!-- Displayed on the tip button while it loads the tip amount. -->
+	<key>LOADING</key>
+	<string>Attendi…</string>
 </dict>
 </plist>

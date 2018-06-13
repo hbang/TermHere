@@ -2,21 +2,24 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>ABOUT</key>
-	<string>關於</string>
-	<key>CHOOSE</key>
-	<string>選取</string>
-	<key>CHOOSE_APPLICATION</key>
-	<string>選取程式</string>
+	<!-- Label displayed while something is loading. -->
 	<key>LOADING</key>
 	<string>載入中…</string>
-	<key>OK</key>
-	<string>確定</string>
+
+	<!-- Button that chooses the selected app in the open panel. -->
+	<key>CHOOSE</key>
+	<string>選取</string>
+
+	<!-- Title of the open panel. -->
+	<key>CHOOSE_APPLICATION</key>
+	<string>選取程式</string>
+
+	<!-- Title of the About window. -->
+	<key>ABOUT</key>
+	<string>關於</string>
+
+	<!-- Message displayed when the app fails to be opened. -->
 	<key>OPENING_APP_FAILED</key>
 	<string>無法開啟程式因為未知的錯誤發生。</string>
-	<key>PLEASE_ENABLE</key>
-	<string>邀開始使用 TermHere，請啟用延伸功能。</string>
-	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>點選確定來開啟延伸功能設定。在 TermHere 點選 Finder 旁邊的核取方塊。</string>
 </dict>
 </plist>

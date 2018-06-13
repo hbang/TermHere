@@ -6,18 +6,6 @@
 	<key>LOADING</key>
 	<string>Đang tải…</string>
 
-	<!-- OK button label. -->
-	<key>OK</key>
-	<string>OK</string>
-
-	<!-- Title of prompt asking the user to enable the extension. -->
-	<key>PLEASE_ENABLE</key>
-	<string>Để bắt đầu sử dụng TermHere, xin hãy mở Extensions.</string>
-
-	<!-- Explanation of how to enable the extension. -->
-	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>Nhấn OK để mở tùy chỉnh Extensions. Bên dưới TermHere, nhấn vào hộp thoại bên cạnh “Finder”.</string>
-
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>Chọn</string>

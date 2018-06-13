@@ -6,18 +6,6 @@
 	<key>LOADING</key>
 	<string>Ladataan…</string>
 
-	<!-- OK button label. -->
-	<key>OK</key>
-	<string>OK</string>
-
-	<!-- Title of prompt asking the user to enable the extension. -->
-	<key>PLEASE_ENABLE</key>
-	<string>Laita laajennus päälle aloittaaksesi TermHere:n käytön.</string>
-
-	<!-- Explanation of how to enable the extension. -->
-	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>Klikkaa OK avataksesi Laajennukset-asetukset. Klikkaa valintalaatikkoa "Finder":in vieressä TermHere:n alla.</string>
-
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>Valitse</string>

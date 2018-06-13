@@ -6,18 +6,6 @@
 	<key>LOADING</key>
 	<string>加载中...</string>
 
-	<!-- OK button label. -->
-	<key>OK</key>
-	<string>OK</string>
-
-	<!-- Title of prompt asking the user to enable the extension. -->
-	<key>PLEASE_ENABLE</key>
-	<string>开始使用TermHere, 请打开扩展程序.</string>
-
-	<!-- Explanation of how to enable the extension. -->
-	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>点击OK来打开扩展程序设置. 在TermHere下面, 勾选在“Finder”旁边的选项框.</string>
-
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>选择</string>

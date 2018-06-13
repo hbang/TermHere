@@ -26,9 +26,6 @@
 	<key>SHOW_IN</key>
 	<string>Mostrar en:</string>
 
-	<key>SHOW_ITEMS</key>
-	<string>Mostrar elementos:</string>
-
 	<!-- Checkbox that toggles “Open in [terminal name]” button. -->
 	<key>OPEN_IN_TERMINAL</key>
 	<string>Abrir en terminal</string>
@@ -84,10 +81,6 @@
 	<!-- Label that explains compatibility of the above options. -->
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>Esta característica requiere Terminal o iTerm 2.9 o más nuevo.</string>
-
-	<!-- Label explaining how to enable TermHere if it is disabled. -->
-	<key>TROUBLESHOOTING_NOTE</key>
-	<string>¿No aparece? Asegúrate de que TermHere está habilitado en las preferencias de Extensiones.</string>
 
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>

@@ -26,9 +26,6 @@
 	<key>SHOW_IN</key>
 	<string>显示于：</string>
 
-	<key>SHOW_ITEMS</key>
-	<string>显示项目:</string>
-
 	<!-- Checkbox that toggles “Open in [terminal name]” button. -->
 	<key>OPEN_IN_TERMINAL</key>
 	<string>在终端中打开</string>
@@ -84,10 +81,6 @@
 	<!-- Label that explains compatibility of the above options. -->
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>此功能需要终端或者iTerm 2.9或更新.</string>
-
-	<!-- Label explaining how to enable TermHere if it is disabled. -->
-	<key>TROUBLESHOOTING_NOTE</key>
-	<string>没有看到 TermHere 按钮？请确定在「系统偏好设置」的「扩展」菜单中勾选了 TermHere. </string>
 
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>

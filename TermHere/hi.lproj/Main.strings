@@ -54,10 +54,6 @@
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>यह सुविधा टर्मिनल या iTerm 2.9 या नए की आवश्यकता है।.</string>
 
-	<!-- Label explaining how to enable TermHere if it is disabled. -->
-	<key>TROUBLESHOOTING_NOTE</key>
-	<string>नहीं दिख रहा? सुनिश्चित करें कि TermHere एक्सटेंशन प्राथमिकताएं में चालू है।</string>
-
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
 	<string>प्राथमिकताएं खोलें</string>

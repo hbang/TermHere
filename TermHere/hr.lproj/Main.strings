@@ -54,10 +54,6 @@
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>Ovo svojstvo zahtjeva Terminal ili iTerm 2.9 ili noviji.</string>
 
-	<!-- Label explaining how to enable TermHere if it is disabled. -->
-	<key>TROUBLESHOOTING_NOTE</key>
-	<string>Ne prikazuje se? Provjerite da li je TermHere uključen u postavkama za proširenja (ekstenzije).</string>
-
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
 	<string>Otvori Postavke</string>

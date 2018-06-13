@@ -6,18 +6,6 @@
 	<key>LOADING</key>
 	<string>Завантаження…</string>
 
-	<!-- OK button label. -->
-	<key>OK</key>
-	<string>OK</string>
-
-	<!-- Title of prompt asking the user to enable the extension. -->
-	<key>PLEASE_ENABLE</key>
-	<string>Для того щоб розпочати використання TermHere, будь ласка, ввімкніть розширення.</string>
-
-	<!-- Explanation of how to enable the extension. -->
-	<key>PLEASE_ENABLE_EXPLANATION</key>
-	<string>Натисніть OK для того щоб відкрити налаштування Розширень. Під TermHere, натисніть чекбокс біля "Finder".</string>
-
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>Обрати</string>

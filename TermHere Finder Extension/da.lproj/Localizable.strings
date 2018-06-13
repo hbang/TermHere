@@ -31,5 +31,9 @@
 
 	<key>NOT_EXECUTABLE_MESSAGE</key>
 	<string>Marker filen som eksekverbar for at fortsætte.</string>
+
+	<!-- Message displayed in a file open panel asking the user to give permission to read the folder. %@ is the folder path. -->
+	<key>GRANT_SANDBOX_PERMISSION_MESSAGE</key>
+	<string>TermHere har brug for tilladelse til at tilgå nogle filer. Tryk på åben for at give TermHere tilladelse til at tilgå %@.</string>
 </dict>
 </plist>
