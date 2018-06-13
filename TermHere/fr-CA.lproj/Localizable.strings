@@ -6,6 +6,10 @@
 	<key>LOADING</key>
 	<string>Chargement…</string>
 
+	<!-- Done button label. -->
+  	<key>DONE</key>
+  	<string>Terminé</string>
+
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>Choisir</string>
@@ -13,6 +17,10 @@
 	<!-- Title of the open panel. -->
 	<key>CHOOSE_APPLICATION</key>
 	<string>Choisir une application</string>
+
+	<!-- Title of the Help window. -->
+  	<key>HELP</key>
+  	<string>Aide</string>
 
 	<!-- Title of the About window. -->
 	<key>ABOUT</key>
