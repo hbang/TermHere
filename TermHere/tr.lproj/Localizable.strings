@@ -6,6 +6,10 @@
 	<key>LOADING</key>
 	<string>Yükleniyor…</string>
 
+	<!-- Done button label. -->
+  	<key>DONE</key>
+  	<string>Bitti</string>
+
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>Seç</string>
@@ -13,6 +17,10 @@
 	<!-- Title of the open panel. -->
 	<key>CHOOSE_APPLICATION</key>
 	<string>Uygulama seç</string>
+
+	<!-- Title of the Help window. -->
+  	<key>HELP</key>
+  	<string>Yardım</string>
 
 	<!-- Title of the About window. -->
 	<key>ABOUT</key>
