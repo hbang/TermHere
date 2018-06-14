@@ -6,6 +6,10 @@
 	<key>LOADING</key>
 	<string>Loading…</string>
 
+	<!-- Done button label. -->
+  	<key>DONE</key>
+  	<string>Selesai</string>
+
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>Pilih</string>
@@ -13,6 +17,10 @@
 	<!-- Title of the open panel. -->
 	<key>CHOOSE_APPLICATION</key>
 	<string>Pilih Aplikasi</string>
+
+	<!-- Title of the Help window. -->
+  	<key>HELP</key>
+  	<string>Bantuan</string>
 
 	<!-- Title of the About window. -->
 	<key>ABOUT</key>

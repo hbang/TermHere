@@ -78,8 +78,44 @@
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>Fitur ini membutuhkan Terminal Atau iTerm 2.9, atau yang lebih baru.</string>
 
+	  	<!-- Title of the setup window. -->
+	<key>SET_UP_TERMHERE</key>
+	<string>Persiapkan TermHere</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>ENABLE_EXTENSION_EXPLANATION</key>
+	<string>Klik untuk buka preferensi Extension. Di bawah TermHere, klik kotak di sebelah “Finder”.</string>
+
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
-	<string>Buka Preferensi</string>
+	<string>Buka preferensi</string>
+
+	<!-- Explanation of how to start the service. -->
+	<key>LAUNCH_SERVICE_EXPLANATION</key>
+	<string>Anda mungkin harus menerima konfirmasi keamanan untuk mulai menggunakan TermHere.</string>
+
+	<!-- Button that starts the service. -->
+	<key>LAUNCH_SERVICE</key>
+	<string>Mulai TermHere</string>
+
+	<!-- Button that dismisses a popup window. -->
+	<key>DONE</key>
+	<string>Selesai</string>
+	
+	<!-- Label recommending the user contributes a tip (donation). -->
+	<key>TIP_JAR_EXPLANATION</key>
+	<string>Jika aplikasi ini membantu untuk anda, tolong berpikir untuk menyumbang ke tip jar kami.</string>
+
+	<!-- Button that opens the tip jar webpage. -->
+	<key>TIP_JAR_SITE</key>
+	<string>Tip…</string>
+
+	<!-- Button that sends a tip. %@ is the defined tip amount. -->
+	<key>TIP_JAR_AMOUNT</key>
+	<string>Tip %@</string>
+
+	<!-- Displayed on the tip button while it loads the tip amount. -->
+	<key>LOADING</key>
+	<string>Loading…</string>
 </dict>
 </plist>
