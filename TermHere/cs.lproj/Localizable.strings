@@ -6,6 +6,10 @@
 	<key>LOADING</key>
 	<string>Načítání…</string>
 
+	<!-- Done button label. -->
+  	<key>DONE</key>
+  	<string>Hotovo</string>
+
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>Vybrat</string>
@@ -13,6 +17,10 @@
 	<!-- Title of the open panel. -->
 	<key>CHOOSE_APPLICATION</key>
 	<string>Vyberte aplikaci</string>
+
+	<!-- Title of the Help window. -->
+  	<key>HELP</key>
+  	<string>Nápověda</string>
 
 	<!-- Title of the About window. -->
 	<key>ABOUT</key>
