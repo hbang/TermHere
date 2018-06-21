@@ -82,8 +82,44 @@
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>Ciri-ciri ini memerlukan Terminal atau iTerm 2.9 atau yang terbaru.</string>
 
+	<!-- Title of the setup window. -->
+	<key>SET_UP_TERMHERE</key>
+	<string>Bentuk TermHere</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>ENABLE_EXTENSION_EXPLANATION</key>
+	<string>Klik untuk buka pilihan Extensions. Dibawah TermHere, klik kotak semak disebelah “Finder”.</string>
+
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
 	<string>Buka Pilihan</string>
+
+	<!-- Explanation of how to start the service. -->
+	<key>LAUNCH_SERVICE_EXPLANATION</key>
+	<string>Anda mungkin perlu terima pengesahan segera sekuriti untuk mulakan Servis TermHere.</string>
+
+	<!-- Button that starts the service. -->
+	<key>LAUNCH_SERVICE</key>
+	<string>Mulakan Servis</string>
+
+	<!-- Button that dismisses a popup window. -->
+	<key>DONE</key>
+	<string>Selesai</string>
+	
+	<!-- Label recommending the user contributes a tip (donation). -->
+	<key>TIP_JAR_EXPLANATION</key>
+	<string>Jika app ini berguna untuk kamu, sila pertimbangkan untuk menyumbang ke balang derma kami.</string>
+
+	<!-- Button that opens the tip jar webpage. -->
+	<key>TIP_JAR_SITE</key>
+	<string>Derma…</string>
+
+	<!-- Button that sends a tip. %@ is the defined tip amount. -->
+	<key>TIP_JAR_AMOUNT</key>
+	<string>Derma %@</string>
+
+	<!-- Displayed on the tip button while it loads the tip amount. -->
+	<key>LOADING</key>
+	<string>Memuatkan…</string>
 </dict>
 </plist>
