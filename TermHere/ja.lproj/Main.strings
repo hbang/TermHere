@@ -78,8 +78,44 @@
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>この機能を使ってために「ターミナル」それとも「iTerm 2.9」は必要です.</string>
 
+	<!-- Title of the setup window. -->
+	<key>SET_UP_TERMHERE</key>
+	<string>TermHereを設定する</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>ENABLE_EXTENSION_EXPLANATION</key>
+	<string>クリックして「拡張機能」設定を開きます。TermHereの下で，"Finder"の隣にあるチェックボックスにチェックを入れます。</string>
+
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
-	<string>設定を開く</string>
+	<string>「設定」を開く</string>
+
+	<!-- Explanation of how to start the service. -->
+	<key>LAUNCH_SERVICE_EXPLANATION</key>
+	<string>TermHereサービスを開始するためにセキュリティについての警告画面で承諾する必要がある場合があります。	</string>
+
+	<!-- Button that starts the service. -->
+	<key>LAUNCH_SERVICE</key>
+	<string>サービスを開始する</string>
+
+	<!-- Button that dismisses a popup window. -->
+	<key>DONE</key>
+	<string>完了</string>
+	
+	<!-- Label recommending the user contributes a tip (donation). -->
+	<key>TIP_JAR_EXPLANATION</key>
+	<string>よろしければ，寄付をお願いします。</string>
+
+	<!-- Button that opens the tip jar webpage. -->
+	<key>TIP_JAR_SITE</key>
+	<string>寄付</string>
+
+	<!-- Button that sends a tip. %@ is the defined tip amount. -->
+	<key>TIP_JAR_AMOUNT</key>
+	<string>寄付額 %@</string>
+
+	<!-- Displayed on the tip button while it loads the tip amount. -->
+	<key>LOADING</key>
+	<string>処理中…</string>
 </dict>
 </plist>
