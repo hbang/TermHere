@@ -5,6 +5,10 @@
 	<!-- Label displayed while something is loading. -->
 	<key>LOADING</key>
 	<string>読み込み中・・・</string>
+	
+	<!-- Done button label. -->
+  	<key>DONE</key>
+  	<string>完了</string>
 
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
@@ -13,6 +17,10 @@
 	<!-- Title of the open panel. -->
 	<key>CHOOSE_APPLICATION</key>
 	<string>アプリを選択</string>
+	
+	<!-- Title of the Help window. -->
+  	<key>HELP</key>
+  	<string>ヘルプ</string>
 
 	<!-- Title of the About window. -->
 	<key>ABOUT</key>
