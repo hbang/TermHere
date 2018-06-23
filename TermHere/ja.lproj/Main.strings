@@ -10,13 +10,37 @@
 	<key>BROWSE</key>
 	<string>選択</string>
 
+	<!-- Radio button for choosing to use an app as the editor. -->
+	<key>EDITOR_APP</key>
+	<string>アプリ:</string>
+	
+	<!-- Radio button for choosing to use a terminal command as the editor. -->
+	<key>EDITOR_COMMAND</key>
+	<string>コマンド:</string>
+
 	<!-- Label for the display preferences. -->
 	<key>SHOW_IN</key>
 	<string>表示:</string>
+	
+	<!-- Checkbox that toggles “Open in [terminal name]” button. -->
+	<key>OPEN_IN_TERMINAL</key>
+	<string>ターミナルで開く</string> <!-- ターミナル refers to terminal -->
+	
+	<!-- Label for checkbox for “Open in [editor name]” button. -->
+	<key>OPEN_IN_EDITOR</key>
+	<string>エディタで開く</string> <!-- エディタ means editor -->
+  
+    	<!-- Checkbox that toggles “Execute button” button. -->
+	<key>EXECUTE_FILE</key>
+	<string>ファイルを実行する</string>
 
 	<!-- Checkbox that toggles displaying the button in context menus. -->
 	<key>SHOW_IN_CONTEXT_MENUS</key>
 	<string>コンテクストメニュー</string>
+	
+	<!-- Checkbox that toggles showing the buttons as a submenu. -->
+	<key>SHOW_AS_SUBMENU</key>
+	<string>サブメニューで</string>
 
 	<!-- Label that explains how to toggle the toolbar button. -->
 	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
