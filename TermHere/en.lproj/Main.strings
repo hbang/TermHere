@@ -117,8 +117,5 @@
 	<!-- Displayed on the tip button while it loads the tip amount. -->
 	<key>LOADING</key>
 	<string>Loading…</string>
-
-	<key>TEST</key>
-	<string>TEST</string>
 </dict>
 </plist>
