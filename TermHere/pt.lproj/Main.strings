@@ -54,8 +54,44 @@
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>Esta função requer Terminal ou iTerm 2.9 ou mais recente.</string>
 
+	<!-- Title of the setup window. -->
+	<key>SET_UP_TERMHERE</key>
+	<string>Configurar TermHere</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>ENABLE_EXTENSION_EXPLANATION</key>
+	<string>Clique para abrir as preferencias das Extensões. No TermHere, clique na caixa próxima ao “Finder”.</string>
+
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
-	<string>Abrir Ajustes</string>
+	<string>Abrir Preferências</string>
+
+	<!-- Explanation of how to start the service. -->
+	<key>LAUNCH_SERVICE_EXPLANATION</key>
+	<string>Talvez seja necessário aceitar uma pergunta de segurança para iniciar o Serviço do TermHere.</string>
+
+	<!-- Button that starts the service. -->
+	<key>LAUNCH_SERVICE</key>
+	<string>Iniciar Serviço</string>
+
+	<!-- Button that dismisses a popup window. -->
+	<key>DONE</key>
+	<string>Concluído</string>
+	
+	<!-- Label recommending the user contributes a tip (donation). -->
+	<key>TIP_JAR_EXPLANATION</key>
+	<string>Se este app for utíl para você, pense em contribuir com nosso potinho de gorjetas.</string>
+
+	<!-- Button that opens the tip jar webpage. -->
+	<key>TIP_JAR_SITE</key>
+	<string>Contribuir…</string>
+
+	<!-- Button that sends a tip. %@ is the defined tip amount. -->
+	<key>TIP_JAR_AMOUNT</key>
+	<string>Contribuir com %@</string>
+
+	<!-- Displayed on the tip button while it loads the tip amount. -->
+	<key>LOADING</key>
+	<string>Contribuindo…</string>
 </dict>
 </plist>
