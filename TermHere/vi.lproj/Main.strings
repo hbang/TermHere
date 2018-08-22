@@ -82,8 +82,44 @@
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>Tính năng này yêu cầu Terminal hoặc iTerm 2.9 trở lên.</string>
 
+	<!-- Title of the setup window. -->
+	<key>SET_UP_TERMHERE</key>
+	<string>Thiết lập TermHere</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>ENABLE_EXTENSION_EXPLANATION</key>
+	<string>Bấm để mở cài đặt Gói mở rộng. Ở dưới TermHere, bấm vào ô đánh dấu bên cạnh "Finder".</string>
+
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
-	<string>Mở Tuỳ Chọn</string>
+	<string>Mở cài đặt</string>
+
+	<!-- Explanation of how to start the service. -->
+	<key>LAUNCH_SERVICE_EXPLANATION</key>
+	<string>Bạn có thể phải đồng ý một thông báo xác minh bảo mật để bắt đầu Dịch vụ TermHere.</string>
+
+	<!-- Button that starts the service. -->
+	<key>LAUNCH_SERVICE</key>
+	<string>Bắt đầu Dịch vụ</string>
+
+	<!-- Button that dismisses a popup window. -->
+	<key>DONE</key>
+	<string>Xong</string>
+	
+	<!-- Label recommending the user contributes a tip (donation). -->
+	<key>TIP_JAR_EXPLANATION</key>
+	<string>If this app is useful to you, please consider contributing to our tip jar.Nếu app này hữu ích cho bạn, hãy nghĩ đến việc đóng góp.</string>
+
+	<!-- Button that opens the tip jar webpage. -->
+	<key>TIP_JAR_SITE</key>
+	<string>Tiền đóng góp...</string>
+
+	<!-- Button that sends a tip. %@ is the defined tip amount. -->
+	<key>TIP_JAR_AMOUNT</key>
+	<string>Đóng góp %@</string>
+
+	<!-- Displayed on the tip button while it loads the tip amount. -->
+	<key>LOADING</key>
+	<string>Đang tải…</string>
 </dict>
 </plist>

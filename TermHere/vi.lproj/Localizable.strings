@@ -6,6 +6,10 @@
 	<key>LOADING</key>
 	<string>Đang tải…</string>
 
+	<!-- Done button label. -->
+  	<key>DONE</key>
+  	<string>Xong</string>
+
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>Chọn</string>
@@ -13,6 +17,10 @@
 	<!-- Title of the open panel. -->
 	<key>CHOOSE_APPLICATION</key>
 	<string>Chọn ứng dụng</string>
+
+	<!-- Title of the Help window. -->
+  	<key>HELP</key>
+  	<string>Trợ giúp</string>
 
 	<!-- Title of the About window. -->
 	<key>ABOUT</key>
