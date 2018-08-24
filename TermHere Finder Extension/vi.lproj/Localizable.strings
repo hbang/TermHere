@@ -9,5 +9,9 @@
 	<!-- Tooltip explaining what the Open in Terminal button does. -->
 	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
 	<string>Mở một terminal trong thư mục này</string>
+
+	<!-- Message displayed in a file open panel asking the user to give permission to read the folder. %@ is the folder path. -->
+	<key>GRANT_SANDBOX_PERMISSION_MESSAGE</key>
+	<string>TermHere cần quyền truy cập vào một số tập tin. Bấm Mở để cho TermHere quyền truy cập vào %@.</string>
 </dict>
 </plist>
