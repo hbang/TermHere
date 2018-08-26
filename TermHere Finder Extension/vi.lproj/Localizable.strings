@@ -2,16 +2,38 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<!-- Button that opens a new terminal tab. -->
-	<key>NEW_TERMINAL_HERE</key>
-	<string>Terminal mới tại đây</string>
+	<!-- Button that opens the file in an app. %@ is the app name. -->
+	<key>OPEN_IN_APP</key>
+	<string>Mở trong %@</string>
 
 	<!-- Tooltip explaining what the Open in Terminal button does. -->
 	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
 	<string>Mở một terminal trong thư mục này</string>
 
+	<!-- Button that edits the file in an app. %@ is the app name. -->
+	<key>EDIT_IN_APP</key>
+	<string>Sửa trong %@</string>
+
+	<!-- Tooltip explaining what the Open in Editor button does. -->
+	<key>EDIT_IN_APP_TOOLTIP</key>
+	<string>Mở %@ trong tập tin hoặc mục hiện tại</string>
+
+	<!-- Button that executes the file in an app. %@ is the app name. -->
+	<key>EXECUTE_IN_APP</key>
+	<string>Thực thi trong %@</string>
+
+	<!-- Tooltip explaining what the button does. -->
+	<key>EXECUTE_IN_APP_TOOLTIP</key>
+	<string>Mở %@ và thực thi tập tin hiện tại</string>
+
+	<key>NOT_EXECUTABLE_TITLE</key>
+	<string>Không thể mở %@ vì file này không phải là tập tin thực thi.</string>
+
+	<key>NOT_EXECUTABLE_MESSAGE</key>
+	<string>Đánh dấu tập tin là thực thi được để tiếp tục.</string>
+	
 	<!-- Message displayed in a file open panel asking the user to give permission to read the folder. %@ is the folder path. -->
 	<key>GRANT_SANDBOX_PERMISSION_MESSAGE</key>
-	<string>TermHere cần quyền truy cập vào một số tập tin. Bấm Mở để cho TermHere quyền truy cập vào %@.</string>
+	<string>TermHere cần quyền truy cập vào một số tập tin. Bấm Mở để cho TermHere truy cập vào %@.</string>
 </dict>
 </plist>
