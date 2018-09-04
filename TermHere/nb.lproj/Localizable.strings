@@ -6,6 +6,10 @@
 	<key>LOADING</key>
 	<string>Loading…</string>
 
+	<!-- Done button label. -->
+	<key>DONE</key>
+	<string>Ferdig</string>
+
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>Choose</string>
@@ -13,6 +17,10 @@
 	<!-- Title of the open panel. -->
 	<key>CHOOSE_APPLICATION</key>
 	<string>Choose Application</string>
+
+	<!-- Title of the Help window. -->
+	<key>HELP</key>
+	<string>Hjelp</string>
 
 	<!-- Title of the About window. -->
 	<key>ABOUT</key>

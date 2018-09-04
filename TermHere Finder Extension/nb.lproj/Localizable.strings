@@ -2,12 +2,38 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<!-- Button that opens a new terminal tab. -->
-	<key>NEW_TERMINAL_HERE</key>
-	<string>Ny Terminal Her</string>
+	<!-- Button that opens the file in an app. %@ is the app name. -->
+	<key>OPEN_IN_APP</key>
+	<string>Åpne i %@</string>
 
 	<!-- Tooltip explaining what the Open in Terminal button does. -->
 	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
 	<string>Åpne en terminal i denne katalogen</string>
+
+	<!-- Button that edits the file in an app. %@ is the app name. -->
+	<key>EDIT_IN_APP</key>
+	<string>Rediger i %@</string>
+
+	<!-- Tooltip explaining what the Open in Editor button does. -->
+	<key>EDIT_IN_APP_TOOLTIP</key>
+	<string>Åpne %@ til gjeldende fil eller katalog</string>
+
+	<!-- Button that executes the file in an app. %@ is the app name. -->
+	<key>EXECUTE_IN_APP</key>
+	<string>Kjør i %@</string>
+
+	<!-- Tooltip explaining what the button does. -->
+	<key>EXECUTE_IN_APP_TOOLTIP</key>
+	<string>Åpne %@ og kjør den nåværende filen</string>
+
+	<key>NOT_EXECUTABLE_TITLE</key>
+	<string>Kunne ikke åpne %@ fordi det ikke er en kjørbar fil.</string>
+
+	<key>NOT_EXECUTABLE_MESSAGE</key>
+	<string>Merk filen som kjørbar for å fortsette.</string>
+
+	<!-- Message displayed in a file open panel asking the user to give permission to read the folder. %@ is the folder path. -->
+	<key>GRANT_SANDBOX_PERMISSION_MESSAGE</key>
+	<string>TermHere trenger tillatelse til å få tilgang til noen filer. Trykk Åpne for å gi TermHere tilgang til  %@.</string>
 </dict>
 </plist>
