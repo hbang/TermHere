@@ -2,12 +2,38 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<!-- Button that opens a new terminal tab. -->
-	<key>NEW_TERMINAL_HERE</key>
-	<string>Neues Terminal Hier</string>
-
+	<!-- Button that opens the file in an app. %@ is the app name. -->
+	 <key>OPEN_IN_APP</key>
+	 <string>Öffnen in %@.</string>
+	 
 	<!-- Tooltip explaining what the Open in Terminal button does. -->
 	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
 	<string>Öffne ein Terminal in diesem Ordner</string>
+
+	 <!-- Button that edits the file in an app. %@ is the app name. -->
+	 <key>EDIT_IN_APP</key>
+	 <string>Bearbeiten in %@.</string>
+
+	 <!-- Tooltip explaining what the Open in Editor button does. -->
+	 <key>EDIT_IN_APP_TOOLTIP</key>
+	 <string>Öffnen Sie %@ für die aktuelle Datei oder das aktuelle Verzeichnis.</string>
+
+	 <!-- Button that executes the file in an app. %@ is the app name. -->
+	 <key>EXECUTE_IN_APP</key>
+	 <string>Ausführen in %@.</string>
+
+	 <!-- Tooltip explaining what the button does. -->
+	 <key>EXECUTE_IN_APP_TOOLTIP</key>
+	 <string>Öffnen Sie %@ und führen Sie die aktuelle Datei aus.</string>
+
+	 <key>NOT_EXECUTABLE_TITLE</key>
+	 <string>%@ konnte nicht geöffnet werden, da es keine ausführbare Datei ist.</string>
+
+	 <key>NOT_EXECUTABLE_MESSAGE</key>
+	 <string>Markieren Sie die Datei als ausführbare Datei, um fortzufahren.</string>
+
+	 <!-- Message displayed in a file open panel asking the user to give permission to read the folder. %@ is the folder path. -->
+	 <key>GRANT_SANDBOX_PERMISSION_MESSAGE</key>
+	 <string>TermHere benötigt die Erlaubnis, auf einige Dateien zuzugreifen. Klicken Sie auf Öffnen, um TermHere Zugriff auf %@ zu geben.</string>
 </dict>
 </plist>
