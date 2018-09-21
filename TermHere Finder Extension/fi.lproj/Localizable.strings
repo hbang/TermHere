@@ -2,12 +2,38 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<!-- Button that opens a new terminal tab. -->
-	<key>NEW_TERMINAL_HERE</key>
-	<string>Uusi pääte tänne</string>
+	<!-- Button that opens the file in an app. %@ is the app name. -->
+    <key>OPEN_IN_APP</key>
+    <string>Avaa ohjelmassa %@</string>
 
-	<!-- Tooltip explaining what the Open in Terminal button does. -->
+    <!-- Tooltip explaining what the Open in Terminal button does. -->
 	<key>NEW_TERMINAL_HERE_TOOLTIP</key>
 	<string>Avaa Pääte-ohjelma tähän kansioon</string>
+
+    <!-- Button that edits the file in an app. %@ is the app name. -->
+    <key>EDIT_IN_APP</key>
+    <string>Muokkaa ohjelmassa %@</string>
+
+    <!-- Tooltip explaining what the Open in Editor button does. -->
+    <key>EDIT_IN_APP_TOOLTIP</key>
+    <string>Avaa nykyinen tiedosto tai polku ohjelmassa %@</string>
+
+    <!-- Button that executes the file in an app. %@ is the app name. -->
+    <key>EXECUTE_IN_APP</key>
+    <string>Suorita ohjelmassa %@</string>
+
+    <!-- Tooltip explaining what the button does. -->
+    <key>EXECUTE_IN_APP_TOOLTIP</key>
+    <string>Avaa ohjelma %@ ja suorita nykyinen tiedosto</string>
+
+    <key>NOT_EXECUTABLE_TITLE</key>
+    <string>Ei voitu suorittaa %@, koska se ei ole suoritettava tiedosto.</string>
+
+    <key>NOT_EXECUTABLE_MESSAGE</key>
+    <string>Merkkaa tiedosto suoritettavaksi jatkaaksesi.</string>
+
+    <!-- Message displayed in a file open panel asking the user to give permission to read the folder. %@ is the folder path. -->
+	<key>GRANT_SANDBOX_PERMISSION_MESSAGE</key>
+	<string>TermHere tarvitsee pääsyoikeudet tiedostoihin. Klikkaa Avaa antaaksesi TermHere:lle pääsyoikeuden kohteeseen %@.</string>
 </dict>
 </plist>

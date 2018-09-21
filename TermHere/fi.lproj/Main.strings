@@ -10,13 +10,37 @@
 	<key>BROWSE</key>
 	<string>Selaa</string>
 
-	<!-- Label for the display preferences. -->
+    <!-- Radio button for choosing to use an app as the editor. -->
+    <key>EDITOR_APP</key>
+    <string>Appi:</string>
+
+    <!-- Radio button for choosing to use a terminal command as the editor. -->
+    <key>EDITOR_COMMAND</key>
+    <string>Komento:</string>
+
+    <!-- Label for the display preferences. -->
 	<key>SHOW_IN</key>
 	<string>Näytä kohteessa:</string>
+    
+     <!-- Checkbox that toggles “Open in [terminal name]” button. -->
+    <key>OPEN_IN_TERMINAL</key>
+    <string>Avaa päätteessä</string>
+
+    <!-- Label for checkbox for “Open in [editor name]” button. -->
+    <key>OPEN_IN_EDITOR</key>
+    <string>Muokkaa ohjelmassa</string>
+  
+    <!-- Checkbox that toggles “Execute button” button. -->
+    <key>EXECUTE_FILE</key>
+    <string>Suorita tiedosto</string>
 
 	<!-- Checkbox that toggles displaying the button in context menus. -->
 	<key>SHOW_IN_CONTEXT_MENUS</key>
 	<string>kontekstivalikot</string>
+
+	<!-- Checkbox that toggles showing the buttons as a submenu. -->
+    <key>SHOW_AS_SUBMENU</key>
+    <string>Alavalikossa</string>
 
 	<!-- Label that explains how to toggle the toolbar button. -->
 	<key>SHOW_IN_TOOLBAR_EXPLANATION</key>
@@ -50,8 +74,48 @@
 	<key>OPEN_IN_LAST_USED_TAB</key>
 	<string>Viimeksi käytetty välilehti</string>
 
+	<!-- Label that explains compatibility of the above options. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Tämä ominaisuus tarvitsee Päätteen tai iTerm 2.9:n tai uudemman.</string>
+
+	<!-- Title of the setup window. -->
+	<key>SET_UP_TERMHERE</key>
+	<string>Ota TermHere käyttöön</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>ENABLE_EXTENSION_EXPLANATION</key>
+	<string>Klikkaa avataksesi Laajennukset-asetukset. Valitse "Finder" TermHere:n alta.</string>
+
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
-	<string>Avaa asetukset</string>
+	<string>Avaa Järjestelmäasetukset</string>
+
+	<!-- Explanation of how to start the service. -->
+	<key>LAUNCH_SERVICE_EXPLANATION</key>
+	<string>Saatat joutua hyväksymään turvallisuusvahvistuksen käynnistääksesi TermHere palvelun.</string>
+
+	<!-- Button that starts the service. -->
+	<key>LAUNCH_SERVICE</key>
+	<string>Käynnistä palvelu</string>
+
+	<!-- Button that dismisses a popup window. -->
+	<key>DONE</key>
+	<string>Valmis</string>
+	
+	<!-- Label recommending the user contributes a tip (donation). -->
+	<key>TIP_JAR_EXPLANATION</key>
+	<string>Mikäli tämä ohjelma on sinulle hyödyllinen, harkitse tipin antamista.</string>
+
+	<!-- Button that opens the tip jar webpage. -->
+	<key>TIP_JAR_SITE</key>
+	<string>Tippaa…</string>
+
+	<!-- Button that sends a tip. %@ is the defined tip amount. -->
+	<key>TIP_JAR_AMOUNT</key>
+	<string>%@ tippi</string>
+
+	<!-- Displayed on the tip button while it loads the tip amount. -->
+	<key>LOADING</key>
+	<string>Latautuu…</string>
 </dict>
 </plist>
