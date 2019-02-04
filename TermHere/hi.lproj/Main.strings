@@ -54,8 +54,44 @@
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>यह सुविधा टर्मिनल या iTerm 2.9 या नए की आवश्यकता है।.</string>
 
+	<!-- Title of the setup window. -->
+	<key>SET_UP_TERMHERE</key>
+	<string>सेट अप TermHere</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>ENABLE_EXTENSION_EXPLANATION</key>
+	<string>एक्सटेंशन प्राथमिकताएँ खोलने के लिए क्लिक करें. TermHere के नीचे, "Finder" के बगल में स्थित चेकबॉक्स पर क्लिक करें.</string>
+
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
-	<string>प्राथमिकताएं खोलें</string>
+	<string>प्रेफ़ेरेन्सेस खोलिये</string>
+
+	<!-- Explanation of how to start the service. -->
+	<key>LAUNCH_SERVICE_EXPLANATION</key>
+	<string>TermHere शुरु कर्ने से पहले आपको सुरक्षा पुष्टिकरण को स्वीकार करने की आवश्यकता हो सकती है</string>
+
+	<!-- Button that starts the service. -->
+	<key>LAUNCH_SERVICE</key>
+	<string>शुरु करे</string>
+
+	<!-- Button that dismisses a popup window. -->
+	<key>DONE</key>
+	<string>पूर्ण</string>
+	
+	<!-- Label recommending the user contributes a tip (donation). -->
+	<key>TIP_JAR_EXPLANATION</key>
+	<string>अगर आप्को यह पसन्द आया तोह क्रिप्या दान य तिप करे</string>
+
+	<!-- Button that opens the tip jar webpage. -->
+	<key>TIP_JAR_SITE</key>
+	<string>टिप…</string>
+
+	<!-- Button that sends a tip. %@ is the defined tip amount. -->
+	<key>TIP_JAR_AMOUNT</key>
+	<string>टिप %@</string>
+
+	<!-- Displayed on the tip button while it loads the tip amount. -->
+	<key>LOADING</key>
+	<string>लोड हो रहा है</string>
 </dict> 
 </plist>

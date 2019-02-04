@@ -6,6 +6,10 @@
 	<key>LOADING</key>
 	<string>लोड हो रहा है…</string>
 
+	<!-- Done button label. -->
+  	<key>DONE</key>
+  	<string>पूर्ण</string>
+
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>चुनें</string>
@@ -13,6 +17,10 @@
 	<!-- Title of the open panel. -->
 	<key>CHOOSE_APPLICATION</key>
 	<string>आवेदन पत्र का चयन</string>
+
+	<!-- Title of the Help window. -->
+  	<key>HELP</key>
+  	<string>मदद</string>
 
 	<!-- Title of the About window. -->
 	<key>ABOUT</key>
