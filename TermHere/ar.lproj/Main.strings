@@ -82,8 +82,44 @@
 	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
 	<string>.أو أحدثiTerm 2.9 تتطلب هذه الميزة محطة مقابل</string>
 
+	<!-- Title of the setup window. -->
+	<key>SET_UP_TERMHERE</key>
+	<string>إعداد TermHere</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>ENABLE_EXTENSION_EXPLANATION</key>
+	<string>انقر لفتح إعدادات الإمتداد. أسفل TermHere، انقر على مربع الإختيار الموحود بجوار "Finder".</string>
+
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
-	<string>الإعدادات</string>
+	<string>فتح الإعدادات</string>
+
+	<!-- Explanation of how to start the service. -->
+	<key>LAUNCH_SERVICE_EXPLANATION</key>
+	<string>ستحتاج إلى قبول مطالبة تأكيد الأمان قبل بدء خدمة TermHere.</string>
+
+	<!-- Button that starts the service. -->
+	<key>LAUNCH_SERVICE</key>
+	<string>بدء الخدمة</string>
+
+	<!-- Button that dismisses a popup window. -->
+	<key>DONE</key>
+	<string>تم</string>
+
+	<!-- Label recommending the user contributes a tip (donation). -->
+	<key>TIP_JAR_EXPLANATION</key>
+	<string>إذا كان هذا التطبيق مفيداً لك، فعبر عن تقديرك لمجهوداتنا بمساهمتك في التبرع.</string>
+
+	<!-- Button that opens the tip jar webpage. -->
+	<key>TIP_JAR_SITE</key>
+	<string>تبرع...</string>
+
+	<!-- Button that sends a tip. %@ is the defined tip amount. -->
+	<key>TIP_JAR_AMOUNT</key>
+	<string>تبرع بـ %@</string>
+
+	<!-- Displayed on the tip button while it loads the tip amount. -->
+	<key>LOADING</key>
+	<string>جارِ التحميل...</string>
 </dict>
 </plist>
