@@ -31,5 +31,9 @@
 
 	<key>NOT_EXECUTABLE_MESSAGE</key>
 	<string>Jelölje meg a fájlt futtathatóként,hogy folytassa.</string>
+
+	<!-- Message displayed in a file open panel asking the user to give permission to read the folder. %@ is the folder path. -->
+	<key>GRANT_SANDBOX_PERMISSION_MESSAGE</key>
+    <string>A TermHere alkalmazás szeretne néhány fájlhoz hozzáférni. Kattints a "Megnyitás" gombra, hogy a TermHere hozzáférést kapjon a(z) %@ mappához és annak tartalmához.</string>
 </dict>
 </plist>

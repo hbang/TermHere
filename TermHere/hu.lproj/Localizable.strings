@@ -6,6 +6,10 @@
 	<key>LOADING</key>
 	<string>Betöltés...</string>
 
+	<!-- Done button label. -->
+	<key>DONE</key>
+	<string>Kész</string>
+
 	<!-- Button that chooses the selected app in the open panel. -->
 	<key>CHOOSE</key>
 	<string>Kiválaszt</string>
@@ -13,6 +17,10 @@
 	<!-- Title of the open panel. -->
 	<key>CHOOSE_APPLICATION</key>
 	<string>Alkalmazás választás</string>
+
+	<!-- Title of the Help window. -->
+	<key>HELP</key>
+	<string>Súgó</string>
 
 	<!-- Title of the About window. -->
 	<key>ABOUT</key>

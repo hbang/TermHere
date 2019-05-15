@@ -10,10 +10,6 @@
 	<key>BROWSE</key>
 	<string>Tallózás</string>
 
-	<!-- Label for choosing the editor app to use. -->
-	<key>EDITOR</key>
-	<string>Szerkesztő:</string>
-
 	<!-- Radio button for choosing to use an app as the editor. -->
 	<key>EDITOR_APP</key>
 	<string>Szerkesztő Alkalmazás:</string>
@@ -66,10 +62,6 @@
 	<key>OPEN_IN</key>
 	<string>Megnyitás másként..:</string>
 
-	<!-- Note for the apps TermHere supports. -->
-	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
-	<string>Ehhez a funkcióhoz szükséges a Terminal vagy az iTerm 2.9 vagy újabb verziója.</string>
-
 	<!-- Radio button for creating a new tab. -->
 	<key>OPEN_IN_NEW_TAB</key>
 	<string>Új lap</string>
@@ -82,8 +74,48 @@
 	<key>OPEN_IN_LAST_USED_TAB</key>
 	<string>Utolsó használt lap</string>
 
+	<!-- Note for the apps TermHere supports. -->
+	<key>OPEN_IN_COMPATIBILITY_NOTE</key>
+	<string>Ehhez a funkcióhoz szükséges a Terminal vagy az iTerm 2.9 vagy újabb verziója.</string>
+
+	<!-- Title of the setup window. -->
+	<key>SET_UP_TERMHERE</key>
+	<string>TermHere beállítása</string>
+
+	<!-- Explanation of how to enable the extension. -->
+	<key>ENABLE_EXTENSION_EXPLANATION</key>
+	<string>A Bővítmények beállításaihoz kattintson ide. A TermHere alkalmazásban kattintson a kereső mellett levő jelölőnégyzetre.</string>
+
 	<!-- Button that opens the Preferences app. -->
 	<key>OPEN_PREFERENCES</key>
-	<string>Beállítások Megnyitása</string>
+	<string>Beállítások megnyitása</string>
+
+	<!-- Explanation of how to start the service. -->
+	<key>LAUNCH_SERVICE_EXPLANATION</key>
+	<string>A TermHere szolgáltatás elindításához a biztonsági megerősítést kötelezően el kell elfogadni.</string>
+
+	<!-- Button that starts the service. -->
+	<key>LAUNCH_SERVICE</key>
+	<string>Szolgáltatás indítása</string>
+
+	<!-- Button that dismisses a popup window. -->
+	<key>DONE</key>
+	<string>Kész</string>
+
+	<!-- Label recommending the user contributes a tip (donation). -->
+	<key>TIP_JAR_EXPLANATION</key>
+	<string>Amennyiben hasznosnak találod az alkalmazást, kérlek támogasd a projektet.</string>
+
+	<!-- Button that opens the tip jar webpage. -->
+	<key>TIP_JAR_SITE</key>
+	<string>Támogatás...</string>
+
+	<!-- Button that sends a tip. %@ is the defined tip amount. -->
+	<key>TIP_JAR_AMOUNT</key>
+	<string>%@ felajánlása</string>
+
+	<!-- Displayed on the tip button while it loads the tip amount. -->
+	<key>LOADING</key>
+	<string>Betöltés...</string>
 </dict>
 </plist>
